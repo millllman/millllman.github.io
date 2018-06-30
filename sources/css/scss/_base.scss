@@ -1,0 +1,204 @@
+/* Variables */
+$main-color: #fff;
+$main-font-size: 16px;
+$main-line-height: 19px;
+$main-font-family: 'Roboto Condensed', sans-serif;
+$main-title-color: #fff;
+$main-link-color: #fff;
+$body-color: #000;
+
+
+
+/*font-family: 'Audiowide', cursive;
+font-family: 'Marck Script', cursive;*/
+
+@keyframes fade {
+	from { /*top: 100%;*/ opacity: 0;}
+	to { /*top: 0;*/ opacity: 1;}
+}
+
+@keyframes preview {
+	from { top: 20%;}
+	to { top: 50%;}
+}
+
+@keyframes popup {
+	from { top: 10%;}
+	to { top: 50%;}
+}
+
+@keyframes popup-close {
+	0% { top: 50%; opacity: 1;}
+	70% { top: 70%; opacity: 0.7;}
+	100% { top: 0%; opacity: 0.2;}
+}
+@keyframes shadow {
+	0% { box-shadow: 0 0 3px black; }
+	100% { box-shadow: 0 0 15px black; }
+}
+
+
+@font-face {
+	font-family: 'Calibri';
+	src: url('../fonts/Calibri.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Calibri.woff') format('woff'),
+		 url('../fonts/Calibri.ttf') format('truetype'),
+		 url('../fonts/Calibri.svg#Calibri') format('svg');
+	font-weight: normal; font-style: normal;
+}
+
+#bg-body {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: $body-color url(../img/bg-apple.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+
+/* Default */
+::selection { color: #fff; background: #e9ae30;}
+::-moz-selection { color: #fff; background: #e9ae30;}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body { background: $body-color;}
+
+li, div {
+	color: $main-color;
+	font: #{$main-font-size}/#{$main-line-height} $main-font-family;
+}
+
+p {
+	padding: 12px 0 0;
+	margin: 0;
+}
+em {
+	font-style: normal;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4 { margin: 0;}
+
+h2 {
+	color: $main-title-color;
+	font: 26px/30px $main-font-family;
+}
+
+a {
+	color: $main-link-color;
+	text-decoration: none;
+	transition: .2s ease-in-out;
+	outline: none;
+	&:hover {
+		color: #F0A714;
+		text-decoration: none;
+	}
+}
+
+.img-extensive {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Mixins */
+@mixin desktop {@media screen and (min-width: 1200px) and (max-width: 1400px) {@content;}}
+@mixin tablet {@media screen and (min-width: 1000px) and (max-width: 1199px) {@content;}}
+@mixin smart {@media screen and (min-width: 768px) and (max-width: 999px) {@content;}}
+@mixin mobile {@media screen and (max-width: 767px) {@content;}}
+@mixin desktop-max {@media screen and (max-width: 1400px) {@content;}}
+
+@mixin border ($border-color, $border-width) {
+	border: {
+		color: $border-color;
+		width: $border-width;
+		style: solid;
+	}
+}
+
+@mixin bs {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin clearfix() {
+	clear: both;
+    &:before {
+		box-sizing: border-box;
+		content: " ";
+		display: table;
+	}
+	&:after {
+		box-sizing: border-box;
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin border-radius($param){
+    -moz-border-radius: $param;
+    -webkit-border-radius: $param;
+    border-radius: $param;
+}
+
+@mixin box-shadow($params){
+    -moz-box-shadow: $params;
+    -webkit-box-shadow: $params;
+    box-shadow: $params;
+}
+
+@mixin font ($custom-size: 16px, $custom-line-height: 19px, $custom-weight: normal, $custom-style: normal) {
+	font: {
+		size: $custom-size;
+		weight: $custom-weight;
+		style: $custom-style;
+	}
+	line-height: $custom-line-height;
+}
+
+
+/* Buttons */
+
+.btn-top {
+	width: 33px;
+	height: 100%;
+	display: block;
+	top: 87px;
+	bottom: 0;
+	left: 0px;
+	position: fixed;
+	z-index: 100;
+	cursor: pointer;
+	background: rgba(0,0,0, 0.3);
+	@include border (#717171, 0 1px 0 0);
+	&:before {
+		content: "\f106";
+		width: 25px;
+		height: 25px;
+		top: 38%;
+		left: 4px;
+		position: absolute;
+		color: #fff;
+		font-family: FontAwesome;
+		text-align: center;
+		@include font (21px, 21px, bold);
+		@include border-radius (50%);
+		background: rgba(140,140,140, 0.7);
+	}
+}
+
+
