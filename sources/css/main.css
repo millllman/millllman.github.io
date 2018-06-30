@@ -49,6 +49,9 @@ font-family: 'Marck Script', cursive;*/
   background: #000 url(../img/bg-apple.jpg) 0 0 no-repeat;
   background-size: cover; }
 
+.hide-el {
+  display: none; }
+
 /* Default */
 ::selection {
   color: #fff;
@@ -371,6 +374,8 @@ a {
       content: "bootstrap"; }
     .portfolio-box em.foundation:before {
       content: "foundation"; }
+    .portfolio-box em.uikit:before {
+      content: "uikit"; }
     .portfolio-box em.responsive:before {
       content: "responsive"; }
     .portfolio-box em + em {
@@ -384,7 +389,7 @@ a {
             .portfolio-box em + em + em + em + em + em {
               top: 58%; }
     .portfolio-box em.js {
-      background: #e4d207; }
+      background: #63a814; }
     .portfolio-box em.css {
       color: #fff;
       background: #0070ba; }
@@ -399,6 +404,9 @@ a {
     .portfolio-box em.foundation {
       color: #fff;
       background: #126fad; }
+    .portfolio-box em.uikit {
+      color: #fff;
+      background: #28a5f5; }
     .portfolio-box em.responsive {
       background: #48c2c5; }
   @media screen and (min-width: 1200px) and (max-width: 1400px) {

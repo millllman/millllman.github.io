@@ -20,6 +20,7 @@ $(document).ready(function() {
 	$('.portfolio-box > li.js').append('<em class="js"></em>');
 	$('.portfolio-box > li.bt').append('<em class="bootstrap"></em>');
 	$('.portfolio-box > li.fd').append('<em class="foundation"></em>');
+	$('.portfolio-box > li.uk').append('<em class="uikit"></em>');
 	$('.portfolio-box > li.rs').append('<em class="responsive"></em>');
 	$('.portfolio-box > li.cs').append('<em class="css"></em>');
 	$('.portfolio-box > li.sc').append('<em class="scss"></em>');

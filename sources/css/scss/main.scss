@@ -186,6 +186,7 @@
 		&.html:before { content: "html";}
 		&.bootstrap:before { content: "bootstrap";}
 		&.foundation:before { content: "foundation";}
+		&.uikit:before { content: "uikit";}
 		&.responsive:before { content: "responsive";}
 		& + em { top: $technology-next + 10;
 			& + em { top: $technology-next + 20;
@@ -200,6 +201,7 @@
 		&.html { background: #e44d26;}
 		&.bootstrap { color: #fff; background: #6f5499;}
 		&.foundation { color: #fff; background: #126fad;}
+		&.uikit { color: #fff; background: #28a5f5;}
 		&.responsive { background: #48c2c5;}
 	}
 	@include desktop {
