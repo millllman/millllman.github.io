@@ -1,0 +1,460 @@
+/* Import */
+@import "variables";
+@import "mixin";
+@import "grid";
+@import "base";
+/*@import "variables-theme.scss";
+@import "mixins-theme.scss";
+@import "uikit-theme.scss";*/
+
+/*------------------------------------- Header */
+header.page-header {
+	padding: 27px 0;
+	@include clearfix;
+	@include border (rgba(210,210,210,0.7),0 0 1px);
+}
+
+.top-container__wrap {
+	z-index: 100;
+	@include abs (0,0,0,auto);
+	@include media(md-max) { z-index: inherit; }
+}
+
+/*Menu*/
+.main-menu__top {
+	@include media(lg-min) {
+		padding: 15px 0;
+		float: left;
+		background-color: rgba(255,255,255, 0.7);
+		@include clearfix;
+		li {
+			padding: 0 25px;
+			float: left;
+			font-family: $ps;
+			@include font (18,21);
+			a { @include link-color (#1e3543); }
+		}
+	}
+}
+
+/*Work time*/
+.work-time__box {
+	color: #000;
+	font-family: $ps;
+	text-align: right;
+	@include font (12,15);
+	a { @include link-color (#000); }
+	span {
+		display: block;
+		@include font (28,30);
+	}
+	@include media(md-max) {
+		position: relative;
+		z-index: 10;
+	}
+	@include media(xs) {
+		margin-left: -45px;
+		white-space: nowrap;
+	}
+}
+
+/*Logo*/
+.logo-top {
+	padding: 78px 15px 0;
+	text-align: center;
+	@include clearfix;
+	img { max-height: 32vh; }
+	@include media(md-max) {
+		position: relative;
+		z-index: 10;
+	}
+	@include media(md-max) {
+		img { max-width: 70%; }
+	}
+}
+
+/*------------------------------------ Content */
+section {}
+
+.section-spacing {
+	height: 40px;
+	@include clearfix;
+}
+
+.box-spacing {
+	height: 20px;
+	@include clearfix;
+}
+
+.main-title {
+	padding: 0 0 15px;
+	color: #fff;
+	font-family: $ps;
+	text-align: center;
+	@include font (64,78);
+	@include media(sm-max) { @include font (54,58); }
+	@include media(xs) { @include font (35,38); }
+}
+
+.section-screen__video {
+	@include clearfix;
+	video {
+		width: 100%;
+	}
+}
+
+/*--------------------------- Section Screen 1 */
+.section-screen__1 {
+	padding: 93px 0 70px;
+	background: url(../img/bg-section1.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	@include clearfix;
+	@include media(sm-max) { padding: 35px 0 50px; }
+}
+
+.second-menu__item {
+	margin-top: 50px;
+	display: block;
+	font-family: $ps;
+	text-align: center;
+	text-transform: uppercase;
+	@include link-color (#1e3543);
+	span.image {
+		padding: 0 0 45px;
+		display: block;
+		img {
+			margin: 0 auto;
+			display: block;
+			@include border-radius (50%);
+		}
+	}
+	span.name {
+		padding: 0 0 58px;
+		display: block;
+		background: url(../img/icon-second__menu.png) 50% 100% no-repeat;
+		@include font (24,27);
+	}
+}
+
+/*--------------------------- Section Screen 2 */
+.section-screen__2 {
+	padding: 145px 0 185px;
+	color: #fff;
+	text-align: center;
+	background: url(../img/bg-section2.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	@include clearfix;
+	@include font (18,24);
+	p.text { padding: 0 0 38px; }
+	input[type="text"] {
+		width: 100%;
+		border: 0;
+	}
+	.form-submit { padding: 40px 0 0; }
+	.form-more {
+		padding: 18px 0 0;
+		text-transform: uppercase;
+		@include font (14,17);
+	}
+	@include media(sm-max) { padding: 45px 0 55px; }
+}
+
+/*--------------------------- Section Screen 3 */
+.section-screen__3 {
+	padding: 100px 0;
+	@include clearfix;
+	@include media(sm-max) { padding: 50px 0; }
+}
+
+.btn-lightbox {
+	display: block;
+	position: relative;
+	@include before {
+		opacity: 0;
+		background: rgba(0,0,0, 0.5) url(../img/icon-lightbox.png) 50% 50% no-repeat;
+		transition: .2s ease-in-out;
+		@include abs;
+	}
+	&:hover {
+		&:before { opacity: 1; }
+	}
+}
+
+/*--------------------------- Section Screen 4 */
+.section-screen__4 {
+	padding: 100px 0;
+	color: #fff;
+	text-align: center;
+	background: url(../img/bg-section3.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	@include clearfix;
+	@include font (18,24);
+	.form-more { padding: 20px 0 0; }
+	.main-title {
+		padding: 85px 0 0;
+		position: relative;
+		background: url(../img/icon-sale.png) 50% 0 no-repeat;
+		@include before {
+			width: calc(50% - 110px);
+			height: 1px;
+			background: #fff;
+			@include abs (18px,0,auto,auto);
+		}
+		@include after {
+			width: calc(50% - 110px);
+			height: 1px;
+			background: #fff;
+			@include abs (18px,auto,0,auto);
+		}
+	}
+	@include media(sm-max) { padding: 50px 0; }
+}
+
+/*--------------------------- Section Screen 5 */
+.section-screen__5 {
+	padding: 100px 0 134px;
+	@include clearfix;
+	@include media(sm-max) { padding: 50px 0; }
+}
+
+.experience-image__box {
+	img { @include box-shadow (30px 30px 0 0px #ffe7a7); }
+	@include media(xs) { padding-right: 30px; }
+}
+
+.experience-text__box {
+	padding: 35px 0 0;
+	p { padding: 27px 0 0; }
+	h4 {
+		padding: 0 0 15px;
+		font-family: $ps;
+		@include font (34,41);
+	}
+	.title {
+		padding: 0 0 30px;
+		text-transform: uppercase;
+		@include border (#d7d8d8,0 0 1px);
+	}
+	@include media(md-max) { padding-left: 30px; }
+}
+
+/*--------------------------- Section Screen 6 */
+.section-screen__6 {
+	padding: 119px 0 145px;
+	color: #fff;
+	text-align: center;
+	background: url(../img/bg-section4.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	@include clearfix;
+	@include font (18,24);
+	p { padding: 25px 0 0; }
+	.title {
+		padding: 25px 0 0;
+		text-transform: uppercase;
+	}
+	.main-title {
+		padding: 85px 0 0;
+		position: relative;
+		background: url(../img/icon-music.png) 50% 0 no-repeat;
+		@include before {
+			width: calc(50% - 110px);
+			height: 1px;
+			background: #fff;
+			@include abs (18px,0,auto,auto);
+		}
+		@include after {
+			width: calc(50% - 110px);
+			height: 1px;
+			background: #fff;
+			@include abs (18px,auto,0,auto);
+		}
+	}
+	@include media(sm-max) { padding: 50px 0; }
+}
+
+/*--------------------------- Section Screen 7 */
+.section-screen__7 {
+	padding: 39px 0;
+	@include clearfix;
+}
+
+.btn-catalog {
+	margin-top: 10px;
+	display: block;
+	img { width: 100%; }
+}
+
+/*--------------------------- Section Screen 8 */
+.section-screen__8 {
+	padding: 49px 0 59px;
+	position: relative;
+	@include clearfix;
+}
+
+.feedback-box__wrap {
+	padding: 44px 0 55px;
+	background: #ffbb02;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	@include clearfix;
+	@include font (18,21);
+	.logo { padding: 0 20px; }
+	.title {
+		padding: 25px 20px 0;
+		text-transform: uppercase;
+		@include font (36,38);
+	}
+	.feedback {
+		padding: 32px 20px 0;
+		a { @include link-color (#fff); }
+		span {
+			padding-top: 20px;
+			display: inline-block;
+			i.fa { margin-right: 10px; }
+			& + span { padding-left: 25px; }
+		}
+	}
+}
+.feedback-box {
+	padding: 7px 15% 0;
+	@include clearfix;
+	li {
+		padding-top: 10px;
+		&:last-child {
+			padding-top: 50px;
+			text-align: center;
+		}
+	}
+	input[type="text"],
+	textarea {
+		width: 100%;
+		padding: 10px;
+		color: #fff;
+		background: none;
+		border-radius: 0;
+		@include font (16,28);
+		@include border (transparent transparent #fff transparent,1px);
+		&:focus {
+			background: none;
+			border-color: #fff;
+			@include box-shadow (none);
+		}
+		&::-webkit-input-placeholder { color:#fff; }
+		&::-moz-placeholder          { color:#fff; }
+		&:-moz-placeholder           { color:#fff; }
+		&:-ms-input-placeholder      { color:#fff; }
+	}
+	textarea {
+		height: 50px;
+		resize: vertical;
+	}
+	button[class^="uk-button"] {
+		color: $orange;
+		background: #fff;
+		border: 0;
+		letter-spacing: 1.5px;
+		@include font (24,60,bold);
+		@include border-radius (6px);
+		@include box-shadow (0 0 15px 3px #fff);
+		&:hover { @include box-shadow (0 0 25px 3px #fff); }
+	}
+}
+#form-success__send { display: none; }
+
+.map-box {
+	overflow: hidden;
+	@include abs;
+	iframe {
+		width: 125%;
+		height: 100%;
+	}
+}
+
+/*--------------------------- Section Screen 9 */
+.section-screen__9 {
+	padding: 39px 0 0;
+	color: #fff;
+	background: url(../img/bg-section5.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	@include clearfix;
+	@include font (14,34);
+	.title {
+		padding: 25px 0 0;
+		@include font (24,27);
+	}
+	p.text { padding: 25px 0 0; }
+	.custom-row { padding-bottom: 39px; }
+}
+
+.footer-time__box {
+	padding: 25px 0 0;
+	@include font (14,24);
+	p { padding: 14px 0 0; }
+	em {
+		color: #fff;
+		font-size: 24px;
+	}
+}
+
+.footer-social__box {
+	padding: 62px 0 0;
+	text-transform: uppercase;
+	@include font (24,27);
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	a.button {
+		width: 36px;
+		height: 36px;
+		margin-left: 25px;
+		display: inline-block;
+		text-align: center;
+		background: $orange;
+		vertical-align: middle;
+		@include font (19,35);
+		@include link-color (#fff,#fff);
+		@include border-radius (50%);
+		&:hover { background: #636365; }
+	}
+	@include media(sm-max) {
+		span {
+			padding: 0 0 20px;
+			display: block;
+		}
+		a.button { margin: 0 17px 0 0; }
+	}
+}
+
+.footer-logo__box {
+	padding: 56px 20px 44px;
+	text-align: center;
+	@include border (#636365,1px 0 0,dashed);
+}
+
+.footer-menu__wrap { background: #0e1013; }
+
+.footer-menu__box {
+	text-align: center;
+	letter-spacing: -0.3em;
+	li {
+		padding: 0 18px;
+		display: inline-block;
+		letter-spacing: normal;
+		@include font (14,70);
+		a {
+			padding: 0 10px;
+			display: block;
+			@include link-color (#fff,$orange);
+		}
+	}
+}
+
+/*------------------------------------- Footer */
+footer.page-footer { @include clearfix; }
+
+.section-screen__video .uk-slidenav-large { z-index: 102; }
+/*-------------------------------------------  */
+

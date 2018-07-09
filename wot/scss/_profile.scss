@@ -1,0 +1,390 @@
+/* Profile Page */
+
+.bg-profile__page {
+	padding-top: 74px;
+	background: url(../img/bg-profile__content.png) 50% 0 no-repeat;
+}
+
+.profile-data__box {
+	padding-bottom: 38px;
+	@include clearfix;
+	.foto {
+		width: 128px;
+		height: 128px;
+		float: left;
+		overflow: hidden;
+		background: rgba(0,0,0,0.7);
+	}
+	.user-col {
+		width: calc(100% - 128px);
+		padding-left: 30px;
+		float: left;
+		font-family: $rr;
+		@include font (14,16);
+	}
+	h4 {
+		padding: 22px 0 0;
+		color: $red;
+		font-family: $hb;
+		text-transform: uppercase;
+		@include font (30,32);
+	}
+}
+
+.profile-roulette__title {
+	padding: 0 0 15px;
+	color: #5a5a5b;
+	text-transform: uppercase;
+	@include font (16,19);
+}
+.profile-roulette__wrap {
+	position: relative;
+	@include clearfix;
+	@include before {
+		width: 4px;
+		margin-left: -2px;
+		background: $red;
+		z-index: 9;
+		@include abs (-22px,50%,auto,-22px);
+	}
+	@include tablet-max {
+		background: #080808;
+		overflow: hidden;
+		@include border (#080808,0 8px);
+		.ld-nopreview_modify {
+			width: 730px !important;
+			display: inline-block;
+			left: 50%;
+			transform: translateX(-50%);
+			&:before, &:after { display: none; }
+		}
+	}
+}
+
+.profile-data__nav {
+	padding: 34px 0 0;
+	@include clearfix;
+	.select-col {
+		width: 55%;
+		padding: 6px 0 0;
+		float: left;
+	}
+	.button-col {
+		width: 44%;
+		float: right;
+		text-align: right;
+	}
+	span.title {
+		padding-right: 20px;
+		display: inline-block;
+		color: #fff;
+		text-transform: uppercase;
+		@include font (20,23);
+	}
+	@include mobile {
+		.select-col,
+		.button-col { width: 100%; }
+		.select-col { padding-bottom: 20px; }
+		.button-col { a.btn { width: 100%; } }
+	}
+}
+
+
+/*------------------------------- Select Menu */
+
+.select-menu__wrap {
+	min-width: 38px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+}
+
+.select-menu__current {
+	height: 38px;
+	padding: 0 3px;
+	display: block;
+	color: $red;
+	cursor: pointer;
+	@include font (20,34);
+	@include border ($red,2px);
+}
+
+.select-menu__box {
+	display: none;
+	z-index: 999;
+	@include abs (38px,0,0,auto);
+	li {
+		padding: 3px;
+		margin-top: 1px;
+		background: #252526;
+		cursor: pointer;
+		@include font (20,32);
+		&:hover,
+		&.active {
+			color: #fff;
+			background: $red;
+		}
+	}
+}
+
+
+/*----------------------------------- Popup Boxes */
+.modal-balance__info {
+	padding: 23px 0 0;
+	@include clearfix;
+	li {
+		width: $column-width-4;
+		padding: 0 10px;
+		float: left;
+		font-family: $rc;
+		@include font (14,17);
+		&:not(:first-child) {
+			@include border (#434345,0 0 0 1px);
+		}
+	}
+	em {
+		color: $red;
+		font-weight: bold;
+	}
+}
+
+/* Pay */
+.modal-balance__pay {
+	padding: 45px 15px 0;
+	.form {
+		width: 100%;
+		position: relative;
+	}
+	span.icon-pay {
+		min-width: 58px;
+		padding: 11px 12px;
+		display: block;
+		color: #fff;
+		font-family: $rc;
+		background: $red;
+		cursor: default;
+		@include font (32,40,bold);
+		@include abs (0,auto);
+		@include border-radius (0 3px 3px 0);
+	}
+	input[type="text"] {
+		width: 100%;
+		padding: 10px 100px 10px 17px;
+		color: #fff;
+		background: $section-color;
+		font-family: $rc;
+		@include border (transparent,1px);
+		@include font (32,40,bold);
+		@include border-radius (3px);
+		&:focus {
+			box-shadow: inherit;
+			border-color: $red;
+		}
+		&.input-get { background: #59595b; }
+	}
+	label {
+		padding: 0px 0 12px;
+		display: block;
+		color: #fff;
+		text-align: left;
+		text-transform: uppercase;
+		cursor: pointer;
+		@include font (20,23);
+	}
+	@include tablet-max {
+		& > .column {
+			& + .column { padding-top: 20px; }
+		}
+	}
+}
+
+
+.modal-balance__title {
+	padding: 0 15px;
+	font-family: $hr;
+	text-transform: uppercase;
+	@include font (16,18);
+	span {
+		color: #fff;
+		font-weight: bold;
+	}
+	em { color: $red; }
+}
+
+.modal-balance__activate {
+	padding: 20px 15px 0;
+	input[type="text"] {
+		width: 100%;
+		padding: 10px 20px;
+		font-family: $rc;
+		@include font (16,28);
+	}
+	@include mobile {
+		& > .column {
+			& + .column { padding-top: 20px; }
+		}
+	}
+}
+
+
+.modal-balance__submit {
+	padding: 10px 15px 0;
+	.btn { min-width: 220px; }
+	@include mobile { .btn { width: 100%; } }
+}
+
+
+/*------------------------------ History Popup Table */
+
+/*------------------------ Players Data Table */
+.modal-history__wrap {
+	padding: 0px 0 0px;
+	@include clearfix;
+}
+
+.modal-history__table {
+	width: 100%;
+	display: table;
+	border-bottom: 1px solid #2e2e2e;
+	& > .t-row {
+		display: table-row;
+		& > .t-column {
+			padding: 15px 15px;
+			display: table-cell;
+			color: #fff;
+			font-family: $hb;
+			text-align: center;
+			text-transform: uppercase;
+			vertical-align: middle;
+			border-top: 1px solid #2e2e2e;
+			border-bottom: 1px solid #111;
+			@include font (16,19);
+			&:nth-child(1) {
+				width: 38%;
+				text-align: left;
+			}
+			&:nth-child(2) { width: 20%; }
+			&:nth-child(3) { width: 20%; }
+			&:nth-child(4) { width: 22%; }
+		}
+		&.caption {
+			background: rgba(255,255,255, 0.1);
+			& > .t-column {
+				color: #bcbbb3;
+				text-transform: uppercase;
+				@include font (18,21);
+			}
+		}
+	}
+
+	a.livedrop-single__item { vertical-align: middle; }
+	a.btn {
+		padding: 7px 15px;
+		@include font (16,26);
+		& > em { font-family: $hr; }
+		&.btn-border { line-height: 22px; }
+		& + .btn { margin-left: 9px; }
+	}
+	span.not-finished { color: #e19d0c; }
+	span.sold { color: $red; }
+
+	@include desktop-max {
+		a.btn {
+			display: block;
+			& + .btn { margin: 15px 0 0; }
+		}
+	}
+	@include laptop-min {}
+	@include tablet-max {
+		& > .t-row {
+			& > .t-column {
+				padding: 15px 5px;
+			}
+			&.caption {
+				& > .t-column { @include font (14,17); }
+			}
+		}
+	}
+	@include mobile {
+		& > .t-row {
+			& > .t-column {
+				@include font (14,17);
+				&:nth-child(4) { display: none; }
+			}
+		}
+	}
+}
+
+.modal-history__nav-wrap {
+	padding: 15px 15px 0;
+	text-align: center;
+	@include clearfix;
+}
+
+.modal-history__nav-total {
+	padding: 0 14px 0 0;
+	display: inline-block;
+	font-family: $hr;
+	vertical-align: middle;
+	@include font (16,19);
+	@include mobile {
+		padding: 0 0 15px;
+		display: block;
+	}
+}
+
+.modal-history__nav {
+	background: #282828;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+	letter-spacing: -0.3em;
+	@include border-radius (3px);
+	li {
+		display: inline-block;
+		letter-spacing: normal;
+		@include font (20,47);
+		a {
+			padding: 0 8px;
+			display: block;
+			&:hover { color: $red; }
+			&.nav-prev,
+			&.nav-next {
+				padding: 0 16px;
+				background: $red;
+				@include link-color (#282828,#fff);
+			}
+			&.nav-prev { margin-right: 10px; }
+			&.nav-next { margin-left: 10px; }
+			&.nav-inactive {
+				cursor: default;
+				background: #484848;
+				&:hover {
+					color: #282828;
+					background: #484848;
+				}
+			}
+		}
+	}
+}
+
+
+/*---------------------------------- Win Popup */
+.modal-win__wrap {
+	padding-left: 246px;
+	background: url(../img/bg-popup__win.png) 0 0 no-repeat;
+	@include tablet-max {
+		padding: 0;
+		background: none;
+	}
+}
+
+.modal-win__submit {
+	padding: 20px 0 10px;
+	.btn {
+		min-width: 260px;
+		padding: 10px 10px;
+		line-height: 37px;
+		&.btn-border { line-height: 33px; }
+	}
+}

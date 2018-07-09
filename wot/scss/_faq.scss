@@ -1,0 +1,31 @@
+/* FAQ Page */
+
+.bg-faq__page {
+	padding-top: 43px;
+	background: url(../img/bg-faq__content.png) 50% 0 no-repeat;
+}
+
+.faq-box {
+	@include clearfix;
+	li {
+		padding: 17px 0 30px;
+	}
+	span.name {
+		display: block;
+		text-transform: uppercase;
+		cursor: pointer;
+		@include font (25,30);
+		&:hover, &.active { color: #fff; }
+	}
+	p.text {
+		display: none;
+		margin-top: 15px;
+		padding: 0 0 0 19px;
+		font-family: $rr;
+		@include font (18,21);
+		@include border ($red,0 0 0 2px);
+	}
+	@include mobile {
+		li { padding: 17px 0 10px; }
+	}
+}

@@ -1,0 +1,148 @@
+/* Partner Page */
+.bg-partner__page {
+	padding-top: 43px;
+	background: url(../img/bg-partner__content.png) 50% 0 no-repeat;
+}
+
+/*------------------------ Partner Link Box */
+.partner-link__title {
+	padding: 42px 0 15px;
+	color: #fff;
+	text-transform: uppercase;
+	@include font (20,23);
+}
+
+.partner-link__box {
+	padding-bottom: 57px;
+	@include clearfix;
+	.form {
+		width: 82%;
+		float: left;
+	}
+	.button-copy {
+		width: 18%;
+		float: left;
+	}
+	input[type="text"] {
+		width: 100%;
+		padding: 10px 27px;
+		background: $section-color;
+		@include border (transparent,1px);
+		@include font (20,40);
+		@include border-radius (3px 0px 0px 3px);
+		&:focus {
+			box-shadow: inherit;
+			border-color: $red;
+		}
+	}
+	button.btn {
+		width: 100%;
+		@include border-radius (0 3px 3px 0);
+	}
+	@include laptop-max {
+		.form { width: 65%; }
+		.button-copy { width: 35%; }
+	}
+	@include mobile {
+		.form { width: 100%; }
+		.button-copy { width: 100%; }
+		input[type="text"] { @include border-radius (3px 3px 0 0); }
+		button.btn { @include border-radius (0 0 3px 3px); }
+	}
+}
+
+/*------------------------ Partner Data Table */
+.partner-data__wrap {
+	padding: 18px 0;
+	background: $section-color url(../img/bg-partner__table.png) 0 0 no-repeat;
+	@include clearfix;
+	@include tablet-max {
+		background-size: auto 100%;
+	}
+}
+.partner-data__table {
+	width: 100%;
+	display: table;
+	& > .t-column {
+		padding: 33px 12px 34px;
+		display: table-cell;
+		text-align: center;
+		font-family: $hr;
+		@include border (#1e1e1e,0 0 0 1px);
+	}
+	span.title {
+		display: block;
+		text-transform: uppercase;
+		@include font (14,17);
+	}
+	span.value {
+		padding: 30px 0 0;
+		display: block;
+		color: #fff;
+		font-family: $rr;
+		@include font (42,45);
+	}
+	span.rating {
+		padding: 15px 0 0;
+		display: block;
+	}
+	@include desktop-max {
+		span.value { @include font (27,30); }
+	}
+	@include laptop-max {
+		span.value { @include font (21,24); }
+	}
+	@include tablet-max {
+		display: block;
+		& > .t-column {
+			padding: 15px 15px;
+			display: block;
+			border-width: 0 0 1px;
+		}
+		span.value { padding: 10px 0 0; }
+	}
+}
+
+/*------------------------ Partner Level Table */
+.partner-level__wrap {
+	padding: 105px 0 90px;
+	@include clearfix;
+}
+
+.partner-level__table {
+	width: 100%;
+	display: table;
+	& > .t-row {
+		display: table-row;
+		& > .t-column {
+			padding: 17px 5px;
+			display: table-cell;
+			text-align: center;
+			font-family: $hr;
+			text-transform: uppercase;
+			vertical-align: middle;
+			@include font (16,19);
+			@include border (#2a2a2b,0 0 1px);
+			&:first-child { text-align: left; }
+		}
+	}
+	span.title {
+		color: #fff;
+		font-family: $hb;
+		text-transform: uppercase;
+		@include font (28,30);
+	}
+	span.rating {
+		padding: 15px 0 0;
+		display: block;
+	}
+	@include mobile {
+		span.title { @include font (15,17); }
+		& > .t-row {
+			& > .t-column {
+				padding-left: 0;
+				@include font (14,17);
+			}
+		}
+	}
+}

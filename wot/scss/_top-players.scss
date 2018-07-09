@@ -1,0 +1,430 @@
+/* Top Players Page */
+
+.bg-players__page {
+	padding-top: 43px;
+	background: url(../img/bg-players__content.png) 50% 0 no-repeat;
+}
+
+/*-------------------------- Players Panel Box */
+.players-panel__box {
+	padding: 23px 0 0;
+}
+
+.players-panel__user {
+	text-align: left;
+	@include clearfix;
+	.image-col {
+		width: 137px;
+		padding-left: 8px;
+		float: left;
+	}
+	.text-col {
+		width: calc(100% - 137px);
+		padding: 11px 0 0;
+		float: left;
+		color: #fff;
+		font-family: $rc;
+		p {
+			padding: 3px 0 5px;
+			color: #4e4e4f;
+			@include font (25,26);
+		}
+	}
+	a.foto {
+		width: 113px;
+		height: 113px;
+		display: block;
+		background: linear-gradient(to bottom, #e53214,#403f43);
+		position: relative;
+		@include border-radius (50%);
+		img {
+			margin: auto;
+			@include abs;
+		}
+	}
+	span.name {
+		color: #fff;
+		@include font (29,32,bold);
+	}
+	em.s1 {
+		padding-right: 8px;
+		color: $red;
+		@include font (20,21,bold);
+	}
+	em.s2 {
+		padding-left: 8px;
+		color: #4e4e4f;
+		@include font (20,21,bold);
+	}
+	em.s3 {
+		color: $red;
+		@include font (12,14);
+	}
+	em.s4 {
+		color: #fff;
+		@include font (12,14);
+	}
+	@include tablet-max {
+		display: inline-block;
+	}
+}
+
+
+.players-panel__title {
+	padding: 12px 0 0;
+	color: #fff;
+	text-align: center;
+	@include font (34,40);
+	@include laptop-max { padding-top: 32px; }
+	@include mobile { @include font (24,30); }
+}
+
+
+.players-panel__end {
+	padding: 10px 0 0;
+	color: #fff;
+	font-family: $hr;
+	text-align: center;
+	@include clearfix;
+	span.s1 {
+		font-family: $hr;
+		text-transform: uppercase;
+		@include font (16,18);
+	}
+	span.s2 {
+		padding: 2px 0 10px;
+		display: block;
+		font-family: $rc;
+		@include font (40,40,bold);
+	}
+	span.s3 {
+		padding: 0 23px;
+		display: inline-block;
+		color: $red;
+		font-family: $hb;
+		@include font (19,25);
+		@include border ($red,2px);
+	}
+	@include laptop-max { padding-top: 20px; }
+}
+
+/*------------------------ Players Data Table */
+.players-data__wrap {
+	padding: 30px 0 0px;
+	@include clearfix;
+}
+
+.players-data__table {
+	width: 100%;
+	padding-bottom: 51px;
+	display: table;
+	background: $section-color;
+	& > .t-row {
+		display: table-row;
+		& > .t-column {
+			padding: 15px 5px;
+			display: table-cell;
+			text-align: center;
+			font-family: $rc;
+			vertical-align: middle;
+			@include font (25,27,bold);
+			@include border (#2a2a2b,1px 0 0);
+
+			&:nth-child(1) { width: 12%; }
+			&:nth-child(2) {
+				width: 37%;
+				text-align: left;
+			}
+			&:nth-child(3) { width: 19%; }
+			&:nth-child(4) { width: 32%; }
+
+		}
+		&.caption {
+			& > .t-column {
+				text-transform: uppercase;
+				border: 0;
+				font-family: $hb;
+				@include font (16,18);
+				@include widescreen {
+					&:nth-child(2) { padding-left: 80px; }
+				}
+			}
+		}
+		&.first-place {
+			background: linear-gradient(to right, #942412, transparent 77%);
+		}
+		&.second-place {
+			background: linear-gradient(to right, #611c11, transparent 77%);
+		}
+		&.third-place {
+			background: linear-gradient(to right, #2d1310, transparent 77%);
+		}
+		&.first-place,
+		&.second-place,
+		&.third-place {
+			a.livedrop-single__item {
+				@include box-shadow (0 0 0 3px $red);
+				@include border-radius (2px);
+			}
+		}
+	}
+
+	img.foto-player {
+		margin-right: 21px;
+		vertical-align: middle;
+	}
+	span.name-player {
+		display: inline-block;
+		color: #fff;
+	}
+	span.summ { color: $red; }
+
+	@include laptop-min {
+		.surprise-col {
+			width: 184px;
+			margin: 0 0 0 auto;
+		}
+	}
+	@include tablet-max {
+		& > .t-row {
+			& > .t-column {
+				@include font (17,20,bold);
+				&:nth-child(1) { width: 7%; }
+				&:nth-child(2) { width: 32%; }
+				&:nth-child(3) { width: 29%; }
+			}
+		}
+		span.name-player {
+			padding: 15px 0 0;
+			display: block;
+		}
+	}
+	@include mobile {
+		& > .t-row {
+			& > .t-column {
+				@include font (14,17,bold);
+				&:nth-child(1) { width: 15%; }
+				&:nth-child(2) { display: none; }
+				&:nth-child(3) { width: 35%; }
+				&:nth-child(4) { width: 50%; }
+			}
+			&.caption {
+				& > .t-column { @include font (14,17); }
+			}
+		}
+		img.foto-player { display: none; }
+		span.name-player { padding: 0 0 20px; }
+	}
+}
+
+
+/*----------------- Live Drop Single Item */
+a.livedrop-single__item {
+	width: 134px;
+	height: 90px;
+	display: inline-block;
+	text-align: left;
+	background: #1a1a1b;
+	position: relative;
+	&:hover {
+		span.preview {
+			display: block;
+			animation: preview-drop .5s forwards;
+		}
+	}
+	img.image {
+		max-width: 92%;
+		max-height: 92%;
+		margin: auto;
+		display: block;
+		@include abs;
+	}
+	span.name {
+		display: block;
+		color: #fff;
+		text-transform: uppercase;
+		text-shadow: 0 0 5px #0d0d0e;
+		@include font (12,14);
+		@include abs (auto,32px,10px,10px);
+	}
+	span.title {
+		display: block;
+		color: #8d8c8c;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 0 0 5px #0d0d0e;
+		@include font (12,14);
+		@include abs (auto,10px,10px,10px);
+	}
+	span.preview {
+		min-height: 111px;
+		padding: 10px 10px 10px;
+		display: none;
+		text-align: center;
+		background: rgba(0,0,0, 0.75);
+		z-index: 2;
+		@include abs (auto,0px,0,-74px);
+		@include border ($red,1px);
+		@include border-radius (1px);
+		em.res {
+			height: 68px;
+			display: block;
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		em.who {
+			padding: 7px 0 0;
+			display: block;
+			color: $red;
+			font-family: $rr;
+			@include font (12,14);
+		}
+		@include before {
+			margin-left: -10px;
+			@include abs (-20px,50%,auto,auto);
+			@include border (transparent transparent rgba(0,0,0, 0.75) transparent,10px 10px);
+		}
+		@include after {
+			width: 15px;
+			height: 15px;
+			margin-left: -7px;
+			transform: rotate(45deg);
+			@include abs (-8px,50%,auto,auto);
+			@include border ($red,1px 0 0 1px);
+		}
+	}
+	em.rating {
+		min-width: 19px;
+		height: 19px;
+		padding: 1px 2px;
+		display: block;
+		color: #fff;
+		text-align: center;
+		background: linear-gradient(to bottom,#686868,#212121);
+		@include font (10,17);
+		@include border-radius (9px);
+		@include abs (auto,8px,auto,8px);
+		&.lvl-2 { /* Standart styles */ }
+		&.lvl-5 { background: linear-gradient(to bottom,#bd371c,#6b0d04); }
+		&.lvl-8 {
+			background: #e19d0c;
+			@include border (#f5b11e,1px);
+			@include box-shadow (0 0 5px #e19d0c);
+		}
+	}
+}
+
+.livedrop-single__addition {
+	min-height: 39px;
+	padding: 0 0 0 50px;
+	margin: 0 0 0 42px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	@include font (16,19);
+	em.rating {
+		min-width: 39px;
+		height: 39px;
+		padding: 1px 2px;
+		display: block;
+		color: #fff;
+		text-align: center;
+		cursor: default;
+		background: linear-gradient(to bottom,#686868,#212121);
+		@include font (17,37);
+		@include border-radius (19px);
+		@include abs (0,0,auto,auto);
+		&.lvl-2 { /* Standart styles */ }
+		&.lvl-5 { background: linear-gradient(to bottom,#bd371c,#6b0d04); }
+		&.lvl-8 {
+			background: #e19d0c;
+			@include border (#f5b11e,1px);
+			@include box-shadow (0 0 5px #e19d0c);
+		}
+	}
+	&.no-icon {
+		min-height: inherit;
+		padding-left: 0;
+	}
+	@include desktop-max { margin-left: 30px; }
+	@include laptop-max {
+		padding: 15px 0 0 50px;
+		margin: 0;
+		display: block;
+		em.rating { top: 15px; }
+	}
+	@include tablet-max { @include font (14,17); }
+	@include mobile { word-break: break-all; }
+}
+
+.livedrop-single__wrap {
+	width: 362px;
+	margin: 0 auto;
+	text-align: left;
+	background: #212121;
+	.livedrop-single__item {
+		vertical-align: middle;
+		@include box-shadow (0 0 0 3px $red);
+	}
+	.livedrop-single__addition {
+		max-width: 172px;
+		span.name { color: #fff; }
+		em.rating { top: 10px; }
+		&:not(.no-icon) { padding: 10px 0 10px 50px; }
+		@include laptop-max {
+			margin-left: 30px;
+			display: inline-block;
+		}
+	}
+	@include tablet-max { width: 80%; }
+	@include mobile {
+		width: 90%;
+		padding: 0 0 10px;
+		text-align: center;
+		.livedrop-single__addition {
+			&:not(.no-icon) { margin-top: 5px; }
+		}
+	}
+}
+
+.livedrop-single__nav {
+	width: 362px;
+	margin: 0 auto;
+	padding: 5px 0 25px;
+	@include clearfix;
+	li.price {
+		float: left;
+	}
+	li.button-sell {
+		float: right;
+		a.btn {
+			padding: 5px 15px;
+			@include font (14,20);
+		}
+	}
+	span.price-value {
+		width: 134px;
+		padding-bottom: 3px;
+		display: inline-block;
+		color: #fff;
+		background: $red;
+		@include font (18,21);
+		@include box-shadow (0 0 0 3px $red);
+	}
+	@include tablet-max { width: 80%; }
+	@include mobile {
+		width: 90%;
+		padding-top: 15px;
+		li { width: 48%; }
+		span.price-value {
+			width: 100%;
+			padding: 0;
+			display: block;
+			line-height: 30px;
+			box-shadow: inherit;
+		}
+		a.btn { width: 100%; }
+	}
+}
