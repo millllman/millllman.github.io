@@ -1,0 +1,277 @@
+// Variables
+
+// Buttons
+$button-default:              #E6E6E6;
+$button-primary:              #0078e7;
+$button-secondary:            #f1a211;
+$button-success:              rgb(28,184,65);
+$button-info:                 rgb(66,184,221);
+$button-warning:              rgb(202,60,60);
+
+// Default
+*, *:before, *:after { box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-wrapper {
+  padding: 25px 5px;
+}
+
+//--------------------------------------------- Buttons
+.btn {
+  padding: .35em .7em;
+  display: inline-block;
+  color: darken($button-default, 70%);
+  font-size: 15px;
+  line-height: 1.5em;
+  text-align: center;
+  background-color: $button-default;
+  border-radius: .2em;
+  text-decoration: none;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  &.btn-primary,
+  &.btn-secondary,
+  &.btn-success,
+  &.btn-info,
+  &.btn-warning {
+    color: white;
+  }
+  &.btn-block {
+    width: 100%;
+  }
+  &:hover {
+    background-image: linear-gradient(to bottom, transparent 0%, darken($button-default, 20%) 100%);
+  }
+  &:focus {
+    box-shadow: inset 0 0 0 1px darken($button-default, 30%), inset 0 0 .35em rgba(0,0,0, 0.7);
+  }
+  &.btn-primary {
+    background-color: $button-primary;
+    &:hover {
+      background-image: linear-gradient(to bottom, transparent 0%, darken($button-primary, 20%) 100%);
+    }
+    &:focus {
+      box-shadow: inset 0 0 0 1px darken($button-primary, 30%), inset 0 0 .35em rgba(0,0,0, 0.7);
+    }
+  }
+  &.btn-secondary {
+    background-color: $button-secondary;
+    &:hover {
+      background-image: linear-gradient(to bottom, transparent 0%, darken($button-secondary, 20%) 100%);
+    }
+    &:focus {
+      box-shadow: inset 0 0 0 1px darken($button-secondary, 30%), inset 0 0 .35em rgba(0,0,0, 0.7);
+    }
+  }
+  &.btn-success {
+    background-color: $button-success;
+    &:hover {
+      background-image: linear-gradient(to bottom, transparent 0%, darken($button-success, 20%) 100%);
+    }
+    &:focus {
+      box-shadow: inset 0 0 0 1px darken($button-success, 30%), inset 0 0 .35em rgba(0,0,0, 0.7);
+    }
+  }
+  &.btn-info {
+    background-color: $button-info;
+    &:hover {
+      background-image: linear-gradient(to bottom, transparent 0%, darken($button-info, 20%) 100%);
+    }
+    &:focus {
+      box-shadow: inset 0 0 0 1px darken($button-info, 30%), inset 0 0 .35em rgba(0,0,0, 0.7);
+    }
+  }
+  &.btn-warning {
+    background-color: $button-warning;
+    &:hover {
+      background-image: linear-gradient(to bottom, transparent 0%, darken($button-warning, 20%) 100%);
+    }
+    &:focus {
+      box-shadow: inset 0 0 0 1px darken($button-warning, 30%), inset 0 0 .35em rgba(0,0,0, 0.7);
+    }
+  }
+}
+
+.btn-group {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  &[hidden] { display: none; }
+  & > .btn {
+    border-radius: 0;
+    &.btn-expand {
+      flex: 1 0 auto;
+    }
+    &.btn-auto {
+      flex: 0 0 auto;
+    }
+    &:first-child {
+      border-radius: .2em 0 0 .2em;
+    }
+    &:last-child {
+      border-radius: 0 .2em .2em 0;
+    }
+  }
+}
+//----------------------------------------- Buttons END
+
+
+//-------------------------------------------- Media
+$gutter-columns:       15px;
+$gutter-columns-small: 5px;
+$total-columns:        12;
+
+$breakpoints: (
+  xs: 320px,
+  sm: 480px,
+  md: 767px,
+  lg: 992px,
+  xl: 1200px
+);
+
+@mixin media-grid($size) {  
+  @media screen and (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+// loop breakpoints
+@each $key, $value in $breakpoints {
+  @for $i from 1 through $total-columns {
+    .#{$key}-#{$i} {
+      @include media-grid($key) {
+        .column {
+          width: #{$i / $total-columns * 100%};
+        }
+      }
+    }
+    .column.#{$key}-#{$i} {
+      @include media-grid($key) {
+        width: #{$i / $total-columns * 100%};
+      }
+    }
+  }
+
+  // Five Columns
+  .column.#{$key}-five {
+      @include media-grid($key) {
+        width: (100% / 5);
+      }
+  }
+  // Five Columns END
+
+}
+
+.column {
+  width: 100%;
+  min-height: 1px;
+  padding-left: $gutter-columns;
+  padding-right: $gutter-columns;
+  float: left;
+}
+
+.row {
+  clear: both;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &.row-reverse {
+    margin: 0 -#{$gutter-columns};
+  }
+  &.row-small {
+    &.row-reverse {
+      margin: 0 -#{$gutter-columns-small};
+    }
+    & > .column {
+      padding-left: $gutter-columns-small;
+      padding-right: $gutter-columns-small;
+    }
+  }
+  &.row-edit {
+    padding-top: 15px;
+    padding-left: 25px;
+  }
+}
+//-------------------------------------- Media END
+
+
+//----------------------------------- Validate Form
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  box-shadow: inset 0 0 1px #777;
+  border: 0;
+  outline: none;
+  resize: vertical;
+  &:focus {
+    box-shadow: 0 0 7px #777, 0 0 0 1px #5f5f5f;
+  }
+  &.error {
+    box-shadow: 0 0 7px #f49eb8, inset 0 0 0 1px red;
+  }
+}
+//----------------------------------- Validate Form END
+
+
+//-------------------------------------- Bookmarks Box
+#bookmarks-form__box {
+  & > .column {
+    & ~ .column { padding-top: 20px; }
+  }
+}
+
+#bookmarks-form__ready {
+  padding: 20px 0 0;
+  margin: 0 15px;
+  border-bottom: 1px solid #bfbfbf;
+  & > li {
+    padding: 5px 5px;
+    border-top: 1px solid #bfbfbf;
+    &:nth-child(odd) {
+      background-color: #f5f5f5;
+    }
+  }
+}
+
+.bookmarks-form__link {
+  margin-left: 30px;
+  position: relative;
+  em.favicon {
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    box-shadow: 0 0 0 3px rgba(0,0,0, 0.2);
+    top: 50%;
+    left: -25px;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+}
+
+.bookmarks-form__info-box {
+  padding: 15px 0 10px 30px;
+}
+//---------------------------------- Bookmarks Box END
