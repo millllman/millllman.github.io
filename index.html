@@ -1,70 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Bookmarks v2</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Front-end developer</title>
+<link href="sources/css/font-awesome.css" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Audiowide|Marck+Script" rel="stylesheet"> -->
+<link href="sources/css/main.css" rel="stylesheet">
+<script src="sources/js/jquery.min.1.11.3.js"></script>
+<script src="sources/js/main.js"></script>
 </head>
-
 <body>
+    
+<div id="bg-body"></div>
 
-  <div class="fixed-background"></div>
-
-<div class="main-wrapper">
-
-<!-- Form Start -->
-<form class="row" id="bookmarks-form__box">
-    <div class="column">
-        <input type="text" placeholder="Site URL* (http://example.com)" id="bookmarks-form__url">
-    </div>
-    <div class="column">
-        <input type="text" placeholder="Site Name*" id="bookmarks-form__name">
-    </div>
-    <div class="column">
-        <textarea placeholder="Site Info" id="bookmarks-form__info"></textarea>
-    </div>
-    <div class="column">
-      <div class="row xs-6 row-reverse row-small">
-        <div class="column"><button class="btn btn-primary btn-block">Add Bookmark</button></div>
-        <div class="column"><a href="#" class="btn btn-secondary btn-block clear-storage">Clear Storage</a></div>
-      </div>
-    </div>
-</form>
-<!-- Form Start END -->
-
-<!-- Search Bookmarks -->
-<div class="bookmarks-form__search-box">
-  <input type="text" placeholder="Search bookmarks" id="bookmarks-form__search">
+<div id="header">
+  <div class="logo"><a href="http://sdelaem.in.ua"><span class="logo-desktop">Front<em>end</em> Developer</span> <span class="logo-mobile">F<em>E</em> Dev</span></a></div>  
+  <ul class="main-menu">
+    <li><a href="#" class="theme-easy active"><i class="fa fa-th"></i></a></li>
+    <li><a href="#" class="theme-apple"><i class="fa fa-desktop"></i></a></li>
+    <li><a href="#" id="feedback-open">Контакты</a></li>
+  </ul>
 </div>
-<!-- Search Bookmarks END -->
-  
-<!-- Bookmarks List -->
-<ul id="bookmarks-form__ready"></ul>
 
-  
+  <ul class="portfolio-box easy">
+    
+    <li class="js rs ht sc"><span class="fade"><img src="sources/img/screen/screen53.jpg" alt=""><a href="https://millllman.github.io/wot/" class="preview" target="_blank"></a></span></li>
+    <li class="js bt rs ht sc"><span class="fade"><img src="sources/img/screen/screen54.jpg" alt=""><a href="https://millllman.github.io/bl-group/" class="preview" target="_blank"></a></span></li>
+    <li class="js rs ht sc uk"><span class="fade"><img src="sources/img/screen/screen56.jpg" alt=""><a href="https://millllman.github.io/white-city/" class="preview" target="_blank"></a></span></li>
+    <li class="js rs ht sc"><span class="fade"><img src="sources/img/screen/screen57.jpg" alt=""><a href="https://millllman.github.io/yellmed/" class="preview" target="_blank"></a></span></li>
 
-  
-  <p></p>
-  <p></p>
+    <li class="js rs ht sc"><span class="fade"><img src="sources/img/screen/screen51.jpg" alt=""><a href="http://sdelaem.in.ua/example/51/" class="preview" target="_blank"></a></span></li>
+    <li class="js rs ht sc uk"><span class="fade"><img src="sources/img/screen/screen55.jpg" alt=""><a href="https://millllman.github.io/mens-motors/" class="preview" target="_blank"></a></span></li>
+    <li class="js rs ht sc"><span class="fade"><img src="sources/img/screen/screen52.jpg" alt=""><a href="http://sdelaem.in.ua/example/52/" class="preview" target="_blank"></a></span></li>
+    <li class="js rs ht sc"><span class="fade"><img src="sources/img/screen/screen50.jpg" alt=""><a href="http://sdelaem.in.ua/example/50/" class="preview" target="_blank"></a></span></li>
+    <li class="js rs ht sc"><span class="fade"><img src="sources/img/screen/screen49.jpg" alt=""><a href="http://sdelaem.in.ua/example/49/" class="preview" target="_blank"></a></span></li>
+    <li class="js fd rs ht sc"><span class="fade"><img src="sources/img/screen/screen48.jpg" alt=""><a href="http://sdelaem.in.ua/example/48/" class="preview" target="_blank"></a></span></li>
 
-  
+    <li class="js bt rs ht sc"><span class="fade"><img src="sources/img/screen/screen47.jpg" alt=""><a href="http://sdelaem.in.ua/example/47/" class="preview" target="_blank"></a></span></li>
+    <li class="js bt rs ht sc"><span class="fade"><img src="sources/img/screen/screen46.jpg" alt=""><a href="http://sdelaem.in.ua/example/46/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen1.jpg" alt=""><a href="http://sdelaem.in.ua/example/45/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen2.jpg" alt=""><a href="http://sdelaem.in.ua/example/44/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen3.jpg" alt=""><a href="http://sdelaem.in.ua/example/43/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen4.jpg" alt=""><a href="http://sdelaem.in.ua/example/37/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen5.jpg" alt=""><a href="http://sdelaem.in.ua/example/36/" class="preview" target="_blank"></a></span></li>
+    <li class="js rs ht cs"><span class="fade"><img src="sources/img/screen/screen6.jpg" alt=""><a href="http://sdelaem.in.ua/example/42/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen7.jpg" alt=""><a href="http://sdelaem.in.ua/example/41/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen8.jpg" alt=""><a href="http://sdelaem.in.ua/example/40/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen9.jpg" alt=""><a href="http://sdelaem.in.ua/example/39/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen10.jpg" alt=""><a href="http://sdelaem.in.ua/example/38/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen12.jpg" alt=""><a href="http://sdelaem.in.ua/example/34/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen13.jpg" alt=""><a href="http://sdelaem.in.ua/example/33/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen14.jpg" alt=""><a href="http://sdelaem.in.ua/example/32/" class="preview" target="_blank"></a></span></li>
+    <li class="js ht cs"><span class="fade"><img src="sources/img/screen/screen15.jpg" alt=""><a href="http://sdelaem.in.ua/example/31/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen16.jpg" alt=""><a href="http://sdelaem.in.ua/example/1/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen17.jpg" alt=""><a href="http://sdelaem.in.ua/example/2/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen18.jpg" alt=""><a href="http://sdelaem.in.ua/example/3/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen19.jpg" alt=""><a href="http://sdelaem.in.ua/example/4/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen20.jpg" alt=""><a href="http://sdelaem.in.ua/example/5/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen21.jpg" alt=""><a href="http://sdelaem.in.ua/example/6/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen22.jpg" alt=""><a href="http://sdelaem.in.ua/example/7/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen23.jpg" alt=""><a href="http://sdelaem.in.ua/example/8/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen24.jpg" alt=""><a href="http://sdelaem.in.ua/example/9/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen25.jpg" alt=""><a href="http://sdelaem.in.ua/example/10/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen26.jpg" alt=""><a href="http://sdelaem.in.ua/example/11/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen27.jpg" alt=""><a href="http://sdelaem.in.ua/example/12/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen28.jpg" alt=""><a href="http://sdelaem.in.ua/example/13/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen29.jpg" alt=""><a href="http://sdelaem.in.ua/example/14/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen30.jpg" alt=""><a href="http://sdelaem.in.ua/example/15/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen31.jpg" alt=""><a href="http://sdelaem.in.ua/example/16/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen32.jpg" alt=""><a href="http://sdelaem.in.ua/example/17/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen33.jpg" alt=""><a href="http://sdelaem.in.ua/example/18/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen34.jpg" alt=""><a href="http://sdelaem.in.ua/example/19/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen35.jpg" alt=""><a href="http://sdelaem.in.ua/example/20/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen36.jpg" alt=""><a href="http://sdelaem.in.ua/example/21/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen37.jpg" alt=""><a href="http://sdelaem.in.ua/example/22/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen38.jpg" alt=""><a href="http://sdelaem.in.ua/example/23/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen39.jpg" alt=""><a href="http://sdelaem.in.ua/example/24/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen40.jpg" alt=""><a href="http://sdelaem.in.ua/example/25/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen41.jpg" alt=""><a href="http://sdelaem.in.ua/example/26/" class="preview" target="_blank"></a></span></li>
+    <li class="ht cs hide-el"><span class="fade"><img src="sources/img/screen/screen42.jpg" alt=""><a href="http://sdelaem.in.ua/example/27/" class="preview" target="_blank"></a></span></li>
+    <!-- <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen43.jpg" alt=""><a href="http://sdelaem.in.ua/example/28/" class="preview" target="_blank"></a></span></li> -->
 
-  
+
+
+    
+    <!-- <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen44.jpg" alt=""><a href="http://sdelaem.in.ua/example/29/" class="preview" target="_blank"></a></span></li> -->
+    <!-- <li class="ht cs"><span class="fade"><img src="sources/img/screen/screen45.jpg" alt=""><a href="http://sdelaem.in.ua/example/30/" class="preview" target="_blank"></a></span></li> -->
+  </ul>
+
+<div class="FadeScreen"></div>
+<div class="feedback-popup">
+    <img src="sources/img/feedback.png" alt="" class="img-extensive">
+    <i class="fa fa-close" id="feedback-close"></i>
 </div>
-  
-  
 
-    <script  src="js/index.js"></script>
-
+<span class="btn-top"></span>
 
 
 
 </body>
-
 </html>
