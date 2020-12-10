@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Новый поток</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+    
+
+    <div class="container main-container">
+      
+      <header>
+        <div class="logo-top"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+        <div class="col-xs-12 col-sm-8 col-md-9 col-top">
+          <ul class="menu-top">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Выкуп</a></li>
+            <li><a href="#">Комиссия</a></li>
+            <li><a href="#">Справочник</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="clearfix visible-xs"></div>
+          <div class="row wrap">
+            <div class="col-sm-7 col-md-5 col-lg-6 col-search">
+              <span class="hidden-xs">Популярные запросы:  DAF 95.400   Renault Midlum 240   Hyundai HD78</span>
+              <input type="text" placeholder="Искать технику">
+              <input type="submit" value="Найти">
+            </div>
+            <div class="col-sm-5 col-md-3 col-lg-3 hidden-xs col-example">
+              г. Москва, <br>  
+              ул. Алексеевская д.1 <br>
+              E-mail: info@truck-stok.ru 
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 text-right">
+              <span class="tell">8 (495) 123-45-67</span>
+              <a href="#" class="feedback">Обратный звонок</a>
+            </div>            
+          </div>
+          <div class="clearfix visible-xs visible-sm"></div>
+        </div>
+        <div class="clearfix visible-xs visible-sm"></div>
+      </header>
+
+      <section>
+        <h2 class="site-slogan">Крупнейший в России автосалон тяжелой техники</h2>
+      </section>
+      
+      <ul class="filter-preview hidden-xs">
+        <li><img src="img/filter_pic.jpg" alt=""></li>
+        <li><img src="img/filter_pic1.jpg" alt=""></li>
+        <li><img src="img/filter_pic2.jpg" alt=""></li>
+        <li><img src="img/filter_pic3.jpg" alt=""></li>
+        <li><img src="img/filter_pic4.jpg" alt=""></li>
+      </ul>
+      <ul class="filter-menu">
+        <li class="active"><a href="#menu1" aria-controls="menu1" role="tab" data-toggle="tab">Седельные тягачи</a></li>
+        <li><a href="#menu2" aria-controls="menu2" role="tab" data-toggle="tab">Полуприцепы</a></li>
+        <li><a href="#menu3" aria-controls="menu3" role="tab" data-toggle="tab">Грузовики</a></li>
+        <li><a href="#menu4" aria-controls="menu4" role="tab" data-toggle="tab">Спецтехника</a></li>
+        <li><a href="#menu5" aria-controls="menu5" role="tab" data-toggle="tab">Автобусы</a></li>
+      </ul>
+
+      <div class="tab-content filter-box">
+        <div role="tabpanel" class="tab-pane fade in active" id="menu1">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2 col-md-2"><span class="title">Подобрать модель</span></div>
+              <div class="col-sm-2 col-md-2 col-lg-3">
+                <span class="title-xs">Марка</span>
+                <select name="" id="">
+                  <option value="">Все</option>
+                  <option value="">Седельные тягачи</option>
+                  <option value="">Полуприцепы</option>
+                  <option value="">Грузовики</option>
+                  <option value="">Спецтехника</option>
+                  <option value="">Автобусы</option>
+                </select>
+              </div>
+              <div class="col-sm-2 col-md-2 col-lg-3">
+                <span class="title-xs">Модель</span>
+                <select name="" id="">
+                  <option value="">Все</option>
+                  <option value="">Все</option>
+                  <option value="">Все</option>
+                </select>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-2">
+                <span class="title-xs">Год выпуска</span>
+                <p>
+                <input type="text" placeholder="От">
+                <input type="text" placeholder="До">
+                <div class="clearfix visible-xs"></div>
+                </p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-2">
+                <span class="title-xs">Цена</span>
+                <p>
+                <input type="text" placeholder="От">
+                <input type="text" placeholder="До">
+                <div class="clearfix visible-xs"></div>
+                </p>
+              </div>
+            </div>
+            <div class="btn-filter"><a href="#" class="btn btn-link">Подобрать</a></div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="menu2">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2 col-md-2"><span class="title">Подобрать модель</span></div>
+              <div class="col-sm-2 col-md-2 col-lg-3">
+                <span class="title-xs">Марка</span>
+                <select name="" id="">
+                  <option value="">Все</option>
+                  <option value="">Седельные тягачи</option>
+                  <option value="">Полуприцепы</option>
+                  <option value="">Грузовики</option>
+                  <option value="">Спецтехника</option>
+                  <option value="">Автобусы</option>
+                </select>
+              </div>
+              <div class="col-sm-2 col-md-2 col-lg-3">
+                <span class="title-xs">Модель</span>
+                <select name="" id="">
+                  <option value="">Все</option>
+                  <option value="">Все</option>
+                  <option value="">Все</option>
+                </select>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-2">
+                <span class="title-xs">Год выпуска</span>
+                <p>
+                <input type="text" placeholder="От">
+                <input type="text" placeholder="До">
+                <div class="clearfix visible-xs"></div>
+                </p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-2">
+                <span class="title-xs">Цена</span>
+                <p>
+                <input type="text" placeholder="От">
+                <input type="text" placeholder="До">
+                <div class="clearfix visible-xs"></div>
+                </p>
+              </div>
+            </div>
+            <div class="btn-filter"><a href="#" class="btn btn-link">Подобрать</a></div>
+          </div>
+        </div>        
+        <div role="tabpanel" class="tab-pane fade" id="menu3">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2 col-md-2"><span class="title">Подобрать модель</span></div>
+              <div class="col-sm-2 col-md-2 col-lg-3">
+                <span class="title-xs">Марка</span>
+                <select name="" id="">
+                  <option value="">Все</option>
+                  <option value="">Седельные тягачи</option>
+                  <option value="">Полуприцепы</option>
+                  <option value="">Грузовики</option>
+                  <option value="">Спецтехника</option>
+                  <option value="">Автобусы</option>
+                </select>
+              </div>
+              <div class="col-sm-2 col-md-2 col-lg-3">
+                <span class="title-xs">Модель</span>
+                <select name="" id="">
+                  <option value="">Все</option>
+                  <option value="">Все</option>
+                  <option value="">Все</option>
+                </select>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-2">
+                <span class="title-xs">Год выпуска</span>
+                <p>
+                <input type="text" placeholder="От">
+                <input type="text" placeholder="До">
+                <div class="clearfix visible-xs"></div>
+                </p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-2">
+                <span class="title-xs">Цена</span>
+                <p>
+                <input type="text" placeholder="От">
+                <input type="text" placeholder="До">
+                <div class="clearfix visible-xs"></div>
+                </p>
+              </div>
+            </div>
+            <div class="btn-filter"><a href="#" class="btn btn-link">Подобрать</a></div>
+          </div>
+        </div>        
+        <div role="tabpanel" class="tab-pane fade" id="menu4">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2 col-md-2"><span class="title">Подобрать модель</span></div>
+              <div class="col-sm-2 col-md-2 col-lg-3">
+                <span class="title-xs">Марка</span>
+                <select name="" id="">
+                  <option value="">Все</option>
+                  <option value="">Седельные тягачи</option>
+                  <option value="">Полуприцепы</option>
+                  <option value="">Грузовики</option>
+                  <option value="">Спецтехника</option>
+                  <option value="">Автобусы</option>
+                </select>
+              </div>
+              <div class="col-sm-2 col-md-2 col-lg-3">
+                <span class="title-xs">Модель</span>
+                <select name="" id="">
+                  <option value="">Все</option>
+                  <option value="">Все</option>
+                  <option value="">Все</option>
+                </select>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-2">
+                <span class="title-xs">Год выпуска</span>
+                <p>
+                <input type="text" placeholder="От">
+                <input type="text" placeholder="До">
+                <div class="clearfix visible-xs"></div>
+                </p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-2">
+                <span class="title-xs">Цена</span>
+                <p>
+                <input type="text" placeholder="От">
+                <input type="text" placeholder="До">
+                <div class="clearfix visible-xs"></div>
+                </p>
+              </div>
+            </div>
+            <div class="btn-filter"><a href="#" class="btn btn-link">Подобрать</a></div>
+          </div>
+        </div>        
+        <div role="tabpanel" class="tab-pane fade" id="menu5">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2 col-md-2"><span class="title">Подобрать модель</span></div>
+              <div class="col-sm-2 col-md-2 col-lg-3">
+                <span class="title-xs">Марка</span>
+                <select name="" id="">
+                  <option value="">Все</option>
+                  <option value="">Седельные тягачи</option>
+                  <option value="">Полуприцепы</option>
+                  <option value="">Грузовики</option>
+                  <option value="">Спецтехника</option>
+                  <option value="">Автобусы</option>
+                </select>
+              </div>
+              <div class="col-sm-2 col-md-2 col-lg-3">
+                <span class="title-xs">Модель</span>
+                <select name="" id="">
+                  <option value="">Все</option>
+                  <option value="">Все</option>
+                  <option value="">Все</option>
+                </select>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-2">
+                <span class="title-xs">Год выпуска</span>
+                <p>
+                <input type="text" placeholder="От">
+                <input type="text" placeholder="До">
+                <div class="clearfix visible-xs"></div>
+                </p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-2">
+                <span class="title-xs">Цена</span>
+                <p>
+                <input type="text" placeholder="От">
+                <input type="text" placeholder="До">
+                <div class="clearfix visible-xs"></div>
+                </p>
+              </div>
+            </div>
+            <div class="btn-filter"><a href="#" class="btn btn-link">Подобрать</a></div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="container main-section">
+        <div class="row">
+          <div class="col-sm-3">
+            <ul class="catalog-menu">
+              <li>
+                <a href="#">Седельные тягачи</a>
+                <ul>
+                  <li><a href="#">DAF</a></li>
+                  <li><a href="#">Dong Feng</a></li>
+                  <li><a href="#">Foton</a></li>
+                  <li><a href="#">Ford</a></li>
+                  <li><a href="#">Freightliner</a></li>
+                  <li><a href="#">Iveco</a></li>
+                  <li><a href="#">Kenworth</a></li>
+                  <li><a href="#">MAN</a></li>
+                  <li><a href="#">Renault</a></li>
+                  <li><a href="#">Scania</a></li>
+                  <li><a href="#">Volvo</a></li>
+                  <li><a href="#">Камаз</a></li>
+                  <li><a href="#">МАЗ</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Полуприцепы</a>
+                <ul>
+                  <li><a href="#">DAF</a></li>
+                  <li><a href="#">Dong Feng</a></li>
+                  <li><a href="#">Foton</a></li>                
+                </ul>
+              </li>
+              <li>
+                <a href="#">Грузовики</a>
+                <ul>
+                  <li><a href="#">DAF</a></li>
+                  <li><a href="#">Dong Feng</a></li>                  
+                </ul>
+              </li>
+              <li>
+                <a href="#">Спецтехника</a>
+                <ul>
+                  <li><a href="#">DAF</a></li>                  
+                </ul>
+              </li>
+              <li>
+                <a href="#">Автобусы</a>
+                <ul>
+                  <li><a href="#">DAF</a></li>
+                  <li><a href="#">Dong Feng</a></li>                  
+                </ul>
+              </li>
+            </ul>
+            <div class="news-box">
+              <span class="title">Новости</span>
+              <p>Жены дальнобойщиков смогут следить за их безопасностью</p>
+              <p>Знатоки «Что? Где? Когда?» не разгадали хитрость дальнобойщиков</p>
+            </div>
+            <div class="banner-box"><img src="img/banner.jpg" alt=""></div>
+          </div>
+          <div class="col-sm-9">
+
+            <div class="sort-box">
+              <ul class="page-nav">
+                <li><a href="#">Главная</a></li>
+                <li>Седельные тягачи</li>
+              </ul>
+              <ul class="filter">
+                <li><a href="#">Сортировать:</a></li>
+                <li>по цене</li>
+                <li><a href="#">году</a></li>
+                <li><a href="#">выпуска</a></li>
+                <li><a href="#">алфавиту</a></li>
+              </ul>
+            </div>
+            
+            <div class="catalog-box">
+              <div class="item">
+                  <span class="spec-offer">Специальное предложение</span>
+                  <h4><a href="#">DAF FT CF 85.360</a></h4>
+                  <span class="date">2011 Год выпуска</span>
+                  <div class="image"><a href="#"><img src="img/pic.jpg" alt=""></a></div>
+                  <ul class="info">
+                    <li>
+                      <span class="price-old">2 554 000</span>
+                      <span class="price">1 690 000</span>
+                    </li>
+                    <li class="text-right">
+                      <a href="#" class="compare">К сравнению</a>
+                      <a href="#" class="more">Подробнее</a>
+                    </li>
+                  </ul>                
+              </div>
+              <div class="item">
+                  <!-- <span class="spec-offer">Специальное предложение</span> -->
+                  <h4><a href="#">FREIGHTLINER COLUMBIA 1200</a></h4>
+                  <span class="date">2011 Год выпуска</span>
+                  <div class="image"><a href="#"><img src="img/pic1.jpg" alt=""></a></div>
+                  <ul class="info">
+                    <li>
+                      <span class="price-old"></span>
+                      <span class="price">1 690 000</span>
+                    </li>
+                    <li class="text-right">
+                      <a href="#" class="compare">К сравнению</a>
+                      <a href="#" class="more">Подробнее</a>
+                    </li>
+                  </ul>                
+              </div>
+              <div class="item">
+                  <!-- <span class="spec-offer">Специальное предложение</span> -->
+                  <h4><a href="#">DAF FT CF 85.360</a></h4>
+                  <span class="date">2011 Год выпуска</span>
+                  <div class="image"><a href="#"><img src="img/pic.jpg" alt=""></a></div>
+                  <ul class="info">
+                    <li>
+                      <span class="price-old"></span>
+                      <span class="price">1 690 000</span>
+                    </li>
+                    <li class="text-right">
+                      <a href="#" class="compare">К сравнению</a>
+                      <a href="#" class="more">Подробнее</a>
+                    </li>
+                  </ul>                
+              </div>
+              <div class="item">
+                  <span class="spec-offer">Специальное предложение</span>
+                  <h4><a href="#">FREIGHTLINER COLUMBIA 1200</a></h4>
+                  <span class="date">2011 Год выпуска</span>
+                  <div class="image"><a href="#"><img src="img/pic1.jpg" alt=""></a></div>
+                  <ul class="info">
+                    <li>
+                      <span class="price-old">2 554 000</span>
+                      <span class="price">1 690 000</span>
+                    </li>
+                    <li class="text-right">
+                      <a href="#" class="compare">К сравнению</a>
+                      <a href="#" class="more">Подробнее</a>
+                    </li>
+                  </ul>                
+              </div>
+              <div class="item">
+                  <!-- <span class="spec-offer">Специальное предложение</span> -->
+                  <h4><a href="#">DAF FT CF 85.360</a></h4>
+                  <span class="date">2011 Год выпуска</span>
+                  <div class="image"><a href="#"><img src="img/pic.jpg" alt=""></a></div>
+                  <ul class="info">
+                    <li>
+                      <span class="price-old"></span>
+                      <span class="price">1 690 000</span>
+                    </li>
+                    <li class="text-right">
+                      <a href="#" class="compare">К сравнению</a>
+                      <a href="#" class="more">Подробнее</a>
+                    </li>
+                  </ul>                
+              </div>
+              <div class="item">
+                  <!-- <span class="spec-offer">Специальное предложение</span> -->
+                  <h4><a href="#">DAF FT CF 85.360</a></h4>
+                  <span class="date">2011 Год выпуска</span>
+                  <div class="image"><a href="#"><img src="img/pic.jpg" alt=""></a></div>
+                  <ul class="info">
+                    <li>
+                      <span class="price-old"></span>
+                      <span class="price">1 690 000</span>
+                    </li>
+                    <li class="text-right">
+                      <a href="#" class="compare">К сравнению</a>
+                      <a href="#" class="more">Подробнее</a>
+                    </li>
+                  </ul>                
+              </div>
+              <div class="item">
+                  <span class="spec-offer">Специальное предложение</span>
+                  <h4><a href="#">DAF FT CF 85.360</a></h4>
+                  <span class="date">2011 Год выпуска</span>
+                  <div class="image"><a href="#"><img src="img/pic.jpg" alt=""></a></div>
+                  <ul class="info">
+                    <li>
+                      <span class="price-old">2 554 000</span>
+                      <span class="price">1 690 000</span>
+                    </li>
+                    <li class="text-right">
+                      <a href="#" class="compare">К сравнению</a>
+                      <a href="#" class="more">Подробнее</a>
+                    </li>
+                  </ul>                
+              </div>
+              <div class="item">
+                  <!-- <span class="spec-offer">Специальное предложение</span> -->
+                  <h4><a href="#">DAF FT CF 85.360</a></h4>
+                  <span class="date">2011 Год выпуска</span>
+                  <div class="image"><a href="#"><img src="img/pic.jpg" alt=""></a></div>
+                  <ul class="info">
+                    <li>
+                      <span class="price-old"></span>
+                      <span class="price">1 690 000</span>
+                    </li>
+                    <li class="text-right">
+                      <a href="#" class="compare">К сравнению</a>
+                      <a href="#" class="more">Подробнее</a>
+                    </li>
+                  </ul>                
+              </div>
+              <div class="item">
+                  <!-- <span class="spec-offer">Специальное предложение</span> -->
+                  <h4><a href="#">DAF FT CF 85.360</a></h4>
+                  <span class="date">2011 Год выпуска</span>
+                  <div class="image"><a href="#"><img src="img/pic.jpg" alt=""></a></div>
+                  <ul class="info">
+                    <li>
+                      <span class="price-old"></span>
+                      <span class="price">1 690 000</span>
+                    </li>
+                    <li class="text-right">
+                      <a href="#" class="compare">К сравнению</a>
+                      <a href="#" class="more">Подробнее</a>
+                    </li>
+                  </ul>                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container services-wrap hidden-xs">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>Новый поток: продажа, выкуп, автоломбард, <br> лизинг для грузовиков и самосвалов</h3>
+            Компания «Новый поток» – ведущий российский дистрибьютор по реализации грузовиков и самосвалов. Мы занимаемся широким спектром услуг: продажей новых автомобилей, выкупом б/у техники, предоставлением услуг авто ломбарда. «Трак Сток» открыт для сотрудничества и всегда готов дать полезные советы клиентам по выбору, а также эксплуатации любой техники представленной в нашем каталоге или на сайте
+            <p>«Новый поток» – профессиональная помощь в продаже грузовой техники, с успешным многолетним опытом работы. Мы на протяжении длительного времени работаем с сотнями клиентов и готовы уделить максимум внимания каждому. В «Трак Сток» непрерывная поставка качественной техники для перевозки всех типов грузов.</p>
+            <p>Внимание к деталям сделало нас успешными на автомобильном рынке в России и странах СНГ.</p>
+          </div>
+          <div class="col-sm-6">
+            <h3>Грузовики</h3>
+
+            Если у Вас есть задача купить грузовик конкретной марки и определенного внешнего вида, следует точно определиться с теми функциями, которые он будет выполнять. Рынок грузовиков «Трак Сток» предлагает широкий выбор грузовых авто различных марок и всевозможных модификаций.
+            <p></p>
+            
+            <h3>Самосвалы</h3>
+
+            На рынке «купли-продажи» грузовых автомобилей отдельное место занимают самосвалы. Самосвалы представлены в разнообразии модификаций и способны решать различные задачи. Определившись с целями, для которых будет использоваться самосвал, необходимо выделить параметры, которым, по Вашему мнению, он должен соответствовать. Дальнейший подбор заключается в отсеивании походящих и не подходящих вариантов самосвалов.
+            <p></p>
+            
+            <h3>Седельные тягачи</h3>
+
+            Сдельные тягачи являются самой важной и незаменимой частью в перевозке грузов. Универсальность использования сделки поражает, ведь зацепить можно столько разнообразного оборудования для транспортировки практически любых грузов! 
+          </div>
+        </div>
+      </div>
+
+      <div class="box-spacing"></div>
+
+    </div>
+
+    <footer>
+      <img src="img/logo.png" alt="">
+      <h3>Крупнейший в России автосалон тяжелой техники</h3>
+      г. Москва,  ул. Алексеевская д.1E-mail: info@truck-stok.ru
+      <p class="number">8 (495) 123-45-67</p>
+      <a href="#" class="call">Обратный звонок</a>
+    </footer>
+
+
+
+
+
+
+</body>
+</html>

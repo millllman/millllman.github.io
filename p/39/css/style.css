@@ -1,0 +1,380 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { min-width: 1200px; background:url(../images/px_body.gif) repeat-x;}
+a { color:#285caa; text-decoration:none; outline:none; transition: .2s ease-in-out;}
+a:hover { color:#ff9509; text-decoration:underline;}
+input { margin:0; padding:0; font:14px MyriadPro, arial; vertical-align:middle; transition: .2s ease-in-out;}
+div { margin:0; padding:0; color:#555555; font:13px/16px MyriadPro, arial;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:15px 0 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; color:#555555; font:13px/16px MyriadPro, arial;}
+h1 { color:#2b519c; font: 30px/30px 'PTSansRegular', MyriadPro, arial; margin:0; padding:0 0 25px;}
+h2 { color:#2b519c; font: 25px/25px 'PTSansRegular', MyriadPro, arial; margin:0; padding:0 0 21px;}
+h3 { color:#333333; font: 24px/22px 'PTSansRegular', MyriadPro, arial; margin:0; padding:0 0 5px;}
+h4 { color:#285caa; font:bold 19px/19px 'PTSansRegular', MyriadPro, arial; margin:0; padding:0 0 10px;}
+
+@font-face {
+     font-family: 'PTSansRegular';
+    src: url('js/pts55f.eot');
+    src: url('js/pts55f.eot?#iefix') format('embedded-opentype'),
+         url('js/pts55f.woff') format('woff'),
+         url('js/pts55f.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+@font-face { font-family:MyriadPro; src:local("MyriadPro-Regular"), url(js/MyriadPro-Regular.otf);}
+*/
+
+#container { min-width: 1200px; max-width: 1600px; margin: 0 auto; min-height:100%; height:auto !important; height:100%; position:relative; border: solid #d5dde5; border-width: 0 1px; background:#fff;}
+.FadeScreen { width:100%; height:100%; background:black; top:0; left:0; position:fixed; z-index:20; opacity:0.2; filter:alpha(opacity=20);}
+/* ********************* Header ********************* */
+#header { height: 88px;}
+
+/* Logo */
+.LogoHead { width: 241px; padding: 20px 0 0 19px; float: left;}
+
+/* Profile Box */
+.ProfileBox { padding: 0 3px 0 0; float: right;}
+.ProfileBox a { height: 59px; padding: 7px 22px 0; float: left; color: #606060;}
+.ProfileBox a:hover { color: #ff9509;}
+.ProfileBox a.login { background:url(../images/icon_login.gif) 50% 100% no-repeat;}
+.ProfileBox a.reg { background:url(../images/icon_reg.gif) 50% 100% no-repeat;}
+.ProfileBox b { width: 1px; height: 37px; float: left; background: #d9d9d9;}
+
+/* -------------------------------------- Main Menu */
+.MainMenu { padding: 0 0 0 9px; clear: both; overflow: hidden; border-bottom: 2px solid #d9dfed; background:url(../images/px_menu.gif) repeat-x #244387;}
+.MainMenu li { padding: 0 0 0 2px; float: left; font:bold 14px/41px MyriadPro, arial; text-transform: uppercase; border-bottom: 1px solid #00316d; background:url(../images/line_menu.gif) 0 0 no-repeat;}
+.MainMenu li a { padding: 0 7px; display: block; color: #fff;}
+.MainMenu li a:hover, .MainMenu li a.active { color: #acc0e6; text-decoration: none; box-shadow: inset 0 0 7px 1px #0b265e;}
+.MainMenu li:first-child { padding: 0; background: none;}
+
+/* -------------------------------------- Search Box */
+.SearchBox { width: 480px; padding: 18px 0 0; float: left;}
+.SearchBox .border { padding: 5px; position: relative; background: #f0eedf; border-radius: 3px;}
+.SearchBox input[type="text"] { width:350px; height: 16px; padding:10px 109px 10px 9px; color:#68737b; font-style: italic; border:1px solid #d3d1c4; border-radius: 3px; box-shadow: inset 0 1px 2px #e7e5d7;}
+.SearchBox input[type="text"]:focus { border-color:#a5a395;}
+.SearchBox input[type="submit"] { width:82px; height:28px; padding-bottom:2px; color:#fff; background:url(../images/btn-search.gif) no-repeat; border:0; cursor:pointer; top: 11px; right: 12px; position: absolute; transition: none;}
+.SearchBox input[type="submit"]:hover { background-position:0 100%;}
+
+/* -------------------------------------- Profile Popup */
+.ProfilePopup { width: 295px; padding: 7px; margin: 0px 0 0 -154px; top: 139px; left: 50%; position: absolute; z-index: 1000; background:url(../images/px_popup.png);}
+.ProfilePopup ul.menu { width: 150px; padding-left: 2px; float: left;}
+.ProfilePopup ul.menu li { padding: 3px 0 0;}
+.ProfilePopup ul.menu li a { color: #9aa1a6;}
+.ProfilePopup ul.menu li a:hover { color: #ff9509;}
+.ProfilePopup ul.menu li.title1 { padding: 0 0 5px; color: #333333; font:bold 18px/19px MyriadPro, arial; text-transform: uppercase;}
+.ProfilePopup .title { padding: 0 40px 0 21px; color: #fff; font:bold 18px/29px MyriadPro, arial; border: 1px solid #181919; background:url(../images/px_title-popup.gif) repeat-x #020202;}
+.ProfilePopup .text { padding: 25px 18px 20px 19px; overflow: hidden; background: #fff;}
+.ProfilePopup .image { padding-right: 2px; float: right;}
+.ProfilePopup .image img { width: 79px; display: block; border: 1px solid #e5e5e5; border-radius: 2px;}
+.ProfilePopup .btn { padding: 14px 2px 3px 2px; clear: both; overflow: hidden;}
+.ProfilePopup .btn a { padding: 0 12px; float: left; color: #fff; font:bold 14px/23px MyriadPro, arial; text-transform: uppercase; text-decoration: none; border-radius: 3px; border: 1px solid; transition: none;}
+.ProfilePopup a.admin { border: 1px solid #fe8f01; border-color: #fe8f01 #fb930e #e37f00 #fb930e; background:url(../images/btn-admin.gif) repeat-x #ff9003; box-shadow: 0 1px 2px #ffdeb5;}
+.ProfilePopup a.admin:hover { background:url(../images/btn-admin.gif) 0 100% repeat-x #fb8701; box-shadow: 0 1px 2px #d9b590;}
+.ProfilePopup a.logout { float: right; border: 1px solid #fe8f01; border-color: #3c7ac7 #7097c8 #32619d #7097c8; background:url(../images/btn-logout.gif) repeat-x #2b529c; box-shadow: 0 1px 2px #cfd7e3;}
+.ProfilePopup a.logout:hover { background:url(../images/btn-logout.gif) 0 100% repeat-x #2751a2; box-shadow: 0 1px 2px #a4aab4; border-color: #2650a2;}
+.ProfilePopup .close { padding: 0 0 0 2px; top: 8px; right: 8px; position: absolute; background:url(../images/px_close.gif) repeat-y;}
+.ProfilePopup .close a { width: 30px; height: 30px; display: block; background:url(../images/btn-close.gif) 50% 50% no-repeat;}
+
+
+
+/* ******************** Content ********************* */
+#content { padding: 15px 20px 0; overflow: hidden; clear: both;}
+#content1 { padding: 15px 580px 0 20px; overflow: hidden; clear: both;}
+
+.clear { clear: both;}
+.content-spacing { height: 146px; clear: both;}
+.content-spacing1 { height: 161px; clear: both;}
+.content-spacing2 { height: 205px; clear: both;}
+.box-spacing { height: 37px; clear: both;}
+.column-spacing { padding: 0 0 0 0px;}
+
+/* -------------------------------------- Banner Box */
+.BannerBox { padding: 38px 0 0; clear: both;}
+.BannerBox1 { padding: 32px 0 34px; clear: both; text-align: center;}
+.BannerBox1 img { margin: 0 auto;}
+.BannerBox2 { padding: 23px 0 10px; clear: both;}
+.BannerBox3 { padding: 15px 0 0; clear: both;}
+.BannerBox img, .BannerBox1 img, .BannerBox2 img, .BannerBox3 img { display: block;}
+
+/* -------------------------------------- Title Main */
+.TitleMain { padding: 25px 0 0; clear: both; color: #000; font: 20px/22px MyriadPro, arial; text-transform: uppercase; background:url(../images/px_title.gif) 2px 34px repeat-x;}
+.TitleMain span { padding: 0 12px 0 0; background: #fff;}
+.TitleMain span.russia { padding: 0 25px 0 44px; color: #284a91; background:url(../images/icon_title.gif) 0 50% no-repeat #fff;}
+.TitleMain span.world { padding: 0 25px 0 44px; color: #11891a; background:url(../images/icon_title1.gif) 0 50% no-repeat #fff;}
+.TitleMain span.community { padding: 0 25px 0 44px; color: #ff9200; background:url(../images/icon_title2.gif) 0 50% no-repeat #fff;}
+.TitleMain span.auto { padding: 0 25px 0 44px; color: #e60d00; background:url(../images/icon_title3.gif) 0 50% no-repeat #fff;}
+.TitleMain span.show { padding: 0 25px 2px 44px; color: #b4218d; background:url(../images/icon_title4.gif) 0 50% no-repeat #fff;}
+.TitleMain span.politics { padding: 0 16px 2px 32px; color: #a80329; background:url(../images/icon_title5.gif) 0 50% no-repeat #fff;}
+.TitleMain span.economy { padding: 0 16px 0px 44px; color: #000; background:url(../images/icon_title6.gif) 0 50% no-repeat #fff;}
+.TitleMain span.incident { padding: 0 16px 1px 32px; color: #3b8437; background:url(../images/icon_title7.gif) 0 50% no-repeat #fff;}
+.TitleMain span.science { padding: 0 16px 3px 32px; color: #7777af; background:url(../images/icon_title8.gif) 0 50% no-repeat #fff;}
+
+/* -------------------------------------- Article Box */
+.ArticleTitle { padding: 43px 0 0; clear: both; color: #000; font: 20px/22px MyriadPro, arial; text-transform: uppercase; background:url(../images/px_title.gif) 1px 52px repeat-x;}
+.ArticleTitle span { padding: 0 12px 0 0; background: #fff;}
+
+/* Menu */
+.ArticleMenu { padding: 17px 0 0; clear: both; overflow: hidden;}
+.ArticleMenu li { margin-left: -1px; float: left; font: 12px/23px MyriadPro, arial; background:url(../images/line_article.gif) 0 50% no-repeat;}
+.ArticleMenu li a { padding: 0 8px; display: block; color: #000; text-decoration: none; text-transform: uppercase; position: relative; z-index: 1;}
+.ArticleMenu li a:hover, .ArticleMenu li a.active { background: #d9d9d9;}
+
+/* Box */
+.ArticleBox { padding: 13px 0 0; clear: both; overflow: hidden;}
+.ArticleBox ul { width: 48%; float: right; border: 1px solid #d9d9d9;}
+.ArticleBox li { padding: 6px 14px; border-top: 1px dashed #d9d9d9; line-height: 13px;}
+.ArticleBox li:first-child { border: 0;}
+.ArticleBox ul:first-child { float: left;}
+
+/* -------------------------------------- Forum Themes */
+.ForumThemes { padding: 15px 0 15px 24px; clear: both; overflow: hidden; background: #f1f1f1;}
+.ForumThemes .title { padding: 0 0 12px; color: #333333; font:bold 20px/22px MyriadPro, arial; text-transform: uppercase;}
+.ForumThemes ul { width: 25%; float: left;}
+.ForumThemes li { padding: 3px 30px 0 8px; color: #858f97; background:url(../images/arrow_themes.gif) 0 10px no-repeat;}
+.ForumThemes li a { color: #858f97;}
+.ForumThemes li a:hover { color: #475055;}
+
+/* -------------------------------------- Page Navigation */
+.PageNavigation { padding: 0 0 15px; clear: both; overflow: hidden;}
+.PageNavigation li { padding: 0 5px 0 12px; float: left; color: #a9afb6; background:url(../images/arrow_pagenav.gif) 0 5px no-repeat;}
+.PageNavigation li:first-child { padding: 0 5px 0 0; background: none;}
+
+
+
+
+
+
+/* -------------------------------------- Forum Box */
+
+
+.ForumTitle { padding: 0 1px 21px 0; clear: both; overflow: hidden;}
+.ForumTitle .name { width: 60%; float: left;}
+.ForumTitle .name h1 { color: #333333; font:bold 24px/25px MyriadPro, arial;}
+
+
+.ForumTitle .nav { float: right; overflow: hidden; border: 1px solid #dce3ea; border-radius: 3px; box-shadow: 0 1px 1px #f1f4f6;}
+.ForumTitle .nav li { float: left; font:bold 12px/21px MyriadPro, arial; border-left: 1px solid #dce3ea;}
+.ForumTitle .nav li a { padding: 0 14px; display: block; color: #555555; text-decoration: none;}
+
+
+.ForumTitle .nav li a:hover { color: #fff; background:url(../images/px_forum-nav.gif) repeat-x #244487;}
+.ForumTitle .nav li a.prev { width: 34px; height: 21px; padding: 0; background:url(../images/arrow_forum-nav.gif) 50% 0px no-repeat;}
+.ForumTitle .nav li a.next { width: 72px; height: 21px; padding: 0; background:url(../images/arrow_forum-nav.gif) 49px 100% no-repeat;}
+
+.ForumTitle .nav li:first-child { border: 0;}
+
+
+
+
+
+
+
+
+/* -------------------------------------- LEFT COLUMN */
+#left_column { width:68%; float:left;}
+#left_column1 { width:100%; float:left;}
+
+/* -------------------------------------- Main Slider */
+.MainSlider { height: 300px; position: relative; background:url(../images/px_slider.gif) repeat-x #1d1d1d; border-radius: 12px 0 0 12px;}
+.MainSlider .bgb { width: 245px; height: 170px; bottom: 0; right: 0; position: absolute; z-index: 1; background:url(../images/bg_slider.gif) 0 0 no-repeat;}
+.MainSlider .slider-title { top: 6px; left: 341px; position: absolute; z-index: 10; color: #919191; font:bold 14px/15px MyriadPro, arial;}
+/* Slide */
+.Slide { width: 785px; height: 300px; background: #1d1d1d; border-radius: 11px 0 0 11px;}
+.Slide .image { width: 320px; float: left;}
+.Slide .image img { width: 320px; height: 300px; display: block; border-radius: 9px 0 0 9px;}
+.Slide .text { width: 425px; padding: 50px 20px 0; float: left; color: #c0c0c0; background:url(../images/px_slider.gif) repeat-x;}
+.Slide .title { padding: 0 0 17px; color: #fff; font: 24px/29px MyriadPro, arial;}
+.Slide .title b { font-size: 28px; display: block;}
+.Slide .comments { padding: 17px 0 0; clear: both; overflow: hidden; color: #c0c0c0; font: 12px/14px MyriadPro, arial;}
+.Slide .comments a { float: right; color: #c0c0c0;}
+.Slide .comments a:hover { color: #fff;}
+.Slide .comments a:hover em.name { text-decoration: underline;}
+.Slide .comments em.amount { width: 32px; height: 27px; padding: 5px 0 0; float: left; color: #fff; text-align: center; background:url(../images/icon_comments.gif) no-repeat;}
+.Slide .comments em.name { padding: 5px 0 0 10px; float: left;}
+.MainSlider .bullets-box { width: 137px; height: 14px; bottom: 0; left: 252px; position: absolute; z-index: 4; background:url(../images/bg_bullets.png) no-repeat;}
+.MainSlider div.slider-nav span.right { width: 20px; height: 14px; top: 8px; right: 7px; background:url(../js/orbit/btn-slider.gif) 100% 0 no-repeat;}
+.MainSlider div.slider-nav span.left { width: 19px; height: 14px; top: 8px; right: 27px; background:url(../js/orbit/btn-slider.gif) 0 0 no-repeat;}
+
+/* -------------------------------------- News Box */
+.NewsBox { padding: 17px 0 0; clear: both; overflow: hidden;}
+.NewsBox .main { width: 60%; float: left; overflow: hidden;}
+.NewsBox .main em { padding: 0 0 3px; display: block; color: #ff9509; font-size: 12px;}
+.NewsBox .main .indent { margin-right: 10px; float: left; border-radius: 3px;}
+.NewsBox .secondary { width: 35%; float: right;}
+.NewsBox .secondary li { padding: 10px 0; border-top: 1px solid #d9d9d9; font-size: 12px;}
+.NewsBox .secondary li em { padding-left: 7px; color: #ff9509;}
+.NewsBox .secondary li:first-child { border: 0;}
+
+/* -------------------------------------- News Full */
+.NewsFull { padding: 0 0 30px;}
+.NewsFull .date { padding: 0 0 7px; color: #ff9509; font:bold 14px MyriadPro, arial;}
+.NewsFull .decor { display: block;}
+.NewsFull .caption { padding: 18px 0 0px; color: #333333; font:bold 18px/21px MyriadPro, arial;}
+
+/* -------------------------------------- Share Box */
+.ShareBox { padding: 9px 0; clear: both; text-align: center; border: solid #d9d9d9; border-width: 1px 0;}
+.ShareBox img { display: block; margin: 0 auto;}
+
+/* -------------------------------------- Similar Box */
+.SimilarBox { padding: 30px 0 0; clear: both;}
+.SimilarBox .title { padding: 0 0 11px; color: #2b519c; font: 18px/19px MyriadPro, arial;}
+.SimilarBox ul {}
+.SimilarBox li { padding: 9px 0; border-bottom: 1px solid #d9d9d9;}
+.SimilarBox li a { color: #60707a;}
+.SimilarBox li a:hover { color: #ff9509;}
+
+/* -------------------------------------- Write Comment */
+.WriteComment { padding: 47px 0 14px; clear: both; border-bottom: 1px solid #d9d9d9;}
+.WriteComment .title { padding: 0 0 12px 28px; color: #333333; font:bold 18px/19px MyriadPro, arial; border-bottom: 1px solid #d9d9d9; background:url(../images/icon_comment.gif) 0 2px no-repeat;}
+.WriteComment .title1 { padding: 15px 0 16px; color: #2b519c; font:bold 15px/16px MyriadPro, arial;}
+.WriteComment input[type="text"] { width:169px; padding:6px; color:#51565a; font:12px MyriadPro, arial; border:1px solid #d9d9d9; border-radius: 3px;}
+.WriteComment textarea { width:366px; height:55px; padding:6px 6px 30px 6px; color:#51565a; font:12px MyriadPro, arial; border: 1px solid #d9d9d9; border-radius: 3px; transition: .2s ease-in-out;}
+.WriteComment input[type="text"]:focus, .WriteComment textarea:focus { box-shadow: 0 0 8px #abd7fa; border-color: #74b9f0;}
+.WriteComment input[type="submit"] { width:149px; height:26px; padding-bottom:2px; color:#fff; font:bold 12px arial; text-transform: uppercase; background:url(../images/btn-comment.gif) repeat-x; border:0; cursor:pointer; text-shadow:0 1px 0 #1f3b72; border-radius: 0 0 2px 0; box-shadow: 0 1px 2px #cfd7e3;}
+.WriteComment input[type="submit"]:hover { box-shadow: 0 1px 4px #99a3b1;}
+.WriteComment .indent { margin-left: 14px;}
+.WriteComment .area { padding: 12px 0 0; position: relative;}
+.WriteComment .btn { width: 379px; height: 27px; bottom: 1px; left: 0; position: absolute; text-align: right; border-top: 1px dotted #d9d9d9;}
+.WriteComment .captcha { padding: 9px 0 18px; clear: both; overflow: hidden;}
+.WriteComment .captcha div { float: left; border:1px solid #d9d9d9;}
+.WriteComment .captcha img { display: block;}
+.WriteComment input.number { width: 286px;}
+.wc_article-page { padding: 47px 0 21px;}
+.wc_article-page .area { padding: 26px 0 0;}
+.wc_article-page1 { padding: 24px 0 0; border: 0;}
+
+/* -------------------------------------- Comment Box */
+.CommentBox {}
+.CommentBox li { padding: 17px 0 14px; font-size: 12px; border-bottom: 1px solid #d9d9d9; line-height: 18px;}
+.CommentBox li p.text { padding: 12px 0 17px;}
+.CommentBox li em.date { color: #ababab;}
+.CommentBox li b { padding: 0 8px;}
+.CommentBox li .quote { padding: 8px 50px 8px 23px; font-size: 12px; line-height: 18px; background: #f2f5f7; border-top: 15px solid #fff;}
+
+/* -------------------------------------- Category Box */
+.CategoryBox { padding: 21px 0 11px; clear: both; overflow: hidden; line-height: 18px; border-bottom: 1px solid #d9d9d9;}
+.CategoryBox em { padding: 0 0 10px; display: block; color: #ff9509;}
+.CategoryBox .indent { margin-right: 21px; float: left;}
+.CategoryBox .rating { padding: 8px 0 0; clear: both; overflow: hidden;}
+.CategoryBox .rating div { padding: 5px; float: right; font: 12px/17px MyriadPro, arial; border: 1px solid #e4e4e4; border-radius: 3px;}
+.CategoryBox .rating em { padding: 0 9px; float: left; color: #000; font:bold 12px/17px MyriadPro, arial; background: #d9d9d9;}
+.CategoryBox .rating a { padding: 0 10px 0 5px; margin-left: 7px; color: #ff9509; border-left: 1px solid #e4e4e4; background:url(../images/arrow_more.gif) 100% 50% no-repeat;}
+.CategoryBox .rating a:hover { color: #5e5e5e;}
+
+/* -------------------------------------- Page Number */
+.PageNumber { padding: 26px 0 4px; clear: both; overflow: hidden;}
+.PageNumber li { padding: 0 10px 0 0; float: left; font: 14px/31px MyriadPro, arial;}
+.PageNumber li a, .PageNumber li em { padding: 0 12px; display: block; color: #434343; text-decoration: none; border: 1px solid #c7d1e0; border-radius: 3px;}
+.PageNumber li a:hover { background: #f5f7f8;}
+.PageNumber li a.active { color: #fff; font-weight: bold; border-color: #3c7bc7; background:url(../images/px_pagenum.gif) repeat-x #2b529c; box-shadow: 0 1px 2px #c2cad6;}
+
+
+
+
+
+/* -------------------------------------- CENTER COLUMN */
+#center_column { width:220px; padding: 0 20px 0 0; margin-right: -260px; float:right;}
+
+/* -------------------------------------- Main News */
+.MainNews { padding: 14px 0 10px; clear: both; overflow: hidden; font-size: 12px; line-height: 15px; border-bottom: 1px solid #d9d9d9;}
+.MainNews a {}
+.MainNews em { padding: 10px 0 2px; display: block; color: #ff9509; font-size: 13px;}
+.MainNews img { width: 220px; display: block;}
+
+
+
+
+
+
+/* ------------------------------------- RIGHT COLUMN */
+#right_column { width:28%; float:right;}
+#right_column1 { width:300px; margin-right: -560px; float:right;}
+
+/* -------------------------------------- Actual Box */
+.ActualTitle { color: #333333; font:bold 20px/22px MyriadPro, arial; text-transform: uppercase;}
+.ActualBox { padding: 18px 0 0;}
+.ActualBox ul { width: 300px; height: 260px; background: #fff; overflow: hidden;}
+.ActualBox li { width: 140px; padding: 0px 0 0 9px; float: left; border-left: 1px solid #d9d9d9; background: #fff;}
+.ActualBox li .image { position: relative;}
+.ActualBox li .image img { width: 140px; display: block;}
+.ActualBox li .image span { padding: 0 7px; display: block; bottom: 0; left: 0; position: absolute; color: #fff; font:bold 11px/14px MyriadPro, arial; background:url(../images/px_economy.gif) repeat-x #030303; border-radius: 0 3px 0 4px; text-transform: uppercase;}
+.ActualBox li .image span.show { background:url(../images/px_show.gif) repeat-x #a90379;}
+.ActualBox li .text { padding: 15px 0 0; font-size: 12px; line-height: 14px;}
+.ActualBox li .text p { padding: 10px 0 0;}
+.ActualBox li a.name { font:bold 13px/14px MyriadPro, arial;}
+.ActualBox li .rating { padding: 9px 0 0; clear: both; overflow: hidden;}
+.ActualBox li .rating div { padding: 5px 28px 5px 5px; float: right; border: 1px solid #e4e4e4; border-radius: 3px; background:url(../images/icon_rating.gif) 100% 50% no-repeat;}
+.ActualBox li .rating em { padding: 0 3px; display: block; color: #000; font:bold 12px/17px MyriadPro, arial; background: #d9d9d9;}
+.ActualBox li:first-child { padding: 0px 10px 0 0; border: 0;}
+
+/* -------------------------------------- News Single */
+.NewsSingle { padding: 20px 0 21px; clear: both; overflow: hidden; border-bottom: 1px dashed #d9d9d9;}
+.NewsSingle a { font-size: 14px;}
+.NewsSingle em { padding: 0 0 2px; display: block; color: #ff9509; font-size: 11px;}
+.NewsSingle .indent { margin-right: 8px; float: left; border-radius: 3px;}
+
+/* -------------------------------------- News Single */
+.NewsSimilar { padding: 0px 0; clear: both; overflow: hidden;}
+.NewsSimilar li { padding: 17px 0 0 11px; background:url(../images/arrow_news.gif) 0 24px no-repeat;}
+.NewsSimilar li a { font-size: 14px;}
+.NewsSimilar li em { padding: 0 0 0 3px; color: #ff9509; font-size: 11px;}
+
+/* -------------------------------------- News Short */
+.NewsShort { padding: 11px 0 0px; clear: both; overflow: hidden;}
+.NewsShort .image { width: 80px; float: left;}
+.NewsShort .image img { width: 80px; display: block; border-radius: 3px;}
+.NewsShort .text { padding: 0 0 8px; margin-left: 98px; border-bottom: 1px dashed #d9d9d9;}
+.NewsShort .text a { font-size: 14px;}
+.NewsShort .text em { padding: 0 0 0 4px; color: #ff9509; font-size: 12px;}
+.ns-spacing { height: 7px; clear: both;}
+
+/* -------------------------------------- Popular News */
+.PopularTitle { padding: 21px 0 7px; color: #333333; font:bold 20px/22px MyriadPro, arial; text-transform: uppercase;}
+.PopularNews { padding: 12px 0 10px; clear: both; overflow: hidden; font: 12px/15px MyriadPro, arial; border-bottom: 1px solid #d9d9d9;}
+.PopularNews a.name { padding: 0 0 10px; display: block; font-size: 17px;}
+.PopularNews em { padding: 0 0 3px; display: block; color: #ff9509; font-size: 13px;}
+.PopularNews .indent { width: 140px; margin-right: 12px; float: left;}
+
+/* -------------------------------------- Category Menu */
+.CategoryTitle { padding: 0 0 8px; color: #ff9600; font:bold 20px/22px MyriadPro, arial; text-transform: uppercase;}
+.CategoryMenu { padding: 0 0 20px;}
+.CategoryMenu li { padding: 2px 0 0;}
+.CategoryMenu li a { padding: 0 8px; display: block; font:bold 14px/25px MyriadPro, arial; text-decoration: none; background: #f3f3f3;}
+.CategoryMenu li a:hover { color: #285caa; background: #dfdfdf;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********************* Footer *********************** */
+#footer { max-width: 1600px; min-width:1160px; height:126px; padding: 0 21px; margin:-126px auto 0; position:relative;}
+.f-spacing { height: 16px; clear: both;}
+
+.FootMenu { border-top: 3px solid #fdb93e; clear: both;}
+.FootMenu ul { padding: 8px 0; overflow: hidden; border-top: 2px solid #939fa7; border-bottom: 2px dotted #efefef;}
+.FootMenu li { padding: 0 0 0 15px; float: left; font:bold 14px/15px MyriadPro, arial; text-transform: uppercase;}
+.FootMenu li a { color: #60707a;}
+.FootMenu li a:hover { color: #ff9509;}
+.FootMenu li:first-child { padding: 0;}
+
+.FootCopyright { width: 336px; padding: 0 90px 0 0; float: left; color: #60707a; font: 11px/15px MyriadPro, arial;}
+.SiteDevelopment { width: 210px; float: left; color: #60707a; font: 11px/15px MyriadPro, arial;}
+.FootCounter { width: 290px; float: right; color: #60707a; font: 11px/15px MyriadPro, arial; text-align: right;}
+.FootCounter a { color: #60707a;}
+.FootCounter a:hover { color: #ff9509;}
+.FootCounter .image { padding: 17px 0 0;}
+.FootCounter .image img { margin-left: 4px; vertical-align: middle;}
+/* ---------------------------------------------------- */

@@ -1,0 +1,88 @@
+/* Variables */
+$main-color: #888888;
+$main-font-size: 14px;
+$main-font-family: tahoma;
+$main-title-color: #222222;
+$main-link-color: #f58220;
+
+$media-desktop: "screen and (min-width: 992px) and (max-width: 1200px)";
+$media-tablet: "screen and (min-width: 768px) and (max-width: 991px)";
+$media-mobile: "screen and (max-width: 767px)";
+
+/* Default */
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: #dae3e8 url(../img/bg_top.jpg) 50% 0 no-repeat;
+	background-size: cover;
+}
+
+li, div {
+	color: $main-color;
+	font: 14px/17px $main-font-family;
+}
+
+p {
+	padding: 17px 0 0;
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4 { margin: 0;}
+
+h2 {
+	color: $main-title-color;
+	font: 26px/30px $main-font-family;
+}
+
+h3 {
+	padding: 0 0 17px;
+	color: $main-title-color;
+	font: 16px/20px $main-font-family;
+}
+
+h4 {
+	padding: 0 0 3px;
+	color: $main-title-color;
+	font: 14px/17px $main-font-family;
+}
+
+a {
+	color: $main-link-color;
+	text-decoration: none;
+	transition: .2s ease-in-out;
+	outline: none !important;
+	&:hover {
+		color: #fda75e;
+	}
+}
+
+header {
+	min-height: 170px;
+	padding-bottom: 10px;
+	background: #eeeeee;
+}
+
+footer {
+	height: 460px;
+	padding: 40px 0 100px;
+	margin-top: -460px;
+	clear: both;
+	color: #222222;
+	text-align: center;
+	background: url(../img/bg_bottom.jpg) 50% 0 no-repeat;
+	background-size: cover;
+	position: relative;
+	h3 {
+		padding: 20px 0 7px;
+		font-size: 20px;
+	}
+}

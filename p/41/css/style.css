@@ -1,0 +1,282 @@
+/* --------------------- Default --------------------- */
+@import url(reset.css);
+html, body { height:100%; width:100%;}
+body { background: #d8e3e5;}
+div, li { color:#314549; font:18px/21px 'Open Sans Condensed', serif, arial;}
+p { padding:10px 0 0;}
+h1 { color:#416065; font:bold 30px/32px 'Open Sans Condensed', sans-serif, arial; padding:8px 0 28px;}
+h2 { color:#416065; font:bold 24px/25px 'Open Sans Condensed', sans-serif, arial; padding:25px 0 3px;}
+
+#container { min-height:100%; height:auto !important; height:100%; position:relative;}
+.wrapper-main { width: 991px; margin: 0 auto; position: relative; z-index: 1;}
+.wrapper-inner { padding: 18px 0 80px; clear: both; background: #d8e3e5;}
+
+.a-none a, .a-none li a { text-decoration: none;}
+.a-none a:hover, .a-none li a:hover { text-decoration: underline;}
+
+/*
+'Oranienbaum'
+*/
+
+/* ********************* Header ********************* */
+#header { height: 319px; position: relative;}
+#header .bg-left { width: 50%; height: 319px; top: 0; left: 0; position: absolute; background: #88768e;}
+#header .bg-right { width: 50%; height: 319px; top: 0; right: 0; position: absolute; background: #609090;}
+#header .bg-center { width: 100%; height: 319px; top: 0; left: 0; position: absolute; background:url(../images/bg_header.jpg) 50% 0 no-repeat;}
+
+/* Logo Name */
+.LogoName { top: 175px; left: 50px; position: absolute; color: #fff; font:bold 40px/37px 'Open Sans Condensed', sans-serif, arial; text-transform: uppercase;}
+
+/* Logo Day */
+.LogoDay { width: 210px; top: 32px; left: 540px; position: absolute; font: 20px/24px 'Open Sans Condensed', sans-serif, arial; text-align: center; text-transform: uppercase;}
+.LogoDay p { padding: 5px 0 0;}
+.LogoDay em.number { display: block; color: #fff; font: 101px/90px 'Oranienbaum', serif, arial;}
+.LogoDay em.month { display: block; color: #fff; font: 42px/35px 'Oranienbaum', serif, arial;}
+
+/* Login Box */
+.LoginBox { top: 12px; right: 0; position: absolute; color: #d8e3e5; font: 18px/20px 'Open Sans Condensed', sans-serif, arial;}
+.LoginBox a { margin: 0 9px; color: #d8e3e5; text-decoration: none;}
+.LoginBox a:hover { color: #f5fdff; text-decoration: underline;}
+
+/* Main Menu */
+.MainMenu { padding: 268px 0 0; overflow: hidden;}
+.MainMenu li { padding-right: 3px; float: left;}
+.MainMenu li a { padding: 0 27px; display: block; color: #31454a; font:26px/41px 'Open Sans Condensed', sans-serif, arial; text-decoration: none;}
+.MainMenu li a:hover, .MainMenu li a.active { background: #fff; box-shadow: inset 0 2px 0px #636364; border-radius: 18px;}
+
+/* Second Menu */
+.SecondMenu { width: 991px; height: 41px; margin: 0 auto; clear: both; background: #416066; border-bottom: 2px solid #31454a; border-radius: 21px;}
+.SecondMenu li { padding: 5px 8px 5px 11px; float: left; color: #d8e3e5; font:bold 18px/31px 'Open Sans Condensed', sans-serif, arial; background:url(../images/line_sec-menu.gif) 0 50% no-repeat;}
+.SecondMenu li a { padding: 0 62px; display: block; color: #d8e3e5; text-decoration: none; text-shadow:0 1px 0 #31454a;}
+.SecondMenu li a:hover, .SecondMenu li a.active { color: #fff; background: #748f96; border-radius: 5px 5px 0 0;}
+.SecondMenu li.level-1:hover a.link-1 { color: #fff; background: #748f96; border-radius: 5px 5px 0 0; transition: .2s ease-in-out;}
+.SecondMenu li .layout { padding: 0 0px; position: relative; color: #d8e3e5; font:bold 18px/31px 'Open Sans Condensed', sans-serif, arial;}
+.SecondMenu ul { width: 100%; padding: 15px 0 33px; top: 31px; left: 0; position: absolute; z-index: 999; background: #748f96; border-bottom: 2px solid #416065; border-radius: 0 0 5px 5px;}
+.SecondMenu ul li { padding: 7px 32px; float: none; background: none; color: #fff; font: 20px/21px 'Open Sans Condensed', sans-serif, arial;}
+.SecondMenu ul li a { padding: 0; color: #fff; text-shadow:none;}
+.SecondMenu ul li a:hover { text-decoration: underline;}
+.SecondMenu ul li ul { padding: 14px 0 0px; position: inherit; background: none; border: 0px; border-radius: 0;}
+.SecondMenu ul li ul li { padding: 7px 0px 0 15px; float: none; background: none; color: #d8e3e5; font:bold 16px/17px 'Open Sans Condensed', sans-serif, arial;}
+.SecondMenu ul li ul li a { padding: 0; color: #d8e3e5; text-shadow:none;}
+.SecondMenu ul li ul li a:hover { text-decoration: none;}
+.SecondMenu li.level-1:first-child { padding: 5px 8px 5px 28px; background: none;}
+.sm-index { top: 319px; left: 50%; position: absolute; z-index: 2; margin-left: -496px;}
+
+/* ******************** Content ********************* */
+#section { clear: both;}
+
+.clear { clear: both;}
+.content-spacing { height: 210px; clear: both;}
+.box-spacing { height: 50px; clear: both;}
+.box-spacing1 { height: 82px; clear: both;}
+
+/* Background Index */
+.SliderMain .bg-left { width: 50%; height: 100%; top: 0; left: 0; position: absolute; background: #cbe4e8;}
+.SliderMain .bg-right { width: 50%; height: 100%; top: 0; right: 0; position: absolute; background: #f7ffff;}
+.SliderMain .bg-center { width: 100%; height: 100%; top: 0; left: 0; position: absolute; background:url(../images/bg_body.jpg) 50% 0 no-repeat;}
+
+.IndexContent { padding: 37px 0 15px; clear: both; position: relative; overflow: hidden;}
+.IndexContent .bg-left { width: 50%; height: 100%; top: 0; left: 0; position: absolute; background: #bdc8ca;}
+.IndexContent .bg-right { width: 50%; height: 100%; top: 0; right: 0; position: absolute; background: #abbabf;}
+.IndexContent .bg-center { width: 100%; height: 100%; top: 0; left: 0; position: absolute; background:url(../images/bg_body1.jpg) 50% 0 no-repeat;}
+.IndexContent .FaqQuestion, .IndexContent .FaqAnswer { width: 100%;}
+.IndexContent .ParentsBox { padding: 10px 0 0;}
+
+/* -------------------------------------- Page Navigation */
+.PageNavigation { clear: both; overflow: hidden;}
+.PageNavigation li { padding-right: 4px; float: left;}
+
+/* -------------------------------------- Slider Main */
+.SliderMain { padding: 76px 0 0; clear: both; position: relative;}
+.SliderMain .slide { width: 991px; height: 489px; clear: both; background:url(../images/bg_body.jpg) 50% -76px no-repeat;}
+.SliderMain .image { width: 245px; padding: 0 10px 0 20px; float: left;}
+.SliderMain .image b { display: block;}
+.SliderMain .image img { width: 225px; margin-bottom: 15px; display: block; border-radius: 112px;}
+.SliderMain .text { width: 715px; padding: 10px 0px 0 0px; float: left; font: 18px/19px 'Oranienbaum', sans-serif, arial;}
+.SliderMain .text:first-letter { font-size: 48px;}
+
+/* -------------------------------------- Index Page */
+.IndexLeftTitle { padding: 0 15px 15px; color: #416066; font:bold 36px/38px 'Open Sans Condensed', sans-serif, arial; text-align: right;}
+.IndexRightTitle { padding: 0 0px 0px 30px; color: #416066; font:bold 36px/38px 'Open Sans Condensed', sans-serif, arial; border-left: 1px solid #416065;}
+.index-left-col { width:584px; float:left;}
+.index-right-col { width:392px; float:right;}
+
+/* -------------------------------------- News Box */
+.NewsBox { padding: 0 0 0 14px; clear: both;}
+.NewsBox li { padding: 23px 0 21px; clear: both; overflow: hidden; border-bottom: 1px dotted #416065;}
+.NewsBox li .image { width: 155px; float: left;}
+.NewsBox li .image img { display: block; border: 1px solid #fff; border-radius: 5px;}
+.NewsBox li .text { width: 222px; float: left; color: #31454a; font: 16px/19px 'Oranienbaum', sans-serif, arial;}
+.NewsBox li .text span.date { padding: 0; display: block; font: 16px/19px 'Open Sans Condensed', sans-serif, arial;}
+.NewsBox li .text strong.name { padding: 4px 10px 12px 0; display: block; color: #416065; font:bold 18px/22px 'Open Sans Condensed', sans-serif, arial;}
+.NewsBox li .text .more { padding: 10px 0 0; clear: both;}
+.NewsBox li .text .more a { padding: 0 12px; margin-left: -12px; display: inline-block; font: 18px/37px 'Open Sans Condensed', sans-serif, arial; border-radius: 5px; border-bottom: 2px solid transparent;}
+.NewsBox li .text .more a:hover { color: #d8e3e5; background: #416065; border-bottom: 2px solid #31454a; text-decoration: none;}
+.NewsBox li:first-child { padding: 15px 0 21px;}
+.NewsAll { padding: 15px 0 0; clear: both;}
+.NewsAll a { padding: 0 12px; margin-left: -12px; display: inline-block; font: 18px/37px 'Open Sans Condensed', sans-serif, arial; border-radius: 5px; border-bottom: 2px solid transparent;}
+.NewsAll a:hover { color: #d8e3e5; background: #416065; border-bottom: 2px solid #31454a; text-decoration: none;}
+
+/* -------------------------------------- Our Heroes Slider */
+.OurHeroesSliderTitle { padding: 25px 0px 0px 0px; color: #416066; font:bold 36px/38px 'Open Sans Condensed', sans-serif, arial; text-align: center; position: relative;}
+
+.OurHeroesSlider { padding: 31px 0 0 23px; clear: both; overflow: hidden; position: relative;}
+.OurHeroesSlider ul { width: 930px; float: left; overflow: hidden;}
+.OurHeroesSlider li { padding: 0 0 0 15px; float: left;}
+.OurHeroesSliderTitle:before { content: ""; width: 39%; top: 45px; left: 0; position: absolute; border-top: 1px solid #416065;}
+.OurHeroesSliderTitle:after { content: ""; width: 39%; top: 45px; right: 0; position: absolute; border-top: 1px solid #416065;}
+.OurHeroesSlider a.btn-prev { width: 23px; height: 41px; top: 57px; left: 0; position: absolute; display: block; background:url(../images/btn-slider.png) no-repeat;}
+.OurHeroesSlider a.btn-next { width: 23px; height: 41px; top: 57px; right: 0; position: absolute; display: block; background:url(../images/btn-slider.png) 100% 0 no-repeat;}
+
+
+/* -------------------------------------- Holiday Box */
+.HolidayBox { padding: 22px 0 0px; clear: both; overflow: hidden; position: relative;}
+.HolidayBox .news { width: 338px; padding: 35px 0 0; float: left; font: 18px/22px 'Oranienbaum', sans-serif, arial;}
+.HolidayBox .news img { display: block; margin-bottom: 10px;}
+.HolidayBox .title { padding: 0px 0px 7px 0px; color: #416066; font:bold 36px/38px 'Open Sans Condensed', sans-serif, arial; position: relative;}
+.HolidayBox .more { padding: 5px 0 0; clear: both;}
+.HolidayBox .more a { padding: 0 12px; margin-left: 0px; display: inline-block; font: 18px/37px 'Open Sans Condensed', sans-serif, arial; border-radius: 5px; border-bottom: 2px solid transparent;}
+.HolidayBox .more a:hover { color: #d8e3e5; background: #416065; border-bottom: 2px solid #31454a; text-decoration: none;}
+.HolidayBox .names { width: 355px; float: right; padding: 35px 0 0;}
+.HolidayBox .names .title { text-align: right;}
+.HolidayBox .names img { margin-bottom: 10px; display: block;}
+.HolidayBox .names ul { clear: both; overflow: hidden;}
+.HolidayBox .names li { width: 93px; padding: 0 0 0 33px; float: left; text-align: center;}
+.HolidayBox .names li strong { display: block;}
+.HolidayBox .names li:first-child { padding: 0 0 0 5px;}
+.HolidayBox .names .all { padding: 15px 0 0; clear: both;}
+.HolidayBox .names .all a { padding: 0 12px; margin-left: -12px; display: inline-block; float: right; font: 18px/37px 'Open Sans Condensed', sans-serif, arial; border-radius: 5px; border-bottom: 2px solid transparent;}
+.HolidayBox .names .all a:hover { color: #d8e3e5; background: #416065; border-bottom: 2px solid #31454a; text-decoration: none;}
+.HolidayBox:before { content: ""; width: 39%; top: 42px; left: 0; position: absolute; border-top: 1px solid #416065;}
+.HolidayBox:after { content: ""; width: 39%; top: 42px; right: 0; position: absolute; border-top: 1px solid #416065;}
+.HolidayBox .day { width: 259px; padding: 0 0 0 25px; float: left; font: 26px/32px 'Open Sans Condensed', sans-serif, arial; text-align: center; text-transform: uppercase;}
+.HolidayBox .day p { padding: 5px 0 0;}
+.HolidayBox .day em.number { display: block; color: #fff; font: 129px/100px 'Oranienbaum', serif, arial;}
+.HolidayBox .day em.month { display: block; color: #fff; font: 53px/55px 'Oranienbaum', serif, arial;}
+
+
+/* -------------------------------------- LEFT COLUMN */
+#left_column { width:395px; float:left;}
+#left_column1 { width:740px; float:left;}
+
+
+
+
+/* ------------------------------------- RIGHT COLUMN */
+#right_column { width:565px; float:right;}
+#right_column1 { width:227px; float:right;}
+
+/* ---------------------------------- Our Heroes Page */
+.OurHeroesImage { height: 566px; clear: both; position: relative;}
+.OurHeroesImage .decor { width: 395px; height: 395px; border-radius: 197px; display: block;}
+.OurHeroesImage .mini { width: 226px; height: 226px; display: block; bottom: 0; left: 85px; position: absolute; border-radius: 113px;}
+.OurHeroesImageDescr { padding: 45px 85px 0px; font:bold 24px/28px 'Open Sans Condensed', sans-serif, arial;}
+.OurHeroesImageDescr p { padding: 21px 0 0;}
+
+/* Text */
+.OurHeroesText { padding: 90px 0 0; font: 18px/22px 'Oranienbaum', sans-serif, arial;}
+.OurHeroesText .author { padding: 35px 0 0; font:bold 30px/32px 'Oranienbaum', sans-serif, arial;}
+.OurHeroesText .quote { padding: 7px 0 0 32px; font: 24px/28px 'Oranienbaum', sans-serif, arial;}
+.OurHeroesText .title { padding: 0 0 25px; font: 30px/36px 'Oranienbaum', sans-serif, arial;}
+
+/* Box */
+.OurHeroesBox { padding: 0 0 50px; clear: both; overflow: hidden; font: 18px/22px 'Oranienbaum', sans-serif, arial;}
+.OurHeroesBox .image { width: 212px; float: left;}
+.OurHeroesBox .image img { border-radius: 99px; margin: 0 0 0 auto; display: block;}
+.OurHeroesBox .text { width: 737px; float: right; font: 18px/22px 'Oranienbaum', sans-serif, arial;}
+.OurHeroesBox .text h3 { color:#314549; font:bold 36px/38px 'Open Sans Condensed', sans-serif, arial; padding:0px 0 15px;}
+.OurHeroesBox .more { padding: 17px 0 0; clear: both;}
+.OurHeroesBox .more a { padding: 0 12px; margin-left: -12px; display: inline-block; font: 18px/37px 'Open Sans Condensed', sans-serif, arial; border-radius: 5px; border-bottom: 2px solid transparent;}
+.OurHeroesBox .more a:hover { color: #d8e3e5; background: #416065; border-bottom: 2px solid #31454a; text-decoration: none;}
+
+/* -------------------------------------- FAQ Page */
+.FaqQuestion { width: 83%; padding: 23px 0; clear: both; background: #fff; border-radius: 5px;}
+.FaqQuestion .image { width:25%; padding: 52px 5px 0; float:left; position: relative; text-align: center; font-weight: bold; box-sizing: border-box;}
+.FaqQuestion .image .photo { width: 115px; height: 121px; top: -73px; left: 50%; margin-left: -57px; position: absolute; background:url(../images/pic_border.png) 0 0 no-repeat;}
+.FaqQuestion .image .photo img { top: 4px; left: 4px; position: absolute; display: block; border-radius: 53px;}
+.FaqQuestion .image .photo em { width: 107px; height: 107px; top: 4px; left: 4px; position: absolute; display: block; border-radius: 53px; box-shadow: inset 0 0 5px #82776a;}
+.FaqQuestion .text { width:70%; padding: 0 0 0 17px; float:left; position: relative; color: #31454a; font:bold 16px/19px 'Open Sans Condensed', sans-serif, arial; box-sizing: border-box;}
+.FaqQuestion .text:before { content: ""; width: 13px; height:11px; top:0; left:0; position:absolute; background:url(../images/icon_question.gif) 0 0 no-repeat;}
+.FaqQuestion .text:after { content: ""; width: 13px; height:11px; margin-left: 4px; background:url(../images/icon_question.gif) 100% 0 no-repeat; display: inline-block;}
+
+/* Answer */
+.FaqAnswer { width: 83%; padding: 12px 10px 17px 16px; margin-top: 31px; float: right; clear: both; background: #819598; border-radius: 5px; box-sizing: border-box;}
+.FaqAnswer .layout { width:80%; float: left;}
+.FaqAnswer .title { padding: 0 0 12px; font:bold 24px/26px 'Open Sans Condensed', sans-serif, arial;}
+.FaqAnswer .text { padding: 17px 15px 17px 20px; font: 18px/22px 'Oranienbaum', sans-serif, arial; background: #fff; border-radius: 5px;}
+.FaqAnswer .image { width:19%; padding: 70px 0px 0; float:right; position: relative; color: #d8e3e5; text-align: center; font-weight: bold;}
+.FaqAnswer .image .photo { width: 115px; height: 121px; top: -54px; left: 50%; margin-left: -57px; position: absolute; background:url(../images/pic_border.png) 0 0 no-repeat;}
+.FaqAnswer .image .photo img { top: 4px; left: 4px; position: absolute; display: block; border-radius: 53px;}
+.FaqAnswer .image .photo em { width: 107px; height: 107px; top: 4px; left: 4px; position: absolute; display: block; border-radius: 53px; box-shadow: inset 0 0 5px #82776a;}
+.FaqAnswer .attachments { padding: 8px 0 0; clear: both;}
+.FaqAnswer .attachments img { margin-left: 9px; vertical-align: top;}
+.FaqAnswer .attachments a { color: #d8e3e5;}
+.FaqAnswer .attachments a:hover { color: #000;}
+
+.faq-info { padding: 10px 0 0; text-align: center; clear: both; position: relative;}
+.faq-info span { width: 24px; height: 25px; display: block; margin: 0 auto; background:url(../images/icon_info.png) no-repeat;}
+.faq-info span:hover { box-shadow:inset 0 1px 1px #777; border-radius: 12px;}
+.faq-tooltip { width: 312px; top: 20px; right: 50%; position: absolute; padding: 28px 40px 34px 28px; font: 16px/20px 'Open Sans Condensed', sans-serif, arial; text-align: left; background: #fff; border: 1px solid #b6b6b6; box-shadow: 0 0 3px #b6b6b6; box-sizing: border-box;}
+
+/* Menu */
+.FaqMenu { padding: 15px 0 0; clear: both; overflow: hidden;}
+.FaqMenu li a { padding: 0 12px; display: inline-block; font: 18px/37px 'Open Sans Condensed', sans-serif, arial; border-radius: 5px; border-bottom: 2px solid transparent;}
+.FaqMenu li a:hover { color: #d8e3e5; background: #416065; border-bottom: 2px solid #31454a; text-decoration: none;}
+.FaqMenu li a.active { color: #d8e3e5; background: #416065; border-bottom: 2px solid #31454a; text-decoration: none; font-weight: bold;}
+.FaqMenu li.all { float: left;}
+.FaqMenu li.ask { float: right;}
+
+/* -------------------------------------- Parents Page */
+.ParentsBox { padding: 10px 0 80px; clear: both; overflow: hidden; font: 18px/22px 'Oranienbaum', sans-serif, arial;}
+.ParentsBox .image { width: 395px; float: left;}
+.ParentsBox .image img { width: 395px; height: 395px; border-radius: 197px; display: block;}
+.ParentsBox .text { width: 520px; padding: 47px 40px 0 30px; float: left; font: 30px/36px 'Oranienbaum', sans-serif, arial;}
+.ParentsBox .text h3 { color:#314549; font:bold 36px/38px 'Open Sans Condensed', sans-serif, arial; padding:0px 0 10px;}
+.ParentsBox .more { padding: 17px 0 0; clear: both;}
+.ParentsBox .more a { padding: 0 12px; margin-left: -12px; display: inline-block; font: 18px/37px 'Open Sans Condensed', sans-serif, arial; border-radius: 5px; border-bottom: 2px solid transparent;}
+.ParentsBox .more a:hover { color: #d8e3e5; background: #416065; border-bottom: 2px solid #31454a; text-decoration: none;}
+.ParentsBox .more a + a { float: right;}
+
+/* -------------------------------------- Services Page */
+.ServicesText { font: 18px/21px 'Oranienbaum', sans-serif, arial;}
+.ServicesText ul.list { padding: 25px 0 0 33px;}
+.ServicesText ul.list li { font: 18px/21px 'Oranienbaum', sans-serif, arial;}
+
+/* Box */
+.ServicesBox {}
+.ServicesBox li { padding: 0 0 19px; font-size: 16px; font-style: italic;}
+.ServicesBox li img { margin-bottom: 7px; display: block;}
+
+
+
+
+/* ********************* Footer *********************** */
+#footer { width:100%; height:210px; margin:-210px auto 0; position:relative;}
+#footer .wrapper-main { height: 210px;}
+#footer .bg-logo { width: 156px; height: 152px; top: 25px; left: 415px; position: absolute; background:url(../images/bg_logo.png) no-repeat;}
+#footer .bg-left { width: 50%; height: 210px; top: 0; left: 0; position: absolute; background: #548186;}
+#footer .bg-right { width: 50%; height: 210px; top: 0; right: 0; position: absolute; background: #776982;}
+#footer .bg-center { width: 100%; height: 210px; top: 0; left: 0; position: absolute; background:url(../images/bg_footer.jpg) 50% 0 no-repeat;}
+
+/* Foot Box */
+.FootBoxWrap { padding: 12px 0 0; clear: both;}
+.FootBox { padding: 8px 0 0; border-top: 1px solid #d8e3e5;}
+.FootBox .social { width: 395px; padding: 8px 0 13px; float: left; border-bottom: 1px solid #d8e3e5; text-align: center;}
+.FootBox .social p { padding: 12px 0 0;}
+.FootBox .social .indent { margin-right: 6px;}
+.FootBox .support { width: 395px; padding: 0px 0 8px; float: right; color: #d8e3e5; font:bold 17px/29px 'Open Sans Condensed', sans-serif, arial; border-bottom: 1px solid #d8e3e5; text-align: center;}
+.FootBox .support img { margin-left: 12px; vertical-align: middle;}
+
+/* Foot Menu */
+.FootMenu { width: 400px; top: 125px; left: 0; position: absolute; text-align: center; color: #d8e3e5; font:bold 17px/29px 'Open Sans Condensed', sans-serif, arial;}
+.FootMenu a { margin: 0 10px 0 7px; color: #d8e3e5;}
+.FootMenu a:hover { color: #e3fafc;}
+
+/* Logo Name 1 */
+.LogoName1 { top: 130px; left: 537px; position: absolute; color: #d8e3e5; font:bold 36px/33px 'Open Sans Condensed', sans-serif, arial; text-transform: uppercase;}
+
+/* Foot Copyright */
+.FootCopyright { width: 270px; top: 128px; right: 0; position: absolute; text-align: right; color: #d8e3e5; font: 18px/29px 'Open Sans Condensed', sans-serif, arial;}
+
+
+/* ---------------------------------------------------- */

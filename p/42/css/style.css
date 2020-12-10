@@ -1,0 +1,462 @@
+/* --------------------- Default --------------------- */
+@import url(reset.css);
+@import url(media-queries.css);
+@import url(orbit.css);
+@import url(selectbox.css);
+@import url(price-band.css);
+
+html, body { height:100%; width:100%;}
+body {}
+div, li { color:#000; font:16px/26px 'PT Sans', 'sans-serif', arial;}
+p { padding:15px 0 0;}
+h1 { color:#000; font:bold 24px/25px 'PT Sans', 'sans-serif', arial; padding:0 0 14px;}
+h2 { color:#000; font:bold 16px/26px 'PT Sans', 'sans-serif', arial; padding:0 0 1px;}
+h3 { color:#000; font:bold 16px/26px 'PT Sans', 'sans-serif', arial; padding:0 0 1px;}
+
+#container { min-width: 940px; max-width: 1180px; padding: 0 10px; margin: 0 auto; min-height:100%; height:auto !important; height:100%; position:relative;}
+
+/* ********************* Header ********************* */
+header { height: 197px; padding: 0 0 0 240px;}
+.top-column { width:100%; float:right;}
+/* -------------------------------------- Links Styles */
+
+.links-black a, .links-black li a { color: #111111; text-decoration: none; border-bottom: 1px solid #ccc;}
+.links-black a:hover, .links-black li a:hover { color: #c24b48; border-color: #f3dbda;}
+.links-black a:focus, .links-black li a:focus { color: #933331; border-color: #e9d6d6;}
+
+.links-red a, .links-red li a { color: #bf4340; text-decoration: none; border-bottom: 1px solid #ecc6c5;}
+.links-red a:hover, .links-red li a:hover { color: #dfa3a1; border-color: #f5e1e1;}
+.links-red a:focus, .links-red li a:focus { color: #933331; border-color: #dec1c1;}
+
+.links-gray a, .links-gray li a { color: #515151; text-decoration: none; border-bottom: 1px solid #ccc;}
+.links-gray a:hover, .links-gray li a:hover { color: #c24b48; border-color: #f3dbda;}
+.links-gray a:focus, .links-gray li a:focus { color: #933331; border-color: #e9d6d6;}
+
+/* ----------------------------------------------------*/
+
+/* Logo Head */
+.LogoHead { width: 200px; padding: 45px 0 0 20px; margin-left: -240px; float: left;}
+
+/* -------------------------------------- Top Box */
+.TopBox { height: 117px; clear: both;}
+
+/* Slogan */
+.SloganBox { width: 40%; padding: 30px 0 0; float: left; font-size: 14px;}
+.SloganBox h5 { font:14px/20px 'PT Sans', 'sans-serif', arial; padding:0 20px 0 0;}
+.SloganBox h5 strong { padding: 0 0 3px; display: block;}
+
+/* Ask Box */
+.AskBox { width: 30%; padding: 30px 0 0; float: left;}
+.AskBox span.tel { padding: 0 0 8px; display: block; font-size: 22px;}
+.AskBox a { color: #bf4340; text-decoration: none;}
+.AskBox a em { border-bottom: 1px solid #ecc6c5;}
+.AskBox a:hover { color: #dfa3a1;}
+.AskBox a:hover em { border-color: #f5e1e1;}
+.AskBox a:focus { color: #933331;}
+.AskBox a:focus em { border-color: #dec1c1;}
+.AskBox a.ask { padding: 0 0 0 32px; float: left; background:url(../images/icon_ask.gif) 10px 7px no-repeat;}
+
+/* Contact */
+.ContactTop { width: 186px; padding: 27px 0 0; float: right;}
+.ContactTop a { color: #515151; text-decoration: none;}
+.ContactTop a em { border-bottom: 1px solid #ccc;}
+.ContactTop a:hover { color: #c24b48;}
+.ContactTop a:hover em { border-color: #f3dbda;}
+.ContactTop a:focus { color: #933331;}
+.ContactTop a:focus em { border-color: #e9d6d6;}
+.ContactTop a.mail { padding: 0 0 0 24px; display: block; background:url(../images/icon_mail.gif) 0 9px no-repeat;}
+.ContactTop a.map { padding: 0 0 0 24px; margin-top: 12px; display: block; background:url(../images/icon_map.gif) 0 9px no-repeat;}
+
+/* -------------------------------------- Main Menu */
+.MainMenu { clear: both; border:1px solid #dddddd; border-radius: 3px;}
+.MainMenu ul { display: table; width: 100%; height: 48px;}
+.MainMenu li { border-left:1px solid #dddddd; display: table-cell; text-align: center; // float: left; // width: 16%;}
+.MainMenu li a { padding: 0 5px; display: block; color: #111111; font:bold 14px/48px 'PT Sans', 'sans-serif', arial; text-decoration: none;}
+.MainMenu li a em { border-bottom: 1px solid #dcdcdc;}
+.MainMenu li a:hover { color: #bf4340;}
+.MainMenu li a:hover em { border-color: #f5e3e3;}
+.MainMenu li a:active { color: #933331;}
+.MainMenu li a:active em { border:0;}
+.MainMenu li a.active { margin-top: -1px; color: #111111; line-height: 46px; background: #fbfbfb; border-top: 3px solid #bf4340;}
+.MainMenu li a.active em { border: 0;}
+.MainMenu li:first-child { border: 0;}
+
+
+/* ******************** Content ********************* */
+#content-wrap { padding: 0 0 60px 240px; clear: both; overflow: hidden;}
+#content-wrap1 { padding: 0 0 60px 0px; clear: both; overflow: hidden;}
+
+section { clear: both;}
+.clear { clear: both;}
+.content-spacing { height: 145px; clear: both;}
+.box-spacing { height: 20px; clear: both;}
+.box-spacing1 { height: 25px; clear: both;}
+.box-spacing2 { height: 30px; clear: both;}
+
+/* -------------------------------------- Main Title */
+.MainTitle { padding: 17px 0 0; clear: both;}
+.MainTitle h1 { font-size: 30px;}
+
+/* -------------------------------------- Page Navigation */
+.PageNavigation { clear: both; overflow: hidden;}
+.PageNavigation li { padding: 0 10px 3px 15px; float: left; font-size: 13px; line-height: 14px; background:url(../images/arrow_pagenav.gif) 0 4px no-repeat;}
+.PageNavigation li a {}
+.PageNavigation li:first-child { padding: 0 10px 0 0; background: none;}
+
+/* -------------------------------------- Catalog Box */
+.CatalogBox { padding: 39px 0 0; clear: both; overflow: hidden;}
+.CatalogBox .image { width: 20%; padding: 25px 0 0; float: left; text-align: center;}
+.CatalogBox .image img { max-width: 155px;}
+.CatalogBox .menu { width: 30%; float: left;}
+.CatalogBox .menu ul { padding: 18px 0 23px; border: 1px solid #dddddd; border-radius: 3px;}
+.CatalogBox .menu li { padding: 14px 21px 0; font: 14px/16px 'PT Sans', 'sans-serif', arial;}
+.CatalogBox .menu li:first-child { padding: 0 21px 18px; font-size: 16px; border-bottom: 1px solid #dddddd;}
+
+/* -------------------------------------- Services Box */
+.ServicesBox { padding: 18px 0 0; clear: both; overflow: hidden;}
+.ServicesBox h2 { width: 70%; float: left; padding: 0; font:24px/25px 'PT Sans', 'sans-serif', arial;}
+.ServicesBox h2 em { padding: 0 9px; color: #8a8a8a; font-size: 16px;}
+.ServicesBox a.order { padding: 0 11px; float: right; color: #fff; font:bold 12px/26px 'PT Sans', 'sans-serif', arial; text-decoration: none; text-transform: uppercase; background: #bf4340; border-radius: 3px;}
+.ServicesBox a.order:hover { background: #ca6360;}
+.ServicesBox a.order:focus { background: #943432;}
+.ServicesBox .column-left { width: 49%; float: left;}
+.ServicesBox .column-right { width: 49%; float: right;}
+.ServicesBox .column-wrap { padding: 15px 0 0px; clear: both; border: 1px solid #dddddd; border-radius: 3px;}
+.ServicesBox .title { padding: 0 15px 15px 22px; overflow: hidden; border-bottom: 1px solid #dddddd;}
+.ServicesBox .text { padding: 18px 20px; clear: both; overflow: hidden; font-size: 14px;}
+.ServicesBox img.indent { margin-right: 20px; float: left;}
+.ServicesBox aside.tel { padding: 20px 20px; line-height: 23px; overflow: hidden; border-top: 1px solid #dddddd;}
+.ServicesBox aside.tel em { font-size: 16px; display: block;}
+
+/* -------------------------------------- Delivery Page */
+
+.DeliveryWrap { padding: 37px 0 0; clear: both; overflow: hidden;}
+
+/* Box */
+.DeliveryFAQ { width: 870px; float: left;}
+.DeliveryBox { width: 435px; padding: 0 0 45px; float: left;}
+.DeliveryBox h2 { font:24px/25px 'PT Sans', 'sans-serif', arial; padding: 0 0 10px;}
+.DeliveryBox ul {}
+.DeliveryBox li { padding: 18px 20px 0 12px; overflow: hidden; clear: both;}
+.DeliveryBox li p { padding: 5px 0 0; display: none;}
+.DeliveryBox li a { transition: none;}
+.DeliveryBox li .number { padding: 1px; float: left; font:bold 11px/12px 'PT Sans', 'sans-serif', arial; border: 1px solid #dddddd; border-radius: 8px;}
+.DeliveryBox li .number span { padding: 0 3px; display: block; border: 1px solid #dddddd; border-radius: 8px;}
+.DeliveryBox li .text { width: 380px; float: right;/* font: 14px/22px 'PT Sans', 'sans-serif', arial;*/}
+.DeliveryBox li.open p { display: block;}
+.DeliveryBox li a.name { color: #515151; font: 14px/19px 'PT Sans', 'sans-serif', arial; text-decoration: none; border-bottom: 1px dashed #ccc;}
+.DeliveryBox li a.name:hover { color: #000; border-color: #000;}
+.DeliveryBox li a.active { font-weight: bold; color: #000;}
+
+/* Note */
+.DeliveryNote { width: 294px; padding: 17px 0 20px; float: right; border: 3px solid #dddddd; border-radius: 3px;}
+.DeliveryNote .title { padding: 0 19px; font-size: 24px;}
+.DeliveryNote ul {}
+.DeliveryNote li { padding: 15px 25px 5px 41px; font: 14px/20px 'PT Sans', 'sans-serif', arial; background:url(../images/icon_delivery.gif) 19px 18px no-repeat;}
+
+/* -------------------------------------- Text Box */
+.TextBox { padding: 0 0 40px; clear: both; overflow: hidden;}
+.TextBox h2 { font:bold 24px/25px 'PT Sans', 'sans-serif', arial; padding:0 0 21px;}
+.TextBox h3 { font: 24px/25px 'PT Sans', 'sans-serif', arial; padding:32px 0 14px; clear: both;}
+.TextBox h4 { color: #000; font:bold 18px/20px 'PT Sans', 'sans-serif', arial; padding:15px 0 15px; clear: both;}
+.TextBox h5 { color: #000; font:bold 16px/18px 'PT Sans', 'sans-serif', arial; padding:14px 0 0px; clear: both;}
+.TextBox h6 { color: #000; font: 16px/18px 'PT Sans', 'sans-serif', arial; padding:14px 0 0px; clear: both;}
+.TextBox p.indent { padding: 30px 0 0;}
+.TextBox img.indent { margin-right: 28px; float: left;}
+
+.TextBox ul.list { padding: 0 0 20px;}
+.TextBox ul.list li { padding: 0 0 0 24px;}
+.TextBox ul.list li ul li ul li { padding: 0 0 0 40px;}
+.TextBox ul.list li b { padding: 0 8px 0 0; color: #bf4340;}
+
+.TextBox ul.list1 { padding: 0 0 25px;}
+.TextBox ul.list1 li { padding: 0 0 0 52px; background:url(../images/arrow_list.gif) 21px 14px no-repeat;}
+.TextBox ul.list1 li ul li { padding: 0 0 0 40px; background:url(../images/arrow_list1.gif) 17px 12px no-repeat;}
+.TextBox ul.list1 li ul li ul li { padding: 0 0 0 40px; background:url(../images/arrow_list2.gif) 17px 11px no-repeat;}
+.TextBox ul.list1 li b { padding: 0 8px 0 0; color: #bf4340;}
+.TextBox aside { padding: 10px 16px; font:bold italic 14px/24px arial; border: 1px solid #dddddd; border-left: 5px solid #c04643; border-radius: 5px 5px;}
+
+/* -------------------------------------- Contact Page */
+
+.ContactWrap { padding: 41px 0 0; clear: both; overflow: hidden;}
+/* Box */
+.ContactLeft { width: 460px; float: left;}
+/* Location */
+.ContactLocation { padding: 0 0 25px; font: 16px/17px 'PT Sans', 'sans-serif', arial;}
+.ContactLocation p { padding: 15px 0 0;}
+.ContactLocation span.address { padding: 0 0 0 32px; display: inline-block; font: 18px/18px arial; background:url(../images/icon_address.gif) 0 50% no-repeat;}
+.ContactLocation span.tel { padding: 0 27px 0 25px; display: inline-block; font: 14px/19px 'PT Sans', 'sans-serif', arial; background:url(../images/icon_tel.gif) 3px 50% no-repeat;}
+.ContactLocation a.mail { padding: 0 0 0 21px; display: inline-block; color: #bf4340; text-decoration: none; background:url(../images/icon_mail1.gif) 0 6px no-repeat;}
+.ContactLocation a.mail em { border-bottom: 1px solid #ecc6c5;}
+.ContactLocation a.mail:hover { color: #dfa3a1;}
+.ContactLocation a.mail:hover em { border-color: #f5e1e1;}
+.ContactLocation a.mail:focus { color: #933331;}
+.ContactLocation a.mail:focus em { border-color: #dec1c1;}
+/* Form */
+.ContactForm { clear: both; border: 3px solid #dddddd; border-radius: 3px;}
+.ContactForm .title { padding: 11px 50px 15px 17px; font: 14px/19px 'PT Sans', 'sans-serif', arial;}
+.ContactForm ul.form { padding: 15px 0 23px; background: #fbfbfb; border-top: 1px solid #dddddd;}
+.ContactForm ul.form li { padding: 12px 17px 0; overflow: hidden; font: 14px/19px 'PT Sans', 'sans-serif', arial;}
+.ContactForm ul.form li label { padding: 0 0 2px; display: block; cursor:pointer;}
+.ContactForm ul.form li input[type="text"] { width:100%; padding:4px; color:#000; font: 16px/17px 'PT Sans', 'sans-serif', arial; border:1px solid #dddddd; border-radius: 3px; box-sizing: border-box;}
+.ContactForm ul.form li textarea { width:100%; height:111px; padding:4px; color:#000; font: 16px/17px 'PT Sans', 'sans-serif', arial; border:1px solid #dddddd; border-radius: 3px; box-sizing: border-box;}
+.ContactForm ul.form li input[type="text"]:focus, .ContactForm ul.form li textarea:focus { border-color:#989898;}
+.ContactForm ul.form li input[type="submit"] { width:125px; height:40px; padding-bottom:0px; color: #fff; font:bold 12px/26px 'PT Sans', 'sans-serif', arial; text-transform: uppercase; background: #bf4340; border-radius: 3px; border:0; cursor:pointer;}
+.ContactForm ul.form li input[type="submit"]:hover { background: #ca6360;}
+.ContactForm ul.form li input[type="submit"]:active { padding: 1px 0 0; background: #943432;}
+.ContactForm ul.form li span.recall { width: 220px; min-height: 35px; padding: 0 0 0 61px; display: inline-block; font: 14px/17px 'PT Sans', 'sans-serif', arial; background:url(../images/icon_recall.gif) 19px 0 no-repeat; margin-top: 2px;}
+.ContactForm ul.form li .col1, .ContactForm ul.form li .col2 { float: left; font: 14px/19px 'PT Sans', 'sans-serif', arial;}
+.ContactForm ul.form li .col1 { width: 48%;/* padding-right: 20px;*/}
+.ContactForm ul.form li .col2 { width: 48%; float: right;}
+/*.ContactForm ul.form li .col1 input[type="text"], .ContactForm ul.form li .col2 input[type="text"] { width: 190px;}*/
+.ContactForm ul.form li .row1 { padding: 8px 0 0;}
+/* Map */
+.ContactRight { width: 700px; float: right; overflow: hidden;}
+
+
+/* -------------------------------------- Side Bar */
+#sidebar { width:220px; margin-left: -240px; float:left;}
+
+/* -------------------------------------- Search Box */
+.SearchBox { position: relative;}
+.SearchBox input[type="text"] { width:160px; height: 28px; padding:5px 44px 5px 14px; color:#6f6f6f; font:italic 16px 'PT Sans', 'sans-serif', arial; border:1px solid #dddddd; border-radius: 3px;}
+.SearchBox input[type="text"]:focus { border-color: #b7b7b7; color: #6e6e6e; font-style: normal; font-weight: bold;} 
+.SearchBox input[type="submit"] { width:36px; height:38px; padding-bottom:2px; color:#fff; font:bold 16px arial; background:url(../images/btn-search.gif) 50% 50% no-repeat #b1b1b1; border:0; cursor:pointer; top: 1px; right: 1px; position: absolute; border-radius: 0 2px 2px 0;}
+.SearchBox input[type="submit"]:hover { background:url(../images/btn-search.gif) 50% 50% no-repeat #a9a9a9;}
+.SearchBox input[type="submit"]:active { box-shadow: inset 0px 0px 3px #797979; background-position: 50% 55%;}
+ 
+/* -------------------------------------- Category Menu */
+.CategoryMenu { background: #bf4340; border-radius: 3px;}
+.CategoryMenu li { border: solid #9f3835; border-width: 1px 0 0 5px; font:bold 13px/16px 'PT Sans', 'sans-serif', arial; position: relative;}
+.CategoryMenu li a { padding: 17px 14px; display: block; color: #fff; text-decoration: none;}
+.CategoryMenu li a em { border-bottom: 1px solid #cc6966;}
+.CategoryMenu li a:hover { background: #943432;}
+.CategoryMenu li a:hover em { border: 0;}
+.CategoryMenu li.spec-offers { border: 0px; overflow: hidden;}
+.CategoryMenu li.spec-offers a { padding: 0px 0 0 50px; background:url(../images/icon_spec.gif) 19px 50% no-repeat #802d2b;}
+.CategoryMenu li.spec-offers a em { padding: 17px 14px; display: block; border: 0px; background: #9f3835;}
+.CategoryMenu ul li { border: solid #9f3835; border-width: 1px 0 0; font: 14px/16px 'PT Sans', 'sans-serif', arial;}
+.CategoryMenu ul li a { padding: 17px 20px 17px 36px; background:url(../images/icon_cat-menu.gif) 16px 21px no-repeat #943432;}
+.CategoryMenu ul li a em { border-bottom: 1px solid #a95d5b;}
+.CategoryMenu ul li a:hover em { border-bottom: 1px solid #a95d5b;}
+.CategoryMenu ul li a:hover, .CategoryMenu ul li a.active { background:url(../images/icon_cat-menu.gif) 16px 21px no-repeat #6d2725;}
+
+.CategoryMenu ul.main { width: 200px; top: 0; left: 215px; position: absolute; border-left: 5px solid #943432; border-radius: 0 3px 3px 0; overflow: hidden; box-shadow: 0 0 3px #943432; display: none;}
+.CategoryMenu ul.main li { border: solid #943432; border-width: 1px 0 0; font: 12px/16px 'PT Sans', 'sans-serif', arial;}
+.CategoryMenu ul.main li a { padding: 17px 20px 17px 36px; background:url(../images/icon_cat-menu.gif) 16px 20px no-repeat #9f3835; text-transform: uppercase;}
+.CategoryMenu ul.main li a em { border-bottom: 1px solid #a95d5b;}
+.CategoryMenu ul.main li a:hover em { border-bottom: 1px solid #a95d5b;}
+.CategoryMenu ul.main li a:hover, .CategoryMenu ul.main li a.active { background:url(../images/icon_cat-menu.gif) 16px 20px no-repeat #6d2725;}
+.CategoryMenu li:hover { background: #943432;}
+.CategoryMenu li:hover ul.main { display: block;}
+
+/* -------------------------------------- Brand Box */
+.BrandBox { width: 219px; overflow: hidden; border: solid #dddddd; border-width: 0px 1px 1px 0; border-radius: 3px;}
+.BrandBox li { float: left; border: solid #dddddd; border-width: 1px 0 0 1px;}
+.BrandBox li img { width: 108px; height: 79px; display: block; opacity: 0.6; filter:alpha(opacity=60);}
+.BrandBox li img:hover { opacity: 1; filter:alpha(opacity=100);}
+.BrandBox li:nth-child(even) { padding-left: 1px;}
+
+
+
+/* ------------------------------------- Content */
+#content { width:100%; float:right;}
+
+/* -------------------------------------- About Us Box */
+.AboutUsBox { padding: 17px 80px 20px 19px; clear: both; border: 1px solid #dddddd; border-radius: 5px;}
+
+/* -------------------------------------- Catalog Box */
+.CatalogProductWrap { padding: 28px 0 0; clear: both; overflow: hidden;}
+.CatalogProductWrap h3 { line-height: 22px;}
+
+/* Product */
+.CatalogProduct { width: 216px; padding: 15px 0 17px; margin-right: 14px; float: left; border: 4px solid #dddddd; border-radius: 5px;}
+.CatalogProduct .text { padding: 0 18px;}
+.CatalogProduct .image { height: 125px; padding: 16px 0 0px; clear: both;}
+.CatalogProduct .image img { max-height: 115px; max-width: 170px; margin: 0 auto; display: block;}
+.CatalogProduct .price { padding: 0 7px; overflow: hidden; background:url(../images/px_border.gif) 0 50% repeat-x;}
+.CatalogProduct .price span.rub { padding: 0 11px; float: left; color: #fff; font:bold 16px/26px 'PT Sans', 'sans-serif', arial; background: #bf4340;}
+.CatalogProduct .price span.new { padding: 0 9px; float: left; font:bold 12px/24px 'PT Sans', 'sans-serif', arial; border: 1px solid #bf4340; text-transform: uppercase; background: #fff;}
+.CatalogProduct ul.options { padding: 8px 18px 0; clear: both;}
+.CatalogProduct ul.options li { font-size: 13px; line-height: 22px;}
+
+.cat-p3 { margin: 0;}
+.cat-p4 { margin: 0; float: right;}
+.CatalogTitle { padding: 28px 0 20px; clear: both; font:24px/25px 'PT Sans', 'sans-serif', arial; border-top: 1px solid #dddddd;}
+
+/* Our Guarantee */
+.OurGuarantee { width: 220px; float: right;}
+.OurGuarantee li { padding: 14px 10px 0 0; overflow: hidden; clear: both; font: 14px/22px 'PT Sans', 'sans-serif', arial;}
+.OurGuarantee li .number { padding: 1px; float: left; font:bold 14px/20px 'PT Sans', 'sans-serif', arial; border: 1px solid #dddddd; border-radius: 12px;}
+.OurGuarantee li .number span { padding: 0 6px; display: block; border: 1px solid #dddddd; border-radius: 12px;}
+.OurGuarantee li .text { width: 170px; float: right; font: 14px/22px 'PT Sans', 'sans-serif', arial;}
+
+/* -------------------------------------- Banner Box */
+.BannerBox { padding: 0px 0 0; clear: both;}
+.BannerBox a { height: 84px; display: block; background:url(../images/advert.gif) 50% 50% no-repeat #fbfbfb; border: 3px solid #e1e1e1; border-radius: 3px;}
+
+/* -------------------------------------- Secondary Menu */
+.SecondaryMenu { padding: 50px 0 0; clear: both; overflow: hidden; border-top: 1px solid #dddddd;}
+
+/* Company */
+.SM-Company { width: 25%; float: left;}
+.SM-Company li { padding: 0 0 7px; font-weight: bold;}
+.SM-Company ul { padding: 0 0 15px;}
+.SM-Company ul li { padding: 4px 0 0; font-size: 14px; font-weight: normal;}
+
+/* Products */
+.SM-Products { width: 50%; float: left;}
+.SM-Products .wrap { width: 448px; margin: 0 auto;}
+.SM-Products .title { clear: both; overflow: hidden; font-weight: bold;}
+.SM-Products ul { width: 224px; float: left;}
+.SM-Products li { padding: 15px 30px 0 0; font: 14px/20px 'PT Sans', 'sans-serif', arial;}
+
+/* Contact */
+.SM-Contact { width: 150px; float: right; line-height: 20px; font-size: 14px;}
+.SM-Contact p { padding: 16px 0 0;}
+.SM-Contact .title { padding: 0 0 5px; font-weight: bold;}
+.SM-Contact span.name { padding: 10px 0 0; display: block; color: #696969; font-size: 10px;}
+.SM-Contact span.tel { padding: 0px 0 0; display: block;}
+
+/* -------------------------------------- Product Page */
+.ProductWrap { padding: 27px 0 0; clear: both; overflow: hidden;}
+
+/* Description */
+.ProductDescr { width: 55%; float: left;}
+.ProductDescr li { padding: 17px 0 0; clear: both; overflow: hidden; position: relative; font: 16px/17px 'PT Sans', 'sans-serif', arial;}
+.ProductDescr li span.name { width: 54%; padding: 0 0 0px; float: left; position: relative;}
+.ProductDescr li span.name em { padding: 0 5px 0 0; background: #fff;}
+.ProductDescr li span.data { width: 44%; float: right; position: relative; text-align: right; font-weight: bold;}
+.ProductDescr li span.data em { padding: 0 0 0 5px; background: #fff;}
+.ProductDescr li span.line { width: 100%; bottom: 0; left: 0; position: absolute; border-top: 1px dashed #dddddd;}
+.ProductDescr li:first-child { padding: 0;}
+
+/* Slider */
+.ProductSlider { width: 40%; height: 250px; padding: 48px 0 15px; float: right; text-align: center; border: 3px solid #dddddd; border-radius: 3px; box-sizing: border-box;}
+.ProductSlider .wrap-slide { padding: 0 105px;}
+
+.ProductPrice { padding: 5px 0 0; overflow: hidden; clear: both; font:bold 14px/37px 'PT Sans', 'sans-serif', arial;}
+.ProductPrice span.price { padding: 0 15px; float: left; color: #fff; font-size: 16px; background: #802d2b; border-radius: 3px 0 0 3px;}
+.ProductPrice a.buy { padding: 0 10px; float: left; color: #fff; background: #bf4340; text-decoration: none; border-radius: 0 3px 3px 0;}
+.ProductPrice a.buy:hover { background: #d6524f;}
+
+/* Text */
+.ProductText { padding: 21px 15px 0 0; clear: both; font: 14px/22px 'PT Sans', 'sans-serif', arial;}
+.ProductText1 { padding: 0px 15px 0 0; clear: both; font: 14px/22px 'PT Sans', 'sans-serif', arial;}
+
+/* Menu */
+.ProductMenu { padding: 31px 0 0; clear: both;}
+.ProductMenu ul { display: table; width: 100%; height: 48px; border:1px solid #dddddd; border-radius: 3px; box-sizing: border-box;}
+.ProductMenu li { display: table-cell; text-align: center; border-left:1px solid #dddddd; // float: left; // width: 24%;}
+.ProductMenu li a { padding: 0 5px; display: block; color: #404040; font: 14px/48px 'PT Sans', 'sans-serif', arial; text-decoration: none; transition: none;}
+.ProductMenu li a em { border-bottom: 1px dashed #404040;}
+.ProductMenu li a:hover { color: #fff; background: #dddddd;}
+.ProductMenu li a:hover em { border: 0;}
+.ProductMenu li.active a { color: #fff; background: #dddddd; font-weight: bold;}
+.ProductMenu li.active a em { border: 0;}
+.ProductMenu li:first-child { border: 0;}
+
+/* Product Left */
+.ProductLeft { width: 700px; float: left;}
+.ProductRight { width: 220px; float: right;}
+
+/* Order Terms */
+.OrderTerms { border:1px solid #dddddd; border-radius: 3px;}
+.OrderTerms li { padding: 15px 15px 17px 19px; overflow: hidden; clear: both; font: 12px/16px 'PT Sans', 'sans-serif', arial; border-top:1px solid #dddddd;}
+.OrderTerms li p { padding: 8px 0 0;}
+.OrderTerms li .title { padding: 0 0 0 23px; font:bold 14px/16px 'PT Sans', 'sans-serif', arial; background:url(../images/icon_title.gif) 0 50% no-repeat;}
+.OrderTerms li:first-child { border: 0;}
+
+/* Data Table */
+.DataTableTitle { padding: 12px 21px; color: #fff; font:bold 16px/18px 'PT Sans', 'sans-serif', arial; background: #b1b1b1; border-radius: 3px 3px 0 0;}
+.DataTable { border: solid #dadada; border-width: 0 1px 1px; border-radius: 0 0 3px 3px;}
+.DataTable li { padding: 14px 0; overflow: hidden; clear: both; border-top: 1px solid #dadada;}
+.DataTable li .name { width: 46%; padding: 0 2%; float: left; font:bold 14px/14px 'PT Sans', 'sans-serif', arial;}
+.DataTable li .text { width: 46%; padding: 0 2%; float: left; font: 14px/14px 'PT Sans', 'sans-serif', arial;}
+.DataTable li.two { background: #fafafa;}
+.DataTable li:first-child { border: 0;}
+
+/* Product Component */
+.ProductComponent { clear: both; overflow: hidden;}
+.ProductComponent .column { width: 45%; padding: 0 5% 0 0; float: left;}
+.ProductComponent .title { padding: 24px 0 0 22px; font:bold 18px/22px 'PT Sans', 'sans-serif', arial; background:url(../images/icon_title.gif) 0 28px no-repeat;}
+.ProductComponent .text { padding: 5px 0 10px 23px; color: #525252; font: 14px/22px 'PT Sans', 'sans-serif', arial;}
+
+/* Product Spare */
+.ProductSpare { clear: both; overflow: hidden; border: 1px solid #dddddd; border-radius: 3px;}
+.ProductSpare li { width: 20%; padding: 21px 0 10000px; margin-bottom: -10000px; float: left; border-left: 1px solid #dddddd; box-sizing: border-box;}
+.ProductSpare li .image { height: 96px; padding: 0 21px;}
+.ProductSpare li .name { padding: 0 21px; font:bold 14px/18px 'PT Sans', 'sans-serif', arial;}
+.ProductSpare li .price { padding: 7px 21px 18px; clear: both; overflow: hidden;}
+.ProductSpare li .price span { padding: 0 7px; float: left; color: #fff; font:bold 12px/20px 'PT Sans', 'sans-serif', arial; background: #bf4340; border-radius: 3px;}
+.ProductSpare li:first-child { border: 0;}
+
+/* Product Spare Menu */
+.ProductSpareMenu { padding: 32px 0 4px; clear: both; overflow: hidden;}
+.ProductSpareMenu li { padding: 0 80px 0 0; float: left; font: 18px/20px 'PT Sans', 'sans-serif', arial;}
+.ProductSpareMenu li em { padding: 0 10px 0 0; color: #9f6160; font-weight: bold;}
+
+
+/* -------------------------------------- catalog-filter Page */
+.catalog-filter-description { padding: 1px 0px 0px 0px; clear: both; }
+.catalog-filter{ border: 4px solid #DDDDDD; border-radius: 5px; display: table; width: 100%; box-sizing: border-box;}
+.catalog-filter-bottom{ margin-bottom: 20px; }
+.catalog-filter span.selectbox ul { z-index: 10000 !important; position: relative !important;}
+.catalog-filter li, .catalog-filter ul{ box-sizing: border-box !important;}
+
+.dropdown ul { z-index: 99999; position: relative;}
+.dropdown ul li { border-top: 1px solid #DDDDDD;}
+.dropdown ul li:first-child { border: none;}
+.selectbox span { z-index: 5 !important;}
+
+/* -------------------------------------- Help Box */
+.HelpButton { padding: 10px 0 0; clear: both; overflow: hidden;}
+.HelpButton a { float: right; color: #000; text-decoration: none; font:bold 16px/36px 'PT Sans', 'sans-serif', arial; border: solid #dddddd; border-width: 3px 3px 0;}
+.HelpButton a span { padding: 0 20px; display: block; border-bottom: 3px solid #dddddd; transition: .5s ease-in-out;}
+.HelpButton a em { border-bottom: 1px solid #ccc;}
+.HelpButton a:hover { color: #c24b48;}
+.HelpButton a:hover em { border-color: #f3dbda;}
+.help-button-open span { border-bottom: 3px solid #fff !important;}
+
+.HelpTitle { padding: 17px 21px; clear: both; font:18px/20px 'PT Sans', 'sans-serif', arial;}
+
+.HelpBox { margin-top: -3px; border: 3px solid #dddddd; border-radius: 5px;}
+.HelpBox ul { padding: 0px 0 17px; overflow: hidden; clear: both; border-top: 1px solid #dddddd;}
+.HelpBox li { width: 50%; padding: 15px 0 1000px; margin-bottom: -1000px; float: left; font:14px/19px 'PT Sans', 'sans-serif', arial; border-left: 1px solid #dddddd; box-sizing: border-box; overflow: hidden;}
+.HelpBox li:first-child { border: 0;}
+.HelpBox li .image { width: 95px; padding: 0 0 0 15px; float: left;}
+.HelpBox li .image img { max-width: 85px; display: block;}
+.HelpBox li .text { margin: 0 20px 0 115px; font:14px/19px 'PT Sans', 'sans-serif', arial;}
+.HelpBox li .text p { padding: 5px 0 0;}
+.HelpBox li .text a.name { font-size: 15px;}
+
+/* -------------------------------------- Page Number */
+.PageNumber { overflow: hidden; clear: both; border: 1px solid #dddddd; border-radius: 3px;}
+.PageNumber li { width: 8%; float: left; font:bold 14px/48px 'PT Sans', 'sans-serif', arial; text-align: center; border-left: 1px solid #dddddd; box-sizing: border-box;}
+.PageNumber li a { display: block; color: #6f6f6f; text-decoration: none;}
+.PageNumber li a:hover { color: #bf4340;}
+.PageNumber li a.active { margin-top: 0px; color: #000; border-top: 0px solid #bf4340; background: #fbfbfb;}
+.PageNumber li:first-child { width: 10%; border: 0;}
+.PageNumber li:last-child { width: 10%;}
+
+/* -------------------------------------- Recommend Menu */
+.RecommendMenuTitle { padding: 32px 0 0px; clear: both; font:24px/25px 'PT Sans', 'sans-serif', arial;}
+.RecommendMenu { padding: 0 0 10px; overflow: hidden; clear: both;}
+.RecommendMenu ul { width: 33%; float: left;}
+.RecommendMenu li { padding: 22px 0 0; font: 14px/20px 'PT Sans', 'sans-serif', arial;}
+
+
+
+
+
+
+/* ********************* Footer *********************** */
+footer#footer { /*min-width: 940px;*/ max-width: 1180px; padding: 0 10px; height:85px; margin:-85px auto 0; position:relative;}
+
+.F-Copyright { padding: 5px 0px 0; float: left;}
+
+.F-Counter { padding: 0 0px 0 0; float: right;}
+.F-Counter img { margin-left: 8px; opacity: 0.3; filter:alpha(opacity=30);}
+.F-Counter img:hover { opacity: 1; filter:alpha(opacity=100);}
+
+/* ---------------------------------------------------- */

@@ -1,0 +1,208 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:url(images/px_body_top.gif) 50% 0 repeat-x;}
+a { color:#2DADFF; text-decoration:underline; outline:none;}
+a:hover { color:orange; text-decoration:underline;}
+input { margin:0; padding:0; font:12px tahoma; vertical-align:middle;}
+div { margin:0; padding:0; font:11px tahoma; color:#707070; line-height:17px;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:14px 0 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:normal;}
+h1 { color:#BABABA; font:28px tahoma; margin:0; padding:0;}
+h2 { color:#BABABA; font:28px tahoma; margin:0; padding:0;}
+h5 { color:#2DADFF; font:18px tahoma; margin:0; padding:0;}
+
+#container { min-width:1000px; min-height:100%; height:auto !important; height:100%; position:relative;}
+/* ********************* Header ********************* */
+#header { height:227px; background:url(images/bg_header.jpg) 50% 0 no-repeat;}
+/* Top */
+#header .top { width:95%; height:160px; margin:0 auto;}
+#header .logo { padding:19px 5px 0; float:left;}
+#header .logo a { width:322px; height:128px; display:block; background:url(images/logo.png) no-repeat;}
+#header .search { padding:40px 126px 0 0; float:right; text-align:right; position:relative;}
+#header .search a { margin-right:13px;}
+#header .search input { width:209px; padding:16px 38px 16px 40px; margin-top:5px; display:block; color:#5D5A57; border:0; background:url(images/bg_search.png) no-repeat;}
+#header .search .button { width:17px; height:16px; padding:0; bottom:15px; left:258px; position:absolute; border:0; background:url(images/button_search.gif) no-repeat; cursor:pointer;}
+/* Menu */
+#header .menu { width:95%; margin:0 auto;}
+#header .menu li { width:15%; float:left;}
+#header .menu li a { padding:6px 12px; float:left; color:#fff; font-size:16px;}
+#header .menu li a:hover { padding:5px 11px; border:1px solid #B70606; background:url(images/px_menu.gif) repeat-x #A70707; text-decoration:none;}
+#header .menu li a.active { padding:5px 11px; border:1px solid #B70606; background:url(images/px_menu.gif) repeat-x #A70707; text-decoration:none;}
+#header .menu li.add { padding:0; float:right;}
+#header .menu li.add { width:8%;}
+#header .menu li.add a { padding:6px 1px 4px; border-bottom:4px solid #fff; text-decoration:none;}
+#header .menu li.add a:hover { padding:5px 0 4px;}
+/*
+#header .menu li.add a { padding:6px 0 4px; border-bottom:4px solid #fff; text-decoration:none;}
+#header .menu li.add a:hover { padding:6px 0 4px; background:none; border-width:0 0 5px;}
+*/
+/* Panel Box */
+.PanelBox { padding:20px 0 17px; overflow:hidden; background:url(images/px_catalog.gif) repeat-x #1C1816;}
+.PanelBox .catalog { width:20%; float:left;}
+.PanelBox .catalog li { padding:8px 20px 0 0;}
+.PanelBox .catalog li a { font-size:12px;}
+.PanelBox .catalog li a:hover { color:#fff; text-decoration:none;}
+.PanelBox .catalog li a.active { color:#fff; text-decoration:none;}
+.PanelBox .catalog li sup { padding-left:4px; color:#B4B4B4;}
+.PanelBox .descr { width:39%; float:right; color:#7F7F7F; font-size:10px; line-height:12px;}
+/* Dynamic Menu */
+#login li { float:left;}
+#login li.title { color:#C4C4C4; font:bold 12px tahoma;}
+#login li.title h1 { color:#C4C4C4; font:bold 12px tahoma;}
+#login li.login { padding-left:23px; float:right; position:relative;}
+#login li.login a { font:bold 12px tahoma; display:block; text-decoration:none; border-bottom:1px dotted #2DADFF;}
+#login li.login a:hover { color:orange; border-color:orange;}
+#login li.empty { height:15px; float:none; clear:both;}
+#login ul { width:264px; height:145px; padding:25px 0 0; top:15px; right:-35px; position:absolute; display:none; background:url(images/bg_login.png) no-repeat;}
+#login ul li { padding:12px 25px 0 28px; float:none; overflow:hidden; color:#424242; font-size:11px;}
+#login ul li a {}
+#login ul li a:hover {}
+#login li:hover ul, #login li.hover ul {display: block;}
+#login li:hover a { color:orange; border-color:orange;}
+#login li:hover ul li a { padding:5px 0 0; color:#1DA7FF; font:11px tahoma; text-decoration:underline; border:0;}
+#login li:hover ul li a:hover { color:#188DD8;}
+#login ul li em { width:22px; float:left; padding:6px 0 0;}
+#login ul li span { width:89px; float:left; padding:8px 0 0;}
+#login ul li b { float:left;}
+#login ul li b input { width:97px; height:48px; padding:0 0 3px; color:#003F67; font:24px Trebuchet MS, tahoma; border:0; background:url(images/button_login.gif) no-repeat; cursor:pointer; text-shadow:1px 1px 1px #5AB9F3;}
+#login ul li .form { width:185px; padding:7px 12px; color:#666666; border:0; background:url(images/bg_login_form.gif) no-repeat;}
+#login ul li.button { padding:6px 25px 0 28px;}
+.wrap { width:84%; margin:0 auto;}
+
+/* ******************** Content ********************* */
+#content { padding:50px 260px 387px 0; overflow:hidden; zoom:1; border-top:1px solid #fff; background:url(images/px_content.gif) repeat-x;}
+/* -------------------------------------- LEFT COLUMN */
+#left_column { width:100%; float:left;}
+.title_main { padding:21px 0 0 30px; clear:both;}
+.title_main h1 { padding-left:26px; background:url(images/arrow_title.gif) 0 5px no-repeat;}
+.title_main h2 { padding-left:26px; background:url(images/arrow_title_bottom.gif) 0 5px no-repeat;}
+.title_main h2.top { background:url(images/arrow_title.gif) 0 5px no-repeat;}
+.line_main { height:27px; margin-right:50px; clear:both; background:url(images/px_content.gif) 0 100% repeat-x;}
+
+/* ------------------------------------ Wallpaper Box */
+.WallpaperBox { padding:0 0 0 30px;}
+.WallpaperBox li.item { width:353px; height:375px; padding:12px 0 0; float:left; position:relative; background:url(images/image_corner_top.gif) 207px 29px no-repeat;}
+.WallpaperBox li.item h5 { overflow:hidden;}
+.WallpaperBox li.item a.name { padding:0 18px 0 0; float:left; font-size:18px; position:relative;}
+.WallpaperBox li.item a.name span { width:16px; height:15px; display:block; top:0; right:0; position:absolute; background:url(images/icon_i.gif) no-repeat;}
+.WallpaperBox .image { padding:24px 0 0 7px;}
+.WallpaperBox .image img { width:322px; height:202px; display:block;}
+.WallpaperBox .logo { width:70px; height:61px; top:12px; right:0; position:absolute; background:url(images/icon_w.png) no-repeat;}
+.WallpaperBox .text { padding:10px 0 19px 7px; background:url(images/image_corner_bottom.gif) 0 100% no-repeat;}
+.WallpaperBox .info { padding:7px 0 0 10px; overflow:hidden; clear:both;}
+.WallpaperBox .info li { float:left;}
+.WallpaperBox .info li em { padding-left:8px; color:#1B1B1B;}
+.WallpaperBox .info li a { padding-left:8px;}
+.WallpaperBox .info li.descr { width:180px;}
+.WallpaperBox .info li.download { width:132px; float:right;}
+.WallpaperBox .tags { padding:7px 40px 2px 45px; background:url(images/icon_tags.gif) 22px 7px no-repeat;}
+.WallpaperBox .tags li { padding:1px 10px 0 0; float:left;}
+.WallpaperBox .tags li a { color:#316688; font-size:10px;}
+.WallpaperBox .tags li a:hover { color:#000; text-decoration:none;}
+.WallpaperBox .tags li a.all { position:relative; color:#000; text-decoration:none;}
+.WallpaperBox .tags li a em { width:15px; height:8px; top:16px; left:11px; position:absolute; display:block; background:url(images/corner_note.gif) no-repeat;}
+.WallpaperBox .tags li a span { top:23px; left:0; position:absolute; padding:6px 8px; display:block; background:#F5F2E9; border:1px solid #CFCFCF; white-space:nowrap;}
+.WallpaperBox .tags li a i { font-style:normal; color:#646464;}
+.WallpaperBox .tags li.empty { clear:both; float:none;}
+
+/* ----------------------------------------- Tags Box */
+.TagsBox { padding:0 30px; clear:both;}
+.TagsBox li { padding:0 14px 0 0; display:inline; line-height:31px;}
+.TagsBox li a { font-size:14px; color:#000;}
+.TagsBox li a:hover { color:#2DADFF; text-decoration:none;}
+.TagsBox li a.active { color:#2DADFF; text-decoration:none;}
+.TagsBox li sup { padding-left:4px; color:#9B9696; font-size:11px;}
+.TagsBox li a.s1 { font-size:10px;}
+.TagsBox li a.s2 { font-size:11px;}
+.TagsBox li a.s3 { font-size:13px;}
+.TagsBox li a.s4 { font-size:16px;}
+.TagsBox li a.s5 { font-size:18px;}
+.TagsBox li a.s6 { font-size:24px;}
+
+/* ------------------------------------- RIGHT COLUMN */
+#right_column { width:226px; float:right; margin-right:-236px;}
+
+/* ----------------------------- Format Wallpaper Box */
+.FormatWallpaperBox { clear:both;}
+.FormatWallpaperBox li { padding:11px 10px 0; overflow:hidden; font-size:12px;}
+.FormatWallpaperBox li.title { padding:0; color:#494949; font-size:18px;}
+.FormatWallpaperBox li.format a { padding:4px; margin-right:8px; float:left; text-decoration:none;}
+.FormatWallpaperBox li.format a:hover { color:#2DADFF; background:#E8E8E8;}
+.FormatWallpaperBox li.format a em { display:block; border-bottom:1px dotted #2DADFF;}
+.FormatWallpaperBox li.screen { padding:11px 30px 0 55px; font-size:11px;}
+.FormatWallpaperBox li.screen a { padding:0 0 1px; margin-right:4px; float:left; text-decoration:none; border-bottom:1px dotted #2DADFF;}
+.FormatWallpaperBox li.screen a:hover { border-color:orange;}
+.FormatWallpaperBox li.screen em { margin-right:4px; float:left;}
+
+/* -------------------------------------- Widgets Box */
+.WidgetsBox { padding:27px 0 0; clear:both;}
+.WidgetsBox a { width:163px; height:60px; padding:13px 0 0 62px; display:block; background:url(images/widget_arrow.gif) 19px 20px no-repeat;}
+.WidgetsBox a:hover { background:url(images/widget_button.gif) no-repeat;}
+.WidgetsBox a.active { background:url(images/widget_button.gif) no-repeat;}
+.WidgetsBox img { width:116px; height:45px; display:block;}
+.WidgetsBox .title { padding:0 5px 11px; color:#494949; font-size:18px;}
+
+/* --------------------------------- Random Image Box */
+.RandomImageBox { padding:10px 0 17px; clear:both; background:url(images/bg_image_shadow_b.gif) 50% 100% no-repeat;}
+.RandomImageBox img { width:209px; padding:15px 0 0; margin:0 auto; display:block; background:url(images/bg_image_shadow_t.gif) 50% 0 no-repeat;}
+.RandomImageBox .title { padding:0 5px 2px; color:#494949; font-size:18px;}
+
+/* --------------------------- Statistics Gallery Box */
+.StatisticsGalleryBox {}
+.StatisticsGalleryBox li { padding:7px 0 2px 50px; overflow:hidden;}
+.StatisticsGalleryBox li em { width:105px; padding-right:10px; float:left; color:#7A7A7A;}
+.StatisticsGalleryBox li span { width:58px; float:left; color:#333333;}
+.StatisticsGalleryBox li.title { padding:7px 5px 3px; color:#494949; font-size:18px;}
+.StatisticsGalleryBox li.users { background:url(images/icon_stat_users.gif) 23px 6px no-repeat;}
+.StatisticsGalleryBox li.all { background:url(images/icon_stat_all.gif) 23px 6px no-repeat;}
+.StatisticsGalleryBox li.size { background:url(images/icon_stat_size.gif) 23px 6px no-repeat;}
+.StatisticsGalleryBox li.new { background:url(images/icon_stat_new.gif) 23px 6px no-repeat;}
+.StatisticsGalleryBox li.moderation { background:url(images/icon_stat_moderation.gif) 23px 6px no-repeat;}
+.StatisticsGalleryBox li.comments { background:url(images/icon_stat_comments.gif) 23px 6px no-repeat;}
+.StatisticsGalleryBox li.download { background:url(images/icon_stat_download.gif) 23px 6px no-repeat;}
+.StatisticsGalleryBox li.today { background:url(images/icon_stat_today.gif) 23px 6px no-repeat;}
+
+/* ------------------------------------ Top Users Box */
+.TopUsersBox { padding:38px 0 0; clear:both;}
+.TopUsersBox li { padding:8px 0 0 29px; overflow:hidden;}
+.TopUsersBox li em { width:116px; padding-right:20px; float:left;}
+.TopUsersBox li em a { text-decoration:none;}
+.TopUsersBox li em i { font-style:normal; text-decoration:underline;}
+.TopUsersBox li em img { margin-right:5px; vertical-align:middle;}
+.TopUsersBox li span { width:58px; float:left; color:#333333;}
+.TopUsersBox li.title { padding:0 5px; color:#494949; font-size:18px;}
+.TopUsersBox li.info { padding:8px 0 0 5px; font-size:14px;}
+.TopUsersBox li.info em { width:128px; color:#CCCCCC;}
+.TopUsersBox li.info span { width:70px; color:#CCCCCC;}
+
+/* -------------------------------- Advertisement Box */
+.AdvertisementBox { padding:32px 0 0; clear:both;}
+.AdvertisementBox .title { padding:0 0 17px; color:#494949; font-size:18px;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:100%; min-width:1000px; height:378px; margin-top:-379px; position:relative; border-top:1px solid #1D1D1D; background:url(images/px_footer.gif) repeat-x #1D1D1D;}
+/* Top */
+#footer .top { width:86%; height:290px; margin:0 auto;}
+#footer .menu { width:51%; float:left;}
+#footer .menu ul { width:20%; float:left;}
+#footer .menu li { padding:4px 10px 0 0;}
+#footer .menu li a { color:#BABABA;}
+#footer .menu li a:hover { color:#2DADFF; text-decoration:none;}
+#footer .menu li a.active { color:#2DADFF; text-decoration:none;}
+#footer .descr { width:49%; padding:54px 0 0; float:right;}
+#footer .descr p { padding:21px 0 0;}
+#footer .title { padding:24px 0 11px; clear:both; color:#fff; font-size:24px;}
+/* Bottom */
+#footer .bottom { padding:29px 0 0; clear:both; background:url(images/px_footer_line.gif) repeat-x;}
+#footer .bottom ul { width:937px; height:47px; margin:0 auto; background:url(images/bg_footer.gif) no-repeat;}
+#footer .bottom li { float:left; color:#fff;}
+#footer .bottom li.copyright { width:300px; padding:21px 0 0 23px;}
+#footer .bottom li.counter { width:324px; padding:10px 0 0; text-align:center;}
+#footer .bottom li.design { width:200px; padding:21px 15px 0 0; float:right;}
+/* ----------------------- IE ------------------------- */
+
+/* ---------------------------------------------------- */

@@ -1,0 +1,1381 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    background: url("../images/bg_body.jpg") repeat-y scroll 50% 0 transparent;
+    min-width: 989px;
+}
+a {
+    color: #CC0017;
+    text-decoration: underline;
+}
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+input {
+    font: 12px tahoma;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+div {
+    color: #3E3E3A;
+    font: 12px/19px tahoma;
+    margin: 0;
+    padding: 0;
+}
+td {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+table {
+    border: 0 none;
+    width: 100%;
+}
+em {
+    font-style: normal;
+}
+img {
+    border: 0 none;
+}
+p {
+    margin: 0;
+    padding: 25px 0 0;
+}
+big {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    line-height: 19px;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #3E3E3A;
+    font: 26px tahoma;
+    margin: 0;
+    padding: 12px 0 0;
+    text-transform: uppercase;
+}
+h2 {
+    color: #BCBCBC;
+    font: 18px arial;
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    color: #CC0017;
+    font: 17px/19px tahoma;
+    margin: 0;
+    padding: 0 0 11px;
+}
+#container {
+    height: auto !important;
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+    width: 989px;
+}
+#pixel {
+    background: url("../images/px_menu.gif") repeat-x scroll 0 0 transparent;
+    height: 33px;
+    left: 0;
+    min-width: 989px;
+    position: absolute;
+    top: 104px;
+    width: 100%;
+}
+#header {
+    height: 210px;
+    position: relative;
+    width: 100%;
+}
+#header .top {
+    height: 84px;
+}
+#header .logo {
+    float: left;
+    padding: 20px 0 0 5px;
+    width: 282px;
+}
+#header .logo img {
+    display: block;
+}
+#header .logo h2 {
+    color: #CC0017;
+    font: bold 13px arial;
+    padding: 2px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 262px;
+}
+#header .city {
+    float: left;
+    font: bold 12px arial;
+    padding: 51px 10px 0 0;
+    width: 95px;
+}
+#header .phone {
+    float: left;
+    font: bold 13px arial;
+    padding: 45px 0 0;
+    width: 128px;
+}
+#header .phone span {
+    color: #CC0017;
+    font: 18px arial;
+}
+#header .menu {
+    clear: both;
+    height: 56px;
+}
+#header .menu li {
+    background: url("../images/line_menu.gif") no-repeat scroll 0 17px transparent;
+    float: left;
+    height: 56px;
+    padding-left: 2px;
+    position: relative;
+}
+#header .menu li:first-child {
+    background: none repeat scroll 0 0 transparent;
+    padding: 0;
+}
+#header .menu li a {
+    color: #FFFFFF;
+    display: block;
+    font: bold 13px arial;
+    height: 56px;
+    padding: 0 0 0 23px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#header .menu li a em {
+    cursor: pointer;
+    display: block;
+    height: 32px;
+    padding: 24px 23px 0 0;
+}
+#header .menu li a:hover {
+    background: url("../images/button_menu.gif") no-repeat scroll 0 0 transparent;
+}
+#header .menu li a:hover em {
+    background: url("../images/button_menu.gif") no-repeat scroll 100% 0 transparent;
+}
+#header .menu ul {
+    background: url("../images/bg_sub_menu.gif") no-repeat scroll 0 100% transparent;
+    display: none;
+    left: 2px;
+    padding: 0 0 4px;
+    position: absolute;
+    top: 56px;
+    width: 216px;
+}
+#header .menu ul li {
+    background: url("../images/px_sub_menu.gif") repeat-y scroll 0 0 transparent;
+    float: none;
+    height: auto;
+    padding: 2px 0 0 6px;
+}
+#header .menu ul li a {
+    background: url("../images/arrow_menu.gif") no-repeat scroll 8px 11px transparent;
+    font: 12px tahoma;
+    height: 20px;
+    padding: 6px 0 0 19px;
+    text-transform: none;
+    width: 184px;
+}
+#header .menu ul li:first-child {
+    background: url("../images/px_sub_menu.gif") repeat-y scroll 0 0 transparent;
+    padding: 15px 0 0 6px;
+}
+#header .menu ul li:last-child {
+    padding: 2px 0 12px 6px;
+}
+#header .menu li:hover a {
+    background: url("../images/button_menu.gif") no-repeat scroll 0 0 transparent;
+}
+#header .menu li:hover a em {
+    background: url("../images/button_menu.gif") no-repeat scroll 100% 0 transparent;
+}
+#header .menu li a.active {
+    background: url("../images/button_menu.gif") no-repeat scroll 0 0 transparent;
+}
+#header .menu li a.active em {
+    background: url("../images/button_menu.gif") no-repeat scroll 100% 0 transparent;
+}
+#header .menu li:hover ul li a {
+    background: none repeat scroll 0 0 transparent;
+}
+#header .menu li:hover ul li a {
+    background: url("../images/arrow_menu.gif") no-repeat scroll 8px 11px transparent;
+}
+#header .menu li:hover ul li a:hover {
+    background: url("../images/arrow_menu_hover.gif") no-repeat scroll 0 0 transparent;
+    color: #535350;
+}
+#header .preview {
+    background: url("../images/bg_preview.gif") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 64px;
+    position: absolute;
+    right: 11px;
+    top: 49px;
+    width: 452px;
+}
+#header .preview li {
+    float: left;
+    padding: 7px 0 0 7px;
+}
+#header .preview li a {
+    border: 2px solid #636363;
+    display: block;
+}
+#header .preview li a:hover {
+    border-color: #CC0017;
+}
+#header .preview li a.active {
+    border-color: #CC0017;
+}
+#header .preview li img {
+    display: block;
+}
+#header .where {
+    left: 541px;
+    position: absolute;
+    top: 41px;
+}
+#header .where a {
+    background: url("../images/button_where.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 69px;
+    width: 277px;
+}
+#header .where a:hover {
+    background-position: 0 100%;
+}
+.panel {
+    height: 25px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.panel ul {
+    background: url("../images/bg_panel_left.png") no-repeat scroll 0 0 transparent;
+    padding: 0 0 0 4px;
+    position: absolute;
+    right: 18px;
+    top: 0;
+}
+.panel li {
+    background: url("../images/line_panel.gif") no-repeat scroll 0 9px #535350;
+    color: #FFFFFF;
+    float: left;
+    font-size: 10px;
+    height: 21px;
+    line-height: 15px;
+    padding: 4px 5px 0 6px;
+}
+.panel li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.panel li a:hover {
+    text-decoration: underline;
+}
+.panel li:first-child {
+    background: none repeat scroll 0 0 #535350;
+}
+.panel li.basket {
+    background: url("../images/px_basket.gif") repeat-x scroll 0 0 transparent;
+    float: left;
+    height: 25px;
+    padding: 0;
+    position: relative;
+}
+.panel li.basket .bgt {
+    background: url("../images/bg_basket_left.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-size: 10px;
+    height: 25px;
+    line-height: 15px;
+    padding-left: 9px;
+}
+.panel li.basket .bgb {
+    background: url("../images/bg_basket_right.gif") no-repeat scroll 100% 0 transparent;
+    color: #FFFFFF;
+    font-size: 10px;
+    height: 22px;
+    line-height: 15px;
+    padding: 3px 3px 0 0;
+}
+.panel a.all {
+    background: url("../images/icon_basket.gif") no-repeat scroll 0 3px transparent;
+    float: left;
+    padding: 1px 0 0 19px;
+}
+.panel a.buy {
+    background: url("../images/button_order.gif") no-repeat scroll 0 0 transparent;
+    color: #454541;
+    float: left;
+    height: 18px;
+    margin-left: 6px;
+    padding-left: 6px;
+}
+.panel a.buy em {
+    background: url("../images/button_order.gif") no-repeat scroll 100% 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 18px;
+    padding: 0 6px 0 0;
+}
+.panel a.buy:hover {
+    background-position: 0 100%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.panel a.buy:hover em {
+    background-position: 100% 100%;
+}
+.panel .product {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 100%;
+}
+.panel .text {
+    background: none repeat scroll 0 0 #F7F7F7;
+    font: 10px arial;
+    overflow: hidden;
+    padding: 8px 0 11px 11px;
+    position: relative;
+}
+.panel .product a {
+    color: #30698A;
+}
+.panel .product h3 {
+    color: #30698A;
+    font: bold 11px arial;
+    margin: 0;
+    padding: 0 0 7px;
+}
+.panel .image {
+    float: left;
+    width: 60px;
+}
+.panel .descr {
+    float: left;
+    font: 10px arial;
+    width: 158px;
+}
+.panel .descr span {
+    color: #9A9A9A;
+}
+.panel .descr em {
+    color: #CC0017;
+}
+.panel .total {
+    background: none repeat scroll 0 0 #DEDEDE;
+    font: 10px arial;
+    padding: 7px 3px 4px 7px;
+}
+.panel .bottom {
+    background: url("../images/bg_total_left.png") no-repeat scroll 0 0 transparent;
+    height: 4px;
+    padding-left: 4px;
+}
+.panel .bottom div {
+    background: url("../images/bg_total_right.png") no-repeat scroll 100% 0 transparent;
+    height: 4px;
+    padding-right: 4px;
+}
+.panel .bottom div div {
+    background: none repeat scroll 0 0 #DEDEDE;
+}
+.panel .title {
+    font: bold 12px arial;
+    padding: 0 0 10px;
+}
+.panel a.close {
+    background: url("../images/button_close.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 18px;
+}
+.panel a.close:hover {
+    background-position: 0 100%;
+}
+.admin li.first {
+    background: url("../images/line_panel.gif") no-repeat scroll 100% 9px #535350;
+    height: 21px;
+    padding: 4px 6px 0;
+}
+.admin li.last {
+    background: url("../images/bg_panel_right.gif") no-repeat scroll 100% 0 #535350;
+    height: 21px;
+    padding: 4px 10px 0 5px;
+}
+.admin li {
+    position: relative;
+}
+.admin li a {
+    border-bottom: 1px dashed #FFFFFF;
+    text-transform: uppercase;
+}
+.admin li a.reg {
+    border-bottom: 1px solid #FFFFFF;
+}
+.admin li a:hover {
+    border: 0 none;
+    text-decoration: none;
+}
+.login {
+    background: url("../images/bg_login.png") no-repeat scroll 0 0 transparent;
+    height: 71px;
+    padding: 4px 0 0;
+    position: absolute;
+    right: 0;
+    top: 26px;
+    width: 263px;
+}
+.login div {
+    color: #FFFFFF;
+    font: bold 11px arial;
+    height: 18px;
+    padding: 4px 0 0 16px;
+}
+.login div input[type="text"], .login div input[type="password"] {
+    background: url("../images/px_login.gif") repeat-x scroll 0 0 #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #8B8B89;
+    font: bold 11px arial;
+    padding: 1px 5px;
+    width: 173px;
+}
+.login div input[type="submit"] {
+    background: url("../images/button_login.gif") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #4D4D4B;
+    cursor: pointer;
+    font: bold 11px arial;
+    height: 18px;
+    margin-left: 5px;
+    padding-bottom: 2px;
+    width: 44px;
+}
+.login div label {
+    cursor: pointer;
+    padding: 0 10px 0 5px;
+}
+.login div a {
+    border: 0 none;
+    color: #FFFFFF;
+    font: bold 11px arial;
+    text-decoration: underline;
+    text-transform: none;
+}
+.login_arrow {
+    background: url("../images/arrow_login.png") no-repeat scroll 0 0 transparent;
+    height: 7px;
+    padding: 0;
+    position: absolute;
+    right: 54px;
+    top: 19px;
+    width: 12px;
+}
+#content {
+    padding: 0 0 100px;
+}
+.h1 {
+    font-size: 20px;
+    padding: 0 12px 15px;
+}
+.c_px {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../images/px_content.gif") repeat-y scroll 0 0 transparent;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0 1px 1px;
+}
+.c_bgt {
+    background: url("../images/bg_content_top.gif") no-repeat scroll 0 0 transparent;
+}
+.c_bgb {
+    background: url("../images/bg_content_bottom.gif") no-repeat scroll 0 100% transparent;
+    overflow: hidden;
+    padding: 32px 25px 150px 21px;
+}
+#content_main {
+    padding: 0 0 150px;
+}
+.main_image {
+    background: url("../images/pic_main.jpg") no-repeat scroll 100% 210px transparent;
+}
+.main_image1 {
+    background: url("../images/pic_main1.jpg") no-repeat scroll 100% 210px transparent;
+}
+.main_image2 {
+    background: url("../images/pic_main2.jpg") no-repeat scroll 100% 210px transparent;
+}
+.main_image3 {
+    background: url("../images/pic_main3.jpg") no-repeat scroll 100% 210px transparent;
+}
+.main_image4 {
+    background: url("../images/pic_main4.jpg") no-repeat scroll 100% 210px transparent;
+}
+.main_image5 {
+    background: url("../images/pic_main5.jpg") no-repeat scroll 100% 210px transparent;
+}
+.main_image6 {
+    background: url("../images/pic_main6.jpg") no-repeat scroll 100% 210px transparent;
+}
+.TitleMain {
+    color: #3E3E3A;
+    font: 36px/34px times new roman;
+    left: 20px;
+    position: absolute;
+    top: 190px;
+}
+.TitleMain h2 {
+    color: #3E3E3A;
+    font: 36px/34px times new roman;
+    padding: 0;
+}
+.TitleMain span {
+    color: #C81D31;
+    display: block;
+    font-size: 52px;
+}
+#left_column {
+    float: left;
+    width: 250px;
+}
+.CatalogMenuBox {
+}
+.CatalogMenuBox li {
+    padding: 2px 0 0 8px;
+}
+.CatalogMenuBox li a {
+    background: url("../images/arrow_cat.gif") no-repeat scroll 8px 8px transparent;
+    color: #3E3E3A;
+    display: block;
+    font: bold 11px arial;
+    height: 18px;
+    padding: 4px 0 0 17px;
+    text-decoration: none;
+    width: 212px;
+}
+.CatalogMenuBox li a:hover {
+    background: url("../images/arrow_cat_hover.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+}
+.CatalogMenuBox li a.active {
+    background: url("../images/arrow_cat_hover.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+}
+.CatalogMenuBox li.title {
+    padding: 0 0 10px;
+}
+.CatalogMenuBox li.title a {
+    background: none repeat scroll 0 0 transparent;
+    color: #CC0017;
+    font-size: 13px;
+    height: inherit;
+    padding: 0;
+    text-transform: uppercase;
+    width: inherit;
+}
+.CatalogMenuBox li.boys {
+    padding: 0 0 10px;
+}
+.CatalogMenuBox li.boys a {
+    background: url("../images/icon_boys.gif") no-repeat scroll 0 0 transparent;
+    color: #CC0017;
+    font-size: 13px;
+    height: inherit;
+    padding: 3px 0 3px 27px;
+    text-transform: uppercase;
+    width: inherit;
+}
+.CatalogMenuBox li.girls {
+    padding: 14px 0 10px;
+}
+.CatalogMenuBox li.girls a {
+    background: url("../images/icon_girls.gif") no-repeat scroll 0 0 transparent;
+    color: #CC0017;
+    font-size: 13px;
+    height: inherit;
+    padding: 3px 0 3px 27px;
+    text-transform: uppercase;
+    width: inherit;
+}
+.CatalogMenuBox li.boys a:hover, .CatalogMenuBox li.girls a:hover, .CatalogMenuBox li.title a:hover {
+    text-decoration: underline;
+}
+.SearchBox {
+    clear: both;
+    font-size: 14px;
+    padding: 31px 0 0;
+    text-transform: uppercase;
+}
+.SearchBox input[type="text"] {
+    border: 1px inset #535350;
+    color: #8B8B89;
+    padding: 4px 5px;
+    width: 153px;
+}
+.SearchBox input[type="submit"] {
+    background: url("../images/button_search.gif") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: 11px tahoma;
+    height: 23px;
+    margin-left: 3px;
+    padding-bottom: 2px;
+    width: 55px;
+}
+.SearchBox input[type="submit"]:hover {
+    background-position: 0 100%;
+}
+.SearchBox p {
+    padding: 0 0 8px;
+}
+#right_column {
+    float: right;
+    width: 675px;
+}
+.wrapper {
+    background: url("../images/bg_wrap_top.gif") no-repeat scroll 0 0 transparent;
+    padding: 4px 0 0;
+}
+.wrapper .bottom {
+    background: url("../images/bg_wrap_bottom.gif") no-repeat scroll 0 100% transparent;
+    padding: 0 0 4px;
+}
+.wrapper .border {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #D9D9D9;
+    border-style: solid;
+    border-width: 0 1px;
+    padding: 17px 14px 28px;
+}
+.PageNavigation {
+    overflow: hidden;
+    padding: 0 0 23px 5px;
+}
+.PageNavigation li {
+    background: url("../images/arrow_cat.gif") no-repeat scroll 0 8px transparent;
+    float: left;
+    padding: 0 5px 0 8px;
+}
+.PageNavigation li:first-child {
+    background: none repeat scroll 0 0 transparent;
+}
+.CatalogBox {
+    overflow: hidden;
+    padding: 28px 0 0;
+}
+.CatalogBox li {
+    float: left;
+    padding: 0 28px 0 65px;
+    width: 209px;
+}
+.CatalogBox li img {
+    display: block;
+}
+.CatalogBox li .wrap {
+    overflow: hidden;
+    padding: 11px 0 0;
+}
+.CatalogBox li .descr {
+    float: left;
+    font: 12px/15px arial;
+    width: 123px;
+}
+.CatalogBox li .descr span {
+    color: #9A9A9A;
+}
+.CatalogBox li .more {
+    float: right;
+}
+.CatalogBox li .more a {
+    background: url("../images/button_more.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 11px;
+    height: 23px;
+    padding: 3px 0 0;
+    text-align: center;
+    text-decoration: none;
+    width: 79px;
+}
+.CatalogBox li .more a:hover {
+    background-position: 0 100%;
+}
+.PageNumber {
+    clear: both;
+    overflow: hidden;
+    padding: 35px 0 0 210px;
+}
+.PageNumber li {
+    float: left;
+    font: bold 11px arial;
+    padding: 0 3px;
+}
+.PageNumber li a {
+    font: bold 11px arial;
+}
+.PageNumber li a em {
+    background: url("../images/button_page.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: block;
+    font: bold 11px arial;
+    height: 17px;
+    padding-left: 7px;
+    text-decoration: none;
+}
+.PageNumber li a em em {
+    background: url("../images/button_page.gif") no-repeat scroll 100% 0 transparent;
+    height: 16px;
+    padding: 1px 7px 0 0;
+}
+.PageNumber li a:hover em {
+    background-position: 0 100%;
+}
+.PageNumber li a:hover {
+    text-decoration: none;
+}
+.PageNumber li a:hover em em {
+    background-position: 100% 100%;
+}
+.PageNumber li span {
+    display: block;
+    font: bold 11px arial;
+    height: 16px;
+    padding: 1px 0 0;
+}
+.PageNumber li a span {
+    text-decoration: underline;
+}
+.LoginBox {
+}
+.LoginBox li {
+    overflow: hidden;
+    padding: 7px 0 0;
+}
+.LoginBox li label {
+    cursor: pointer;
+}
+.LoginBox li em {
+    float: left;
+    width: 55px;
+}
+.LoginBox li span {
+    float: left;
+    width: 270px;
+}
+.LoginBox li span input[type="text"], .LoginBox li span input[type="password"] {
+    border: 1px inset #ABADB3;
+    color: #8B8B89;
+    padding: 2px 8px;
+    width: 234px;
+}
+.LoginBox li span label {
+}
+.LoginBox li span input[type="submit"] {
+    background: url("../images/button_enter.gif") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: 11px tahoma;
+    height: 26px;
+    margin-left: 8px;
+    padding-bottom: 3px;
+    width: 66px;
+}
+.LoginBox li span input[type="submit"]:hover {
+    background-position: 0 100%;
+}
+.RegistrationBox {
+}
+.RegistrationBox li {
+    overflow: hidden;
+    padding: 7px 0 0;
+}
+.RegistrationBox li label {
+    cursor: pointer;
+}
+.RegistrationBox li.title {
+    color: #CC0017;
+    font-size: 14px;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+}
+.RegistrationBox li.title1 {
+    color: #CC0017;
+    font-size: 14px;
+    padding: 30px 0 10px;
+    text-transform: uppercase;
+}
+.RegistrationBox li em {
+    float: left;
+    width: 145px;
+}
+.RegistrationBox li span {
+    float: left;
+    width: 260px;
+}
+.RegistrationBox li i {
+    color: #CC0017;
+    float: left;
+    font-size: 11px;
+    font-style: normal;
+    width: 20px;
+}
+.RegistrationBox li i.note {
+    color: #3E3E3A;
+    float: left;
+    width: 170px;
+}
+.RegistrationBox li span input[type="text"], .RegistrationBox li span input[type="password"] {
+    border: 1px inset #ABADB3;
+    color: #8B8B89;
+    padding: 2px 8px;
+    width: 234px;
+}
+.RegistrationBox li span textarea {
+    border: 1px inset #ABADB3;
+    color: #8B8B89;
+    height: 96px;
+    padding: 2px 8px;
+    width: 234px;
+}
+.RegistrationBox li span label {
+    padding: 0 7px 0 4px;
+}
+.RegistrationBox li input[type="submit"] {
+    background: url("../images/button_reg.gif") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: 11px tahoma;
+    height: 26px;
+    padding-bottom: 3px;
+    width: 146px;
+}
+.RegistrationBox li input[type="submit"]:hover {
+    background-position: 0 100%;
+}
+.RegistrationBox li span input.w1 {
+    margin-right: 2px;
+    width: 34px;
+}
+.RegistrationBox li span input.w2 {
+    margin-left: 2px;
+    width: 174px;
+}
+.RegistrationBox li.captcha {
+    padding: 22px 0;
+}
+.RegistrationBox li.captcha em {
+    padding-right: 12px;
+    text-align: center;
+    width: 172px;
+}
+.RegistrationBox li.captcha em a {
+    border-bottom: 1px dotted #CC0017;
+    font-size: 11px;
+    text-decoration: none;
+}
+.RegistrationBox li.captcha em img {
+    display: block;
+}
+.RegistrationBox li.captcha span {
+    color: #CC0017;
+}
+.RegistrationBox li.captcha span input {
+    margin-right: 8px;
+    width: 195px;
+}
+.RegistrationBox li.captcha span label {
+    color: #3E3E3A;
+    display: block;
+    font-size: 11px;
+    padding: 0 0 7px;
+}
+.RegistrationBox li.button {
+    padding: 28px 0 0 197px;
+}
+.BasketBox {
+    background: none repeat scroll 0 0 #C2BFB8;
+}
+.BasketBox td {
+    background: url("../images/px_td.gif") repeat-x scroll 0 0 #FFFFFF;
+    color: #9A9A9A;
+    line-height: 15px;
+    padding: 7px;
+    text-align: center;
+    vertical-align: middle;
+}
+.BasketBox .product {
+    font-size: 11px;
+    text-align: left;
+    width: 34%;
+}
+.BasketBox .product img {
+    float: left;
+    margin-right: 10px;
+}
+.BasketBox a.name {
+    display: block;
+    font-size: 12px;
+    padding: 1px 0 3px;
+}
+.BasketBox .growth {
+    width: 10%;
+}
+.BasketBox .color {
+    width: 11%;
+}
+.BasketBox .quantity {
+    width: 8%;
+}
+.BasketBox .quantity input[type="text"] {
+    border: 1px inset #ABADB3;
+    color: #8B8B89;
+    padding: 2px 3px;
+    text-align: right;
+    width: 22px;
+}
+.BasketBox .price {
+    width: 15%;
+}
+.BasketBox .price span {
+    display: block;
+    text-decoration: line-through;
+}
+.BasketBox .price em {
+    color: #CC0017;
+    display: block;
+    font-size: 14px;
+}
+.BasketBox .total {
+    width: 12%;
+}
+.BasketBox .delete {
+    width: 10%;
+}
+.BasketBox tr.title td {
+    background: none repeat scroll 0 0 #C2BFB8;
+    border-left: 1px solid #DAD9D4;
+    color: #FFFFFF;
+}
+.BasketBox tr.title td:first-child {
+    border: 0 none;
+}
+.UpdateButton {
+    overflow: hidden;
+    padding: 14px 0;
+}
+.UpdateButton a {
+    background: url("../images/button_update.gif") no-repeat scroll 0 0 transparent;
+    color: #414141;
+    float: right;
+    font: bold 11px arial;
+    height: 23px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.UpdateButton a em {
+    background: url("../images/button_update.gif") no-repeat scroll 100% 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 18px;
+    padding: 5px 10px 0 0;
+}
+.UpdateButton a:hover {
+    background-position: 0 100%;
+    color: #FFFFFF;
+}
+.UpdateButton a:hover em {
+    background-position: 100% 100%;
+}
+.OrderButton {
+    overflow: hidden;
+    padding: 14px 0 0;
+}
+.OrderButton a {
+    background: url("../images/button_order1.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    float: right;
+    font: bold 12px arial;
+    height: 27px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.OrderButton a em {
+    background: url("../images/button_order1.gif") no-repeat scroll 100% 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 21px;
+    padding: 6px 10px 0 0;
+}
+.OrderButton a:hover {
+    background-position: 0 100%;
+    color: #FFFFFF;
+}
+.OrderButton a:hover em {
+    background-position: 100% 100%;
+}
+.TotalBox {
+    background: url("../images/bg_total_left1.gif") no-repeat scroll 0 0 #C2BFB8;
+    clear: both;
+    height: 33px;
+}
+.TotalBox div {
+    background: url("../images/bg_total_right1.gif") no-repeat scroll 100% 0 transparent;
+    color: #FFFFFF;
+    font: bold 12px arial;
+    height: 31px;
+    padding: 1px 0;
+}
+.TotalBox span {
+    border-left: 1px solid #DAD9D4;
+    float: right;
+    height: 23px;
+    min-width: 129px;
+    padding: 8px 10px 0;
+    text-align: center;
+}
+.TotalBox em {
+    float: right;
+    padding: 8px 32px 0;
+}
+.PreviewBox {
+    clear: both;
+    overflow: hidden;
+    padding: 27px 0 0;
+}
+.PreviewBox li.descr {
+    float: left;
+    line-height: 15px;
+    width: 200px;
+}
+.PreviewBox li.descr p {
+    padding: 12px 0 0;
+}
+.PreviewBox li.descr span {
+    color: #9A9A9A;
+}
+.PreviewBox li.image {
+    float: right;
+    width: 444px;
+}
+.PreviewBox li.image img {
+    float: left;
+    margin-left: 13px;
+}
+.PreviewBox li.image .mini {
+    clear: both;
+    padding: 14px 0 0;
+}
+.PreviewBox li.image .mini img {
+    margin: 0 0 0 23px;
+}
+.PreviewBox li.image img.home {
+    margin: 0 0 0 13px;
+}
+.OptionTitle {
+    font-size: 14px;
+    padding: 25px 0 12px;
+}
+.OptionBox {
+    background: none repeat scroll 0 0 #C2BFB8;
+}
+.OptionBox td {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #9A9A9A;
+    font: 12px tahoma;
+    text-align: center;
+    width: 11%;
+}
+.OptionBox td a {
+    background: url("../images/px_option.gif") repeat-x scroll 0 0 #F9F9F8;
+    border: 1px solid #FFFFFF;
+    display: block;
+    text-decoration: none;
+}
+.OptionBox td a em {
+    display: block;
+    padding: 7px;
+}
+.OptionBox td a:hover {
+    border-color: #CC0017;
+}
+.OptionBox td a:hover em {
+    background: url("../images/icon_ok.gif") no-repeat scroll 50% 50% transparent;
+}
+.OptionBox td a.active {
+    border-color: #CC0017;
+}
+.OptionBox td a.active em {
+    background: url("../images/icon_ok.gif") no-repeat scroll 50% 50% transparent;
+}
+.OptionBox td span {
+    border: 1px solid #FFFFFF;
+    display: block;
+    padding: 7px;
+}
+.OptionBox td a.delete {
+    background: url("../images/icon_delete.gif") no-repeat scroll 50% 50% transparent;
+}
+.OptionBox td a.delete:hover {
+    background: url("../images/icon_delete.gif") no-repeat scroll 50% 50% transparent;
+}
+.OptionBox td a.delete:hover em {
+    background: none repeat scroll 0 0 transparent;
+}
+.OptionBox td:first-child {
+    width: 14%;
+}
+.OptionBox td.price {
+    font-size: 11px;
+    vertical-align: middle;
+    width: 20%;
+}
+.OptionBox i {
+    color: #3E3E3A;
+    display: block;
+    font: 12px tahoma;
+    padding: 0 0 4px;
+}
+.OptionBox b {
+    display: block;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+.OptionBox tr.title td {
+    background: none repeat scroll 0 0 #C2BFB8;
+    border-left: 1px solid #DAD9D4;
+    color: #FFFFFF;
+    padding: 7px;
+}
+.OptionBox tr.title td:first-child {
+    border: 0 none;
+}
+.InfoBox {
+    clear: both;
+    overflow: hidden;
+    padding: 24px 0;
+}
+.InfoBox li.info {
+    float: left;
+    font-size: 14px;
+    width: 400px;
+}
+.InfoBox li.info p {
+    padding: 12px 0 0;
+}
+.InfoBox li.info input[type="text"] {
+    border: 1px inset #ABADB3;
+    color: #3E3E3A;
+    margin-left: 8px;
+    padding: 1px 3px;
+    text-align: right;
+    width: 22px;
+}
+.InfoBox li.info em {
+    font-size: 20px;
+}
+.InfoBox li.info span {
+    color: #9A9A9A;
+}
+.InfoBox li.info small {
+    font-size: 12px;
+}
+.InfoBox li.button {
+    float: right;
+    padding: 58px 0 0;
+}
+.InfoBox li.button a {
+    background: url("../images/button_add.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: block;
+    font: 11px tahoma;
+    height: 26px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.InfoBox li.button a em {
+    background: url("../images/button_add.gif") no-repeat scroll 100% 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 21px;
+    padding: 5px 10px 0 0;
+}
+.InfoBox li.button a:hover {
+    background-position: 0 100%;
+}
+.InfoBox li.button a:hover em {
+    background-position: 100% 100%;
+}
+.RecommendBox {
+    clear: both;
+    overflow: hidden;
+    padding: 14px 0 0;
+}
+.RecommendBox li {
+    float: left;
+    line-height: 14px;
+    padding-left: 12px;
+    text-align: center;
+    width: 112px;
+}
+.RecommendBox li img {
+    display: block;
+    margin: 0 0 12px;
+}
+.RecommendTitle {
+    background: url("../images/bg_rec_left.gif") no-repeat scroll 0 0 #ECEBE9;
+    clear: both;
+    height: 26px;
+}
+.RecommendTitle a {
+    border-bottom: 1px dashed #CC0017;
+    text-decoration: none;
+}
+.RecommendTitle a:hover {
+    border-color: #000000;
+}
+.RecommendTitle div {
+    background: url("../images/bg_rec_right.gif") no-repeat scroll 100% 0 transparent;
+    font: 14px tahoma;
+    height: 23px;
+    padding: 3px 12px 0;
+}
+#footer {
+    background: url("../images/px_footer.png") repeat scroll 0 0 transparent;
+    height: 51px;
+    margin-top: -81px;
+    min-width: 989px;
+    position: relative;
+    width: 100%;
+}
+#footer ul {
+    margin: 0 auto;
+    width: 989px;
+}
+#footer li {
+    color: #FFFFFF;
+    float: left;
+    font: bold 12px arial;
+    padding: 17px 5px 0 0;
+}
+#footer li a {
+    color: #CBCBCB;
+}
+#footer li a:hover {
+    color: #FFFFFF;
+}
+#footer li.copyright {
+    float: right;
+    width: 172px;
+}
+#footer li.city {
+    padding: 17px 17px 0 10px;
+}
+#cart_product {
+    display: none;
+}
+#header .preview li a:hover {
+    border-color: #636363;
+    cursor: default;
+}
+#header .preview li a.active:hover {
+    border-color: #CC0017;
+}
+#password {
+    display: none;
+}
+#login_form {
+    display: none;
+}
+.main_image {
+    background-position: center top;
+    border: 0 solid #FF0000;
+    top: 210px;
+}
+.bgImageTweenfader {
+    background-position: center top;
+    border: 0 solid green;
+    top: 0 !important;
+}
+#ft-buttons-slideshowHolder {
+    left: 533px;
+    position: absolute;
+    text-align: left;
+    top: 51px;
+    width: 437px;
+}
+#ft-buttons-slideshowHolder a {
+    border: 2px solid #636363;
+    color: #DADADA;
+    display: block;
+    float: left;
+    font-size: 1px;
+    height: 38px;
+    margin-right: 6px;
+    width: 55px;
+}
+#ft-buttons-slideshowHolder a:hover {
+    border-color: #CC0017;
+}
+#ft-buttons-slideshowHolder a.ft-button-slideshowHolder-active {
+    border-color: #CC0017;
+}
+#header .menu ul {
+    z-index: 3;
+}
+#ft-buttons-slideshowHolder a {
+    padding: 4px;
+}
+#ft-next-slideshowHolder, #ft-prev-slideshowHolder {
+    display: none;
+}
+.login_arrow {
+    display: none;
+}
+.new_slider {
+    height: 937px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 210px;
+    width: 100%;
+}
+.new_slider img {
+    display: block;
+}

@@ -1,0 +1,6 @@
+.MenuHead ul { behavior:url(PIE.htc);}
+.MenuHead li a { behavior:url(PIE.htc);}
+.PartnerBox { behavior:url(PIE.htc);}
+.ResponseBox { behavior:url(PIE.htc);}
+.OrderBox { behavior:url(PIE.htc);}
+.PortfolioBox li:first-child { width:24%;}

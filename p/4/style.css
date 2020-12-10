@@ -1,0 +1,206 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:url(images/px_body.gif) repeat-x;}
+a { color:#24539A; text-decoration:none; outline:none;}
+a:hover { color:#4984DC; text-decoration:underline;}
+input { margin:0; padding:0; font:12px arial; vertical-align:middle;}
+div { margin:0; padding:0; font:12px arial; color:#797979; line-height:14px;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:12px 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:normal;}
+h1 { color:#fff; font:bold 24px arial; margin:0; padding:0;}
+h2 { color:#fff; font:bold 21px arial; margin:0; padding:0;}
+h4 { color:#404D5F; font:bold 16px arial; margin:0; padding:0;}
+
+#container { width:982px; margin:0 auto; min-height:100%; height:auto !important; height:100%; position:relative;}
+/* ********************* Header ********************* */
+#header { padding:12px 0;}
+#header .banner { border:1px solid #000; margin:0 auto; display:block;}
+/* Title Main */
+.TitleMain { padding:8px 20px; overflow:hidden; clear:both; background:url(images/px_title_main.gif) repeat-x #3171A8;}
+.TitleMain .name { width:80%; float:left;}
+.TitleMain .bookmarks { width:150px; padding:5px 0 0; float:right; text-align:right;}
+/* Top Box */
+.TopBox { height:132px; clear:both;}
+.TopBox label { cursor:pointer;}
+.TopBox .logo { width:250px; float:left;}
+.TopBox .panel { width:675px; padding:16px 0 0; float:right;}
+.TopBox ul { padding:0 0 16px; overflow:hidden; border-bottom:1px solid #DBDCE0;}
+.TopBox li { padding:4px 0; float:left;}
+.TopBox li.reg { padding-right:38px;}
+.TopBox li.reg a { padding:1px 0 0 21px; float:left; background:url(images/icon_reg.gif) 0 0 no-repeat;}
+.TopBox li.help { padding-right:30px;}
+.TopBox li.help a { padding:1px 0 1px 21px; float:left; background:url(images/icon_help.gif) 0 1px no-repeat;}
+.TopBox li.map { padding:4px 28px 4px 0; border-right:1px solid #DBDCE0;}
+.TopBox li.map a { padding:1px 0 0 21px; float:left; background:url(images/icon_map.gif) 0 0 no-repeat;}
+.TopBox li.rus { padding:4px 15px 4px 21px;}
+.TopBox li.rus a { padding:1px 0 0 23px; float:left; background:url(images/icon_rus.gif) 0 2px no-repeat;}
+.TopBox li.rus span { padding:1px 0 0 23px; float:left; background:url(images/icon_rus.gif) 0 2px no-repeat;}
+.TopBox li.eng { padding:4px 15px 4px 0;}
+.TopBox li.eng a { padding:1px 0 0 23px; float:left; background:url(images/icon_eng.gif) 0 2px no-repeat;}
+.TopBox li.eng span { padding:1px 0 0 23px; float:left; background:url(images/icon_eng.gif) 0 2px no-repeat;}
+.TopBox li.fr {}
+.TopBox li.fr a { padding:1px 0 0 23px; float:left; background:url(images/icon_fr.gif) 0 2px no-repeat;}
+.TopBox li.fr span { padding:1px 0 0 23px; float:left; background:url(images/icon_fr.gif) 0 2px no-repeat;}
+.TopBox li.rus a:hover, .TopBox li.eng a:hover, .TopBox li.fr a:hover { color:#F42D2D; text-decoration:none;}
+.TopBox li.change { padding:2px 0 0; float:right;}
+.TopBox li.change a { width:81px; height:16px; padding:3px 0 0 32px; float:left; font-size:10px; background:url(images/button_change.gif) no-repeat;}
+.TopBox li.change a:hover { color:#F42D2D; text-decoration:none;}
+.TopBox .login { padding:21px 0 0; clear:both;}
+.TopBox .form { width:173px; padding:5px; margin:0 17px 0 7px; color:#797979; border:0; background:url(images/bg_login.gif) no-repeat;}
+.TopBox .button { width:61px; height:24px; color:#515151; font:bold 12px arial; border:0; background:url(images/button_login.gif) no-repeat; cursor:pointer;}
+.TopBox a.forgot { padding:5px 0 0; font-size:10px; float:right;}
+/* Menu Box */
+.MenuBox { height:67px; overflow:hidden; clear:both; position:relative; background:url(images/bg_menu.gif) no-repeat #fff;}
+.MenuBox li { padding:0 0 0 3px; float:left; background:url(images/line_menu.gif) no-repeat;}
+.MenuBox li a { height:27px; padding:10px 15px 0; float:left; color:#DCE4F1; font-size:15px;}
+.MenuBox li a:hover { background:url(images/px_menu.gif) repeat-x; text-decoration:none;}
+.MenuBox li a.active { background:url(images/px_menu.gif) repeat-x; text-decoration:none;}
+.MenuBox li.home { padding:0 0 0 5px; background:none;}
+.MenuBox li.add { padding:0; float:right; background:none;}
+.MenuBox li.add a { width:224px; padding:10px 10px 0; color:#515151; background:url(images/button_add.gif) no-repeat; text-align:center;}
+.MenuBox li.add a:hover { color:#000;}
+.MenuBox ul { top:41px; left:10px; position:absolute;}
+.MenuBox ul li { padding:0 0 0 15px; background:none;}
+.MenuBox ul li a { height:22px; padding:0 0 0 9px; font-size:12px;}
+.MenuBox ul li a em { height:18px; padding:4px 9px 0 0; float:left;}
+.MenuBox ul li a:hover { background:url(images/bg_sub_menu.gif) no-repeat;}
+.MenuBox ul li a:hover em { background:url(images/bg_sub_menu.gif) 100% 0 no-repeat;}
+.MenuBox ul li a.active1 { background:url(images/bg_sub_menu.gif) no-repeat;}
+.MenuBox ul li a.active1 em { background:url(images/bg_sub_menu.gif) 100% 0 no-repeat;}
+
+/* ******************** Content ********************* */
+#content { padding:6px 0 270px; overflow:hidden; zoom:1; background:url(images/line_content.gif) repeat-x;}
+#content .background { padding:10px 20px 18px; overflow:hidden; zoom:1; border:solid #DBDCE0; border-width:0 1px; background:url(images/line_content.gif) 0 100% repeat-x #fff;}
+#content .empty { padding:12px 0 0; clear:both;}
+/* Content Box */
+.ContentTop { clear:both; background:url(images/px_content.gif) repeat-x #ECF0F3;}
+.ContentTop div { background:url(images/bg_content_tl.gif) no-repeat;}
+.ContentTop ul { padding:9px 18px; overflow:hidden; background:url(images/bg_content_tr.gif) 100% 0 no-repeat;}
+.ContentTop li.title { float:left; color:#404D5F; font:bold 16px arial;}
+.ContentTop li.all { padding:4px 0 0; float:right;}
+.ContentTop li.all a { padding:0 0 0 18px; float:left; background:url(images/icon_all.gif) 0 2px no-repeat;}
+.ContentBox { overflow:hidden; clear:both; border:solid #DBDCE0; border-width:0 1px;}
+.ContentBottom { height:5px; clear:both; background:url(images/px_content.gif) 0 100% repeat-x;}
+.ContentBottom div { height:5px; background:url(images/bg_content_bl.gif) no-repeat;}
+.ContentBottom div div { background:url(images/bg_content_br.gif) 100% 0 no-repeat;}
+
+/* --------------------------------------- Search Box */
+.SearchBox { width:941px; clear:both; background:url(images/px_search.gif) repeat-y;}
+.SearchBox .bg_t { background:url(images/bg_search_top.gif) no-repeat;}
+.SearchBox .bg_b { min-height:394px; padding:15px; overflow:hidden; zoom:1; background:url(images/bg_search_bottom.gif) 0 100% no-repeat;}
+.SearchBox .filter { width:241px; padding-right:10px; float:left;}
+.SearchBox .filter li { padding:7px 0 0; overflow:hidden; color:#515151;}
+.SearchBox .filter li em { width:146px; padding:12px 6px 0 0; float:left; color:#797979; font-size:11px;}
+.SearchBox .filter li span { width:75px; padding:12px 0 0; float:left;}
+.SearchBox .filter li select { width:228px; height:23px; padding:2px; color:#515151; font:11px arial; border:1px solid #DBDCE0;}
+.SearchBox .filter li label { cursor:pointer;}
+.SearchBox .filter li #office { margin-right:11px;}
+.SearchBox .filter li #sale { margin-right:4px;}
+.SearchBox .filter li #rent { margin:0 4px 0 21px;}
+.SearchBox .filter li.title { padding:0 0 5px; color:#404D5F; font:bold 16px arial;}
+.SearchBox .filter li.search { padding:12px 0 0 144px;}
+.SearchBox .button { width:75px; height:24px; padding-bottom:2px; color:#515151; font:bold 12px arial; border:0; background:url(images/button_search.gif) no-repeat; cursor:pointer;}
+.SearchBox .button_adv { width:124px; height:21px; margin-top:7px; padding-bottom:3px; color:#24539A; font:11px arial; border:0; background:url(images/button_adv_search.gif) no-repeat; cursor:pointer;}
+.SearchBox .option { width:228px; padding:5px 0 0; background:url(images/bg_search_top1.gif) no-repeat;}
+.SearchBox .option div { padding:0 0 5px; background:url(images/bg_search_bottom1.gif) 0 100% no-repeat;}
+.SearchBox .option div div { padding:0; background:#fff; border:solid #DBDCE0; border-width:0 1px;}
+.SearchBox .option ul { overflow:hidden;}
+.SearchBox .option .text { width:48px; padding:14px 5px 0 0; float:left; font-size:10px; text-align:right;}
+.SearchBox .option .beg { width:167px; float:left;}
+.SearchBox .number { padding:3px 0;}
+.SearchBox .number li { width:19px; padding:0 0 0 8px; float:left; text-align:center; font-size:10px;}
+.SearchBox .number li input { margin:4px auto 0; display:block;}
+.SearchBox .number .text1 { width:45px; padding:3px 0 0 10px; text-align:left;}
+.SearchBox .line { height:23px; clear:both; background:url(images/line_search.gif) 0 14px no-repeat;}
+.SearchBox .form { width:209px; padding:5px; color:#858585; font-size:11px; border:0; background:url(images/bg_search_form.gif) no-repeat;}
+.SearchBox .form1 { width:139px; padding:5px; color:#858585; font-size:11px; border:0; background:url(images/bg_search_form1.gif) no-repeat;}
+.SearchBox .map { width:391px; padding:23px 0 0; float:right;}
+
+/* -------------------------------------- LEFT COLUMN */
+#left_column { width:253px; padding:12px 0 0; float:left;}
+.left_column { width:331px; float:left;}
+
+/* ---------------------------------------- Total Box */
+.TotalBox { padding:7px 0; font-size:11px; color:#515151;}
+.TotalBox em { color:#24539A;}
+.TotalBox .company { padding:0 12px 6px;}
+.TotalBox .company li { padding:3px 0 0;}
+.TotalBox .new { min-height:45px; padding:8px 10px 8px 71px; color:#515151; font-size:11px; background:url(images/time.jpg) 8px 4px no-repeat #ECF0F3; line-height:16px;}
+.TotalBox .new span { padding:0 0 2px; display:block; color:#404D5F; font:bold 12px arial; display:block;}
+.TotalBox .search { padding:7px 12px 0;}
+.TotalBox .search li { padding:4px 0 0; color:#404D5F; font:bold 16px arial;}
+.TotalBox .search li a { margin-left:10px;}
+
+/* ----------------------------------- Navigation Box */
+.NavigationBox { padding:12px 0; clear:both; position:relative;}
+.NavigationBox li { padding:1px 0 0;}
+.NavigationBox li a { padding:10px 25px; display:block; zoom:1; color:#E8E8E8; font-size:15px; background:url(images/px_nav.gif) repeat-y #545454;}
+.NavigationBox li a em { padding:0 0 0 11px; display:block; background:url(images/arrow_nav.gif) 0 5px no-repeat;}
+.NavigationBox li a:hover { color:#DFDFDF; background:url(images/px_nav_hover.gif) repeat-y #6B6B6B; text-decoration:none;}
+.NavigationBox li a:hover em { background:url(images/arrow_nav_hover.gif) 0 5px no-repeat;}
+.NavigationBox li a.active { color:#DFDFDF; background:url(images/px_nav_hover.gif) repeat-y #6B6B6B; text-decoration:none;}
+.NavigationBox li a.active em { background:url(images/arrow_nav_hover.gif) 0 5px no-repeat;}
+.NavigationBox .corner_top { width:253px; height:9px; top:13px; left:0; position:absolute; background:url(images/corner_nav.png) no-repeat;}
+.NavigationBox .corner_bottom { width:253px; height:9px; bottom:12px; left:0; position:absolute; background:url(images/corner_nav.png) 0 100% no-repeat;}
+
+/* ------------------------------------- RIGHT COLUMN */
+#right_column { width:676px; padding:12px 0 0; float:right;}
+#right_column .banner { padding:11px 0 0; clear:both;}
+#right_column .banner img { border:1px solid #DBDCE0; display:block;}
+.right_column { width:331px; float:right;}
+
+/* ----------------------------------- New Offer Box */
+.NewOfferBox { padding:27px 0 0;}
+.NewOfferBox ul { float:left;}
+.NewOfferBox li { width:114px; padding:0 8px 11px 0; float:left; font-size:11px;}
+.NewOfferBox li img { border:2px solid #ECF0F3; display:block;}
+.NewOfferBox li img:hover { border-color:#3A65A4;}
+.NewOfferBox li span { padding:15px 0 0; display:block; font-size:12px;}
+.NewOfferBox li a:hover span { text-decoration:underline;}
+.NewOfferBox .prev { width:24px; padding:31px 0 0 10px; float:left;}
+.NewOfferBox .prev a { width:14px; height:14px; display:block; background:url(images/button_prev.gif) no-repeat;}
+.NewOfferBox .next { width:28px; padding:31px 0 0; float:right;}
+.NewOfferBox .next a { width:14px; height:14px; display:block; background:url(images/button_next.gif) no-repeat;}
+.NewOfferBox .prev a:hover, .NewOfferBox .next a:hover { background-position:0 100%;}
+
+/* --------------------------------- Useful Info Box */
+.UsefulInfoBox { padding:3px 11px 10px;}
+.UsefulInfoBox li { padding:17px 14px 8px; overflow:hidden; border-bottom:1px solid #DBDCE0; background:url(images/px_useful.gif) 0 100% repeat-x;}
+.UsefulInfoBox a.name { padding:0 0 7px; display:block;}
+.UsefulInfoBox .more { padding:8px 0 0; clear:both;}
+.UsefulInfoBox .more a { padding:3px 29px 3px 0; float:right; font-size:11px; background:url(images/icon_view.gif) 100% 0 no-repeat;}
+
+/* -------------------------------- Special Offer Box */
+.SpecOfferBox { padding:0 11px 10px;}
+.SpecOfferBox li { padding:14px 11px 14px 0; overflow:hidden; border-bottom:1px solid #DBDCE0;}
+.SpecOfferBox li em { display:block; font-size:10px; color:#24539A; text-transform:uppercase;}
+.SpecOfferBox li span { padding:0 0 17px; display:block; color:#232933;}
+.SpecOfferBox li i { color:#515151; font-style:normal;}
+.SpecOfferBox .indent { margin-right:9px; float:left;}
+.SpecOfferBox .more { padding:4px 0 0; clear:both;}
+.SpecOfferBox .more a { padding:3px 29px 3px 0; float:right; font-size:11px; background:url(images/icon_view.gif) 100% 0 no-repeat;}
+
+/* ----------------------------------------- News Box */
+.NewsBox { padding:10px 0 21px;}
+.NewsBox li { padding:18px 12px 0;}
+.NewsBox li em { display:block; font-size:10px;}
+.NewsBox a.name { display:block;}
+.NewsBox .indent { margin-right:10px; float:left;}
+
+/* ********************* Footer *********************** */
+#footer { width:100%; height:255px; margin-top:-255px; position:relative; background:url(images/px_footer.gif) repeat-x;}
+#footer .Wrapper { width:982px; padding:23px 0 0; margin:0 auto;}
+#footer .Wrapper ul { padding:0 0 0 21px; float:left;}
+#footer .Wrapper li { padding:2px 0 0; color:#4E4E4F;}
+#footer .Wrapper li a { color:#515151; font-size:11px;}
+#footer .Wrapper li a:hover { color:#2C2C2C;}
+#footer .Wrapper li.title { padding:0 0 17px; font-size:12px; text-transform:uppercase;}
+#footer .subscribe { float:right;}
+#footer .subscribe img { margin-left:12px;}
+#footer .copyright { padding:42px 21px 0; clear:both; font-size:11px;}
+/* ----------------------- IE ------------------------- */
+
+/* ---------------------------------------------------- */

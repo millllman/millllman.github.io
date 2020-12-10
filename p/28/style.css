@@ -1,0 +1,97 @@
+ /* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body {  background:url(images/px_body.gif) 50% 0 repeat;}
+a { color:#C81313; text-decoration:underline;}
+a:hover { color:#89C124; text-decoration:underline;}
+input { margin:0; padding:0; font:11px tahoma; vertical-align:middle;}
+div { margin:0; padding:0; font:13px Trebuchet MS, arial; color:#343333; line-height:16px;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:12px 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:16px;}
+h1 { color:#0093DD; font:18px arial; margin:0; padding:0;}
+h2 { color:#BCBCBC; font:18px arial; margin:0; padding:0;}
+h3 { color:#C81313; font:bold 18px arial; margin:0; padding:0;}
+
+#container { width:915px; margin:0 auto; min-height:100%; height:auto !important; height:100%; position:relative; background:url(images/bg_header.jpg) 50% 0 no-repeat #fff;}
+#top { width:100%; height:417px; top:0; left:0; position:absolute; background:url(images/bg_header.jpg) 50% 0 no-repeat;}
+/* ********************* Header ********************* */
+#header { height:376px; position:relative;}
+#header .logo { top:7px; left:18px; position:absolute;}
+#header .logo1 { top:102px; left:40px; position:absolute; color:#fff; font:bold 17px arial;}
+#header .slogan { top:160px; left:112px; position:absolute; color:#fff; font:bold 22px arial;}
+#header .slogan span { display:block; font:bold 17px arial;}
+#header .slogan1 { top:226px; left:42px; position:absolute;}
+#header .delivery { top:23px; right:7px; position:absolute;}
+.city { width:213px; top:132px; right:0; position:absolute; color:#fff; font:bold 23px arial;}
+.city1 { width:120px; top:160px; right:0; position:absolute; color:#fff; font:bold 20px arial;}
+.city2 { width:218px; top:175px; right:0; position:absolute; color:#F3D3D3; font:bold 18px arial;}
+.city3 { top:192px; right:0; position:absolute; color:#F3D3D3; font:bold 18px arial;}
+.city4 { width:193px; top:205px; right:0; position:absolute; color:#fff; font:bold 20px arial;}
+.rub { width:218px; height:218px; top:209px; right:-42px; position:absolute; background:url(images/rub.png) no-repeat;}
+#header .menu { bottom:34px; left:44px; position:absolute;}
+#header .menu li { height:26px; padding:5px 7px 0 9px; float:left; background:url(images/line_menu.gif) 0 0 no-repeat;}
+#header .menu li:first-child { background:none;}
+#header .menu li a { height:24px; padding-left:6px; float:left; color:#fff; font-size:18px; text-decoration:none;}
+#header .menu li a em { height:21px; padding:3px 6px 0 0; display:block;}
+#header .menu li a:hover { background:url(images/button_menu.gif) no-repeat;}
+#header .menu li a:hover em { background:url(images/button_menu.gif) 100% 0 no-repeat;}
+#header .menu li a.active { background:url(images/button_menu.gif) no-repeat; text-decoration:none;}
+#header .menu li a.active em { background:url(images/button_menu.gif) 100% 0 no-repeat;}
+
+/* ******************** Content ********************* */
+#content { padding:0 14px 150px 19px; overflow:hidden; zoom:1;}
+/* -------------------------------------- LEFT COLUMN */
+#left_column { width:600px; float:left;}
+
+/* ----------------------------------------- Main Box */
+.MainBox { padding:0 0 8px 30px;}
+
+/* -------------------------------------- Product Box */
+.ProductBox { padding:1px 0 0; overflow:hidden;}
+.ProductBox li { width:290px; float:left;}
+.ProductBox li:first-child { width:310px;}
+.ProductBox li .image { width:163px; height:164px; float:left; background:url(images/image_border.gif) no-repeat;}
+.ProductBox li .image img { width:148px; height:148px; margin:6px 0 0 5px; display:block; border:1px solid #F2C57D;}
+.ProductBox li .name { padding:35px 0 0; color:#C81313; font:bold 18px arial;}
+.ProductBox li .price { color:#4C4C4C; font:bold 18px arial;}
+.ProductBox li .amount { padding:7px 0 0; overflow:hidden;}
+.ProductBox li .amount a { width:30px; height:31px; float:left;}
+.ProductBox li .amount input { width:38px; margin:0 3px; padding-bottom:1px; float:left; color:#4C4C4C; font:21px arial; background:url(images/bg_form.gif) no-repeat; text-align:center; border:0;}
+.ProductBox li a.minus { background:url(images/button_minus.gif) no-repeat;}
+.ProductBox li a.plus { background:url(images/button_plus.gif) no-repeat;}
+
+/* ------------------------------------- RIGHT COLUMN */
+#right_column { width:267px; padding:40px 0 0; float:right;}
+
+/* ---------------------------------------- Order Box */
+.OrderBox { width:267px; padding:0 0 29px; background:url(images/bg_order_bottom.gif) 4px 100% no-repeat;}
+.OrderBox .pixel { background:url(images/px_order.gif) 4px 0 repeat-y;}
+.OrderBox ul { padding:0 10px 0 17px; background:url(images/bg_order_top.gif) 0 0 no-repeat;}
+.OrderBox li { padding:5px 0 3px; overflow:hidden; background:url(images/line_order.gif) 0 0 no-repeat;}
+.OrderBox li em { width:130px; float:left;}
+.OrderBox li span { width:47px; float:left; text-align:center;}
+.OrderBox li i { width:14px; padding:4px 0 0; float:right;}
+.OrderBox li i a { width:10px; height:9px; display:block; background:url(images/button_close.gif) no-repeat;}
+.OrderBox li.title { padding:5px 0 15px; color:#fff; font:bold 14px arial; background:none;}
+.OrderBox li.total { padding:5px 11px 0; color:#497B0A; font:bold 14px arial; text-align:right; line-height:21px;}
+.OrderBox li.total big { display:block; color:#C81313; font-size:16px;}
+.OrderBox li.button { padding:10px 0 0; background:none; text-align:center;}
+.OrderBox li.button input { width:144px; height:28px; padding-bottom:4px; color:#fff; font:bold 15px arial; background:url(images/button_order.gif) no-repeat; border:0; text-shadow:1px 1px 1px #A20F0F; cursor:pointer;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:100%; height:144px; margin-top:-144px; position:relative; background:url(images/px_footer.png) 0 100% repeat-x;}
+#footer .background { height:144px; background:url(images/bg_footer.jpg) 50% 0 no-repeat;}
+#footer .wrapper { width:915px; margin:0 auto;}
+#footer .wrapper li { padding:62px 0 0; float:left;}
+#footer li.counter { width:102px; padding-left:26px;}
+#footer li.menu { width:570px; color:#FEFDE5; font-size:11px;}
+#footer li.menu a { color:#fff; font-size:12px; margin-right:8px;}
+#footer li.menu a:hover { color:#E0FFCA;}
+#footer li.menu p { padding:7px 0 0;}
+#footer li.design { width:155px; padding-right:30px; color:#fff; font-size:11px;}
+#footer li.design a { color:#fff;}
+#footer li.design a:hover { color:#E0FFCA;}
+/* ---------------------------------------------------- */

@@ -1,0 +1,203 @@
+/* --------------------- Default --------------------- */
+@import url(reset.css);
+@import "http://webfonts.ru/import/b20sans.css";
+html, body { height:100%; width:100%;}
+body { background: #f3f3f3;}
+div, li { color:#000; font:18px/21px 'B20 Sans', MyriadPro, arial;}
+p { padding:15px 0 0;}
+h1 { color:#000; font:25px arial; padding:0 0 10px;}
+h2 { color:#000; font:21px arial; padding:0 0 10px;}
+
+#container { min-height:100%; height:auto !important; height:100%; position:relative;}
+.wrapper-main { width: 978px; margin: 0 auto;}
+.topline-left { width: 33%; border-top: 4px solid #fff; top: 0; left: 0; position: absolute;}
+.topline-center { width: 34%; border-top: 4px solid #4f749c; top: 0; left: 33%; position: absolute;}
+.topline-right { width: 33%; border-top: 4px solid #ff0000; top: 0; left: 67%; position: absolute;}
+.FadeScreen { width:100%; height:100%; background:black; top:0; left:0; position:fixed; z-index:4; opacity:0.5; filter:alpha(opacity=50);}
+/* ********************* Header ********************* */
+#header { height: 160px; width: 978px; margin: 0 auto;}
+
+/* Logo */
+.LogoTop { width: 50%; padding: 8px 0 0; float: left; position: relative;}
+.LogoTop em { top: 92px; left: 131px; position: absolute; font-size: 20px; font-weight: bold;}
+
+/* Phone Top */
+.PhoneTop { width: 40%; padding: 17px 0 0; float: right; text-align: right;}
+.PhoneTop p { padding: 12px 0 0;}
+.PhoneTop em { padding: 0 0 0 32px; font:bold 20px/22px 'B20 Sans', MyriadPro, arial; background:url(../images/icon_tel.gif) no-repeat;}
+.PhoneTop span { padding: 5px 0; display: block; color: #b5001e; font-size: 18px; font-weight: bold;}
+.PhoneTop a.btn { padding: 0 32px; display: inline-block; color: #fff; font:bold 18px/39px 'B20 Sans', MyriadPro, arial; background: #d80606; border-bottom: 3px solid #b00000; text-decoration: none;}
+.PhoneTop a.btn:hover { background: #c80606;}
+
+/* Main Menu */
+.MainMenu { clear: both; background: #3b3b3b;}
+.MainMenu ul { width: 978px; margin: 0 auto; overflow: hidden; border-left: 1px solid #000;}
+.MainMenu li { float: left; color: #fff; font:bold 20px/57px 'B20 Sans', MyriadPro, arial; border-right: 1px solid #000;}
+.MainMenu li a { padding: 0 22px; display: block; color: #fff; text-decoration: none;}
+.MainMenu li a:hover { background: #2d2d2d;} 
+
+/* -------------------------------------- Feedback Box */
+.FeedbackPopup { width: 380px; padding: 20px 0; top: 245px; left: 50%; margin-left: -192px; position: absolute; z-index: 5; background: #f2f2f2; border: 2px solid #9eb0c1;}
+.FeedbackPopup .title { padding: 0 0 10px; font:bold 20px/28px 'B20 Sans', MyriadPro, arial; text-align: center; border-bottom: 1px solid #dcdcdc;}
+.FeedbackPopup ul { padding: 8px 0 0;}
+.FeedbackPopup ul div { border: 1px solid #686868; display: inline-block;}
+.FeedbackPopup ul li { padding: 5px 0 0; text-align: center;}
+.FeedbackPopup ul li em { width: 37px; height: 43px; display: inline-block; border-right: 1px solid #686868;}
+.FeedbackPopup ul li input[type="text"] { width:209px; min-height: 23px; padding:10px 16px; color:#515151; font: 18px/20px 'B20 Sans', MyriadPro, arial; border:0;}
+.FeedbackPopup ul li.name em { background:url(../images/icon_name.gif) 50% 50% no-repeat #fff;}
+.FeedbackPopup ul li.tel em { background:url(../images/icon_tel2.gif) 50% 50% no-repeat #fff;}
+.FeedbackPopup ul li.type em { background:url(../images/icon_tel3.gif) 50% 50% no-repeat #fff;}
+.FeedbackPopup li.btn { padding: 18px 0 0; clear: both; text-align: center;}
+.FeedbackPopup li.btn a { padding: 0 25px; display: inline-block; color: #fff; font:bold 19px/55px 'B20 Sans', MyriadPro, arial; background: #ff1414; border-bottom: 7px solid #ad0000; border-radius: 3px; overflow: hidden; text-decoration: none;}
+.FeedbackPopup li.btn a:hover { background: #bb0303;}
+.FeedbackPopup li.note { padding: 11px 0 0; clear: both; text-align: center;}
+.FeedbackPopup li.note span { padding: 0 0 0 20px; display: inline-block; color: #858585; font: 15px/17px 'B20 Sans', MyriadPro, arial; background:url(../images/icon_note.gif) 0 50% no-repeat;}
+.FeedbackPopup a.close { width: 21px; height: 21px; display: block; top: -25px; right: -25px; position: absolute; background:url(../images/btn-close.png) no-repeat;}
+
+/* ******************** Content ********************* */
+#section { clear: both;}
+
+.clear { clear: both;}
+.content-spacing { height: 203px; clear: both;}
+.box-spacing { height: 37px; clear: both;}
+
+/* -------------------------------------- Order Box */
+.OrderBox { min-height: 632px; padding: 0px 0 0px; clear: both; border-bottom: 6px solid #9fafc1; background:url(../images/bg_order.jpg) 50% 0 no-repeat;}
+.OrderBox .wrapper-main { position: relative;}
+.OrderBox .title { padding: 72px 0 0 72px;}
+.OrderBox .title b { padding: 0 60px; display: inline-block; color: #fff; font:bold 43px/90px 'B20 Sans', MyriadPro, arial; background: #4f749b; text-transform: uppercase;}
+.OrderBox .popup { width: 380px; padding: 20px 0; top: 235px; right: 15px; position: absolute; background: #f2f2f2; border: 2px solid #9eb0c1;}
+.OrderBox .title1 { padding: 0 0 10px; font:bold 20px/28px 'B20 Sans', MyriadPro, arial; text-align: center; border-bottom: 1px solid #dcdcdc;}
+.OrderBox ul { padding: 8px 0 0;}
+.OrderBox ul div { border: 1px solid #686868; display: inline-block;}
+.OrderBox ul li { padding: 5px 0 0; text-align: center;}
+.OrderBox ul li em { width: 37px; height: 43px; display: inline-block; border-right: 1px solid #686868;}
+.OrderBox ul li input[type="text"] { width:209px; min-height: 23px; padding:10px 16px; color:#515151; font: 18px/20px 'B20 Sans', MyriadPro, arial; border:0;}
+.OrderBox ul li.name em { background:url(../images/icon_name.gif) 50% 50% no-repeat #fff;}
+.OrderBox ul li.tel em { background:url(../images/icon_tel2.gif) 50% 50% no-repeat #fff;}
+.OrderBox ul li.type em { background:url(../images/icon_tel3.gif) 50% 50% no-repeat #fff;}
+.OrderBox li.btn { padding: 18px 0 0; clear: both; text-align: center;}
+.OrderBox li.btn a { padding: 0 25px; display: inline-block; color: #fff; font:bold 19px/55px 'B20 Sans', MyriadPro, arial; background: #ff1414; border-bottom: 7px solid #ad0000; border-radius: 3px; overflow: hidden; text-decoration: none;}
+.OrderBox li.btn a:hover { background: #bb0303;}
+.OrderBox li.note { padding: 11px 0 0; clear: both; text-align: center;}
+.OrderBox li.note span { padding: 0 0 0 20px; display: inline-block; color: #858585; font: 15px/17px 'B20 Sans', MyriadPro, arial; background:url(../images/icon_note.gif) 0 50% no-repeat;}
+
+/* -------------------------------------- Attention Box */
+.AttentionWrap { padding: 48px 0 55px; clear: both;}
+.AttentionTitle { padding: 0 0 0 30px; display: block; font:bold 35px/38px 'B20 Sans', MyriadPro, arial; background:url(../images/arrow_title.gif) 0 50% no-repeat; text-transform: uppercase;}
+.AttentionNote { padding: 0 0 44px 30px; display: block; font: 20px/24px 'B20 Sans', MyriadPro, arial;}
+.AttentionBox { padding: 35px 0 0; clear: both; overflow: hidden;}
+.AttentionBox p { padding: 7px 0 0; font: 17px/19px 'B20 Sans', MyriadPro, arial;}
+.AttentionBox li { width: 25%; padding: 0 50px 0 12px; float: left; box-sizing:border-box;}
+.AttentionBox span { padding: 8px 0 0; display: block; clear: both; font-size: 22px; font-weight: bold; border-top: 1px solid #c0c0c0;}
+
+.ServicesIcon { width: 100px; height: 102px; display: block; margin: 0 auto 6px; position: relative; background:url(../images/icon_service.png) no-repeat; position: relative;}
+.ServicesIcon em.icon1 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive1.gif) 50% 50% no-repeat;}
+.ServicesIcon em.icon2 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive2.gif) 50% 50% no-repeat;}
+.ServicesIcon em.icon3 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive3.gif) 50% 50% no-repeat;}
+.ServicesIcon em.icon4 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive4.gif) 50% 50% no-repeat;}
+.ServicesIcon em.icon5 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive5.gif) 50% 50% no-repeat;}
+.ServicesIcon em.icon6 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive6.gif) 50% 50% no-repeat;}
+.ServicesIcon em.icon7 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive7.gif) 50% 50% no-repeat;}
+.ServicesIcon em.icon8 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive8.gif) 50% 50% no-repeat;}
+.ServicesIcon em.icon9 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive9.gif) 50% 50% no-repeat;}
+.ServicesIcon em.icon10 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive10.gif) 50% 50% no-repeat;}
+.ServicesIcon em.icon11 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive11.gif) 50% 50% no-repeat;}
+.ServicesIcon em.icon12 { width: 100px; height: 102px; display: block; background:url(../images/icon_servive12.gif) 50% 50% no-repeat;}
+.ServicesIcon em.number { width: 24px; height: 24px; display: inline-block; top: 14px; left: 50%; position: absolute; color: #fff; font:bold 14px/28px 'B20 Sans', MyriadPro, arial; background: #f22d2d; text-align: center; border-radius: 50%; border: 3px solid #efecea;}
+
+/* -------------------------------------- Advantage Box */
+.AdvantageWrap { min-height: 515px; padding: 20px 0; clear: both; background:url(../images/bg_advantage.png) 50% 0 no-repeat #3e6792;}
+.AdvantageBox { padding: 40px 16px 25px; background: #f7f7f7; border-bottom: 6px solid #d2d2d2;}
+.AdvantageList { width: 50%; padding: 28px 0 0; float: left;}
+.AdvantageList li { padding: 5px 0 0 10px; overflow: hidden;}
+.AdvantageList .number { width: 10%; float: left; box-sizing:border-box;}
+.AdvantageList .number em { width: 24px; display: block; color: #d90d0d; font:bold 15px/24px 'B20 Sans', MyriadPro, arial; border: 1px solid #d90d0d; border-radius: 50%; text-align: center;}
+.AdvantageList .text { width: 90%; padding: 0 0 0 8px; float: left; font: 20px/32px 'B20 Sans', MyriadPro, arial; box-sizing:border-box;}
+.AdvantageBtn { padding: 34px 0 0; text-align: center; clear: both;}
+.AdvantageBtn a { display: inline-block; color: #fff; font:bold 15px/49px 'B20 Sans', MyriadPro, arial; background: #d80606; border-bottom: 6px solid #9f0101; border-radius: 3px; overflow: hidden;}
+.AdvantageBtn em { width: 54px; height: 54px; display: inline-block;  background:url(../images/icon_advantage.gif) 50% 50% no-repeat #bb0303;}
+.AdvantageBtn span { padding: 5px 10px 0; display: inline-block;}
+.AdvantageBtn a:hover { background: #bb0303;}
+
+/* -------------------------------------- Thus Box */
+.ThusWrap { padding: 48px 0 35px; clear: both; overflow: hidden;}
+.ThusBox { padding: 30px 0 0; clear: both; overflow: hidden;}
+.ThusBox li { width: 33%; padding: 0 0 0 12px; margin-left: 0px; float: left; box-sizing:border-box;}
+.ThusBox li .text { padding: 30px 44px 22px; min-height: 207px; background: #fff; border-bottom: 3px solid #b1c0d0;}
+
+/* -------------------------------------- Guarantee Box */
+.GuaranteeWrap { padding: 42px 0 74px; clear: both; background:url(../images/bg_guarantee.png) 50% 174px no-repeat #fff;}
+.GuaranteeBox { padding: 38px 0 0; clear: both; overflow: hidden;}
+.GuaranteeBox .image { width: 50%; float: left;}
+.GuaranteeBox .text { width: 50%; float: left;}
+.GuaranteeBox .list { padding: 35px 0 0 27px; background:url(../images/icon_guarantee.gif) 0 35px no-repeat;}
+.GuaranteeBox .list1 { padding: 14px 0 0 27px; background:url(../images/icon_guarantee1.gif) 0 14px no-repeat;}
+.GuaranteeBox .list2 { padding: 14px 0 0 27px; background:url(../images/icon_guarantee2.gif) 0 14px no-repeat;}
+
+/* -------------------------------------- Test Box */
+.TestWrap { min-height: 660px; padding: 40px 0 50px; clear: both; border-top: 5px solid #c0cddb; background:url(../images/bg_test.jpg) 50% 0 no-repeat;}
+.TestBox { padding: 32px 30px 35px; background: #fff; border: 1px solid #4a7099; position: relative;}
+.TestBox .title { padding: 0 0 0 57px; font:bold 22px/24px 'B20 Sans', MyriadPro, arial;}
+.TestBox .title1 { padding: 25px 0 0 210px; font: 20px/24px 'B20 Sans', MyriadPro, arial;}
+.TestBox ul {}
+.TestBox li { padding: 11px 0 0 24px; background:url(../images/arrow_test.gif) 0 17px no-repeat;}
+.TestBox:before { content: ""; width: 21px; height: 60px; bottom: 1px; left: 13px; position: absolute; background:url(../images/arrow_test1.gif) 0 0 no-repeat;}
+.TestBox:after { content: ""; width: 69px; height: 78px; top: -16px; right: -28px; position: absolute; background:url(../images/arrow_test2.png) 0 0 no-repeat;}
+
+/* -------------------------------------- Price Box */
+.PriceBox { min-height: 132px; padding: 27px 0 40px; clear: both; border-top: 5px solid #637e9d; background:url(../images/bg_price.gif) 50% 0 no-repeat #486c94;}
+.PriceBox .title { padding: 1px 0 27px; color: #fff; font:bold 21px/27px 'B20 Sans', MyriadPro, arial; text-align: center;}
+.PriceBox input[type="text"] { width:198px; padding:12px 15px; margin-right: 5px; color:#333333; font: 18px/18px 'B20 Sans', MyriadPro, arial; border:1px solid #a0a0a0; vertical-align: middle;}
+.PriceBox a { padding: 0 25px; display: inline-block; color: #fff; font:bold 18px/41px 'B20 Sans', MyriadPro, arial; background: #ff1414; border-bottom: 4px solid #ad0000; border-radius: 3px; overflow: hidden; text-decoration: none;}
+.PriceBox a:hover { background: #bb0303;}
+
+/* -------------------------------------- Stage Box */
+.StageWrap { padding: 44px 0 50px; clear: both;}
+.StageBox { padding: 45px 0 0; clear: both; overflow: hidden;}
+.StageBox p { padding: 5px 0 0;}
+.StageBox li { width: 20%; padding: 0 10px; float: left; box-sizing:border-box;}
+
+/* -------------------------------------- Response Box */
+.ResponseWrap { min-height: 305px; padding: 40px 0 10px; clear: both; border-top: 3px solid #d6e0e9; background:url(../images/bg_response.jpg) 50% 0 no-repeat;}
+
+.SliderBox { padding: 38px 0 20px 52px; clear: both; overflow: hidden;}
+.SliderBox .image { width: 234px; height: 243px; float: left; position: relative;}
+.SliderBox .image:before { content: ""; width: 66px; height: 66px; bottom: -11px; left: -25px; position: absolute; background:url(../images/icon_slider.png) 0 0 no-repeat;}
+.SliderBox .text { width: 628px; min-height: 232px; padding: 37px 22px 22px 18px; float: left; background: #f1f1f1; box-sizing:border-box;}
+.SliderBox .author { padding: 20px 0 0; text-align: right; font-style: italic;}
+
+div.orbit { overflow: inherit !important;}
+
+/* -------------------------------------- Question Box */
+.QuestionWrap { min-height: 488px; clear: both; border-top: 5px solid #b6cadd; background:url(../images/bg_question.jpg) 50% 0 no-repeat;}
+.QuestionBox { width: 68%; margin: 87px 0 0 38px; padding: 27px 0 21px; clear: both; background: #f6f6f6; border: 1px solid #4e739b;}
+.QuestionBox .title { font:bold 35px/40px 'B20 Sans', MyriadPro, arial; text-align: center; text-transform: uppercase;}
+.QuestionBox .title1 { padding: 12px 0 15px; text-align: center; border-bottom: 1px solid #dedede;}
+.QuestionBox .form { padding: 20px 0 0; clear: both; text-align: center;}
+.QuestionBox .name { border: 1px solid #686868; display: inline-block; margin-right: 3px;}
+.QuestionBox .name em { width: 37px; height: 43px; display: inline-block; background:url(../images/icon_name.gif) 50% 50% no-repeat #fff; border-right: 1px solid #686868;}
+.QuestionBox .form input[type="text"] { width:209px; min-height: 23px; padding:10px 16px; color:#515151; font: 18px/20px 'B20 Sans', MyriadPro, arial; border:0;}
+.QuestionBox .tel { border: 1px solid #686868; display: inline-block;}
+.QuestionBox .tel em { width: 37px; height: 43px; display: inline-block; background:url(../images/icon_tel2.gif) 50% 50% no-repeat #fff; border-right: 1px solid #686868;}
+.QuestionBox .btn { padding: 20px 0 0; clear: both; text-align: center;}
+.QuestionBox .btn a { padding: 0 25px; display: inline-block; color: #fff; font:bold 19px/55px 'B20 Sans', MyriadPro, arial; background: #ff1414; border-bottom: 7px solid #ad0000; border-radius: 3px; overflow: hidden; text-decoration: none;}
+.QuestionBox .btn a:hover { background: #bb0303;}
+.QuestionBox .note { padding: 14px 0 0; clear: both; text-align: center;}
+.QuestionBox .note em { padding: 0 0 0 20px; display: inline-block; color: #858585; font: 15px/17px 'B20 Sans', MyriadPro, arial; background:url(../images/icon_note.gif) 0 50% no-repeat;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:100%; height:203px; margin:-203px auto 0; position:relative;}
+
+.BottomWrap { height: 115px; background: #171717;}
+/* Logo */
+.LogoBottom { width: 50%; padding: 22px 0 0 13px; float: left; position: relative; box-sizing:border-box;}
+.LogoBottom em { top: 60px; left: 97px; position: absolute; color: #fff; font:bold 14px/19px 'B20 Sans', MyriadPro, arial;}
+
+/* Phone Top */
+.PhoneBottom { width: 40%; padding: 18px 0 0; float: right; text-align: right;}
+.PhoneBottom p { padding: 12px 0 0;}
+.PhoneBottom em { padding: 0 0 0 32px; color: #fff; font:bold 20px/22px 'B20 Sans', MyriadPro, arial; background:url(../images/icon_tel1.gif) no-repeat;}
+.PhoneBottom span { padding: 5px 0; display: block; color: #f2d012; font-size: 18px; font-weight: bold;}
+/* ---------------------------------------------------- */

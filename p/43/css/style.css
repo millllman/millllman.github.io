@@ -1,0 +1,181 @@
+/* --------------------- Default --------------------- */
+@import url(reset.css);
+html, body { height:100%; width:100%;}
+body {}
+div, li { color:#333333; font:18px/24px MyriadPro, arial;}
+p { padding:15px 0 0;}
+h1 { color:#000; font:25px arial; padding:0 0 10px;}
+h2 { color:#000; font:21px arial; padding:0 0 10px;}
+@font-face { font-family:MyriadPro; src:local("MyriadPro-Regular"), url(js/MyriadPro-Regular.otf);}
+
+#container { margin: 0 auto; min-height:100%; height:auto !important; height:100%; position:relative;}
+.wrapper-main { width: 960px; margin: 0 auto;}
+/* ********************* Header ********************* */
+#header { height: 96px; width: 100%; margin: 0 auto; background: #fff; top: 0; left: 0; box-shadow: 0 0 5px #ccc;}
+
+/* Logo */
+.LogoTop { width: 283px; padding: 20px 0 0; float: left;}
+
+/* Phone */
+.PhoneTop { width: 265px; padding: 35px 0 0; float: left; font: 24px/24px MyriadPro, arial;}
+.PhoneTop span { padding: 0 0 0 27px; display: inline-block; background:url(../images/icon_tel.gif) no-repeat;}
+.PhoneTop em { color: #999999;}
+
+/* Mail */
+.MailTop { padding: 35px 0 0; float: left; font: 18px/25px MyriadPro, arial;}
+.MailTop span { padding: 0 0 0 34px; display: inline-block; color: #999999; background:url(../images/icon_mail.gif) no-repeat;}
+
+/* Order */
+.OrderTop { padding: 35px 0 0; float: right; font: 18px/24px MyriadPro, arial;}
+.OrderTop a { padding: 0 0 0 37px; display: inline-block; color: #333; background:url(../images/icon_order.gif) no-repeat;}
+.OrderTop a:hover { color: #f6a258;}
+
+/* ******************** Content ********************* */
+#section { clear: both;}
+
+.clear { clear: both;}
+.content-spacing { height: 200px; clear: both;}
+.box-spacing { height: 37px; clear: both;}
+
+/* -------------------------------------- Parallax Box */
+.ParallaxBox { height: 484px; clear: both; background:#1f2830; position:relative; overflow:hidden;}
+.ParallaxBox span { padding: 180px 0 0; display: block; color: #f6a258; font: 48px/48px MyriadPro, arial;}
+.ParallaxBox em { display: block; color: #fff; font-size: 60px;}
+
+/* -------------------------------------- Services Box */
+.ServicesText { padding: 52px 0; clear: both; border-bottom: 1px solid #e0e0e0;}
+.ServicesBox { padding: 57px 0 70px; clear: both; overflow: hidden;}
+.ServicesBox li { width: 25%; float: left; text-align: center; font: 24px/29px MyriadPro, arial;}
+.ServicesBox li img { margin: 0 auto 14px; display: block;}
+
+/* -------------------------------------- About Box */
+.AboutBox { padding: 75px 0; clear: both; color: #fdecde; font: 18px/24px MyriadPro, arial; background: #f6a258;}
+.AboutBox .title { color: #fff; font-size: 36px; text-align: center;}
+.AboutBox ul { padding: 55px 0 0; clear: both; overflow: hidden;}
+.AboutBox li { width: 25%; float: left; color: #fdecde; overflow: hidden;}
+.AboutBox li img { margin-right: 17px; float: left;}
+
+/* -------------------------------------- History Box */
+.HistoryBox { padding: 70px 0; clear: both; overflow: hidden; border-bottom: 1px solid #e0e0e0;}
+.HistoryBox .year { width:300px; float:left; color: #f6a258; font:italic 130px/130px MyriadPro, arial; letter-spacing: -10px;}
+.HistoryBox .year em { padding: 85px 0 0; display: inline-block; font:italic 24px/24px MyriadPro, arial; letter-spacing: 0;}
+.HistoryBox .text { width:650px; float:right; font:italic 27px/40px MyriadPro, arial; text-transform: uppercase; text-indent: 23px;}
+.HistoryBox .text em { color: #999999; font-style: italic;}
+
+/* -------------------------------------- Location Box */
+.LocationBox { padding: 75px 0 110px; clear: both; color: #f6a258; font:italic 28px/35px MyriadPro, arial;}
+.LocationBox .title { padding: 0 0 18px 150px; color: #f6a258; font:italic 28px/35px MyriadPro, arial;}
+.LocationBox .title em { text-indent: 160px; display: block; font-style: italic;}
+
+/* -------------------------------------- Services All */
+.ServicesAll { padding: 55px 0 100px; clear: both; color: #bcbfc1; font: 18px/22px MyriadPro, arial; background: #1f2830;}
+.ServicesAll .title { padding: 0 0 10px; color: #f6a258; font-size: 36px; text-align: center;}
+.ServicesAll ul { padding: 50px 0 0; clear: both; overflow: hidden;}
+.ServicesAll li { width: 25%; float: left; color: #bcbfc1; overflow: hidden;}
+.ServicesAll li p {padding: 20px 0 0;}
+.ServicesAll li img { margin-right: 20px; float: left;}
+
+/* -------------------------------------- Design Box */
+.DesignBox { padding: 78px 0; clear: both; border-bottom: 1px solid #e0e0e0;}
+.DesignBox .title { padding: 0 0 0px; color: #f6a258; font: 36px/40px MyriadPro, arial; text-align: center;}
+.DesignBox .title img { margin: 0 auto 37px; display: block;}
+.DesignBox .title1 { padding: 55px 0 0; color: #fff; font: 24px/27px MyriadPro, arial;}
+.DesignBox .title1 em { padding: 0 5px; margin-bottom: 4px; display: inline-block; background: #f6a258;}
+.DesignBox ul.list { padding: 50px 0 0; clear: both; overflow: hidden;}
+.DesignBox ul.list li { width: 25%; padding: 0 30px 0 0; float: left; overflow: hidden; box-sizing:border-box;}
+.DesignBox .list1 { padding: 50px 0 0; clear: both; overflow: hidden;}
+.DesignBox .list1 ul { width: 450px; float: right;}
+.DesignBox .list1 li { padding: 5px 0 0 16px; background:url(../images/arrow_list.gif) 0 15px no-repeat;}
+.DesignBox .list1 ul:first-child { float: left;}
+.DesignBox ul.list2 { padding: 55px 0 0; clear: both; overflow: hidden;}
+.DesignBox ul.list2 li { width: 440px; float: left;}
+.DesignBox ul.list2 li:first-child { width: 470px;padding: 0 39px 0 0; }
+
+/* -------------------------------------- Quality Box */
+.QualityBox { padding: 80px 0; clear: both; background: #f6a258; color: #fdecde;}
+.QualityBox .title { padding: 0 0 0px; color: #fff; font: 36px/40px MyriadPro, arial; text-align: center;}
+.QualityBox .title img { margin: 0 auto 20px; display: block;}
+.QualityBox .title1 { padding: 50px 0 0px; color: #fff; font: 24px/24px MyriadPro, arial;}
+.QualityBox ul { padding: 50px 0 0; clear: both; overflow: hidden;}
+.QualityBox ul li { width: 25%; padding: 0 20px 0 0; float: left; color: #fdecde; overflow: hidden; box-sizing:border-box;}
+.QualityBox .btn { padding: 48px 0 0; clear: both; text-align: center;}
+.QualityBox .btn a { padding: 0 15px; display: inline-block; color: #f6a258; font:bold 18px/40px MyriadPro, arial; text-transform: uppercase; background: #fff; border-radius: 5px;}
+.QualityBox .btn a:hover { background: #fdfbfb; text-decoration: none; box-shadow: 0 0 5px 1px #a8560d;}
+.QualityBox .btn a:active { box-shadow:inset 1px 1px 4px 0px #a8560d; background: #fff;}
+
+/* -------------------------------------- Feedback Box */
+.FeedbackBox { padding: 80px 0; clear: both; background: #1f2830; color: #bcbfc1; font: 16px/24px MyriadPro, arial;}
+.FeedbackBox li { color: #bcbfc1; font: 16px/24px MyriadPro, arial;}
+.FeedbackBox .title { padding: 0 0 0px; color: #f6a258; font: 36px/40px MyriadPro, arial; text-align: center;}
+.FeedbackBox ul.company { padding: 50px 0 0; clear: both; overflow: hidden;}
+.FeedbackBox ul.company li { width: 50%; float: left; color: #bcbfc1; font: 16px/24px MyriadPro, arial;}
+.FeedbackBox .image { width: 77px; float: left; color: #bcbfc1; font: 16px/24px MyriadPro, arial;}
+.FeedbackBox .text { width: 390px; padding: 0 10px 0 0; float: left; color: #bcbfc1; font: 16px/24px MyriadPro, arial;}
+.FeedbackBox ul.contact { padding: 55px 0 0; clear: both; overflow: hidden;}
+.FeedbackBox ul.contact li { float: left; color: #fff; font: 24px/24px MyriadPro, arial;}
+.FeedbackBox ul.contact li.mail { width: 312px;}
+.FeedbackBox ul.contact li.mail em { padding: 0 11px 0 0; font: 36px/36px MyriadPro, arial; vertical-align: middle;}
+.FeedbackBox ul.contact li.tel { width: 250px;}
+.FeedbackBox ul.contact li.tel span { padding: 0 0 0 34px; display: inline-block; font:italic 24px/24px MyriadPro, arial; background:url(../images/icon_tel1.gif) no-repeat;}
+.FeedbackBox ul.contact li.tel em { color: #999999; font-style: italic;}
+.FeedbackBox ul.contact li.location { float: right;}
+.FeedbackBox ul.contact li.location em { padding: 0 0 0 31px; display: inline-block; font: 16px/26px MyriadPro, arial; background:url(../images/icon_location.gif) no-repeat;}
+.FeedbackBox ul.form { padding: 55px 0 0; clear: both; overflow: hidden;}
+.FeedbackBox ul.form li { width: 470px; float: right;}
+.FeedbackBox ul.form li:first-child { float: left;}
+.FeedbackBox ul.form input[type="text"] { width:448px; padding:11px; margin-bottom: 20px; display: block; color:#333333; font:18px MyriadPro, arial; border:0; background: #fff; border-radius: 5px;}
+.FeedbackBox ul.form textarea { width:448px; height: 149px; padding:11px; color:#333333; font:18px MyriadPro, arial; border:0; background: #fff; border-radius: 5px;}
+.FeedbackBox ul.send { clear: both; overflow: hidden;}
+.FeedbackBox ul.send li.note { padding: 15px 0 0; float: left;}
+.FeedbackBox ul.send li.btn { float: right;}
+.FeedbackBox ul.send li.btn input[type=submit] { width: 135px; height: 40px; color: #fff; font:bold 18px MyriadPro, arial; text-transform: uppercase; background: #f6a258; border: 0; border-radius: 5px; cursor: pointer;}
+.FeedbackBox ul.send li.btn input[type=submit]:hover { background: #ec974d;}
+.FeedbackBox ul.send li.btn input[type=submit]:active { box-shadow: inset 1px 1px 2px 1px #a85c19;}
+
+/* -------------------------------------- Google Map */
+.GoogleMap { clear: both;}
+
+/* ---------------------------------------------------- */
+
+
+ul.objects
+{
+	width: 100%;
+	height:488px;
+	position: relative;
+	margin: 0 auto;
+	z-index: 11;
+	top: 0;
+}
+
+ul.objects li
+{
+	position: absolute;
+}
+.obj1
+{
+	background:url(../images/obj.png) no-repeat;
+	width: 339px;
+	height: 339px;
+	top: -150px;
+	right: 25%;
+	z-index:13;
+}
+
+.obj2
+{
+	background:url(../images/obj1.png) 50% 0 repeat;
+	width: 100%;
+	height: 1400px;
+	top: -400px;
+	left: 0;
+}
+
+.obj3
+{
+	background:url(../images/obj2.png) 50% 0 repeat;
+	width: 3000px;
+	height: 995px;
+	top: -200px;
+	left: -20%;
+}

@@ -1,0 +1,183 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:url(images/bg_header.jpg) 50% 0 no-repeat #011422;}
+a { color:#8FCFFF; text-decoration:underline; outline:none;}
+a:hover { color:#fff; text-decoration:underline;}
+input { margin:0; padding:0; font:14px tahoma; vertical-align:middle;}
+div { margin:0; padding:0; font:12px tahoma; color:#D3D6D9; line-height:17px;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:21px 0 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:17px;}
+h1 { color:#DBE2E5; font:26px tahoma; margin:0; padding:0 0 17px;}
+h2 { color:#BCBCBC; font:18px arial; margin:0; padding:0;}
+h3 { color:#58A4EC; font:18px tahoma; margin:0; padding:0 0 12px;}
+h4 { color:#C2DAEC; font:24px georgia, tahoma; margin:0; padding:0;}
+
+#container { width:967px; margin:0 auto; min-height:100%; height:auto !important; height:100%; position:relative;}
+.inner { background:#0E202D;}
+/* ********************* Header ********************* */
+#header { height:298px; background:url(images/bg_header.jpg) 50% 0 no-repeat;}
+/* Slogan */
+#header .slogan { top:58px; left:0; position:absolute; color:#9ED5DF; font:28px georgia, tahoma;}
+#header .slogan h2 { color:#9ED5DF; font:28px georgia, tahoma; margin:0; padding:0;}
+/* Logo */
+#header .logo { top:104px; left:45px; position:absolute;}
+/* About Us */
+#header .about_us { width:370px; top:62px; right:0; position:absolute; color:#fff; font-size:14px; text-align:right; text-shadow:0px 0px 3px #969AB3;}
+#header .about_us p { padding:40px 0 0;}
+/* Menu */
+#header .menu { padding:207px 0 0;}
+#header .menu li { padding:0 10px 0 11px; float:left;}
+#header .menu li a { padding:17px 10px; display:block; color:#95CCFF; font-size:14px; text-decoration:none; text-shadow:0px 0px 1px #3DF4FF;}
+#header .menu li a:hover { color:#fff;}
+#header .menu li a.active { color:#fff;}
+
+/* ******************** Content ********************* */
+#content { padding:0 0 200px; overflow:hidden; zoom:1;}
+.empty { height:20px; clear:both;}
+/* Report Page */
+.ReportPage { background:url(images/bg_header1.jpg) 50% 0 no-repeat #011422;}
+.ReportPage #container { width:600px;}
+.ReportPage #header { height:137px; background:none;}
+.ReportPage #header .logo { top:55px; left:177px; position:absolute;}
+.ReportPage #header .slogan { top:24px; left:207px; color:#9ED5DF; font:21px georgia, tahoma;}
+.ReportPage #header .slogan h2 { font-size:21px;}
+.ReportPage #content { padding:0 0 50px;}
+.ReportPage .TaroBox { width:600px; background:url(images/bg_taro1.jpg) no-repeat;}
+.ReportPage .TaroBox h1 { padding:51px 30px 0; color:#BAEBFF; font:42px georgia, tahoma;}
+.ReportPage .TaroBox h1 span { padding:5px 0 0; display:block; color:#CBB1FF; font-size:46px;}
+/* Month Box */
+.MonthBox { padding:23px 0 35px; background:#1F303D;}
+.MonthBox li { padding:24px 20px 0; font-size:13px; overflow:hidden; line-height:18px;}
+.MonthBox li h4 { padding:0 0 4px; margin-bottom:21px; background:url(images/line_month.gif) 0 100% no-repeat;}
+.MonthBox li img { margin-right:28px; float:left;}
+.MonthBox li.cartomancy { padding:0 0 0 12px;}
+.MonthBox li .text { padding:0 270px 0 10px; font-size:14px;}
+.MonthBox li .text p { padding:17px 0 0;}
+.MonthBox li .title { padding:17px 0 27px; color:#B0C6D8; font:24px georgia, tahoma; text-align:center; background:url(images/line_month_title.gif) 50% 33px no-repeat;}
+.MonthBox li .title span { padding:0 10px; background:#1F303D;}
+/* Result Box */
+.ResultBox { padding:21px 0 0; background:url(images/bg_result_top.gif) no-repeat;}
+.ResultBox span { padding:0 0 17px; display:block; color:#C0DCEE; font:30px georgia, tahoma;}
+.ResultBox .pixel { background:url(images/px_result.gif) repeat-y;}
+.ResultBox .text { padding:11px 24px 28px; overflow:hidden; background:url(images/bg_result_bottom.jpg) 0 100% no-repeat;}
+.ResultBox .indent { margin-right:23px; float:left;}
+
+/* ------------------------------------- Services Box */
+.ServicesBox { padding:23px 0 0; overflow:hidden;}
+.ServicesBox li { width:472px; padding:17px 0 0; float:left; position:relative; background:url(images/bg_services_top.gif) no-repeat;}
+.ServicesBox li div { background:url(images/px_services.gif) repeat-y;}
+.ServicesBox li div div { padding:0 14px 17px; min-height:134px; overflow:hidden; background:url(images/bg_services_bottom.gif) 0 100% no-repeat;}
+.ServicesBox li:hover { background:url(images/bg_services_top_active.gif) no-repeat;}
+.ServicesBox li:hover div { background:url(images/px_services_active.gif) repeat-y #0F212E;}
+.ServicesBox li:hover div div { background:url(images/bg_services_bottom_active.jpg) 0 100% no-repeat;}
+.ServicesBox li:hover span { background:url(images/icon_free_active.png) no-repeat;}
+.ServicesBox li.active { background:url(images/bg_services_top_hover.gif) no-repeat;}
+.ServicesBox li.active div { background:url(images/px_services_hover.gif) repeat-y #0F212E;}
+.ServicesBox li.active div div { background:url(images/bg_services_bottom_hover.gif) 0 100% no-repeat;}
+.ServicesBox li img { margin-right:16px; float:left;}
+.ServicesBox li.two { margin-left:23px;}
+.ServicesBox li span { width:128px; height:29px; top:0; left:18px; position:absolute; display:block; color:#fff; background:url(images/icon_free.png) no-repeat; text-align:center; line-height:23px; font-weight:bold; text-shadow:1px 1px 10px #000;}
+
+/* -------------------------------------- LEFT COLUMN */
+#left_column { width:295px; padding:20px 0 0 17px; float:left;}
+
+/* ------------------------------------- Forecast Box */
+.ForecastBox { padding:0 0 20px;}
+.ForecastBox .title { height:37px; border-bottom:1px solid #0D1E2B; background:url(images/px_forec_title.gif) repeat-x;}
+.ForecastBox .title div { background:url(images/bg_forec_title_tl.gif) no-repeat;}
+.ForecastBox .title div div { padding:0 14px; color:#fff; font-size:18px; background:url(images/bg_forec_title_tr.gif) 100% 0 no-repeat; line-height:35px;}
+.ForecastBox .title h3 { color:#fff; line-height:35px;}
+.ForecastBox .text { background:url(images/px_forec.gif) repeat #162734;}
+.ForecastBox .bottom { padding:17px 15px; font-size:13px; overflow:hidden; background:url(images/bg_forec_bottom.gif) 0 100% no-repeat;}
+.ForecastBox .example { text-align:center;}
+.ForecastBox .example img { display:block; margin:0 auto 1px;}
+.ForecastBox .descr {}
+.ForecastBox .descr li { padding:3px 0; color:#fff;}
+.ForecastBox .descr li strong { color:#AECAEB;}
+.ForecastBox .descr li img { margin-left:3px;}
+.ForecastBox .text input[type="text"] { width:259px; padding:7px; color:#1C1C1C; background:url(images/bg_form.gif) no-repeat; border:0; font-weight:bold;}
+.ForecastBox .text input[type="submit"] { width:165px; height:33px; padding-bottom:3px; margin-right:12px; float:left; color:#fff; font:bold 12px tahoma; background:url(images/button_read.gif) no-repeat; border:0; text-shadow:1px -1px 1px #4C3F79; cursor:pointer;}
+.ForecastBox .text input[type="submit"]:hover { background-position:0 100%;}
+.ForecastBox .text b { color:#fff; font-size:11px;}
+.ForecastBox .p { padding:14px 0;}
+.ForecastBox .b { padding:0 14px; background:url(images/bg_forec_title.jpg) no-repeat; color:#fff; font-size:18px; line-height:35px;}
+
+/* ------------------------------------- RIGHT COLUMN */
+#right_column { width:617px; padding:20px 17px 20px 0; float:right;}
+
+/* ----------------------------------------- Taro Box */
+.TaroBox { width:617px; height:203px; background:url(images/bg_taro.jpg) no-repeat;}
+.TaroBox .text { padding:27px 210px 0 25px; font-size:13px;}
+.TaroBox .text p { padding:0 58px 0 0;}
+
+/* ----------------------------------------- Main Box */
+.MainBox { padding:0 0 20px; background:#1F303D;}
+.MainBox .title_main { height:45px; padding:0 16px; color:#fff; font-size:18px; background:url(images/bg_title_main.jpg) no-repeat; line-height:43px;}
+.MainBox .text { padding:18px 65px 0 16px;}
+
+/* ----------------------------------- Cartomancy Box */
+.CartomancyBox { padding:21px 10px 0; text-align:center;}
+.CartomancyBox span { padding:0 0 21px; display:block; color:#DEE0E2; font-size:24px;}
+
+/* -------------------------------- Personal Info Box */
+.PersonalInfoBox { padding:40px 0 0 19px;}
+.PersonalInfoBox .bgt { width:579px; padding:5px 0 0; background:url(images/bg_pers_top.gif) no-repeat;}
+.PersonalInfoBox .bgb { padding:0 0 5px; background:url(images/bg_pers_bottom.gif) 0 100% no-repeat;}
+.PersonalInfoBox ul { padding:7px 0 22px 21px; background:#1D2E3B; border:solid #2F3F4B; border-width:0 1px;}
+.PersonalInfoBox li { padding:10px 0 0; overflow:hidden;}
+.PersonalInfoBox li label { cursor:pointer;}
+.PersonalInfoBox li .w1 { width:112px; padding:7px 0 0; float:left; color:#fff; font-size:13px;}
+.PersonalInfoBox li .w2 { width:425px; float:left; font-size:13px;}
+.PersonalInfoBox li .w2 input[type="text"] { width:259px; padding:7px; color:#1C1C1C; background:url(images/bg_form.gif) no-repeat; border:0; font-weight:bold;}
+.PersonalInfoBox li .w2 input[type="checkbox"] { margin-right:8px;}
+.PersonalInfoBox li .w2 select { width:109px; height:30px; padding:5px 5px 5px 0px; margin-right:10px; color:#1C1C1C; font:bold 13px tahoma; border:1px solid #C0D5D8;}
+.PersonalInfoBox li select.w { width:64px;}
+.PersonalInfoBox li .w2 select option { background:#fff;}
+.PersonalInfoBox li.title { padding:10px 0 12px; color:#DDE0E2; font-size:18px;}
+.PersonalInfoBox li a.how { text-decoration:none; border-bottom:1px dashed #8FCFFF;}
+.PersonalInfoBox li a.how:hover { border-color:#fff;}
+.PersonalInfoBox li a.rules { color:#D3D6D9; text-decoration:none; border-bottom:1px dashed #D3D6D9;}
+.PersonalInfoBox li a.rules:hover { color:#fff; border-color:#fff;}
+.PersonalInfoBox li .w2 input[type="submit"] { width:216px; height:33px; padding-bottom:3px; margin-right:12px; float:left; color:#fff; font:bold 12px tahoma; background:url(images/button_get.gif) no-repeat; border:0; text-shadow:1px -1px 1px #4C3F79; cursor:pointer;}
+.PersonalInfoBox li .w2 input[type="submit"]:hover { background-position:0 100%;}
+.PersonalInfoBox .p { padding:14px 0 0; font-size:12px;}
+.PersonalInfoBox .p img { margin-right:10px; float:left;}
+
+/* ------------------------------------------ Sms Box */
+.SmsBox { padding:20px 0 0 19px;}
+.SmsBox .title { width:577px; height:57px; color:#C9D0D2; font-size:26px; background:url(images/bg_sms_title.gif) no-repeat; line-height:25px;}
+.SmsBox .title span { padding:15px 21px 0; display:block;}
+.SmsBox .pixel { width:577px; background:url(images/px_sms.gif) repeat-y;}
+.SmsBox .txt { padding:10px 12px 21px 21px; min-height:207px; background:url(images/bg_sms.jpg) 0 100% no-repeat;}
+.SmsBox .number { overflow:hidden; font-size:18px; line-height:32px;}
+.SmsBox .number em { float:left;}
+.SmsBox .number span { height:33px; padding-left:8px; margin:0 8px; float:left; background:url(images/bg_sms_message.gif) no-repeat;}
+.SmsBox .number span span { height:33px; padding:0 8px 0 0; margin:0; background:url(images/bg_sms_message.gif) 100% 0 no-repeat;}
+.SmsBox ul { padding:32px 0 7px; overflow:hidden;}
+.SmsBox li { float:left; color:#fff; font-size:13px;}
+.SmsBox li.operator { width:75px; padding:2px 10px 0 0;}
+.SmsBox li.select { width:240px;}
+.SmsBox li.select select { width:216px; height:40px; padding:5px 5px 5px 2px; color:#1C1C1C; font:20px tahoma; border:1px solid #C0D5D8;}
+.SmsBox li.select select option { background:#fff;}
+.SmsBox li.price { width:210px; padding:10px 0 0; font-size:18px;}
+
+/* ********************* Footer *********************** */
+#footer { width:100%; height:200px; margin:-200px auto 0; position:relative; background:url(images/bg_footer.jpg) 50% 0 no-repeat;}
+#footer .Wrapper { width:967px; margin:0 auto;}
+/* Menu */
+#footer .menu { height:100px; overflow:hidden;}
+#footer .menu li { padding:35px 32px 0 0; float:left; color:#5695F4; font-size:20px;}
+#footer .menu li a { color:#fff;}
+#footer .menu li a:hover { color:#8FCFFF;}
+/* Text */
+#footer .text { width:280px; padding-right:50px; float:left; color:#B4B9BE; font-size:13px; text-shadow:0 0 1px #31628F; line-height:18px;}
+#footer .text p { padding:8px 0 0;}
+#footer .text a { color:#5695F4;}
+#footer .text a:hover { color:#fff;}
+#footer .w { width:305px; padding:0; float:right;}
+#footer .text a.rules { color:#B4B9BE; text-decoration:none; border-bottom:1px dashed #B4B9BE;}
+#footer .text a.rules:hover { color:#fff; border-color:#fff;}
+/* ---------------------------------------------------- */

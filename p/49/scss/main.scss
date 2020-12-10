@@ -1,0 +1,405 @@
+/* Import */
+@import "variables";
+@import "mixin";
+@import "grid";
+@import "base";
+
+/*------------------------------------- Header */
+header.header {
+	height: 94px;
+	padding: 22px 0;
+	background: #222;
+	.column {
+		color: #fff;
+		@include font (14,20,600);
+		a { @include link-color (#fff,#ccc); }
+		span {
+			display: block;
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+	}
+	p.text { padding: 6px 0 0; }
+	@include desktop-max {
+		height: auto;
+	}
+	@include mobile {
+		.column { text-align: center; }
+	}
+	width: 100%;
+	/*z-index: 999;*/
+	/*@include abs (0,0,0,auto,fixed);*/
+}
+
+.header-indent {
+	height: 94px;
+	display: none;
+	@include clearfix;
+	@include laptop-max { height: 110px; }
+	@include tablet-max { height: 180px; }
+	@include mobile { height: 270px; }
+}
+
+.yButton { display: none; }
+
+/*------------------------------------ Content */
+section {}
+
+.section-spacing {
+	height: 40px;
+	@include clearfix;
+}
+
+.box-spacing {
+	height: 20px;
+	@include clearfix;
+}
+
+.title-main {
+	@include title;
+	@include tablet-max {
+		padding-top: 15px;
+		text-align: center;
+	}
+}
+
+.column-half {
+	width: 50%;
+	float: left;
+}
+
+.section-screen__2,
+.section-screen__3,
+.section-screen__6 {
+	position: relative;
+	@include clearfix;
+	.column-half { padding: 8% 5%; }
+	@include before {
+		width: 50%;
+		background-size: cover !important;
+	}
+	&.light {
+		@include before {
+			@include abs (0,auto,0);
+		}
+	}
+	&.dark {
+		background: $section-color;
+		.column-half {
+			float: right;
+			@extend .box-black;
+		}
+		@include before {
+			@include abs (0,0,auto);
+		}
+	}
+	@include tablet-max {
+		.column-half { width: 100%; }
+		@include before { display: none !important; }
+	}
+}
+
+/*-------------------------- Section Screen 1 */
+.section-screen__1 {
+	min-height: 544px;
+	background: $section-color url(../img/pic-video.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	position: relative;
+	@include laptop-max { min-height: 404px; }
+	@include tablet-max { min-height: 304px; }
+}
+
+/*-------------------------- Section Screen 2 */
+.section-screen__2 {
+	@include before {
+		background: $section-color url(../img/pic-section2.jpg) 50% 50% no-repeat;
+	}
+}
+
+/*-------------------------- Section Screen 3 */
+.section-screen__3 {
+	@include before {
+		background: url(../img/pic-section3.jpg) 50% 50% no-repeat;
+	}
+}
+
+/*-------------------------- Section Screen 4 */
+.section-screen__4 {
+	height: 638px;
+	padding: 0 15px;
+	text-align: center;
+	background: url(../img/pic-section3.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	@include clearfix;
+	.title {
+		display: inline-block;
+		vertical-align: middle;
+		color: #fff;
+		font-family: $ar;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		@include font (30,48);
+	}
+	@include after {
+		height: 100%;
+		vertical-align: middle;
+	}
+	@include desktop-max {
+		height: 438px;
+		line-height: 435px;
+	}
+}
+
+/*-------------------------- Section Screen 5 */
+.section-screen__5 {
+	padding: 75px 0 70px;
+	text-align: center;
+	@include clearfix;
+	@include tablet-max {
+		padding-top: 25px;
+	}
+}
+
+.section5-team__box {
+	width: 1153px;
+	padding: 25px 20px 0;
+	margin: 0 auto;
+	overflow: hidden;
+	@include clearfix;
+	li {
+		width: 25%;
+		padding: 10px 5px 0;
+		float: left;
+		position: relative;
+		&:nth-child(5) { clear: left; }
+		img {
+			width: 100%;
+			display: block;
+		}
+		span {
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			@include font (14,17,bold);
+			@include abs (auto,30px,30px,27px);
+		}
+	}
+	@include desktop-max {
+		width: auto;
+		padding: 25px 10px 0;
+	}
+	@include tablet-max {
+		padding-top: 0;
+		li {
+			width: 50%;
+			img { width: 100%; }
+			span { bottom: 12px; }
+		}
+	}
+}
+
+/*-------------------------- Section Screen 6 */
+.section-screen__6 {
+	@include before {
+		background: $section-color url(../img/pic-section6.jpg) 50% 50% no-repeat;
+	}
+}
+
+/*-------------------------- Section Screen 7 */
+.section-screen__7 {
+	min-height: 638px;
+	text-align: center;
+	background: url(../img/bg-section7.jpg) 50% 0% no-repeat;
+	background-size: cover;
+	@include clearfix;
+	@include laptop-max { min-height: 438px; }
+	@include tablet-max { min-height: 338px; }
+	@include mobile { min-height: 238px; }
+}
+
+/*-------------------------- Section Screen 8 */
+.section-screen__8 {
+	padding: 75px 0 70px;
+	@include clearfix;
+	.title-main { padding-bottom: 65px; }
+	@include tablet-max {
+		padding-top: 25px;
+		.title-main { padding-bottom: 32px; }
+	}
+}
+
+.section8-price__box {
+	width: 750px;
+	padding: 20px 0;
+	margin: -1px auto 0;
+	@include clearfix;
+	@include border ($border-color,1px 0);
+	li {
+		padding-right: 20px;
+		float: left;
+		color: #222;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@include font (14,17,600);
+		&:last-child {
+			padding: 0 0 0 20px;
+			float: right;
+			text-align: right;
+		}
+	}
+	@include tablet-max {
+		width: auto;
+		padding: 20px 15px;
+		li {
+			width: 75%;
+			&:last-child { width: 25%; }
+		}
+	}
+}
+
+.section8-price__all {
+	padding: 35px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	@include font (14,17,600);
+	a {
+		@include link-color (#000,#000);
+		@include link-decoration (none);
+		i.fa {
+			margin-left: 10px;
+			font-size: 17px;
+		}
+		span.hide { display: none; }
+		&.open {
+			span.show { display: none; }
+			span.hide { display: block; }
+		}
+	}
+}
+
+.section8-price__hide { display: none; }
+
+/*-------------------------- Section Screen 9 */
+.section-screen__9 {
+	padding: 75px 0 70px;
+	background: $section-color;
+	@include clearfix;
+	@extend .box-black;
+	@include font (17,35);
+	a:not(.btn) { @include link-color (#aeaeae,#fff); }
+	.title-main {
+		padding: 0 0 65px;
+		text-align: center;
+	}
+	.btn { margin-top: 7px; }
+	@include tablet-max {
+		padding-top: 25px;
+		.title-main { padding: 25px 0 32px; }
+		.column { text-align: center; }
+	}
+}
+
+/*-------------------------- Section Screen 10 */
+.section-screen__10 {
+	min-height: 429px;
+	text-align: center;
+	background: url(../img/pic-map.gif) 50% 50% no-repeat;
+	background-size: cover;
+	@include clearfix;
+	iframe {
+		width: 100%;
+		display: block;
+	}
+	@include tablet-max { min-height: 300px; }
+}
+
+#map {
+	width: 100%;
+	height: 300px;
+}
+
+.section-screen__10 {
+-webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+     -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+}
+
+.ymaps-2-1-53-balloon__layout { background: none; }
+.ymaps-2-1-53-balloon__content {
+	padding: 20px 0 20px 20px !important;
+	margin-right: 50px !important;
+	color: #fff;
+	background: none !important;
+	font-family: $main-font-family !important;
+	font-size: 15px !important;
+	line-height: 30px !important;
+}
+.ymaps-2-1-53-balloon__layout {
+	background: rgba(0,0,0, 0.5) !important;
+}
+
+.ymaps-2-1-53-balloon__tail {
+	width: 24px !important;
+	height: 10px !important;
+	margin-bottom: -10px !important;
+	overflow: hidden;
+	background: none !important;
+	transform: none !important;
+	box-shadow: none !important;
+}
+
+.ymaps-2-1-53-balloon__tail:after {
+	left: 2px !important;
+	bottom: 3px !important;
+	transform: rotate(-45deg);
+	background: rgba(0,0,0, 0.4) !important;
+}
+
+.ymaps-2-1-53-balloon__close-button {
+	height: 30px !important;
+	margin: 8px 8px 0 0 !important;
+	opacity: 1 !important;
+	background: url(../img/btn-close.png) 50% 50% no-repeat !important;
+	&:hover { opacity: 0.7 !important; }
+}
+
+@media screen and (max-width: 533px) {
+	.ymaps-2-1-53-balloon__content { color: #000; }
+}
+
+/*------------------------------------- Footer */
+footer {
+	height: 114px;
+	padding: 45px 0 42px;
+	background: $section-color;
+	@include clearfix;
+	a {
+		display: inline-block;
+		@include link-color (#aeaeae,#fff);
+		i.fa {
+			margin-left: 25px;
+			@include font (32,32);
+		}
+		& + a {
+			top: -2px;
+			position: relative;
+		}
+	}
+	.column {
+		color: #aeaeae;
+		@include font (13,17);
+	}
+	span.copy {
+		padding: 7px 0 0;
+		display: block;
+		letter-spacing: 1px;
+	}
+	@include tablet-max {
+		a i.fa { margin-left: 15px; }
+	}
+}
+/*-------------------------------------------  */
+

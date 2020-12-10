@@ -1,0 +1,393 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:url(../images/px_body.gif) repeat;}
+a { color:#30A2BC; text-decoration:underline; outline:none;}
+a:hover { color:#30A2BC; text-decoration:none;}
+input { margin:0; padding:0; font:12px tahoma; vertical-align:middle;}
+div { margin:0; padding:0; font:13px tahoma; color:#343434; line-height:16px;}
+form { margin:0; padding:0;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:12px 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:normal;}
+h1 { color:#8E8E8E; font:18px georgia, tahoma; margin:0; padding:0 0 10px;}
+h2 { color:#BCBCBC; font:18px arial; margin:0; padding:0;}
+h3 { color:#005588; font:18px georgia, tahoma; margin:0; padding:0;}
+
+#container { width:902px; margin:0 auto; min-height:100%; height:auto !important; height:100%; position:relative;}
+.empty { height:15px; clear:both;}
+.empty1 { height:65px; clear:both;}
+/* ********************* Header ********************* */
+#banner { text-align:center; position:relative;}
+#banner img { margin:0 auto; display:block;}
+#banner a.hide { top:74px; right:3px; position:absolute; color:#121B21; font-size:11px; text-decoration:none; border-bottom:1px dashed #121B21;}
+#banner a.hide:hover { border:0;}
+/* Header */
+#header { padding:25px 0 0; overflow:hidden; zoom:1;}
+/* Logo */
+#header .logo { width:220px; float:left; text-align:center; font-size:12px;}
+#header .logo img { margin:0 auto 2px; display:block;}
+/* Panel */
+#header .panel { width:665px; float:right;}
+#header .panel .pixel { background:url(../images/px_panel_shadow.gif) 100% 0 repeat-y #F5F5F5;}
+#header .panel ul.main { padding:12px 10px 14px 16px; overflow:hidden; zoom:1; background:url(../images/bg_panel_top.gif) no-repeat;}
+#header .panel ul.main_inner { padding:12px 10px 7px 16px; overflow:hidden; zoom:1; background:url(../images/bg_panel_top.gif) no-repeat;}
+#header .panel ul.main_inner li.support { min-height:84px; _height:84px;}
+#header .panel ul.main_inner li.start { min-height:77px; _height:77px;}
+#header .panel li.support { width:180px; min-height:101px; _height:101px; float:left; padding-right:10px; color:#696969; font:bold 13px georgia, tahoma; background:url(../images/line_panel.gif) 100% 0 no-repeat;}
+#header .panel li.support em { color:#005588; font-size:14px;}
+#header .panel li.support p { padding:7px 0 4px;}
+#header .panel li.support big { font-size:16px;}
+#header .panel li.reg { width:203px; min-height:85px; _height:85px; padding:16px 2px 0 0; float:left; text-align:center; background:url(../images/line_panel.gif) 100% 0 no-repeat;}
+#header .panel li.reg img { margin:0 auto; display:block;}
+#header .panel li.login { width:224px; float:right; padding:6px 0 0; color:#545453;}
+#header .panel li.login p { padding:8px 0 5px;}
+#header .panel li.login a { color:#005588;}
+#header .panel li.login .enter { width:73px; height:21px; padding-bottom:3px; margin-left:15px; border:0; color:#005588; font:bold 12px tahoma; background:url(../images/button_login.gif) no-repeat; cursor:pointer;}
+#header .panel li.login label input { margin:0 2px 0 1px;}
+#header .panel li.login ul {}
+#header .panel li.login li { padding:5px 0 0; overflow:hidden; zoom:1; font:bold 12px georgia, tahoma;}
+#header .panel li.login li em { width:60px; float:left; padding:3px 0 0;}
+#header .panel li.login li span { width:140px; float:left;}
+#header .panel li.login li span input { width:109px; padding:3px 8px 4px; color:#545453; font:12px tahoma; border:0; background:url(../images/bg_form.gif) no-repeat;}
+#header .panel li.start { width:151px; min-height:85px; _height:85px; padding:7px 2px 0 7px; float:left; color:#696969; font:bold 13px georgia, tahoma; background:url(../images/line_panel.gif) 100% 0 no-repeat;}
+#header .panel li.start img { margin:14px 0 0; display:block;}
+#header .panel li.balance { width:217px; padding:8px 10px 0 0; float:right; color:#696969; font:bold 12px georgia, tahoma;}
+#header .panel li.balance p { padding:5px 0;}
+#header .panel li.balance em { padding-left:5px; font:12px tahoma;}
+#header .panel li.exit { width:40px; padding:8px 0 0; float:right; color:#696969; font-size:12px;}
+#header .panel li.exit a { color:#545453;}
+/* Menu */
+#header .panel #menu { height:39px; padding:0 0 27px 10px; margin-right:2px; overflow:hidden; position:relative; background:url(../images/px_panel_menu.gif) repeat-x;}
+#header .panel #menu li { padding:0 3px; float:left;}
+#header .panel #menu li a { height:39px; padding:0 0 0 12px; display:block; float:left; color:#005588; font:bold 14px georgia, tahoma; text-decoration:none;}
+#header .panel #menu li a em { height:39px; padding:12px 12px 0 0; display:block; float:left; cursor:pointer;}
+#header .panel #menu li a:hover { color:#000; background:url(../images/bg_panel_menu.gif) no-repeat;}
+#header .panel #menu li a:hover em { background:url(../images/bg_panel_menu.gif) 100% 0 no-repeat;}
+/* Dynamic Menu */
+#header .panel #menu ul { width:664px; height:27px; top:39px; left:0; position:absolute; background:url(../images/bg_panel_sub_menu.gif) no-repeat; display:none;}
+#header .panel #menu ul li { padding:6px 12px 0 11px; float:left; background:url(../images/line_sub_menu.gif) 0 6px no-repeat;}
+#header .panel #menu li:hover ul, #header .panel #menu li.hover ul {display: block;}
+#header .panel #menu li:hover ul li a, #header .panel #menu li.hover ul li a { height:inherit; padding:0; color:#fff; font:11px georgia, tahoma; background:none;}
+#header .panel #menu li:hover ul li a:hover, #header .panel #menu li.hover ul li a:hover { color:#fff; text-decoration:underline; background:none;}
+#header .panel #menu li:hover a, #header .panel #menu li.hover a { color:#000; text-decoration:none; background:url(../images/bg_panel_menu.gif) no-repeat;}
+#header .panel #menu li:hover a em, #header .panel #menu li.hover a em { color:#000; background:url(../images/bg_panel_menu.gif) 100% 0 no-repeat;}
+#header .panel #menu li.home { background:none;}
+#header .panel #menu li a.active { text-decoration:underline;}
+
+/* ----------------------------------------- Menu Box */
+.MenuBox { height:35px; overflow:hidden; clear:both;}
+.MenuBox li { padding-left:2px; float:left;}
+.MenuBox li.home { padding:0;}
+.MenuBox li a { height:35px; padding:0 0 0 24px; display:block; float:left; color:#005588; font:21px georgia, tahoma; background:url(../images/bg_menu.gif) 0 0 no-repeat; text-decoration:none;}
+.MenuBox li a em { height:30px; padding:5px 24px 0 0; display:block; float:left; cursor:pointer; color:#005588; background:url(../images/bg_menu.gif) 100% 0 no-repeat;}
+.MenuBox li a:hover { color:#000; background-position:0 100%;}
+.MenuBox li a:hover em { color:#000; background-position:100% 100%;}
+.MenuBox li a em em { height:auto; padding:0; background:none;}
+/* .MenuBox li a:hover em em { border-bottom:1px dashed #000; background:none;} */
+.MenuBox li a.active { color:#000; background-position:0 100%;}
+.MenuBox li a.active em { color:#000; background-position:100% 100%;}
+.MenuBox li a.active em em { border-bottom:1px dashed #000;}
+.MenuBox li a.active:hover em em { border:0;}
+
+/* --------------------------------------- Info Box */
+.InfoBox { zoom:1; background:url(../images/px_info_shadow.gif) 100% 0 repeat-y #F5F5F5;}
+.InfoBox .bg_top { background:url(../images/bg_info_top.gif) no-repeat;}
+.InfoBox .bg_bottom { padding:0 0 2px; background:url(../images/bg_info_bottom.gif) 0 100% no-repeat;}
+.InfoBox ul { padding:21px 0 10px; overflow:hidden; zoom:1; background:url(../images/bg_info.jpg) 414px 100% no-repeat;}
+.InfoBox ul p { padding:15px 0 0;}
+.InfoBox .left { width:276px; padding-left:112px; float:left; background:url(../images/pic.jpg) 9px 0 no-repeat;}
+.InfoBox .right { width:362px; padding-right:15px; float:right;}
+.InfoBox .right p { padding:12px 0 0 105px;}
+
+/* ------------------------------------- Search Box */
+.SearchBox { width:393px; height:228px; top:401px; left:101px; position:absolute; background:url(../images/bg_search.png) no-repeat;}
+.SearchBox li { padding:5px 0 6px 20px; overflow:hidden; font-size:11px;}
+.SearchBox li em { width:190px; float:left; padding:2px 8px 0 0; text-align:right;}
+.SearchBox li span { width:129px; float:left; text-align:right;}
+.SearchBox li span select { width:129px; height:18px; padding-left:2px; color:#000; font:11px tahoma;}
+.SearchBox li.close { padding:14px 14px 0;}
+.SearchBox li.close img { display:block; float:right;}
+.SearchBox li span .search { width:73px; height:21px; padding-bottom:3px; border:0; color:#005588; font:bold 12px tahoma; background:url(../images/button_login.gif) no-repeat; cursor:pointer;}
+
+/************************************************************************************************************* DELETE THIS */
+.SearchBox { display:none;}
+/************************************************************************************************************* DELETE THIS */
+
+
+/* ******************** Content ********************* */
+#content { background:url(../images/px_content_shadow.gif) 100% 0 repeat-y #F5F5F5;}
+#content .background { padding:14px 0 17px 17px; overflow:hidden; zoom:1; background:url(../images/bg_content_bottom.gif) 0 100% no-repeat;}
+#content .bg_content_top { background:url(../images/bg_content_top1.gif) no-repeat;}
+#content .bg_content_bottom { padding:28px 20px 28px 28px; overflow:hidden; zoom:1; background:url(../images/bg_content_bottom1.gif) 0 100% no-repeat;}
+#content .bg_t { padding:12px 0 0; background:url(../images/bg_content_top2.gif) no-repeat #F5F5F5;}
+#content .bg_b { padding:5px 7px 21px 17px; background:url(../images/bg_content_bottom2.gif) 0 100% no-repeat #F5F5F5;}
+#content .pixel { width:857px; background:url(../images/px_content.gif) repeat-y;}
+#empty { height:202px; clear:both;}
+
+/* -------------------------------------- Expert Box */
+.ExpertBox { width:283px; float:left; padding-right:8px; background:url(../images/px_expert.gif) repeat-y;}
+.ExpertBox .title { height:54px; padding:0 12px; color:#005588; font:bold 12px georgia, tahoma; background:url(../images/bg_expert_top.jpg) no-repeat; line-height:15px;}
+.ExpertBox .title em { color:#DA2526; font-size:17px; padding-right:4px;}
+.ExpertBox .title h3 { padding:10px 0 0;}
+.ExpertBox .title h3 a { color:#005588; font:18px georgia, tahoma; text-decoration:none;}
+.ExpertBox .text { padding:4px 14px 14px; background:url(../images/bg_expert_bottom.gif) 0 100% no-repeat;}
+.ExpertBox .text .all { padding:5px 0 0;}
+.ExpertBox .text .all a { color:#005588;}
+.ExpertBox .text ul { padding:14px 0; border-top:1px solid #ECE7E7; overflow:hidden; zoom:1; position:relative;}
+.ExpertBox .text ul.home { border:0;}
+.ExpertBox .text li.image { width:106px; height:111px; float:left; overflow:hidden; position:relative; background:url(../images/bg_image.gif) no-repeat;}
+.ExpertBox .text li.image a { width:106px; height:111px; display:block; top:0; left:0; position:absolute; line-height:106px; font-size:400px;}
+.ExpertBox .text li.image img { margin:0 auto; display:block;}
+.ExpertBox .text li.image .corner { width:106px; height:111px; top:0; left:0; position:absolute; background:url(../images/image_preview.png) no-repeat;}
+.ExpertBox .text li.image .icon_offline { width:14px; height:15px; bottom:0; _bottom:-2px; right:0; position:absolute; background:url(../images/icon_offline.png) no-repeat;}
+.ExpertBox .text li.image .icon_online { width:14px; height:15px; bottom:0; _bottom:-2px; right:0; position:absolute; background:url(../images/icon_online.png) no-repeat;}
+.ExpertBox .text li.image .indent { margin:9px auto 0;}
+.ExpertBox .text li.none { background:url(../images/bg_image_none.gif) no-repeat;}
+.ExpertBox .text li.expert { width:140px; float:right; line-height:14px; font-size:11px;}
+.ExpertBox .text li.expert a.name { color:#005588; font-size:14px; display:block;}
+.ExpertBox .text li.expert a.started { padding:4px 0 8px; display:block; color:#E11919;}
+.ExpertBox .text li.expert p { padding:3px 0;}
+.ExpertBox .text li.expert img { display:block;}
+.ExpertBox .text li.expert span { color:#8E8E8E; padding:3px 0; display:block;}
+.ExpertBox .text li.expert em { padding:0 7px;}
+
+/* ---------------------------------- Statistics Box */
+.StatisticsBox {}
+.StatisticsBox .title { color:#005588; font:bold 14px georgia, tahoma;}
+/* Search */
+.StatisticsBox .search { padding:19px 0 0; overflow:hidden;}
+.StatisticsBox .search li { color:#000; font-size:14px; float:left; font-weight:bold;}
+.StatisticsBox .search li label { padding:0 0 4px; display:block;}
+.StatisticsBox .search .expert { width:190px;}
+.StatisticsBox .search .expert select { width:161px; height:19px; border:1px solid #CCCCCC; color:#000; font:12px tahoma;}
+.StatisticsBox .search .date { width:350px;}
+.StatisticsBox .search .date img { margin:0 14px 0 1px; vertical-align:middle;}
+.StatisticsBox .search .date .form { width:70px; padding:2px 6px 3px; margin-left:5px; color:#000; font:12px tahoma; border:0; background:url(../images/bg_form2.gif) no-repeat;}
+.StatisticsBox .search .date .button { width:73px; height:21px; padding-bottom:3px; border:0; color:#005588; font:bold 12px tahoma; background:url(../images/button_login.gif) no-repeat; cursor:pointer;}
+/* Wrap Table */
+.StatisticsBox .wrap { padding:17px 0 0; overflow:hidden; zoom:1;}
+/* Left Table */
+.StatisticsBox .left { width:531px; float:left; border:1px solid #8E8E8E; background:url(../images/px_table.gif) repeat-y #5FB4CB;}
+.StatisticsBox .left li { color:#fff; font:11px Trebuchet MS, tahoma; overflow:hidden; zoom:1; border-top:1px solid #F5F5F5;}
+.StatisticsBox .left li a { color:#fff;}
+.StatisticsBox .left div { padding:7px; float:left; color:#fff; font:11px Trebuchet MS, tahoma;}
+.StatisticsBox .left li.none { border:0;}
+.StatisticsBox .left li.info { border:0; background:url(../images/px_table.gif) repeat-y #4BA3BD;}
+.StatisticsBox .left li.info div { font-size:13px;}
+.StatisticsBox .left .id { width:25px; padding:7px 7px 7px 2px; text-align:right;}
+.StatisticsBox .left .id a { margin-left:3px;}
+.StatisticsBox .left .date { width:112px; padding:7px 2px 7px 5px;}
+.StatisticsBox .left .model { width:64px;}
+.StatisticsBox .left .type { width:109px;}
+.StatisticsBox .left .status { width:83px; padding:7px 6px 7px 4px; text-align:right;}
+.StatisticsBox .left .total { width:80px; padding:7px 0 7px 3px;}
+/* Right Table */
+.StatisticsBox .right { width:233px; float:right; border:1px solid #8E8E8E; background:url(../images/px_table1.gif) 131px 0 repeat-y #5FB4CB;}
+.StatisticsBox .right li { padding:0 2px 0 5px; color:#fff; font:11px Trebuchet MS, tahoma; overflow:hidden; zoom:1; border-top:1px solid #F5F5F5;}
+.StatisticsBox .right li a { color:#fff;}
+.StatisticsBox .right div { padding:7px 0; float:left; color:#fff; font:11px Trebuchet MS, tahoma;}
+.StatisticsBox .right li.info { border:0; background:url(../images/px_table1.gif) 131px 0 repeat-y #4BA3BD;}
+.StatisticsBox .right .all_balance { width:123px;}
+.StatisticsBox .right .credit { width:92px; float:right;}
+/* Filter */
+.StatisticsBox .filter { padding:22px 0; color:#848484; clear:both;}
+.StatisticsBox .filter p { padding:7px 0;}
+.StatisticsBox .filter select { width:42px; margin:0 12px 0 7px; border:1px solid #CCCCCC; color:#005588; font:12px tahoma;}
+
+/* -------------------------------- Registration Box */
+.RegistrationBox {}
+.RegistrationBox .rules { padding:15px 0 10px; clear:both;}
+.RegistrationBox .rules a { color:#005588;}
+/* Stage */
+.RegistrationBox .stage { overflow:hidden; zoom:1;}
+.RegistrationBox .stage span { height:39px; padding:0 0 0 8px; margin-right:8px; float:left; color:#545453; font:14px georgia, tahoma; background:url(../images/arrow_stage.gif) 100% 11px no-repeat; cursor:default;}
+.RegistrationBox .stage span span { height:29px; padding:10px 22px 0 0; margin:0;}
+.RegistrationBox .stage .active { color:#005588; padding:0 0 0 15px; font-size:17px; background:url(../images/button_stage.gif) 0 0 no-repeat;}
+.RegistrationBox .stage .active span { height:30px; color:#005588; padding:9px 32px 0 0; font-size:17px; background:url(../images/button_stage.gif) 100% 0 no-repeat;}
+.RegistrationBox .stage .finish { background:none;}
+.RegistrationBox .stage .finish span { padding:9px 0 0; background:none;}
+.RegistrationBox .stage .active_finish { color:#005588; padding:0 0 0 15px; margin:0; font-size:17px; background:url(../images/button_stage_finish.gif) 0 0 no-repeat;}
+.RegistrationBox .stage .active_finish span { height:30px; color:#005588; padding:9px 15px 0 0; font-size:17px; background:url(../images/button_stage_finish.gif) 100% 0 no-repeat;}
+/* Info */
+.RegistrationBox ul.info { padding:10px 0 0;}
+.RegistrationBox ul.info li { padding:18px 0 0; overflow:hidden; zoom:1;}
+.RegistrationBox ul.info li em { width:70px; float:left; font-size:13px;}
+.RegistrationBox ul.info li span { width:580px; float:left;}
+.RegistrationBox ul.info li span input { width:199px; padding:2px 6px 3px; margin-right:32px; color:#000; font:12px tahoma; border:0; background:url(../images/bg_form3.gif) no-repeat;}
+.RegistrationBox ul.info li span i { color:#FF1825; font:12px tahoma;}
+.RegistrationBox ul.info li span b { padding:7px 0 0; display:block; font-size:11px; font-weight:normal;}
+.RegistrationBox .captcha { overflow:hidden; zoom:1;}
+.RegistrationBox .captcha li { float:left;}
+.RegistrationBox .captcha li.code { width:260px; font-size:14px;}
+.RegistrationBox .captcha li.code input { width:125px; padding:2px 6px 3px; margin-left:11px; color:#000; font:12px tahoma; border:0; background:url(../images/bg_form4.gif) no-repeat; vertical-align:top;}
+.RegistrationBox .captcha li.image { width:150px; font-size:12px;}
+.RegistrationBox .captcha li.image a.other { padding:7px 0 1px; display:block; color:#005588; border-bottom:1px dashed #545453; text-decoration:none;}
+.RegistrationBox .captcha li.image a.other:hover { padding:7px 0 2px; border:0;}
+.RegistrationBox .captcha li.wrong { width:330px; color:#FF1825; font-size:12px;}
+.RegistrationBox .create { width:166px; height:47px; padding-bottom:4px; border:0; color:#005588; font:17px tahoma; background:url(../images/button_create_account.gif) no-repeat; cursor:pointer;}
+/* I Am */
+.i_am { padding:17px 25px; clear:both;}
+.i_am input { margin:0 5px 0 21px;}
+.i_am label { cursor:pointer;}
+.i_am span { padding-right:21px;}
+
+/* ------------------------------------- Payment Box */
+.PaymentMenu { height:34px; overflow:hidden;}
+.PaymentMenu li { padding-right:49px; float:left; color:#817A7D; font:18px georgia, tahoma;}
+.PaymentMenu li a { height:34px; float:left; padding:0 0 0 27px; color:#817A7D; text-decoration:none;}
+.PaymentMenu li a em { height:25px; padding:9px 27px 0 0; float:left; cursor:pointer;}
+.PaymentMenu li a em em { height:auto; padding:0; border-bottom:1px dashed #817A7D;}
+.PaymentMenu li a:hover { color:#323232; background:url(../images/bg_menu_pay.gif) no-repeat #F5F5F5;}
+.PaymentMenu li a:hover em { background:url(../images/bg_menu_pay.gif) 100% 0 no-repeat;}
+.PaymentMenu li a:hover em em { border:0; background:none;}
+.PaymentMenu li a.active { color:#323232; background:url(../images/bg_menu_pay.gif) no-repeat #F5F5F5;}
+.PaymentMenu li a.active em { background:url(../images/bg_menu_pay.gif) 100% 0 no-repeat;}
+.PaymentMenu li a.active em em { border:0; background:none;}
+.PaymentMenu li.sms { float:right; padding:0;}
+/* Payment Box */
+.PaymentBox { padding:17px 15px 14px 27px; overflow:hidden; zoom:1; background:url(../images/bg_content_bottom2.gif) 0 100% no-repeat #F5F5F5;}
+.PaymentBox li.top { width:100%; padding:0 0 17px; overflow:hidden;}
+.PaymentBox li.image { width:130px; float:left;}
+.PaymentBox li.text { width:620px; float:left;}
+.PaymentBox li.text p { padding:15px 0 21px;}
+.PaymentBox li.text .pay { padding:8px 0 14px;}
+.PaymentBox li.text .pay select { width:199px; height:21px; margin-right:19px; color:#000; font:15px tahoma; border:1px solid #B2B3B3; vertical-align:middle;}
+.PaymentBox li.text .pay input { width:126px; height:21px; padding-bottom:3px; border:0; color:#005588; font:bold 12px tahoma; background:url(../images/button_pay.gif) no-repeat; cursor:pointer;}
+.PaymentBox li.text .note { color:#005E97;}
+.PaymentBox li.text .note big { font-size:16px; display:block;}
+/* Info SMS */
+.PaymentBox li.text ul.info { padding:15px 60px 0 0;}
+.PaymentBox li.text ul.info li { padding:12px 0; overflow:hidden; zoom:1; background:url(../images/px_sms.gif) repeat-x;}
+.PaymentBox li.text ul.info li.home { background:none;}
+.PaymentBox li.text ul.info li.title { background:none;}
+.PaymentBox li.text ul.info li.title div { color:#313131; font:bold 12px tahoma;}
+.PaymentBox li.text ul.info li div { float:left; color:#005E97; text-align:center; line-height:20px;}
+.PaymentBox li.text ul.info li .country { width:75px; font-size:14px;}
+.PaymentBox li.text ul.info li .country img { margin:0 auto 5px; display:block;}
+.PaymentBox li.text ul.info li .country .padding { padding:45px 0 0;}
+.PaymentBox li.text ul.info li .country .padding1 { padding:15px 0 0;}
+.PaymentBox li.text ul.info li .number { width:178px;}
+.PaymentBox li.text ul.info li .number b { font-size:24px;}
+.PaymentBox li.text ul.info li .number b.padding { padding:60px 0 0; display:block;}
+.PaymentBox li.text ul.info li .number b.padding1 { padding:28px 0 0; display:block;}
+.PaymentBox li.text ul.info li .operator { width:120px;}
+.PaymentBox li.text ul.info li .operator div { padding-left:35px; text-align:left;}
+.PaymentBox li.text ul.info li .cost { width:80px;}
+.PaymentBox li.text ul.info li .credit { width:102px;}
+.PaymentBox li.text ul.info li.more { padding:40px 0 0; background:none; font:bold 11px tahoma; clear:both;}
+.PaymentBox li.text ul.info li.more a { color:#313131; font-weight:normal;}
+
+/* -------------------------------------- LEFT COLUMN */
+#left_column { width:321px; float:left;}
+
+/* --------------------------- Expert Description Box */
+.ExpertDescrBox {}
+.ExpertDescrBox h1 { padding:10px 0 5px;}
+.ExpertDescrBox h1 em { color:#005E97; font-size:24px;}
+/* Description */
+.ExpertDescrBox .descr { padding:0 0 7px; overflow:hidden; zoom:1;}
+.ExpertDescrBox .descr li { float:left; font-size:12px;}
+.ExpertDescrBox .descr li.left { width:98px; color:#8E8E8E;}
+.ExpertDescrBox .descr li.right { width:210px;}
+/* Image */
+.ExpertDescrBox .image { width:320px; height:239px; position:relative; background:url(../images/bg_image1.gif) no-repeat;} 
+.ExpertDescrBox .image img { margin:auto; display:block;}
+.ExpertDescrBox .image .corner { width:320px; height:239px; top:0; left:0; position:absolute; background:url(../images/image_preview1.png) no-repeat;}
+/* Album */
+.ExpertDescrBox .album { margin-top:18px; padding:12px 0 0; background:url(../images/bg_album_top.gif) no-repeat;}
+.ExpertDescrBox .album .bg_bottom { padding:0 0 12px; background:url(../images/bg_album_bottom.gif) 0 100% no-repeat;}
+.ExpertDescrBox .album .text { padding:0 0 0 4px; overflow:hidden; zoom:1; background:#F5F5F5; border:solid #B2B3B3; border-width:0 1px;}
+.ExpertDescrBox .album li { color:#005E97; font:14px georgia, tahoma; float:left;}
+.ExpertDescrBox .album li select { width:204px; padding:2px; color:#000; font:12px tahoma; margin-left:6px; vertical-align:middle;}
+.ExpertDescrBox .album li.name { width:100%; padding:0 0 20px; overflow:hidden;}
+.ExpertDescrBox .album li.name label { padding-left:4px;}
+.ExpertDescrBox .album li div { width:89px; height:85px; padding:0 3px 17px 5px; float:left; background:url(../images/bg_image2.gif) 5px 0 no-repeat;}
+.ExpertDescrBox .album li div img { margin:auto; display:block;}
+.ExpertDescrBox .album li.prev { width:9px; padding:74px 0 0;}
+.ExpertDescrBox .album li.prev a { width:9px; height:39px; display:block; background:url(../images/button_prev.gif) no-repeat; text-decoration:none;}
+.ExpertDescrBox .album li.next { width:9px; padding:74px 0 0;}
+.ExpertDescrBox .album li.next a { width:9px; height:39px; display:block; background:url(../images/button_next.gif) no-repeat; text-decoration:none;}
+.ExpertDescrBox .album li a.none { background-position:0 100%;}
+.ExpertDescrBox .album li.preview { width:293px;}
+
+/* ------------------------------------- RIGHT COLUMN */
+#right_column { width:458px; float:right;}
+
+/* ----------------------------------- Enter Chat Box */
+.EnterChatBox { padding-bottom:20px;}
+.EnterChatBox .title { padding:14px 0 5px; color:#005E97; font:17px georgia, tahoma;}
+.EnterChatBox .title1 { padding:24px 0 5px; color:#005E97; font:17px georgia, tahoma;}
+.EnterChatBox .take { padding:2px 11px 0;}
+.EnterChatBox a.link { color:#005588; font:bold 15px georgia, tahoma; zoom:1; text-decoration:none; border-bottom:1px dashed #005588;}
+.EnterChatBox a.link:hover { border:0;}
+/* Time Table */
+.EnterChatBox .timetable { margin:25px 0; background:url(../images/bg_table_top.gif) no-repeat #6DCBE1;}
+.EnterChatBox .timetable .bgb { overflow:hidden; zoom:1; padding:12px 9px 8px 12px; background:url(../images/bg_table_bottom.gif) 0 100% no-repeat;}
+.EnterChatBox .timetable .title2 { padding:0 0 8px; color:#005E97; font:18px georgia, tahoma;}
+.EnterChatBox .timetable ul { border:1px solid #6DA2BC; background:url(../images/px_time_table.gif) repeat-y #1E7EBB;}
+.EnterChatBox .timetable ul li { padding:3px 0; color:#fff; font:10px Trebuchet MS, tahoma; overflow:hidden; zoom:1; border-top:1px solid #6DA2BC; text-align:center;}
+.EnterChatBox .timetable ul li a { color:#fff;}
+.EnterChatBox .timetable ul li em { width:75px; _width:72px; float:left;}
+.EnterChatBox .timetable ul li span { width:15px; float:left; color:#1E7EBB;}
+.EnterChatBox .timetable ul li span i { width:9px; height:9px; display:block; margin:3px auto 0; background:url(../images/icon_time.gif) no-repeat;}
+.EnterChatBox .timetable li.day { border:0;}
+.EnterChatBox .timetable li.day span { color:#fff;}
+/* Recall */
+.EnterChatBox ul.recall { padding:55px 0 0;}
+.EnterChatBox ul.recall li { padding:10px 0 1px; overflow:hidden;}
+.EnterChatBox ul.recall li em { width:250px; float:left; font:17px georgia, tahoma;}
+.EnterChatBox ul.recall li em img { margin-right:10px; vertical-align:middle;}
+.EnterChatBox ul.recall li span { width:200px; float:right; padding-right:5px; font:bold 15px georgia, tahoma; text-align:right;}
+.EnterChatBox ul.recall li i { color:#8E8E8E; font:bold 14px georgia, tahoma;}
+.EnterChatBox ul.recall li.text { padding:4px 0 20px;}
+/* Send Message */
+.EnterChatBox .send_message { position:relative;}
+.EnterChatBox .send_message .bg_top { width:321px; top:2px; left:0; position:absolute; padding:12px 0 0; background:url(../images/bg_album_top.gif) no-repeat;}
+.EnterChatBox .send_message .bg_bottom { padding:0 0 12px; background:url(../images/bg_album_bottom.gif) 0 100% no-repeat;}
+.EnterChatBox .send_message .text { padding:17px 0 0 11px; overflow:hidden; background:#F5F5F5; border:solid #B2B3B3; border-width:0 1px;}
+.EnterChatBox .send_message textarea { width:271px; height:46px; padding:3px 8px; color:#000; font:12px tahoma; border:0; background:url(../images/bg_message.gif) no-repeat;}
+.EnterChatBox .send_message .send { width:91px; height:21px; padding-bottom:3px; margin-right:17px; border:0; color:#005588; font:bold 12px tahoma; background:url(../images/button_send.gif) no-repeat; cursor:pointer;}
+.EnterChatBox .send_message p { padding:7px 0 0;}
+.EnterChatBox .send_message a.close { top:6px; right:6px; position:absolute;}
+/* Write Recall */
+.EnterChatBox .write_recall { position:relative;}
+.EnterChatBox .write_recall ul { width:434px; height:211px; padding:9px 0 0; top:60px; left:-120px; position:absolute; background:url(../images/bg_write_recall.png) no-repeat;}
+.EnterChatBox .write_recall li { padding:7px 0 0 27px; overflow:hidden; zoom:1;}
+.EnterChatBox .write_recall li em { width:84px; float:left; padding:2px 0 0;}
+.EnterChatBox .write_recall li span { width:295px; float:left;}
+.EnterChatBox .write_recall li span #name { width:274px; padding:3px 8px 4px; color:#000; font:12px tahoma; border:0; background:url(../images/bg_form1.gif) no-repeat;}
+.EnterChatBox .write_recall li span textarea { width:275px; height:65px; padding:3px 8px; color:#000; font:12px tahoma; border:0; background:url(../images/bg_message1.gif) no-repeat;}
+.EnterChatBox .write_recall li span i { color:#666666; font:11px tahoma; display:block; line-height:13px;}
+.EnterChatBox .write_recall li.close { top:9px; right:9px; padding:0; position:absolute;}
+.EnterChatBox .write_recall li .send { width:91px; height:21px; padding-bottom:3px; margin:9px 0 8px; display:block; border:0; color:#005588; font:bold 12px tahoma; background:url(../images/button_send.gif) no-repeat; cursor:pointer;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:902px; height:170px; padding-top:14px; margin:-184px auto 0; position:relative; background:url(../images/bg_footer.gif) no-repeat;}
+/* Copyright */
+#footer .copyright { width:184px; height:158px; padding:0 10px 0 21px; float:left; color:#fff; font-size:11px; border-right:1px solid #9BC3E4;}
+#footer .copyright p { padding:7px 0 11px;}
+#footer .copyright .img { margin-right:21px;}
+/* Menu */
+#footer .menu { width:490px; height:158px; padding:0 0 0 20px; float:left; color:#fff; font-size:13px; border-right:1px solid #9BC3E4;}
+#footer .menu a { color:#fff; font-size:11px;}
+#footer .menu .title { padding:0 0 10px; display:block; font-weight:bold;}
+#footer .menu .list { padding:0 0 17px; overflow:hidden; zoom:1;}
+#footer .menu .list ul { width:202px; float:left; padding-right:10px;}
+#footer .menu .list ul li { padding:2px 0 0;}
+/* Payment */
+#footer .payment { width:168px; float:right; color:#fff;}
+#footer .payment a { color:#fff; font:bold 14px Trebuchet MS, arial; text-decoration:none;}
+#footer .payment p { padding:4px 0;}
+#footer .payment img { margin-right:6px; vertical-align:middle;}
+
+/* ----------------------- IE ------------------------- */
+* html .ExpertBox .text li.image .icon_offline { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/icon_offline.png", sizingMethod="crop")}
+* html .ExpertBox .text li.image .icon_online { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/icon_online.png", sizingMethod="crop")}
+* html .SearchBox { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg_search.png", sizingMethod="crop")}
+* html .EnterChatBox .write_recall ul { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg_write_recall.png", sizingMethod="crop")}
+.ExpertBox .text li.image .corner { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/image_preview.png", sizingMethod="crop")}
+.ExpertDescrBox .image .corner { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/image_preview1.png", sizingMethod="crop")}
+/* ---------------------------------------------------- */

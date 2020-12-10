@@ -1,0 +1,80 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:url(images/bg_body_top_left.jpg) no-repeat #000;}
+a { color:#A0ADF1; text-decoration:underline; outline:none;}
+a:hover { color:orange;}
+input { margin:0; padding:0; color:#000; font:14px Myriad Pro, tahoma; vertical-align:middle;}
+div { margin:0; padding:0; font:14px arial; color:#fff; line-height:20px;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:15px 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:normal;}
+h1 { color:#fff; font:bold 18px arial; margin:0; padding:10px 0;}
+h2 { color:#fff; font:bold 16px arial; margin:0; padding:0 0 21px;}
+h4 { color:#fff; font:bold 14px arial; margin:0; padding:20px 0 15px;}
+h5 { color:#fff; font:bold 13px arial; margin:0; padding:20px 0;}
+
+#container { width:100%; min-width:1000px; min-height:100%; height:auto !important; height:100%; position:relative;}
+#page { width:90%; margin:0 auto;}
+#bg_feather { width:100%; height:181px; top:564px; left:0; position:absolute;}
+#bg_feather div { width:997px; height:181px; margin:0 auto; background:url(images/bg_feather.gif) no-repeat;}
+#bg_light { width:273px; height:542px; top:139px; right:0; position:absolute; background:url(images/bg_light.jpg) no-repeat;}
+.feather { background:url(images/bg_feather1.gif) 46px 70px no-repeat;}
+/* ********************* Header ********************* */
+#header { height:195px; position:relative;}
+/* Logo */
+#header .logo { top:56px; left:40%; right:40%; position:absolute;}
+/* Phone */
+#header .phone { padding-left:28px; top:70px; right:42px; position:absolute; color:#fff; font:bold 21px Myriad Pro, arial; background:url(images/icon_phone.gif) 0 5px no-repeat;}
+/* Menu */
+#header .menu { width:100%; height:40px; bottom:0; left:0; position:absolute;}
+#header .menu li { width:24.5%; padding:0; float:left; background:url(images/line_menu.gif) 0 3px no-repeat; text-align:center;}
+#header .menu li.home { background:none;}
+
+/* ******************** Content ********************* */
+#content { padding:0 0 138px; overflow:hidden; zoom:1;}
+
+/* ---------------------------------------- Image Box */
+.ImageBox { width:873px; height:625px; margin:0 auto; background:url(images/bg_main.jpg) no-repeat;}
+.ImageBox div { position:relative;}
+.ImageBox div a { top:105px; right:61px; position:absolute;}
+
+/* -------------------------------------- Service Box */
+.ServiceBox { padding:35px 45px; clear:left; background:#0E111A; line-height:25px; position:relative; zoom:1;}
+.ServiceBox p { padding:17px 0 0;}
+.ServiceBox a { color:#8882FF; display:block;}
+.ServiceBox a:hover { color:orange;}
+.ServiceBox ul { width:100%; float:left; padding:0 0 17px;}
+.ServiceBox ul li { padding-right:40px; float:left; color:#B6AFD3; font:bold 17px Myriad Pro, arial; text-transform:uppercase; cursor:default;}
+.ServiceBox ul li a { text-decoration:none; border-bottom:1px dashed #8882FF;}
+.ServiceBox ul li a:hover { border-color:orange;}
+
+/* ---------------------------------------- Main Box */
+.MainBox { padding:80px 12px 0 45px; position:relative;}
+/* Description */
+.MainBox .descr { width:815px; padding:31px 0 21px; overflow:hidden;}
+.MainBox .descr li { padding:7px 3px; overflow:hidden; zoom:1; border-bottom:1px solid #2B3547;}
+.MainBox .descr li i, .MainBox .descr li b, .MainBox .descr li em, .MainBox .descr li span { float:left; padding-right:10px; font-style:normal; font-weight:normal;}
+.MainBox .descr li em { width:197px; color:#8489AB;}
+.MainBox .descr li span { width:191px;}
+.MainBox .descr li i { width:118px;}
+.MainBox .descr li b { width:58px;}
+/* List */
+.MainBox .list { overflow:hidden; padding:7px 0 15px;}
+.MainBox .list li { padding:8px 0 0 16px; color:#8489AB; background:url(images/arrow_list.gif) 0 14px no-repeat;}
+/* Contact */
+.MainBox .contact { width:100%; overflow:hidden;}
+.MainBox .contact li { width:225px; float:right; padding:11px 0 11px 45px;}
+.MainBox .contact li label { cursor:pointer;}
+.MainBox .contact li label input { width:218px; padding:3px; border:0; margin-top:7px; display:block; font-weight:bold;}
+.MainBox .contact li.send { padding:26px 0 0; text-align:right;}
+.MainBox .contact li.send input { width:133px; height:33px; padding-bottom:1px; color:#000; font:bold 14px arial; border:0; background:url(images/button_send.gif) no-repeat; cursor:pointer;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:873px; height:88px; margin:-88px auto 0; position:relative; background:url(images/bg_footer.jpg) 0 100% no-repeat;}
+#footer p { padding:0 45px 10px; color:#B4AED4;}
+/* ------------------------- IE ----------------------- */
+* html body	{ width: expression(((document.documentElement.clientWidth || document.clientWidth) < 1000)? "1000px" : "100%"); height:100%;}
+/* ---------------------------------------------------- */

@@ -1,0 +1,310 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:url(images/bg_top.jpg) 50% 0 no-repeat #000;}
+a { color:#000; text-decoration:none; outline:none;}
+a:hover { color:#ED1C24; text-decoration:underline;}
+input { margin:0; padding:0; font:12px tahoma; vertical-align:middle;}
+div { margin:0; padding:0; color:#000; font:13px/17px arial;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:15px 0 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; color:#000; font:13px/17px arial;}
+h1 { color:#000; font: 20px calibri, arial; margin:0; padding:0;}
+h2 { color:#000; font: 18px calibri, arial; margin:0; padding:0;}
+@font-face { font-family:calibri; src:local("Calibri"), url(js/calibri.ttf);}
+@font-face { font-family:cuprum; src:local("Cuprum"), url(js/Cuprum.ttf);}
+
+#container { min-height:100%; height:auto !important; height:100%; position:relative; background:url(images/bg_bottom.jpg) 50% 100% repeat-x;}
+.Wrapper { width: 961px; margin: 0 auto; background:url(images/line_pers.gif) 609px 67px no-repeat;}
+/* ********************* Header ********************* */
+#header { height: 155px; position: relative; background:url(images/bg_header.png) 100% 12px no-repeat;}
+/* Logo */
+.LogoBG { width: 100%; height: 188px; top: 0; left: 0; position: absolute; background:url(images/logoo.png) 50% 100% no-repeat;}
+.LogoHead { top: 16px; left: 0; position: absolute;}
+/* Person Slider */
+.PersonSlider { padding: 27px 147px 0 0; float: right;}
+.person-slide { width: 280px; height: 40px; background:url(images/bg_pers1.gif) no-repeat;}
+.person-slide ul { float: right;}
+.person-slide li { padding-left: 3px; float: left; color: #D9E0E4; font: 16px/17px times new roman, arial; text-align: right;}
+.person-slide b { padding: 1px 10px 0 0; display: block; color: #FAA31A; font-weight: normal; font-size: 13px;}
+.person-slide em { height: 30px; padding-left: 10px; float: left; color: #fff; font: bold 30px/30px arial; text-shadow:1px 1px 2px #5A3832; background:url(images/bg_pers.gif) 0 100% no-repeat;}
+.person-slide em em { padding:0 10px 0 0; background:url(images/bg_pers.gif) 100% 100% no-repeat;}
+.person-slide em em em { padding:0 7px; background:url(images/bg_pers.gif) repeat-x;}
+.person-slide li.name {}
+.person-slide li.number { padding: 4px 0 0 3px;}
+/* Main Menu */
+.MainMenu { width: 795px; height: 35px; top: 144px; right: 0; position: absolute; background:url(images/px_menu.gif) repeat-x #F1F4F6;}
+.MainMenu li { padding: 0 0 0 2px; float: left; position: relative; background:url(images/line_menu.gif) no-repeat;}
+.MainMenu li a { padding: 0 21px; display: block; color: #000; font:bold 13px/35px arial; background:url(images/px_menu.gif) repeat-x #F1F4F6;}
+.MainMenu li:hover a { color: #fff; text-decoration: none; background-position: 0 100%;}
+.MainMenu li:first-child { background: none;}
+.MainMenu li:hover ul { display: block;}
+.MainMenu li ul { width: 180px; top: 35px; left: 2px; position: absolute; z-index: 333; display: none; background: #ED1C24; border: solid #D7A751; border-width: 0 1px 1px;}
+.MainMenu li ul li { padding: 0; float: none; background: none; border-top: 1px solid #D7A751;}
+.MainMenu li ul li a { padding: 7px 23px; color: #fff; font:12px arial; background: none;}
+.MainMenu li ul li a:hover { background: #111111;}
+.MainMenuCorner { width: 6px; height: 35px; top: 144px; right: 795px; position: absolute; background:url(images/px_menu.gif) repeat-x #F1F4F6;}
+
+/* ******************** Content ********************* */
+#content { padding: 35px 4px 6px 5px; overflow: hidden; border: 1px solid #757575; background:url(images/px_content.png);}
+.clear { clear: both;}
+.empty { height: 25px; clear: both;}
+.empty1 { height: 5px; clear: both;}
+.empty2 { height: 40px; clear: both;}
+.box-spacing { height: 2px; clear: both;}
+.empty-bottom { height: 150px; clear: both;}
+.ContentWrap { padding: 10px 12px 0 14px; overflow: hidden; clear: both;}
+
+/* Partner Box */
+.PartnerBox { padding: 21px; position: relative; border: 1px solid #757575; background: #000;}
+.PartnerBox img { margin: 0 auto; display: block;}
+.PartnerBox .three { width: 33%; float: left;}
+.PartnerBox .title { width: 100%; top: -11px; left: 0; position: absolute; color: #fff; font: 17px arial; text-align: center;}
+.PartnerBox .title span { padding: 0 8px; background: #000;}
+/* Menu Full */
+.MenuFull { padding: 33px 0 0; clear: both; overflow: hidden;}
+.MenuFull ul { width: 224px; padding-right: 20px; float: left;}
+.MenuFull li { padding: 12px 0 0; color: #fff; font: 14px calibri, arial;}
+.MenuFull li a { color: #9A9999;}
+.MenuFull li a:hover { color: #fff;}
+.MenuFull li span { color: #fff;}
+.MenuFull ul.w1 { width: 210px;}
+.MenuFull ul.w2 { width: 230px;}
+.MenuFull ul.w3 { width: 215px;}
+
+
+/****************************************************** Card Pages */
+
+/* Card Menu */
+.CardMenuWrap { border: 1px solid #A6A7A8; overflow: hidden; background:url(images/px_cardwrap.gif) repeat-x #DBDBDB;}
+.CardMenu { width: 560px; float: left;}
+.CardMenu li { float: left;}
+.CardMenu li a { padding: 0 12px; display: block; color: #232323; font: bold 15px/47px calibri, arial; text-shadow:1px 1px 0 #fff; background:url(images/px_card.gif) repeat-x #DBDBDB; text-decoration: none;}
+.CardMenu li a:hover, .CardMenu li a.active { background-position: 0 100%; border: solid #A6A7A8; border-width: 0 1px; padding: 0 11px;}
+.CardMenu li:first-child a:hover, .CardMenu li:first-child a.active { border-width: 0 1px 0 0; padding: 0 11px 0 12px;}
+.CardPrice { height: 31px; padding: 3px 4px 3px 10px; margin: 4px 4px 0 0; float: right; overflow: hidden; color: #fff; font: 15px/30px calibri, arial; background: #4B4B4B; border: 1px solid; border-color: #131313 #fff #fff #131313;}
+.CardPrice b { float: left; font: 23px/30px calibri, arial;}
+.CardPrice span { padding: 0 20px 0 5px; float: left;}
+.CardPrice a { padding: 0 12px; margin-left: 5px; float: left; color: #fff; font: 15px/30px calibri, arial; background:url(images/px_cardprice.gif) 0 100% repeat-x #A80C13; border-radius: 5px; text-decoration: none;}
+.CardPrice a:hover { background-position: 0 0;}
+.CardPrice a.currency { padding: 0; margin-left: 14px;}
+.CardPrice a.currency em { padding: 0 36px 0 10px; display: block; font-size: 18px; background:url(images/arrow_currency.gif) 100% 50% no-repeat;}
+
+/* Category Menu */
+.CategoryMenu { padding: 0 0 5px; background:url(images/px_category.gif) repeat-x #F3E5AD; border: 1px solid #A6A7A8;}
+.CategoryMenu li { padding: 5px 0; background:url(images/line_category.gif) 50% 0 no-repeat;}
+.CategoryMenu li a { padding: 0 12px; display: block; color: #797258; font: 16px calibri, arial;}
+.CategoryMenu li a:hover, .CategoryMenu li a.active { color: #ED1C24; text-decoration: underline;}
+
+/* Product Single */
+.ProductSingle { padding: 19px 20px 47px 47px; overflow: hidden; position: relative; border: 1px solid #A6A7A8; background: #fff;}
+.ProductSingle .image { width: 410px; padding: 25px 0 0; float: left;}
+.ProductSingle .image img { max-width: 410px; display: block;}
+.ProductSingle .text { width: 221px; float: right; color: #5C5C5C; font: italic 15px calibri, arial;}
+.ProductSingle .text .add { padding: 21px 0 0;}
+.ProductSingle .text .add a { padding: 0 5px; display: block; color: #fff; font: 15px/28px calibri, arial; text-align: center; background:url(images/btn_add.gif) repeat-x #C71B05; border: 1px solid #A4070D; border-radius: 5px;}
+.ProductSingle .text .add a:hover { text-decoration: none;}
+.ProductSingle .text p { padding: 8px 0 0;}
+.ProductSingle .text em { padding: 17px 0 0; display: block; color: #5C5C5C; font: italic 13px calibri, arial;}
+.ProductSingle .text span { padding: 0 0 15px 30px; display: block; color: #CD0000; font: italic 20px/21px calibri, arial; background:url(images/icon_price.gif) 0 7px no-repeat;}
+.ProductSingle .new { width: 46px; height: 46px; top: 0; left: 0; position: absolute; background:url(images/icon_new.gif) no-repeat;}
+
+/* Similar Product */
+.SimilarProductWrap { padding: 0 0 3px; overflow: hidden;}
+.SimilarProduct { width: 245px; padding: 8px 0 9px; margin-left: 3px; overflow: hidden; float: left; position: relative; border: 1px solid #A6A7A8; background: #fff;}
+.SimilarProduct:first-child { margin: 0;}
+.SimilarProduct:hover { border-color: #0A0A0A;}
+.SimilarProduct .image img { max-width: 225px; margin: 0 auto; display: block;}
+.SimilarProduct .name { padding: 10px 10px 0; text-align: center;}
+.SimilarProduct .name a { font: 16px calibri, arial;}
+.SimilarProduct .panel { padding: 27px 10px 0; overflow: hidden; clear: both;}
+.SimilarProduct .price { width: 125px; float: left;}
+.SimilarProduct .price i { padding: 0 0 0 30px; display: block; color: #000; font: italic 16px calibri, arial; text-decoration: line-through;}
+.SimilarProduct .price em { display: block; color: #5C5C5C; font: italic 13px calibri, arial;}
+.SimilarProduct .price span { padding: 0 0 0 30px; display: block; color: #CD0000; font: italic 20px/21px calibri, arial; background:url(images/icon_price.gif) 0 7px no-repeat;}
+.SimilarProduct .add { width: 95px; padding: 3px 0 0; float: right;}
+.SimilarProduct .add a { padding: 0 5px; display: block; color: #fff; font: 15px/28px calibri, arial; text-align: center; background:url(images/btn_add.gif) repeat-x #ED391F; border: 1px solid #A4070D; border-radius: 5px;}
+.SimilarProduct .add a:hover { text-decoration: none; background-position: 0 100%;}
+.SimilarProduct .hit { width: 46px; height: 46px; top: 0; left: 0; position: absolute; background:url(images/icon_hit.gif) no-repeat;}
+.SimilarProduct .sale { width: 46px; height: 46px; top: 0; left: 0; position: absolute; background:url(images/icon_sale.gif) no-repeat;}
+.SimilarProduct .new { width: 46px; height: 46px; top: 0; left: 0; position: absolute; background:url(images/icon_new.gif) no-repeat;}
+
+/* Page Number */
+.PageNumber { padding: 30px 0 0; text-align: center; color: #5C5C5C;}
+.PageNumber a { margin: 0 2px; color: #5C5C5C; font: 16px calibri, arial;}
+.PageNumber a:hover { color: #EC272F;}
+
+
+/* -------------------------------------- LEFT COLUMN */
+#left_column { width:623px; float:left;}
+#left_column1 { width:162px; float:left;}
+.ContentInner { padding: 2px 2px 8px; overflow: hidden; background:url(images/px_tour2.gif) 0 100% repeat-x #fff;}
+.TitleInner { padding: 0 100px 0 15px; color: #fff; font: bold 15px/38px calibri, arial; background: #0E0E0E; position: relative;}
+.TitleInner a { color: #fff;}
+.TitleInner h1 { padding: 0; color: #fff; font: bold 15px/38px calibri, arial;}
+
+.player-number { padding: 1px; top: 0; right: 0; position: absolute; border: 1px solid #CACACA; background: #fff;}
+.player-number em { height: 31px; padding: 1px 20px 0; display: block; color: #fff; font: bold 30px/28px calibri, arial; border: 1px solid #C39B4C; background:url(images/px_number.gif) repeat-x #EB2802; text-shadow: 1px 1px 3px #5B403C;}
+
+/* Slider Box */
+.SliderWrap { height: 340px; border: 3px solid #fff;}
+.SliderWrap img { display: block;}
+.MiniBox { height: 72px; clear: both;}
+
+/* Tournament Box */
+.NewsTabs { height: 38px; padding-left: 85px; background:#0E0E0E; border: solid #fff; border-width: 2px 2px 0;}
+.NewsTabs li { padding: 2px 7px 0 14px; float: left; color: #fff; font:bold 13px/36px arial;}
+.NewsTabs li a { padding: 0 10px; display: block; color: #fff; font:bold 13px/36px arial;}
+.NewsTabs li a:hover, .NewsTabs li.active a { color: #000; text-decoration: none; background: #fff;}
+.NewsTabsTitle { position: relative; clear: both;}
+.NewsTabsTitle div { top: -36px; left: 18px; position: absolute; color: #fff; font:bold 13px/36px arial;}
+.NewsBox { padding: 5px 2px 0; background:url(images/px_tour1.gif) 0 100% repeat-x #fff;}
+.NewsBox li { padding: 10px 15px; overflow: hidden; border-top: 1px solid #A6A7A8;}
+.NewsBox li a.name { width: 470px; float: left;}
+.NewsBox li em.date { width: 100px; float: right; color: #828282; text-align: right;}
+.NewsBox li:first-child { border: 0;}
+.NewsBox li .text { padding: 7px 0 0; clear: both; color: #898888;}
+.NewsBox li.page-num { padding: 20px 0 30px; background: #ECECEC; clear: both; text-align: center;}
+.NewsBox li.page-num a { padding: 0 7px; border: 1px solid #858585; line-height: 22px;}
+.NewsBox li.page-num a:hover { border-color: #E11820; text-decoration: none;}
+.NewsBox li.page-num a.active { border-color: #000; background: #000; color: #fff;}
+
+/* Team Foto */
+.TeamFoto { background:url(images/px_teamfoto.gif) 0 100% repeat-x #ED1C24; border: 1px solid #C5A054; border-radius: 4px; overflow: hidden;}
+.TeamFoto .background { padding: 11px 0px 10px 9px; overflow: hidden; background:url(images/bg_teamfoto.jpg) 100% 100% no-repeat;}
+.TeamFoto .image { width: 150px; float: left;}
+.TeamFoto .image img { display: block; border: 1px solid #FFBC00;}
+.TeamFoto .title { padding: 0 12px 0 0; float: left; background:url(images/bg_team_corner.gif) 100% 0 no-repeat;}
+.TeamFoto .title em { min-width: 234px; padding: 0 10px 0 32px; float: left; color: #fff; font:bold 16px/25px arial; background:url(images/bg_team_title.gif) 100% 0 no-repeat #FFBD00;}
+.TeamFoto .text { width: 450px; float: left; overflow: hidden; color: #fff;}
+.TeamFoto .text p { padding: 7px 0 0 32px; clear: both;}
+.TeamFoto .person { padding: 8px 0 0 32px; overflow: hidden; clear: both;}
+.TeamFoto li.number { padding-right: 14px; float: left;}
+.TeamFoto li.number em { padding: 3px 10px; display: block; color: #fff; font:bold 24px/22px arial; border: 1px solid #C39B4C; background: #000;}
+.TeamFoto li.name { width: 250px; padding: 4px 0 0; float: left; color: #fff; font-size: 17px;}
+.TeamFoto li.name em { padding: 0 0 5px; display: block; color: #fff; font-size: 11px;}
+.TeamFoto .team-slider-wrap { padding: 23px 0 0 66px; clear: both; overflow: hidden;}
+.TeamFoto .team-slider { float: left; overflow: hidden;}
+.TeamFoto .team-slider li { padding-left: 14px; float: left;}
+.TeamFoto .team-slider li a img { display: block; opacity: 0.7; filter:alpha (opacity=70);}
+.TeamFoto .team-slider li a { display: block; border: 1px solid #fff;}
+.TeamFoto .team-slider li a:hover, .TeamFoto .team-slider li a.active { border: 1px solid #FFBC00;}
+.TeamFoto .team-slider li a:hover img, .TeamFoto .team-slider li a.active img { opacity: 1; filter:alpha (opacity=100);}
+.TeamBtnLeft { padding: 21px 2px 0 0; float: left;}
+.TeamBtnLeft a { width: 9px; height: 9px; display: block; background:url(images/btn_slider_team.png) no-repeat;}
+.TeamBtnRight { padding: 21px 0 0 16px; float: left;}
+.TeamBtnRight a { width: 9px; height: 9px; display: block; background:url(images/btn_slider_team.png) 100% 0 no-repeat;}
+.TeamBtnLeft a:hover, .TeamBtnRight a:hover { opacity: 0.8;}
+
+/* Single News */
+.SingleNews { background:url(images/px_news_single.gif) 0 100% repeat-x #fff; border-radius: 4px; overflow: hidden;}
+.SingleNews .background { padding: 11px 0px 10px 9px; overflow: hidden; background:url(images/bg_news_single.gif) 100% 100% no-repeat;}
+.SingleNews .image { width: 150px; float: left;}
+.SingleNews .image img { display: block; border: 1px solid #E61A22;}
+.SingleNews .title { padding: 0 12px 0 0; float: left; background:url(images/bg_single_corner.gif) 100% 0 no-repeat;}
+.SingleNews .title em { min-width: 234px; padding: 0 10px 0 32px; float: left; color: #fff; font:bold 16px/25px arial; background:url(images/bg_single_title.gif) 100% 0 no-repeat #EA1B23;}
+.SingleNews .text { width: 450px; float: left;}
+.SingleNews .text p { padding: 7px 0 0 32px; clear: both;}
+.SingleNews .name { padding: 10px 0 0 32px; font-size: 17px; clear: both;}
+.SingleNews .name em { font-size: 13px;}
+
+/* Match Box */
+.MatchBox { padding: 13px 18px 16px 13px; overflow: hidden; font: 14px calibri, arial; text-align: justify;}
+.MatchBox p { padding: 12px 0 0; clear: both;}
+.MatchBox .date { padding: 0 0 12px; color: #828282; font-size: 12px;}
+.MatchBox .border { margin-right: 13px; float: left; border: 1px solid #000;}
+
+.MatchMenu {}
+.MatchMenu li { padding: 0 0 2px;}
+.MatchMenu li a { padding: 0 14px; display: block; color: #E1656A; font:bold 15px/36px calibri, arial; background:url(images/px_match.gif) repeat-x #EAEAEA; border: 1px solid #A6A7A8;}
+.MatchMenu li a em { display: block; background:url(images/arrow_match.gif) 100% 50% no-repeat;}
+.MatchMenu li a.match-active { color: #272727; background:url(images/px_match.gif) 0 100% repeat-x #CCCACA;}
+.MatchMenu li a.match-active em { background:url(images/arrow_match_open.gif) 100% 50% no-repeat;}
+
+/* Goal */
+.MatchMenu li .GoalBox { margin-top: 2px; border: 1px solid #CACACA; border-top: 0;}
+.MatchMenu li .GoalBox a { color: #8D8564; font:14px/25px calibri, arial; border: 0; background: none; border-top: 1px solid #CACACA;}
+.MatchMenu li .GoalBox .two { background: #F3F3F3;}
+.MatchMenu li .GoalBox .two a { color: #272727;}
+.GoalBox span { display: block; background: #fff;}
+
+/* Gallery Box */
+.GalleryBox { padding: 6px 0 11px 9px; overflow: hidden; background: #fff; border: 1px solid #CACACA;}
+.GalleryBox img { padding: 3px; float: left; border: 1px solid #CACACA;}
+.GalleryBox a { margin: 4px 0 0 4px; position: relative; float: left;}
+.GalleryBox a em { width: 138px; height: 138px; top: 4px; left: 4px; position: absolute; background:url(images/image_border.png) -138px 0 no-repeat;}
+.GalleryBox a:hover em { background-position: 0 0;}
+.GalleryBox a:hover img { border-color: #000;}
+
+
+/****************************************************** Player Box */
+.PlayerTitle { padding: 0 14px; color: #ED1C24; font:bold 15px/36px calibri, arial; background:url(images/px_player.gif) repeat-x #DBDBDB; border: 1px solid #A6A7A8;}
+.PlayerWrap { padding: 2px 0; overflow: hidden;}
+/* Image */
+.PlayerImage { width: 218px; float: left;}
+.PlayerImage img { width: 216px; display: block; border: 1px solid #ACADAD;}
+/* Data */
+.PlayerData { width: 395px; min-height: 288px; float: right; border: 1px solid #ACADAD; background: #fff;}
+.PlayerData ul { width: 370px; padding: 8px 0 14px 13px;}
+.PlayerData li { padding: 3px 0; overflow: hidden; border-bottom: 1px solid #E2E2E2;}
+.PlayerData li em { width:164px; float:left; color: #8D8564; font:bold 17px calibri, arial;}
+.PlayerData li span { width:170px; padding: 4px 0 0; float:left; font: 14px calibri, arial;}
+/* Full */
+.PlayerFull { padding: 15px 18px 14px 14px; clear: both; color: #818181; font: 14px/20px calibri, arial;}
+.PlayerFull p { padding: 23px 0;}
+.PlayerFull:hover { color: #444444;}
+
+/****************************************************** Play Off Table */
+.PlayOffTable { width: 100%; margin-top: 2px; border-collapse: collapse; background: #fff;}
+.PlayOffTable td { width: 6%; padding: 4px 7px; font: 15px/17px calibri, arial; border: 1px solid #A6A7A8;}
+.PlayOffTable thead tr { background:url(images/px_playoff.gif) repeat-x #FAECB7;}
+.PlayOffTable thead tr td { color: #8D8564;}
+.PlayOffTable .year { width: 14%;}
+.PlayOffTable .team { width: 30%;}
+.PlayOffTable .lge { width: 17%;}
+.PlayOffTable .number { width: 7%; color: #000; text-align: center; background:url(images/px_table_number.gif) repeat-x #FABA3E;}
+.PlayOffTable .number a { margin-left: 7px;}
+.PlayOffTable .name { width: 40%;}
+.PlayOffTable .birthday { width: 19%;}
+.PlayOffTable .two { background: #F3F3F3;}
+.PlayOffTable .total td { color: #C4A426; background: #fff;}
+.PlayOffTable .sum { text-align: right;}
+.PlayOffTable tr:nth-child(even) { background: #F3F3F3;}
+
+
+/* ------------------------------------- RIGHT COLUMN */
+#right_column { width:321px; float:right;}
+#right_column1 { width:747px; float:right;}
+
+/* Time Match */
+.TimeMatchDate { padding: 4px 9px; color: #fff; font:bold 11px arial; background:url(images/px_timematch_title.gif) repeat-x #010101; border-radius: 4px 4px 0 0;}
+.TimeMatchDate em { padding-left: 7px; font-weight: normal;}
+.TimeMatchBox { padding: 7px 0 15px 13px; overflow: hidden; background:url(images/px_timematch.gif) 0 100% repeat-x #FDFDFD; border-radius: 0 0 4px 4px;}
+.TimeMatchBox .location { padding:0 10px 5px 0; text-align: center; font-size: 11px;}
+.TimeMatchBox .team { width: 95px; float: left; text-align: center; font-size: 12px;}
+.TimeMatchBox .team div { height: 57px;}
+.TimeMatchBox .team div img { max-height: 57px; margin: 0 auto; display: block;}
+.TimeMatchBox .score { width: 105px; padding: 15px 0 0; float: left; font:bold 22px arial; text-align: center;}
+
+/* Tournament Box */
+.TournamentTabs { height: 25px; margin-bottom: -2px; background:url(images/px_tour.gif) repeat-x #A2060C; border-radius: 4px 4px 0 0;}
+.TournamentTabs li { padding: 1px 3px 0; float: left; color: #fff; font-size: 10px; text-transform: uppercase;}
+.TournamentTabs li a { padding: 0 7px; display: block; color: #fff; font:bold 10px/22px arial;}
+.TournamentTabs li a:hover, .TournamentTabs li.active a { color: #000; text-decoration: none; background: #fff; border-radius: 4px 4px 0 0;}
+.TournamentBox { padding: 8px 15px 12px; background:url(images/px_tour1.gif) 0 100% repeat-x #fff; border-radius: 4px;}
+.TournamentBox .table li { padding: 5px 0; overflow: hidden; border-top: 1px solid #A6A7A8;}
+.TournamentBox .table li b { padding-right: 5px; float: left; font-weight: normal;}
+.TournamentBox .table li b.w1 { width: 33px;}
+.TournamentBox .table li b.w2 { width: 170px;}
+.TournamentBox .table li b.w3 { width: 40px; text-align: center;}
+.TournamentBox .table li b.w4 { width: 31px; padding: 0; float: right; text-align: right;}
+.TournamentBox .table li:first-child { border: 0;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:961px; height:134px; margin:-135px auto 0; position:relative; border-top: 1px solid #999999;}
+.CopyFoot { width: 500px; padding: 8px 0 0; float: left; color: #D8D7D7; font:14px cuprum, times new roman, arial;}
+.ShocosTeam { width: 220px; padding: 8px 0 0; float: right; color: #D8D7D7; font:14px cuprum, times new roman, arial;}
+.ShocosTeam a { color: #D8D7D7;}
+/* ---------------------------------------------------- */

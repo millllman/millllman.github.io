@@ -1,0 +1,129 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:url(images/px_body.gif) repeat #000;}
+a { color:#D8D8D8; text-decoration:underline; outline:none;}
+a:hover { color:orange; text-decoration:underline;}
+input { margin:0; padding:0; font:11px tahoma; vertical-align:middle;}
+div { margin:0; padding:0; font:14px tahoma; color:#777676; line-height:18px;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:12px 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:normal;}
+h1 { color:#fff; font:24px tahoma; margin:0; padding:0 0 8px;}
+h2 { color:#fff; font:24px tahoma; margin:0; padding:0 0 8px;}
+h3 { color:#fff; font:21px tahoma; margin:0; padding:0 0 11px;}
+
+#container { width:980px; padding:0 35px; margin:0 auto; min-height:100%; height:auto !important; height:100%; position:relative; background:url(images/px_content.gif) 50% 0 repeat-y;}
+#bg_top { width:980px; height:207px; top:10px; left:35px; position:absolute; background:url(images/bg_header.jpg) no-repeat;}
+/* ********************* Header ********************* */
+#header { height:73px; position:relative; border-top:10px solid #1C1D1F;}
+#header .reg { height:39px; _width:240px; margin:4px 38px 0 0; _margin-right:20px; float:right; background:url(images/px_reg.gif) repeat-x;}
+#header .reg div { height:39px; background:url(images/bg_reg_left.gif) no-repeat;}
+#header .reg ul { height:39px; float:right; background:url(images/bg_reg_right.gif) 100% 0 no-repeat;}
+#header .reg li { padding:11px 17px 0; float:left; font-size:12px;}
+#header .reg li.home { height:23px; background:url(images/line_reg.gif) 100% 3px no-repeat;}
+#header .reg li.login { padding:11px 25px 0 14px;}
+#header .reg li.login a { padding-left:14px; background:url(images/icon_login.gif) 0 3px no-repeat;}
+
+/* ******************** Content ********************* */
+#content { padding:0 0 177px; position:relative; overflow:hidden; zoom:1;}
+.wrap { padding:0 0 17px; clear:both; overflow:hidden; zoom:1;}
+.wrap1 { padding:0 0 12px; clear:both; overflow:hidden; zoom:1; background:url(images/bg_corner.gif) 0 100% no-repeat #121416;}
+
+/* -------------------------------------- Auction Box */
+.AuctionBox { padding:23px 40px 17px; clear:both; overflow:hidden; zoom:1; background:url(images/bg_auction.gif) 0 100% no-repeat;}
+.AuctionBox li { padding:8px 35px 0 0; float:left;}
+.AuctionBox li a { padding:7px 0 6px; display:block;}
+.AuctionBox li.title { width:185px; padding:0 20px 0 0; font-size:24px;}
+.AuctionBox li.title a { color:#777676;}
+.AuctionBox li.title a:hover { color:#fff;}
+.AuctionBox li a.link { padding:7px 0 6px 31px; background:url(images/icon_auction.gif) 0 0 no-repeat;}
+.AuctionBox li a.link1 { padding:7px 0 6px 35px; background:url(images/icon_auction1.gif) 0 0 no-repeat;}
+
+/* --------------------------------------- Famous Box */
+.FamousBox { padding:15px 40px 25px; clear:both; overflow:hidden; zoom:1; background:url(images/bg_famous.gif) 0 100% no-repeat #0E1011;}
+.FamousBox li { padding:7px 30px 0 0; float:left; _white-space:nowrap;}
+.FamousBox li.title { width:215px; padding:0 20px 0 0; font-size:24px;}
+.FamousBox li.title a { color:#777676;}
+.FamousBox li.title a:hover { color:#fff;}
+
+/* ------------------------------------ Partners List */
+.PartnerBox { padding:18px 0 30px; clear:both; text-align:center; background:url(images/px_content1.gif) repeat;}
+.PartnerBox img { margin:0 30px; vertical-align:middle;}
+
+/* ------------------------------ Active Auction List */
+.ActiveAuctionList { padding:22px 40px 0; clear:both; overflow:hidden; background:url(images/px_border.gif) repeat-x;}
+.ActiveAuctionList li { padding:6px 11px 0 0; float:left;}
+.ActiveAuctionList li a { padding:2px 6px; display:block; border:1px solid #262626; text-decoration:none;}
+.ActiveAuctionList li a:hover { background:#1D2123;}
+.ActiveAuctionList li a.active { background:#1D2123;}
+.ActiveAuctionList li a.continue { padding:2px 0 0; border:0;}
+.ActiveAuctionList li.title { padding:0 11px 0 0; font-size:24px;}
+
+/* ------------------------------- Active Auction Box */
+.ActiveAuctionBox { padding:32px 0 0; clear:both; overflow:hidden;}
+.ActiveAuctionBox li { width:410px; padding:0 31px 0 40px; float:left;}
+.ActiveAuctionBox li p { padding:21px 0 0;}
+.ActiveAuctionBox li .border { margin-right:15px; float:left; border:1px solid #262626;}
+
+/* -------------------------------------- LEFT COLUMN */
+.left_column { width:280px; float:left; padding:22px 0 0 40px;}
+
+/* ----------------------------------------- Logo Box */
+.LogoBox { padding-left:21px; color:#BAB4B4; font:15px arial;}
+.LogoBox img { margin-bottom:6px; display:block;}
+
+/* ------------------------------------- Category Box */
+.CategoryBox { padding:10px 0 0;}
+.CategoryBox li { padding:10px 21px 0; overflow:hidden; zoom:1;}
+.CategoryBox li.date { padding:0;}
+.CategoryBox li.date em { height:25px; padding-left:10px; float:left; color:#777676; font-size:11px; background:url(images/bg_date.gif) no-repeat;}
+.CategoryBox li.date em em { height:19px; padding:6px 10px 0 0; background:url(images/bg_date.gif) 100% 0 no-repeat;}
+.CategoryBox li.title { padding:23px 0 5px; color:#777676; font-size:24px;}
+
+/* ------------------------------------- RIGHT COLUMN */
+.right_column { width:605px; float:right;}
+
+/* ----------------------------------------- News Box */
+.NewsBox {}
+.NewsBox li { padding:7px 21px 10px 62px; background:url(images/star_news.gif) 35px 0 no-repeat;}
+
+/* --------------------------------------- Slider Box */
+.SliderBox {}
+.SliderBox .shadow { padding:0 3px; background:url(images/px_shadow.gif) repeat-y;}
+.SliderBox .shadow .border { padding:2px 0 0; background:url(images/px_border.gif) repeat-x;}
+/* Slider */
+.SliderBox .slider { padding:20px 0 20px; overflow:hidden; zoom:1; background:url(images/px_content1.gif) repeat;}
+.SliderBox .slider li { width:488px; padding:0 12px; float:left;}
+.SliderBox .slider li a { text-decoration:none;}
+.SliderBox .slider li h2 a { color:#fff;}
+.SliderBox .slider li.prev { width:43px; height:71px; padding:0; background:url(images/line_slider.gif) 100% 0 no-repeat;}
+.SliderBox .slider li.prev a { width:23px; height:20px; margin:30px 0 0 10px; display:block; background:url(images/arrow_prev.gif) 0 100% no-repeat;}
+.SliderBox .slider li.prev a.none { background-position:0 0;}
+.SliderBox .slider li.next { width:43px; height:71px; padding:0; background:url(images/line_slider.gif) 0 0 no-repeat;}
+.SliderBox .slider li.next a { width:23px; height:20px; margin:30px 0 0 10px; display:block; background:url(images/arrow_next.gif) 0 100% no-repeat;}
+.SliderBox .slider li.next a.none { background-position:0 0;}
+/* Bet */
+.SliderBox .bet { width:605px; height:352px; position:relative; background:url(images/bg_slider.jpg) 2px 0 no-repeat;}
+.SliderBox .bet div { height:352px; background:url(images/px_shadow.gif) repeat-y;}
+.SliderBox .bet div div { height:352px; background:url(images/bg_shadow.gif) 0 100% no-repeat;}
+.SliderBox .bet a { bottom:20px; right:19px; position:absolute;}
+/* Preview */
+.SliderBox .preview {}
+.SliderBox .preview li { padding:15px 0 0 14px; float:left;}
+.SliderBox .preview li a { display:block; border:2px solid #323232;}
+.SliderBox .preview li a:hover { border-color:#fff;}
+.SliderBox .preview li a.active { border-color:#fff;}
+.SliderBox .preview li a img { display:block;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:1050px; height:150px; margin:-150px auto 0; position:relative;}
+#footer ul { width:980px; height:139px; margin:0 auto; overflow:hidden; border-top:1px solid #262626; border-bottom:10px solid #1C1D1F; background:url(images/px_content1.gif) repeat;}
+#footer li { padding:40px 0 0; float:left; color:#464646; font-size:12px;}
+#footer li p { padding:8px 0;}
+#footer li.copyright { width:177px; padding-left:41px;}
+#footer li.about { width:160px;}
+#footer li.menu { width:220px;}
+/* ---------------------------------------------------- */

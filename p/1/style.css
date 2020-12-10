@@ -1,0 +1,123 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { font:14px arial; color:#000; line-height:17px; background:url(images/bg_header.jpg) 294px 26px no-repeat;}
+a { color:#FF6D00; text-decoration:underline; outline:none;}
+a:hover { color:#0086C1; text-decoration:underline;}
+input { margin:0; padding:0; font:13px arial; vertical-align:middle;}
+div { margin:0; padding:0;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:12px 0 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:17px;}
+h1 { color:#0C48A2; font:30px arial; margin:0; padding:0 0 14px;}
+h2 { color:#0C48A2; font:30px arial; margin:0; padding:0 0 14px;}
+h3 { color:#0C48A2; font:30px arial; margin:0; padding:0 0 10px;}
+h4 { color:#0C48A2; font:30px arial; margin:0; padding:0 0 8px;}
+
+#container { max-width:1400px; min-width:1000px; min-height:100%; height:auto !important; height:100%; position:relative;}
+/* ********************* Header ********************* */
+#header { height:162px; padding-left:53px;}
+/* Logo */
+.LogoHead { width:336px; padding:23px 0 0; float:left;}
+/* Menu */
+.MenuHead { padding:39px 0 0; float:left;}
+.MenuHead ul { height:39px; background:url(images/px_menu.gif) repeat-x; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; -khtml-border-radius:20px;}
+.MenuHead li { padding:3px 6px 0; float:left; position:relative;}
+.MenuHead li a { height:29px; padding:4px 12px 0; display:block; color:#fff; font:19px arial; text-decoration:none; border-radius:15px; -moz-border-radius:15px; -webkit-border-radius:15px; -khtml-border-radius:15px;}
+.MenuHead li a em { width:100%; height:16px; display:block; top:35px; left:0; position:absolute;}
+.MenuHead li a:hover { background:#FF7400;}
+.MenuHead li a:hover em { background:url(images/arrow_menu.gif) 50% 0 no-repeat;}
+.MenuHead li a.active { background:#FF7400;}
+.MenuHead li a.active em { background:url(images/arrow_menu.gif) 50% 0 no-repeat;}
+/* Top Box */
+.TopBox { min-height:256px; overflow:hidden;}
+.TopBox .descr { width:255px; padding:0 0 10px 53px; float:left; font-size:13px;}
+.TopBox .descr h2 { color:#0086C1; font-size:17px;}
+.TopBox .contact { width:132px; padding:27px 0 0 447px; float:left; text-align:right; font:13px/15px arial;}
+/* Portfolio Box */
+.PortfolioBox { padding:0 0 0 53px; overflow:hidden;}
+.PortfolioBox li { width:25%; float:left;}
+.PortfolioBox li img { width:180px; height:153px; padding:10px 23px 24px 8px; display:block; background:url(images/image_border.png) no-repeat;}
+.PortfolioBox li i { width:200px; padding:2px 12px 0 0; display:block; font-size:15px; text-align:right; text-decoration:underline;}
+
+/* ******************** Content ********************* */
+#content { padding:31px 48px 223px 53px; overflow:hidden;}
+.Wrapper { padding:25px 0 0; overflow:hidden; clear:both;}
+.Wrapper1 { padding:0; overflow:hidden; clear:both;}
+
+/* -------------------------------------- Service Box */
+.ServiceBox { overflow:hidden;}
+.ServiceBox li { width:33%; float:left; border-left:2px dashed #ADADAD;}
+.ServiceBox li:first-child { border:0;}
+.ServiceBox li h2 { padding:0 0 21px;}
+.ServiceBox li .text { padding:0 25px;}
+.ServiceBox li .more { padding:8px 10px 0; font-size:15px; text-align:right; font-style:italic;}
+.ServiceInner { padding:32px 0 0;}
+.ServiceInner li { width:49%;}
+.ServicePublish li { width:100%; padding:10px 0 0;}
+.ServicePublish li .text { padding:0 3px 0 8px;}
+
+/* -------------------------------------- Partner Box */
+.PartnerBox { padding:5px 0; overflow:hidden; background:url(images/px_partner.gif) repeat-x #DBEBF9; border-radius:12px; -moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px;}
+.PartnerBox li { width:20%; float:left; text-align:center;}
+.PartnerBox li:first-child { width:19%;}
+.PartnerBox img { margin:0 auto; display:block;}
+.PartnerTitle { padding:21px 23px 17px; clear:both; color:#FF6D00; font-size:35px; line-height:21px;}
+.PartnerAll { padding:15px 15px 0; clear:both; font-size:15px; text-align:right; font-style:italic; overflow:hidden;}
+
+/* ------------------------------------- Response Box */
+.ResponseBox { padding:12px 0; overflow:hidden; background:url(images/px_partner.gif) repeat-x #DBEBF9; border-radius:12px; -moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px;}
+.ResponseBox li { width:33%; padding:4px 0; float:left; font-size:13px; border-left:2px dashed #ADADAD;}
+.ResponseBox li b { display:block;}
+.ResponseBox li:first-child { border:0;}
+.ResponseBox li .text { padding:0 25px;}
+.ResponseInner li { width:100%;}
+
+/* -------------------------------------- Publish Box */
+.PublishBox { min-height:117px; padding:4px 0 0 167px; overflow:hidden; background:url(images/bg_publish.jpg) 28px 4px no-repeat;}
+.PublishBox li { width:50%; float:right;}
+.PublishBox li:first-child { width:49%; float:left;}
+.PublishBox li .text { padding:0 0 0 53px;}
+.PublishBox li .more { padding:10px 15px 0; clear:both; font-size:15px; text-align:right; font-style:italic;}
+.PublishInner { background-position:12px 4px; padding:4px 0 0 150px;}
+.PublishInner li:first-child { width:100%;}
+
+/* -------------------------------------- LEFT COLUMN */
+#left_column { margin-right:310px;}
+
+/* ------------------------------------ Service Box 1 */
+.ServiceBox1 {}
+.ServiceBox1 li { padding:4px 0 0;}
+.ServiceBox1 li .more { padding:5px 15px 0; font-size:15px; text-align:right; font-style:italic;}
+.ServiceBox1 li .note { padding:12px 0 0 19px; color:#6A6A6A;}
+
+/* ---------------------------------- Page Navigation */
+.PageNavigation { padding:0 0 14px 21px; overflow:hidden; background:url(images/icon_pagenav.gif) 0 1px no-repeat;}
+.PageNavigation li { padding-right:5px; float:left; color:#7E7E7E;}
+.PageNavigation li a { color:#7E7E7E; margin-right:5px;}
+.PageNavigation li a:hover { color:#000;}
+
+/* ------------------------------------- RIGHT COLUMN */
+#right_column { width:276px; padding:5px 0 0; float:right;}
+#right_column1 { width:276px; padding:5px 0 0 15px; float:right; border-left:2px dashed #ADADAD;}
+
+/* ---------------------------------------- Order Box */
+.OrderBox { padding:0 0 20px; border:1px solid #B3C8DA; background:url(images/px_order.gif) repeat-x #DBEBF9; border-radius:12px; -moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px;}
+.OrderBox li { padding:9px 0 0 7px; overflow:hidden; font:bold 10px arial; color:#FF6D00; text-transform:uppercase;}
+.OrderBox li label { cursor:pointer;}
+.OrderBox li em { width:80px; padding:4px 0 0; float:left;}
+.OrderBox li span { width:185px; float:left;}
+.OrderBox li span input[type="text"] { width:168px; padding:1px; border:1px solid #044FE8; color:#000; font-weight:bold; background:url(images/bg_form.gif) no-repeat #fff;}
+.OrderBox li span textarea { width:168px; height:97px; padding:1px; border:1px solid #044FE8; color:#000; font:bold 13px arial; background:url(images/bg_form.gif) no-repeat #fff;}
+.OrderBox li.title { padding:9px 0 14px; font:19px arial; text-align:center;}
+.OrderBox li i { font:italic 9px arial; text-transform:none;}
+.OrderBox li.button { padding:15px 10px 0; text-align:right;}
+.OrderBox li.button input { width:111px; height:31px; padding:0 0 2px 25px; border:0; color:#fff; font:12px georgia, arial; background:url(images/button_order.gif) no-repeat; cursor:pointer;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:100%; height:223px; margin-top:-223px; position:relative; background:url(images/bg_footer.jpg) no-repeat;}
+#footer .text { padding:122px 0 0 211px; text-shadow:2px 2px 3px #262525;}
+#footer .text span { font-size:16px; display:block;}
+/* ---------------------------------------------------- */

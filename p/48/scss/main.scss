@@ -1,0 +1,555 @@
+/* Import */
+@import "variables";
+@import "mixin";
+@import "base";
+@import "category";
+@import "brands";
+@import "product";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+/*------------------------------------- Header */
+header.header {
+	padding: 12px 0;
+	position: relative;
+	z-index: 1;
+	@extend .section-white;
+	@include box-shadow (0 1px 4px rgba(68,68,68,0.2));
+}
+
+/* Advertising Box */
+.advertising-box {
+	padding: 15px 0;
+	color: #fff;
+	text-align: center;
+	background: #444;
+	@include font (14,17);
+	a {
+		@include link-color (#fff,#ccc);
+		@include link-decoration (underline,underline);
+	}
+}
+
+/* Logo */
+.main-logo {
+	padding-top: 9px;
+	padding-bottom: 12px;
+	text-transform: uppercase;
+	@include font (20,23,bold);
+}
+/* Search */
+.main-search {
+	input[type=text] {
+		background: #f0f1f2;
+		@include box-shadow (none);
+		@include border (#f0f1f2,1px);
+		@include border-radius (5px);
+		&:focus {
+			border-color: #8a8a8a;
+			@include box-shadow (0 0 5px #cacaca);
+		}
+	}
+}
+
+/* Login Box */
+.login-box {
+	padding-top: 9px;
+	text-align: right;
+	& > a {
+		margin: 0 7px 0 10px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+
+/* Login Popup */
+#loginModal,
+#productModal,
+#saleModal {
+	text-align: center;
+	p { padding: 10px 0 0; }
+	span.title-large {
+		padding: 0 0 10px;
+		display: block;
+		font-style: italic;
+		@include font (30,32);
+		b { font-style: normal; }
+	}
+	span.title-product {
+		padding: 0 0 10px;
+		display: block;
+		color: #939393;
+		text-transform: uppercase;
+		@include font (24,27);
+	}
+	span.title-sale {
+		padding: 5px 0 0;
+		display: block;
+		text-transform: uppercase;
+		@include font (43,50,bold);
+	}
+	span.title-small {
+		padding: 5px 0;
+		display: block;
+		@include font (20,24);
+	}
+	span.title-xsmall {
+		padding: 5px 0;
+		display: block;
+		@include font (15,18);
+	}
+	span.title-sale-top {
+		padding: 15px 0 0;
+		display: block;
+		text-transform: uppercase;
+		@include font (15,18);
+	}
+	span.form-title {
+		padding: 10px 0;
+		display: block;
+		position: relative;
+		@include font (14,18);
+		@include before {
+			width: 47%;
+			height: 1px;
+			top: 20px;
+			left: 0;
+			position: absolute;
+			background: #c4c6c8;
+		}
+		@include after {
+			width: 47%;
+			height: 1px;
+			top: 20px;
+			right: 0;
+			position: absolute;
+			background: #c4c6c8;
+		}
+	}
+	.form {
+		padding: 0 0 5px;
+		input[type=text],
+		input[type=password] {
+			margin: 0;
+			background: #f6f6f6;
+		}
+	}
+	.note {
+		padding: 5px 0 15px;
+		color: #939393;
+		@include font (12,17);
+	}
+	.popup-toggle {
+		padding: 15px 0 0;
+		text-align: right;
+		@include border (#c4c6c8,1px 0 0);
+		a.btn { margin-left: 30px; }
+	}
+	.image-product { padding-top: 22px; }
+	span.title-price {
+		padding: 27px 0 0;
+		display: block;
+		font-style: italic;
+		@include font (20,24);
+	}
+	span.title-sale-mail {
+		padding: 12px 0 15px;
+		display: block;
+		font-style: italic;
+		text-transform: capitalize;
+		@include font (15,18);
+	}
+	span.title-note {
+		padding: 17px 0 0;
+		display: block;
+		color: #939393;
+		@include font (17,20);
+	}
+	.select {
+		padding: 7px 0px 0;
+		text-align: left;
+		/*@include font (12,15,bold);*/
+		input[type="checkbox"],
+		input[type="radio"] {
+			margin: 0 7px 0 0;
+			top: 1px;
+			position: relative;
+		}
+		label {
+			margin: 0;
+			color: #444;
+			@include font (18,21);
+			&:hover { color: #008bee; }
+		}
+	}
+	.mail {
+		padding: 15px 0 0;
+		input[type="text"] {
+			background: #f0f1f2;
+		}
+	}
+	p.set-sale-alert {
+		padding: 22px 0 0;
+	}
+	.sale-submit {
+		width: 240px;
+		padding: 10px 0 0;
+		margin: 0 auto;
+		input[type="text"] { margin-bottom: 0; }
+		p.set-sale-alert { padding: 12px 0 0; }
+	}
+	.sale-icon { font-size: 24px; }
+	ul.sale-tags {
+		min-height: 100px;
+		padding: 7px 12px 12px;
+		text-align: center;
+		letter-spacing: -0.3em;
+		background: #e7e7e7;
+		li {
+			padding: 5px 3px 0;
+			display: inline-block;
+			letter-spacing: normal;
+			a {
+				padding: 0 7px;
+				display: block;
+				background: #fff;
+				@include font (15,28);
+				@include border (#fff,2px);
+				&:hover {
+					color: #fff;
+					background: #000;
+				}
+				@include after {
+					content: "\f00d";
+					font-family: FontAwesome;
+					margin-left: 7px;
+					color: #b7b8b7;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+#saleModal {
+	background: #fff url(../img/bg-sale-popup.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+/* Language Box */
+.language-box {
+	padding: 0 0 12px;
+	display: inline-block;
+	position: relative;
+	span.lang-current {
+		padding: 0 14px;
+		display: block;
+		cursor: default;
+	}
+	ul {
+		display: none;
+		background: #fff;
+		@include border (#f0f1f2,1px);
+		@include abs (30px,auto,0,auto);
+		li {
+			text-align: center;
+			@include border (#f0f1f2,1px 0 0);
+			a {
+				padding: 8px 12px;
+				display: block;
+				text-transform: uppercase;
+				@include font (14,25);
+				&:hover { background: #f8f8f8; }
+			}
+			&:first-child { border: 0; }
+		}
+	}
+	&:hover {
+		ul {display: block;}
+	}
+}
+
+/*Main Menu*/
+.main-menu {
+	text-align: center;
+	letter-spacing: -0.3em;
+	li {
+		padding: 0 15px;
+		display: inline-block;
+		letter-spacing: normal;
+		a {
+			padding: 5px 0;
+			display: block;
+			text-transform: uppercase;
+			@include font (12,40);
+			@include border (transparent,0 0 1px);
+			@include link-color ($menu-link-color, $menu-link-color-hover);
+			&:hover { border-color: $menu-link-color; }
+		}
+	}
+	@include medium {
+		li {
+			padding: 0 5px;
+		}
+	}
+}
+
+/**************************** Main Menu Mobile */
+.main-menu__mobile {
+	padding: 14px 0;
+	color: #fff;
+	background: #444;
+	@include font (14,17);
+	a {
+		@include link-color (#fff,#ccc);
+		@include link-decoration (underline,underline);
+	}
+}
+/* Top Block */
+.menu-mobile__top {
+	padding-left: 5px;
+	padding-right: 5px;
+	li.logo-col {
+		color: #fff;
+		text-transform: uppercase;
+		@include font (20,23,bold);
+		a {
+			@include link-decoration (none,none);
+		}
+	}
+	li.btn-col {
+		float: right;
+		color: #fff;
+		text-align: right;
+		@include font (21,23);
+	}
+}
+/* Button Menu Close */
+.btn-menu-close {
+	top: 11px;
+	right: 14px;
+	position: absolute;
+	z-index: 9999;
+	display: none;
+	@include font (25,23);
+	@include link-color (#fff,#ccc);
+	@include link-decoration (underline,underline);
+}
+
+/* Caption */
+.menu-mobile__caption {
+	padding-right: 50px;
+	display: none;
+	li {
+		width: 25%;
+		padding: 0 10px;
+		float: left;
+		color: #fff;
+		text-align: center;
+		position: relative;
+		@include font (20,23,bold);
+		a {
+			@include link-decoration (none,none);
+		}
+		&.active {
+			&:before {
+				content: "\f0d8";
+				font-family: FontAwesome;
+				text-align: center;
+				line-height: 24px;
+				@include abs (auto,0,0,-23px);
+			}
+		}
+	}
+}
+
+/* Drop Down Menu */
+.menu-mobile__dropdown {
+	padding-bottom: 20px;
+	color: $main-color;
+	background: #fff;
+	z-index: 999;
+	display: none;
+	@include abs (51px,0,0,auto);
+	@include box-shadow (0 2px 3px #777);
+}
+
+.menu-mobile__login {
+	padding-top: 10px;
+	li {
+		width: 49%;
+		float: left;
+		a {
+			width: 100%;
+			padding: 10px 0;
+			display: block;
+			text-align: center;
+			background: #f0f1f2;
+			@include font (18,25,bold);
+			@include link-color ($menu-link-color,#000);
+			@include link-decoration (none,none);
+			&:hover { background: #d9dbdc; }
+		}
+		&:last-child { float: right; }
+	}
+}
+
+/* Category */
+.menu-mobile__category {
+	padding-top: 20px;
+	li {
+		@include border (#c4c6c8,0 0 1px);
+		a {
+			padding: 15px 0;
+			display: block;
+			@include font (17,30);
+			@include link-color ($menu-link-color,#000);
+			@include link-decoration (none,none);
+			&:hover { background: #f9f9f9; }
+		}
+	}
+}
+
+/* Pages */
+.menu-mobile__pages {
+	padding-top: 20px;
+	li {
+		a {
+			padding: 10px 0;
+			display: block;
+			@include font (15,25);
+			@include link-color (#939393,#000);
+			@include link-decoration (none,none);
+			/*&:hover { background: #f9f9f9; }*/
+		}
+	}
+}
+
+
+/* Main Banner */
+.main-banner {}
+
+/*------------------------------------ Content */
+section {}
+
+.section-spacing {
+	height: 100px;
+}
+
+.section-title {
+	padding: 30px 15px;
+	color: #444;
+	text-align: center;
+	text-transform: uppercase;
+	@include font (14,15,bold);
+	span {
+		padding: 0 0 7px;
+		display: inline-block;
+		@include border (#c4c6c8,0 0 4px);
+	}
+}
+
+/*-------------------------------- Trending Box */
+.trending-box {
+	padding: 0px 20px 20px;
+	background: $section-white;
+	@include box-shadow (0 1px 1px #c4c6c8);
+	& > .column {
+		padding-top: 30px;
+		@include font (18,20);
+		& > a {
+			padding: 0 0 0 27px;
+			display: block;
+			position: relative;
+			@include before {
+				content: "\f201";
+				font-family: FontAwesome;
+				font-size: 15px;
+				@include abs (2px,0,auto,auto);
+			}
+		}
+	}
+}
+
+/*--------------------------------- Product Box */
+.product-box {
+	padding: 0 0 40px;
+	margin-bottom: 10px;
+	text-align: center;
+	@extend .section-white;
+	@include border ($border-color,1px);
+	a.name {
+		span {
+			padding: 20px 20px 18px;
+			display: block;
+			@include font (20,23);
+		}
+	}
+}
+
+/*------------------------------------- Footer */
+footer.footer {
+	padding: 25px 0;
+	background: $section-footer;
+	& .column {
+		color: $footer-text;
+		@include font (14,17);
+	}
+	a {
+		@include link-color ($footer-link,$footer-link-hover);
+	}
+	.title {
+		color: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+
+/* Menu */
+.footer__menu {
+	padding: 0 0 20px;
+	li {
+		padding: 3px 0 0;
+		color: $footer-text;
+		@include font (14,17);
+		a {
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+}
+
+/* Social */
+.footer__social {
+	padding: 5px 0 0;
+	letter-spacing: -0.3em;
+	li {
+		padding-right: 8px;
+		display: inline-block;
+		letter-spacing: normal;
+		a {
+			width: 30px;
+			height: 30px;
+			margin-bottom: 8px;
+			display: block;
+			color: #101e2d;
+			text-align: center;
+			background: #808f9e;
+			@include font (18,30);
+			@include border-radius (50%);
+			@include link-color (#101e2d,#101e2d);
+			&:hover {
+				transform: rotate(360deg);
+				background: #687786;
+			}
+		}
+	}
+}
+
+/* Copyright */
+.footer__copyright {
+	padding-top: 10px;
+	font-size: 12px !important;
+}
+/*-------------------------------------------  */
+

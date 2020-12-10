@@ -1,0 +1,182 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body {}
+a { color:#660406; text-decoration:underline; outline:none;}
+a:hover { color:#ab1115; text-decoration:underline;}
+input { margin:0; padding:0; font:17px 'Scada', sans-serif, arial; vertical-align:middle;}
+div { margin:0; padding:0; color:#000; font:17px/23px 'Scada', sans-serif, arial;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:15px 0 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; color:#000; font:17px/23px 'Scada', sans-serif, arial;}
+h1 { color:#000; font:25px 'Scada', sans-serif, arial; margin:0; padding:0;}
+h2 { color:#000; font:21px 'Scada', sans-serif, arial; margin:0; padding:0;}
+h3 { color:#000; font:20px 'Scada', sans-serif, arial; margin:0; padding:0;}
+h4 { color:#000; font:20px 'Scada', sans-serif, arial; margin:0; padding:0;}
+@import url(http://fonts.googleapis.com/css?family=Scada:400,700&subset=latin,cyrillic);
+
+#container { min-height:100%; min-width: 963px; height:auto !important; height:100%; position:relative; background:url(images/bg_header.jpg) 50% 50px no-repeat;}
+.Wrapper { width: 963px; margin: 0 auto;}
+.FadeScreen { width:100%; height:100%; background:black; top:0; left:0; position:fixed; z-index:7; opacity:0.5; filter:alpha(opacity=50);}
+.TopPurple { width: 100%; min-width: 963px; height: 50px; top: 0; left: 0; position: absolute; background: #62408c;}
+/* ********************* Header ********************* */
+#header { width: 963px; margin: 0 auto; height: 405px; background:url(images/bg_glasses.jpg) 420px 127px no-repeat;}
+
+.CallOrder { height: 50px;}
+.CallOrder .title { padding: 0 0 0 172px; float: left; color: #f2e7ff; font: 20px/49px 'Scada', sans-serif, arial;}
+.CallOrder .number { padding: 0 0 0 47px; float: left; color: #fff; font: 29px/49px 'Scada', sans-serif, arial;}
+.CallOrder .btn { padding: 8px 0 0 47px; float: left; color: #fff; font: 20px/49px 'Scada', sans-serif, arial;}
+.CallOrder .btn a { padding: 0 21px; display: block; color: #fff; font: 18px/30px 'Scada', sans-serif, arial; background:url(images/btn-call.gif) repeat-x #e74b30; border: 1px solid #face00; border-radius: 5px; text-decoration: none; text-shadow:0 1px 0 #c4551f; box-shadow: 0 1px 2px #312046;}
+.CallOrder .btn a:hover { box-shadow:inset 0 0px 3px 2px #b18300; border-color: #b18300;}
+
+/* Stars Box */
+.StarsBox { height: 172px; min-width: 963px; clear: both; background:url(images/bg_stars.jpg) 50% 0 no-repeat;}
+
+/* Logo Head */
+.LogoHead { padding: 137px 0 0 12px;}
+
+/* Slogan Box */
+.SloganBox { width: 963px; padding: 0 0 27px; margin: 0 auto; font-size: 24px; text-align: center;}
+.SloganBox h1 { padding: 0 0 11px; color: #f6734b; font: 54px/55px 'Scada', sans-serif, arial; text-transform: uppercase;}
+
+/* -------------------------------------- Feedback Popup */
+.FeedbackPopup { width: 652px; min-height: 391px; margin: -196px 0 0 -326px; top: 50%; left: 50%; position: fixed; z-index: 1000; border-radius: 5px; background:url(images/px_reason.gif) repeat;}
+.FeedbackPopup .title { padding: 70px 50px 0px; color: #62408c; font: 50px/52px 'Scada', sans-serif, arial; text-transform: uppercase; text-align: center;}
+.FeedbackPopup input[type="text"] { width:268px; padding:9px 23px 9px 47px; border:1px solid #7543b2; border-radius: 3px; box-shadow: inset 1px 2px 2px #8c8c8c;} 
+.FeedbackPopup input.name { background:url(images/icon_name.gif) 7px 50% no-repeat #fff;}
+.FeedbackPopup input.phone { background:url(images/icon_phone.gif) 7px 50% no-repeat #fff;}
+.FeedbackPopup input[type="submit"] { width: 200px; height: 51px; color: #fff; font: 29px/30px 'Scada', sans-serif, arial; background:url(images/btn-send.gif) repeat-x #e74a30; border: 1px solid #face00; border-radius: 5px; text-shadow:0 1px 0 #783512; box-shadow: 0 1px 2px #241537; cursor: pointer; text-transform: uppercase;}
+.FeedbackPopup input[type="submit"]:hover { box-shadow:inset 0 0px 3px 2px #b18300; border-color: #b18300;}
+.FeedbackPopup .value { padding: 20px 50px 0; text-align: center;}
+.FeedbackPopup .order { padding: 35px 50px 0; text-align: center;}
+.FeedbackPopup .close { top: 15px; right: 15px; position: absolute;}
+.FeedbackPopup .close a { width: 33px; height: 32px; display: block; background:url(images/btn-close.png) no-repeat;}
+
+/* ******************** Content ********************* */
+#content { padding: 67px 0 14px; overflow: hidden; clear: both;}
+.content-spacing { height: 303px; clear: both;}
+.clear { clear: both;}
+
+/* -------------------------------------- Action Box */
+.ActionBox { min-width: 963px; clear: both; background:url(images/px_action.jpg) 50% 0 repeat #feb13d;}
+.ActionBox .Wrapper { position: relative; overflow: hidden;}
+
+/* Title */
+.ActionTitle { width: 188px; height: 184px; top: -18px; left: 0px; position: absolute; color: #fff; font: 36px/37px 'Scada', sans-serif, arial; background:url(images/bg_action.png) no-repeat; text-shadow:0 1px 1px #6b1106;}
+.ActionTitle p { padding: 55px 0 0 6px; text-align: center;}
+
+/* Left */
+.ActionLeft { width: 540px; padding: 0 0 30px; float: left;}
+.ActionLeft .text { padding: 56px 0 0 226px; font: 22px/31px 'Scada', sans-serif, arial;}
+.ActionLeft .counter { min-height: 94px; padding: 44px 0 23px 226px; color: #62408c; font: 22px/31px 'Scada', sans-serif, arial; background:url(images/pic_action.png) 12px 100% no-repeat;}
+.ActionLeft .counter p { padding: 11px 0 0;}
+.ActionLeft .counter img { display: block;}
+.ActionLeft .note { padding: 25px 0 0 14px; clear: both; font: 16px/22px 'Scada', sans-serif, arial;}
+.ActionLeft .bg { width: 265px; height: 76px; margin-top: 11px; font: 36px/37px 'Scada', sans-serif, arial; background:url(images/counter.png) no-repeat;}
+.ActionLeft .bg b { font: 36px/37px 'Scada', sans-serif, arial; float: left; padding: 0 0 0 34px;}
+.ActionLeft .bg b:nth-child(1) { padding: 0 0 0 10px;}
+.ActionLeft .bg b:nth-child(2) { padding: 0 0 0 42px;}
+.ActionLeft .bg b:nth-child(3) { padding: 0 0 0 28px;}
+.ActionLeft .bg b:nth-child(4) { padding: 0 0 0 28px;}
+.ActionLeft .indent { padding: 10px 0 0;}
+
+/* Right */
+.ActionRight { width: 400px; margin-bottom: -5000px; padding-bottom: 5000px; float: right; overflow: hidden; background:url(images/px_order.gif) repeat-x #53317c;}
+.ActionRight .text { padding: 18px 30px; color: #fff; font: 17px/24px 'Scada', sans-serif, arial;}
+.ActionRight .title { text-align: center; color: #fff; font: 17px/24px 'Scada', sans-serif, arial;}
+.ActionRight .title span { display: block; font: 23px/24px 'Scada', sans-serif, arial;}
+.ActionRight .title1 { padding: 18px 0 7px; display: block;}
+.ActionRight .value { padding: 20px 0 0; text-align: center;}
+.ActionRight input[type="text"] { width:268px; padding:9px 23px 9px 47px; border:1px solid #7543b2; border-radius: 3px; box-shadow: inset 1px 2px 2px #8c8c8c;} 
+.ActionRight input.name { background:url(images/icon_name.gif) 7px 50% no-repeat #fff;}
+.ActionRight input.phone { background:url(images/icon_phone.gif) 7px 50% no-repeat #fff;}
+.ActionRight input.mail { background:url(images/icon_mail.gif) 7px 50% no-repeat #fff;}
+.ActionRight input[type="submit"] { width: 200px; height: 51px; color: #fff; font: 29px/30px 'Scada', sans-serif, arial; background:url(images/btn-send.gif) repeat-x #e74a30; border: 1px solid #face00; border-radius: 5px; text-shadow:0 1px 0 #783512; box-shadow: 0 1px 2px #241537; cursor: pointer; text-transform: uppercase;}
+.ActionRight input[type="submit"]:hover { box-shadow:inset 0 0px 3px 2px #b18300; border-color: #b18300;}
+.ActionRight .privacy { padding: 0 0 0 34px; display: inline-block; color: #cebae8; font: 12px/29px 'Scada', sans-serif, arial; background:url(images/icon_privacy.png) 0 0 no-repeat;}
+.CornerTop { width: 963px; margin: 0 auto; clear: both; position: relative;}
+.CornerTop .action { width: 188px; height: 18px; top: -18px; left: 0px; position: absolute; background:url(images/bg_action.png) no-repeat;}
+.CornerTop .order { width: 414px; height: 18px; top: -18px; right: 0px; position: absolute; background:url(images/bg_order_top.gif) no-repeat;}
+.CornerBottom { width: 963px; margin: 0 auto; clear: both; position: relative;}
+.CornerBottom div { width: 414px; height: 14px; top: 0px; right: 0px; position: absolute; background:url(images/bg_order_bottom.gif) no-repeat;}
+
+/* -------------------------------------- Reason Box */
+.ReasonBox { min-width: 963px; padding: 70px 0 53px; clear: both; overflow: hidden; background:url(images/px_reason.gif) repeat; border-bottom: 1px solid #f5f5fb;}
+.ReasonBox .title { color: #62408c; font: 50px/60px 'Scada', sans-serif, arial; text-align: center;}
+.ReasonBox ul { padding: 36px 0 0; clear: both; overflow: hidden;}
+.ReasonBox li { width: 168px; padding: 0 0 0 95px; float: left; color: #000; font: 17px/24px 'Scada', sans-serif, arial; text-align: center;}
+.ReasonBox li img { margin: 0 auto; display: block;}
+.ReasonBox li span { padding: 12px 0 0; display: block;}
+.ReasonBox li:first-child { padding: 0;}
+.ReasonBox ul.two { padding: 28px 0 0;}
+.ReasonBox ul.two li { padding: 0 0px 0 112px;}
+
+/* -------------------------------------- Popular Box */
+.PopularBox { width: 963px; padding: 52px 0 100px; margin: 0 auto; clear: both;}
+.PopularBox h3 { color: #62408c; font: 49px/60px 'Scada', sans-serif, arial; text-align: center;}
+.PopularBox h4 { padding: 0 0 25px; color: #000; font: 24px/25px 'Scada', sans-serif, arial; text-align: center;}
+.PopularBox ul { padding: 50px 0 40px; clear: both; overflow: hidden;}
+.PopularBox li { width: 250px; padding: 0 0 0 100px; float: left; text-align: center;}
+.PopularBox li .image { position: relative;}
+.PopularBox li .image img { display: block;}
+.PopularBox li .image .note { width: 201px; height: 164px; display: block; top: -18px; right: -19px; position: absolute; background:url(images/icon_note.png) no-repeat;}
+.PopularBox li .image .note1 { width: 168px; height: 137px; display: block; top: -18px; right: -19px; position: absolute; background:url(images/icon_note1.png) no-repeat;}
+.PopularBox li .image .note2 { width: 109px; height: 88px; display: block; top: -18px; right: -19px; position: absolute; background:url(images/icon_note2.png) no-repeat;}
+.PopularBox li span.old-price { padding: 17px 0 0; display: block; color: #9d9d9d; font: 24px/24px 'Scada', sans-serif, arial; text-decoration: line-through;}
+.PopularBox li span.price { padding: 11px 0 0; display: block; color: #62408c; font: 35px/35px 'Scada', sans-serif, arial;}
+.PopularBox li:first-child { padding: 0 0 0 10px;}
+.PopularBox .try { padding: 22px 0 4px; clear: both; text-transform: uppercase;}
+.PopularBox .try span { width: 180px; padding: 0 10px; margin: 0 auto; display: block; color: #fff; font: 23px/37px 'Scada', sans-serif, arial; background:url(images/btn-try.gif) repeat-x #e74b30; border: 1px solid #face00; border-radius: 5px; text-decoration: none; text-shadow:0 1px 0 #c4551f; box-shadow: 0 1px 2px #808080; cursor: pointer;}
+.PopularBox .try span:hover { box-shadow:inset 0 0px 3px 2px #b18300; border-color: #b18300;}
+
+/* -------------------------------------- Brand Box */
+.BrandBox { min-width: 963px; padding: 63px 0 20px; clear: both; background:url(images/px_brand.jpg) 50% 0 repeat-x #feb13d; text-align: center;}
+.BrandBox .Wrapper { position: relative;}
+.BrandBox div { font: 24px/34px 'Scada', sans-serif, arial;}
+.BrandBox span { color: #f50b14; text-transform: uppercase;}
+.BrandBox .title { color: #f50b14; font: 50px/60px 'Scada', sans-serif, arial; text-align: center; text-transform: uppercase;}
+.BrandBox .text { padding: 17px 35px 15px;}
+.BrandBox .brand { padding: 14px 0 0; clear: both;}
+.BrandBox .brand img { margin: 0 11px; vertical-align: middle;}
+.BrandBox .present { width: 235px; height: 250px; top: -154px; right: 17px; position: absolute; background:url(images/icon_brand.png) no-repeat;}
+.BrandBox .corner { width: 40px; height: 20px; bottom: -40px; left: 463px; position: absolute; background:url(images/arrow_brand.png) no-repeat;}
+
+/* -------------------------------------- Prize Box */
+.PrizeBox { min-width: 963px; padding: 37px 0 50px; min-height: 340px; clear: both; background:url(images/px_prize.jpg) 50% 0 repeat-x #3a1e5b; text-align: center;}
+.PrizeBox .title { color: #fff; font: 29px/30px 'Scada', sans-serif, arial; text-align: center;}
+.PrizeBox .value { padding: 20px 0 0;}
+.PrizeBox input[type="text"] { width:268px; padding:9px 23px 9px 47px; border:1px solid #7543b2; border-radius: 3px; box-shadow: inset 1px 2px 2px #8c8c8c;} 
+.PrizeBox input.name { background:url(images/icon_name.gif) 7px 50% no-repeat #fff;}
+.PrizeBox input.phone { background:url(images/icon_phone.gif) 7px 50% no-repeat #fff;}
+.PrizeBox input.mail { background:url(images/icon_mail.gif) 7px 50% no-repeat #fff;}
+.PrizeBox input[type="submit"] { width: 200px; height: 51px; color: #fff; font: 29px/30px 'Scada', sans-serif, arial; background:url(images/btn-send.gif) repeat-x #e74a30; border: 1px solid #face00; border-radius: 5px; text-shadow:0 1px 0 #783512; box-shadow: 0 1px 2px #241537; cursor: pointer; text-transform: uppercase;}
+.PrizeBox input[type="submit"]:hover { box-shadow:inset 0 0px 3px 2px #b18300; border-color: #b18300;}
+.PrizeBox .privacy { padding: 0 0 0 34px; margin-top: 10px; display: inline-block; color: #cebae8; font: 12px/29px 'Scada', sans-serif, arial; background:url(images/icon_privacy.png) 0 0 no-repeat;}
+
+/* -------------------------------------- How Work Box */
+.HowWorkBox { width: 963px; padding: 50px 0 80px; margin: 0 auto; clear: both;}
+.HowWorkBox .title { color: #62408c; font: 50px/60px 'Scada', sans-serif, arial; text-align: center;}
+.HowWorkBox ul { padding: 55px 0 0; overflow: hidden;}
+.HowWorkBox li { width: 167px; padding: 0 0 0 28px; float: left; font: 15px/19px 'Scada', sans-serif, arial; text-align: center;}
+.HowWorkBox li p { padding: 17px 0 0;}
+.HowWorkBox li span.number { padding: 0 15px; display: block; top: -12px; left: -14px; position: absolute; color: #62408c; font: 15px/35px 'Scada', sans-serif, arial; background: #f5f5f5; border-radius: 19px;}
+.HowWorkBox li .image { width: 147px; height: 146px; margin-left: 10px; background:url(images/image_border.png) no-repeat; position: relative;}
+.HowWorkBox li .image img { padding: 43px 0 0; margin: 0 auto; display: block;}
+.HowWorkBox li:first-child { padding: 0 0 0 7px;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:100%; min-width: 963px; height:276px; margin:-276px auto 0; position:relative; background:url(images/bg_footer.jpg) 50% 0 no-repeat;}
+.DataBox { width: 963px; margin: 0 auto; color: #858585; font: 17px/24px 'Scada', sans-serif, arial;}
+.DataBox p { padding: 48px 0 0 18px;}
+
+/* -------------------------------------------- PIE FIX */
+.CallOrder .btn a { behavior:url(js/PIE.htc); position: relative;}
+.ActionRight input[type="text"] { behavior:url(js/PIE.htc); position: relative;} 
+.ActionRight input[type="submit"] { behavior:url(js/PIE.htc); position: relative;}
+.PopularBox .try span { behavior:url(js/PIE.htc);}
+.PrizeBox input[type="text"] { behavior:url(js/PIE.htc); position: relative;} 
+.PrizeBox input[type="submit"] { behavior:url(js/PIE.htc); position: relative;}
+.HowWorkBox li span.number { behavior:url(js/PIE.htc);}
+/* ---------------------------------------------------- */

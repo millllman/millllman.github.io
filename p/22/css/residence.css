@@ -1,0 +1,204 @@
+ /* --------------------- Default --------------------- */
+body { background:url(../images/residence/px_body.gif) repeat;}
+a { color:#499229; text-decoration:underline; outline:none;}
+a:hover { color:#5DBB34; text-decoration:none;}
+div { font:12px georgia, verdana; color:#515151;}
+h1 { color:#000; font:bold italic 25px georgia, verdana; margin:0; padding:0;}
+h2 { color:#000; font:45px georgia, verdana; margin:0; padding:0; text-transform:uppercase; letter-spacing:5px;}
+h3 { color:#000; font:bold italic 25px georgia, verdana; margin:0; padding:27px 0 0;}
+
+
+#container { background:url(../images/residence/px_header.jpg) 0 0 repeat-x;}
+/* ********************* Header ********************* */
+#header {}
+#header .background {}
+/* Language */
+#header .lang li { padding:19px 0 0 15px;}
+#header .lang li a:hover { background:url(../images/lounge/px_lang.gif) repeat-x;}
+#header .lang li a.active { background:url(../images/lounge/px_lang.gif) repeat-x;}
+/* Menu */
+#header .menu li a { color:#515251;}
+#header .menu li a:hover {/* color:#fff; background:url(../images/lounge/px_menu.gif) repeat-x;*/}
+#header .menu li a em { border-color:#A9B28D; cursor:pointer;}
+#header .menu li b { color:#515151; background:url(../images/residence/px_menu.gif) repeat-x #CCCCCC;}
+#header .over li a:hover { color:#515151; background:url(../images/residence/px_menu.gif) repeat-x #CCCCCC;}
+/* Weather */
+#header .weather span {}
+
+/* ******************** Content ********************* */
+#content {}
+/* ---------------------------------- LEFT NAVIGATION */
+
+/* --------------------------------------- Banner Box */
+.BannerBox { padding:44px 0 0;}
+.BannerBox .logo { height:220px; padding-left:54px;}
+.BannerBox .logo a { width:232px; height:220px; display:block; background:url(../images/residence/logo.jpg) no-repeat;}
+.BannerBox .img { margin:53px 0 17px;}
+
+/* --------------------------------- RIGHT NAVIGATION */
+
+/* ---------------------------------------- Event Box */
+.EventBox { width:100%; padding:35px 0 133px; overflow:hidden; position:relative;}
+.EventBox li { padding:25px 0 0 35px; overflow:hidden; zoom:1; font:12px georgia, verdana; line-height:19px;}
+.EventBox li a { float:left; color:#E7E091; font:bold italic 17px georgia, verdana; border-top:2px solid #0C0C0C; background:#2B2B2B;}
+.EventBox li a span { color:#E7E091; padding:5px 10px 8px; display:block; border-top:1px solid #565656; border-bottom:1px solid #4A4A4A;}
+.EventBox li a:hover { color:#fff; background:#333333; text-decoration:underline;}
+.EventBox li a:hover span { color:#fff;}
+.EventBox li em { width:120px; float:left; padding:7px 8px 0 0; color:#fff;}
+.EventBox li div { margin:0 14px 0 128px;}
+.EventBox .title { width:294px; height:40px; background:url(../images/residence/title_event.gif) no-repeat;}
+
+.EventBox .all { top:8px; right:14px; position:absolute;}
+.EventBox .all a { height:21px; padding:5px 17px 0; display:block; float:left; color:#E7E091; font:bold italic 12px georgia, verdana; border:1px solid #E7E091; background:#3D3D3D;}
+.EventBox .all a:hover { background:#525252;}
+
+.EventBox .png { width:100%; height:178px; bottom:0; position:absolute;}
+.EventBox .png div { width:597px; height:178px; margin:0 auto; background:url(../images/residence/bg_event.png) no-repeat;}
+
+.EventBox .background { position:relative; overflow:hidden; padding:0 0 65px; background:url(../images/residence/px_event.jpg) 0 100% repeat-x #3D3D3D;}
+
+/* ---------------------------------------- Photo Box */
+.PhotoBox { width:100%; padding:0; overflow:hidden; position:relative;}
+.PhotoBox li { width:24%; float:left; padding:20px 0 0; font:12px georgia, verdana; line-height:17px;}
+.PhotoBox li .image { width:140px; height:179px; padding-left:15px; position:relative;}
+.PhotoBox li .image img { width:140px; height:175px;}
+.PhotoBox li .image a { width:140px; height:175px; top:0; right:0; _right:-1px; position:absolute; display:block; background:url(../images/residence/image_shadow.png) no-repeat; cursor:pointer}
+.PhotoBox li .name { width:170px; padding:20px 0 0; text-align:center;}
+.PhotoBox li .name a { color:#8A6100; font:bold italic 14px georgia, verdana;}
+.PhotoBox li .name a:hover { color:#000;}
+.PhotoBox .title { width:396px; height:39px; background:url(../images/residence/title_photo.gif) no-repeat;}
+
+.PhotoBox .all { top:3px; right:14px; position:absolute;}
+.PhotoBox .all a { height:21px; padding:5px 17px 0; display:block; float:left; color:#E7E091; font:bold italic 12px georgia, verdana; border:1px solid #E7E091; background:#3D3D3D;}
+.PhotoBox .all a:hover { background:#525252;}
+
+/*********************** Inner Pages *******************/
+
+/* --------------------- Content Box ----------------- */
+.ContentBox {}
+.ContentBox h2 a { color:#000;}
+.ContentBox h2 a:hover { color:#313131;}
+.ContentBox h3 { width:100%; float:left; color:#E7E091; font:bold italic 25px georgia, verdana;}
+.ContentBox h3 em { padding:2px 14px 5px; color:#E7E091; font:bold italic 25px georgia, verdana; background:url(../images/residence/px_title.gif) repeat-x #686868;}
+.ContentBox h3 a { padding:2px 14px 5px; color:#E7E091; font:bold italic 25px georgia, verdana; background:url(../images/residence/px_title.gif) repeat-x #686868;}
+/* Page Navigation */
+.ContentBox .page_nav { width:100%; float:left; padding:5px 0 12px;}
+.ContentBox .page_nav li { padding-right:7px; float:left; color:#000; font:bold italic 15px georgia, verdana;}
+.ContentBox .page_nav li a { color:#000;}
+/* Photo */
+.ContentBox .photo { width:100%; float:left;}
+.ContentBox .photo li { width:158px; float:left; padding:21px 0 0; position:relative;}
+.ContentBox .photo li img { width:140px; height:175px;}
+.ContentBox .photo li a { width:140px; height:175px; top:21px; left:0; position:absolute; display:block; background:url(../images/residence/image_shadow.png) no-repeat; cursor:pointer;}
+/* Event One */
+.ContentBox .event_one { padding:21px 30px 0 0;}
+.ContentBox .event_one h1 { padding:2px 14px 5px; color:#E7E091; font:bold italic 25px georgia, verdana; background:url(../images/residence/px_title.gif) repeat-x #686868;}
+.ContentBox .event_one p { clear:left;}
+.ContentBox .event_one .text { overflow:hidden; zoom:1; padding:30px 25px 58px 28px; color:#424040; font-size:17px; background:#fff; opacity:0.8; filter: alpha(opacity=80);}
+.ContentBox .event_one .img { margin-right:10px; float:left;}
+/* Event List */
+.ContentBox .event_list { padding:30px 30px 0 0; overflow:hidden; zoom:1; position:relative;}
+.ContentBox .event_list li { padding:10px 0 20px; overflow:hidden; zoom:1; font:12px georgia, verdana; line-height:19px; position:relative;}
+.ContentBox .event_list li em { width:120px; float:left; color:#000;}
+.ContentBox .event_list li div { margin-left:120px; padding:0 70px 0 17px; zoom:1;}
+.ContentBox .event_list li a { color:#E7E091; font:bold italic 17px georgia, verdana;}
+.ContentBox .event_list li a:hover { color:#fff; text-decoration:underline;}
+.ContentBox .event_list .background { height:100%; padding:0; top:30px; right:30px; left:120px; position:absolute; background:url(../images/residence/px_event_list.jpg) 100% 85px repeat-y #2B2B2B;}
+/* Page Number */
+.ContentBox .page_number { width:100%; float:left; padding:30px 0 0;}
+.ContentBox .page_number li { height:31px; float:left; padding:0 1px; background:url(../images/residence/px_page_number.gif) repeat-x;}
+.ContentBox .page_number li a { height:29px; padding:2px 7px 0; display:block; float:left; color:#AB8E4A; font:bold italic 20px georgia, verdana;}
+.ContentBox .page_number li a:hover { color:#fff; background:#313131;}
+.ContentBox .page_number li a.active { color:#fff; background:#000; text-decoration:none;}
+.ContentBox .page_number .bg_left { width:45px; padding:0; background:url(../images/residence/bg_page_left.gif) no-repeat;}
+.ContentBox .page_number .bg_right { width:45px; padding:0; background:url(../images/residence/bg_page_right.gif) no-repeat;}
+
+/* -------------------- Content Box 1 ---------------- */
+.ContentBox1 { color:#515151; font-size:15px; margin-right:30px; padding:27px 0 32px 29px; background:url(../images/residence/px_cont.gif) 100% 0 repeat-y #fff;}
+.ContentBox1 h1 { margin:0; padding:0; line-height:15px;}
+.ContentBox1 .text1 { color:#515151; font-size:15px; padding-right:20px;}
+.assort_page { padding:27px 0 0 29px;}
+
+.ContentBox1 .title_txt { width:137px; height:46px; background:url(../images/residence/txt.gif)  no-repeat;}
+.ContentBox1 .title_txt1 { width:221px; height:46px; background:url(../images/residence/txt1.gif)  no-repeat;}
+.ContentBox1 .title_txt2 { width:336px; height:46px; background:url(../images/residence/txt2.gif)  no-repeat;}
+.ContentBox1 .title_txt3 { width:432px; height:46px; background:url(../images/residence/txt3.gif)  no-repeat;}
+
+/* Image Main */
+.ContentBox1 .image_main { height:245px; position:relative;}
+.ContentBox1 .image_main div { width:622px; height:198px; top:19px; right:-30px; position:absolute; background:url(../images/residence/image_border.gif) no-repeat;}
+.ContentBox1 .image_main div img { width:502px; height:192px; margin-top:3px; float:right;}
+/* Cook */
+.ContentBox1 .cook { padding:26px 0 0; overflow:hidden; zoom:1;}
+.ContentBox1 .cook li { width:49%; float:left;}
+.ContentBox1 .cook .item { width:260px;}
+.ContentBox1 .cook .img { border:3px solid #A68E5B; padding:1px; display:block;}
+.ContentBox1 .cook .title { width:200px; margin:0 auto; padding:18px 5px 15px; text-align:center; background:#FFEECA; border:1px solid #C5AF81;}
+.ContentBox1 .cook .title h3 { color:#362501; font:21px georgia, verdana; letter-spacing:2px; margin:0; padding:0; text-transform:uppercase;}
+.ContentBox1 .cook .title h3 a { color:#362501;}
+.ContentBox1 .cook .name { width:200px; margin:0 auto; padding:22px 3px 12px; border:solid #C5AF81; border-width:0 1px 1px; background:url(../images/residence/px_shadow.gif) repeat-x #FFEECA; position:relative;}
+.ContentBox1 .cook .name strong { padding:5px 11px; top:15px; left:68px; position:absolute; color:#362501; font-size:16px; white-space:nowrap; border:1px solid #C5AF81; background:#fff;}
+.ContentBox1 .cook .text { width:200px; margin:0 auto; padding:28px 0 0; color:#362501; font-size:11px; font-family:verdana; line-height:21px;}
+/* Contact */
+.ContentBox1 .contact { overflow:hidden; zoom:1; padding:0 0 28px;}
+.ContentBox1 .contact .address { width:235px; float:left; line-height:19px;}
+.ContentBox1 .contact .address span { padding-left:76px;}
+.ContentBox1 .contact .map { width:180px; padding-right:50px; float:right;}
+/* Send */
+.ContentBox1 .send { padding:3px 0 8px; border-left:4px solid #2C2C2C; background:url(../images/residence/px_send.jpg) 100% 0 repeat-y #363636;}
+.ContentBox1 .send li { padding:5px 7px 0; color:#fff; overflow:hidden;}
+.ContentBox1 .send li.title { padding:5px 7px 11px; font-size:24px;}
+.ContentBox1 .send li label input { width:184px; height:14px; padding:7px 5px; display:block; margin-top:3px; color:#C0C0C0; font:bold 12px georgia, verdana; border:none; background:url(../images/residence/bg_form.gif) no-repeat;}
+.ContentBox1 .send li textarea { width:85%; height:83px; padding:7px 5px; display:block; margin-top:3px; color:#C0C0C0; font:bold 12px georgia, verdana; border:none;}
+.ContentBox1 .send .button { width:85%; text-align:right;}
+.ContentBox1 .send .button input { color:#C5B082; font:20px georgia, verdana; text-decoration:underline; cursor:pointer; border:none; background:none;}
+/* Our response */
+.ContentBox1 .our_response { padding:21px 20px 0 0;}
+.ContentBox1 .our_response li { padding:0 0 75px; background:url(../images/residence/bg_response.gif) 50% 100% no-repeat;}
+.ContentBox1 .our_response li a { color:#806535; font-size:20px;}
+.ContentBox1 .our_response li em { font-size:11px; padding-left:5px;}
+.ContentBox1 .our_response .title { padding:0 0 17px; color:#806535; font:italic 39px georgia, verdana; background:none;}
+.ContentBox1 .our_response .text { padding:1px 0 0; font-size:17px;}
+/* Page Number */
+.ContentBox1 .page_number { clear:left; overflow:hidden; zoom:1; padding:30px 0 0;}
+.ContentBox1 .page_number li { height:29px; float:left; padding:1px 1px 1px 0; background:url(../images/residence/px_page_number1.gif) repeat-x;}
+.ContentBox1 .page_number li a { height:28px; padding:1px 7px 0; display:block; float:left; color:#AB8E4A; font:bold italic 20px georgia, verdana;}
+.ContentBox1 .page_number li a:hover { color:#fff; background:#DFC78E;}
+.ContentBox1 .page_number li a.active { color:#fff; background:#C0A669; text-decoration:none;}
+.ContentBox1 .page_number li.home { border-left:1px solid #C0A669;}
+.ContentBox1 .page_number li.last { width:41px; padding:1px 0; background:url(../images/residence/bg_page_right1.gif) no-repeat;}
+/* Assortment */
+.ContentBox1 .assortment { padding:0 80px 20px 0; overflow:hidden; zoom:1; clear:left;}
+.ContentBox1 .assortment li { padding:24px 0 0; overflow:hidden; color:#000; font-size:13px;}
+.ContentBox1 .assortment li.title { color:#806535; padding:0; font:39px italic georgia, verdana;}
+.ContentBox1 .assortment li.title h3 { color:#806535; font:italic 39px georgia, verdana; margin:0; padding:0;}
+.ContentBox1 .assortment li div { overflow:hidden; zoom:1; background:url(../images/residence/px_assort.gif) 0 82% repeat-x;}
+.ContentBox1 .assortment li em { padding:9px 5px 0 0; float:left; color:#806535; font-size:20px; font-style:italic; background:#fff;}
+.ContentBox1 .assortment li em a { color:#806535; text-decoration:none;}
+.ContentBox1 .assortment li em a:hover { color:#000; text-decoration:underline;}
+.ContentBox1 .assortment li span { padding-left:8px; float:right; color:#806535; font-size:20px; font-style:italic; background:#fff;}
+.ContentBox1 .assortment li span b { font-size:30px; font-weight:normal;}
+/* Assortment Menu */
+.AssortmentMenu { overflow:hidden; clear:left; padding:0 0 0 32px; background:#fff;}
+.AssortmentMenu .image { float:left;}
+.AssortmentMenu .image img { width:352px; height:259px; border:1px solid #5B5B5B; display:block;}
+.AssortmentMenu .menu { width:199px; min-height:262px; _height:262px; float:right; background:url(../images/residence/px_assort_menu.gif) 100% 0 repeat-y #2C2C2C;}
+.AssortmentMenu .menu ul { padding:14px 0 0;}
+.AssortmentMenu .menu li { padding:1px 0;}
+.AssortmentMenu .menu li a { width:125px; padding:7px 20px 7px 18px; display:block; color:#C0B293; font-size:12px;}
+.AssortmentMenu .menu li a:hover { color:#000; background:#fff;}
+.AssortmentMenu .menu li a.active { color:#000; background:#fff; text-decoration:none;}
+
+/* ********************* Footer *********************** */
+#footer {}
+#footer .background {}
+#footer .copyright { margin-left:350px; background:url(../images/residence/px_footer.jpg) 0 100% repeat-x;}
+/* ----------------------- IE ------------------------- */
+* html .EventBox .png div {background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/residence/bg_event.png", sizingMethod="crop")}
+* html #header .weather span { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/lounge/sun.png", sizingMethod="crop")}
+
+* html .PhotoBox li .image a { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/residence/image_shadow.png", sizingMethod="crop")}
+* html .ContentBox .photo li a { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/residence/image_shadow.png", sizingMethod="crop")}
+* html .ContentBox .event_list .background { height:100000px; width:85%;}
+
+/* ---------------------------------------------------- */

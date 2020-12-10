@@ -1,0 +1,107 @@
+ /* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body {}
+a { color:#FF6B00; text-decoration:underline;}
+a:hover { color:#4A84EE; text-decoration:none;}
+input { margin:0; padding:0; font-family:tahoma; font-size:11px; vertical-align:middle;}
+div { margin:0; padding:0; font-family:tahoma; font-size:11px; color:#54545C; line-height:16px;}
+em, i { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:12px 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:normal;}
+h1 { color:#fff; font:19px times new roman, arial; text-transform:uppercase; margin:0; padding:8px 0 0;}
+h2 { color:#000; font:21px tahoma; font-weight:normal; margin:0; padding:61px 0 0;}
+h3 { color:#54545C; font:14px times new roman, arial; font-weight:bold; text-transform:uppercase; margin:0; padding:0 0 5px 7px;}
+
+#container { min-width:1000px; min-height:100%; height:auto !important; height:100%; position:relative;}
+/* ********************* Header ********************* */
+#header { height:335px; background:url(images/px_header.gif) 0 139px repeat-x;}
+
+/* ---------------------------------- Slogan Row */
+.slogan_row { height:139px; text-align:center;}
+.slogan_row h2 em { color:#FF7F00; font-size:23px;}
+.slogan_row h2 span { color:#FF2600; font-size:25px;}
+.slogan_row .flash { padding:20px 0 0; text-align:center;}
+
+/* ------------------------------------ Menu Row */
+.menu_row { height:196px; /*background:url(images/bg_header.gif) 0 0 no-repeat;*/}
+.menu_row .logo { width:174px; float:left; text-align:right;}
+.menu_row .menu { margin:0 0 0 174px; padding:0 0 0 17px;}
+.menu ul { padding:24px 0 0;}
+.menu li { width:24%; float:left; text-align:center;}
+.menu li a { color:#606060; font:18px tahoma; text-decoration:none;}
+.menu li a:hover { color:#FF6A00;}
+.menu li a.active { color:#FF6A00;}
+.menu li img { margin:0 auto 3px; display:block;}
+/* ******************** Content ********************* */
+#content { padding:0 20px 0 36px;}
+/* ---------------------------------- LEFT NAVIGATION */
+#left_nav { margin:0 205px 0 0;}
+/* ----------------------------------- Navigation Row */
+.navigation_row { width:100%; float:left;}
+
+/* ------------------------------- Additional Service */
+.additional_service { width:246px; float:left;}
+.additional_service .px_top {background:url(images/px_add_service.gif) 0 0 repeat-x #969696;}
+.additional_service .bg_top {background:url(images/bg_add_service_top.gif) 0 0 no-repeat;}
+.additional_service .bg_bottom { padding:20px 25px 5px; color:#fff; background:url(images/bg_add_service_bottom.gif) 0 bottom no-repeat;}
+.additional_service li { padding:0 0 20px;}
+.additional_service li a { color:#fff; font-weight:bold;}
+.additional_service li a:hover { color:#DADADA;}
+.additional_service li a.active { color:#DADADA; text-decoration:none;}
+
+/* --------------------------------------- Our Offer */
+.our_offer { margin:0 0 0 260px;}
+.our_offer h3 { color:#FF6900;}
+.our_offer ul { width:49%; float:left;}
+.our_offer li { padding:0 10px 20px 0;}
+.our_offer li a { color:#fff; font-weight:bold;}
+.our_offer li a:hover { color:#F2E627;}
+.our_offer li a.active { color:#F2E627; text-decoration:none;}
+.our_offer .px_top { background:url(images/px_our_offer.gif) 0 0 repeat-x #FF7C00;}
+.our_offer .bg_top_left { background:url(images/bg_our_offer_top_left.gif) 0 0 no-repeat;}
+.our_offer .bg_top_right {background:url(images/bg_our_offer_top_right.gif) 100% 0 no-repeat;}
+.our_offer .bg_bottom_left {background:url(images/bg_our_offer_bottom_left.gif) 0 bottom no-repeat;}
+.our_offer .bg_bottom_right {padding:20px 25px 5px; color:#fff; overflow:hidden; zoom:1; background:url(images/bg_our_offer_bottom_right.gif) right bottom no-repeat;}
+
+/* ---------------------------------- Content Row */
+.content_row { width:99%; float:left; padding:37px 0 0;}
+.content_row p { padding:12px 0 18px;}
+
+.content_row .img { width:160px; height:147px; margin:0 15px 0 0; float:left; background:url(images/pic_over.jpg) 0 0 no-repeat;}
+.content_row .img:hover { background:url(images/pic.jpg) 0 0 no-repeat;}
+
+.content_row .img1 { width:160px; height:147px; margin:0 15px 0 0; float:left; background:url(images/pic1_over.jpg) 0 0 no-repeat;}
+.content_row .img1:hover { background:url(images/pic1.jpg) 0 0 no-repeat;}
+
+.content_row .img2 { width:160px; height:147px; margin:0 15px 0 0; float:left; background:url(images/pic2_over.jpg) 0 0 no-repeat;}
+.content_row .img2:hover { background:url(images/pic2.jpg) 0 0 no-repeat;}
+
+.content_row .clear { height:39px; clear:both;}
+.content_row a.more { color:#939393; padding:0 24px 0 0; background:url(images/arrow.gif) 100% 5px no-repeat;}
+.content_row a.more:hover { color:#FF6B00;}
+
+/* --------------------------------- RIGHT NAVIGATION */
+#right_nav { width:205px; float:right; position:relative;}
+#right_nav .cont { padding:21px 0 0 14px;}
+#right_nav .cont .call { font:13px times new roman, arial; padding:0 0 0 20px; font-weight:bold; text-transform:uppercase;}
+#bg_phone { width:90px; height:120px; position:absolute; top:40px; right:143px; background:url(images/bg_phone.gif) 0 0 no-repeat;}
+
+.call_phone { padding:29px 0 0 25px; font:18px times new roman, arial; font-weight:bold;}
+.call_phone .tel { color:#FF6A00; font:24px times new roman, arial; font-weight:bold; margin:-35px 0 0 43px;}
+.scheme { padding:23px 15px 8px 0; text-align:right;}
+.address { display:block; padding:24px 20px 21px 14px; margin:0 0 85px; background:url(images/bg_map.gif) 0 0 no-repeat;}
+.address .gray { color:#A9A9A9; padding:10px 0 0; display:block;}
+
+/* ********************* Footer *********************** */
+#empty { height:200px; clear:both;}
+	 
+#footer { width:100%; min-width:1000px; height:114px; margin-top:-114px; position:relative; color:#fff; font-size:12px; text-align:center; background:#333333;}
+#footer .indent { width:100%; float:left; padding:0 0 11px;}
+#footer .phone { float:right; padding:5px 7px 10px; margin:0 32px; text-align:right; background:#2B2B2B; color:#fff; font:16px arial; font-weight:bold;}
+#footer .img { margin:0 0 0 65px; vertical-align:middle;}
+/* ----------------------- IE ------------------------- */
+* html body	{ width: expression(((document.documentElement.clientWidth || document.clientWidth) < 1000)? "1000px" : "100%"); height:100%;}
+* html #bg_phone { right:142px;}
+/* ---------------------------------------------------- */

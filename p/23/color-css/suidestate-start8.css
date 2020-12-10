@@ -1,0 +1,68 @@
+/* --------------------- Default --------------------- */
+body { background:url(../images/suidestate-start8/px_header.gif) repeat-x;}
+a { color:#057CE1;}
+a:hover { color:#E16402;}
+/* ********************* Header ********************* */
+#header {}
+/* Top */
+.top_header a.favorites { background:url(../images/suidestate-start8/icon_favorites.gif) 0 1px no-repeat;}
+.top_header a.login { background:url(../images/suidestate-start8/icon_login.gif) no-repeat;}
+.top_header a.reg { background:url(../images/suidestate-start8/icon_reg.gif) no-repeat;}
+.top_header a.reg:hover { color:#A4EEB3;}
+/* Bottom */
+.bottom_header .search input { width:254px; background:url(../images/suidestate-start8/bg_search.gif) no-repeat;}
+.bottom_header .search .button { left:285px; background:url(../images/suidestate-start8/button_search.gif) no-repeat;}
+/* Menu */
+#menu li a sup { color:#EA5505;}
+/* ******************** Content ********************* */
+.SliderBox .title { background:url(../images/suidestate-start8/px_slider_title.png) repeat;}
+/* Panel */
+.SliderBox .panel { background:url(../images/suidestate-start8/bg_slider_panel.gif) no-repeat;}
+/* Top Week */
+.SliderBox ul { border-left:1px solid #E2D088;}
+.SliderBox li { border-color:#fff #fff #F3E4A9 #fff; background:#F3F1E5;}
+.SliderBox li a { color:#BB3C37;}
+.SliderBox li a:hover { background:#EB7337;}
+.SliderBox .title a:hover { color:#FFDCD4;}
+/* --------------------------------- New Articles Box */
+.NewArticlesBox li .info a { color:#E16402;}
+.NewArticlesBox li .info a:hover { color:#085CA3;}
+.NewArticlesBox li.title { color:#CC4C03;}
+/* --------------------------------- New Articles Box */
+a.author { height:14px; padding:3px 26px 0 23px; float:left; background:url(../images/suidestate-start8/icon_author.gif) 0 1px no-repeat;}
+a.rating { height:14px; padding:3px 18px 0 23px; float:left; background:url(../images/suidestate-start8/icon_rating.gif) 0 1px no-repeat;}
+a.comment { height:14px; padding:3px 10px 0 23px; float:left; background:url(../images/suidestate-start8/icon_comment1.gif) 0 1px no-repeat;}
+/* -------------------------------------- Comment Box */
+.CommentBox { background:url(../images/suidestate-start8/bg_comment_top.gif) no-repeat #FFF9EB;}
+.CommentBox li span a { color:#D45002;}
+.CommentBox li.title { color:#CC4C03; background:url(../images/suidestate-start8/icon_comment.gif) 23px 3px no-repeat;}
+.CommentBox li.bottom { background:url(../images/suidestate-start8/bg_comment_bottom.gif) 0 100% no-repeat;}
+/* --------------------------------- Ask Question Box */
+.AskQuestionBox {}
+.AskQuestionBox ul { background:url(../images/suidestate-start8/bg_ask_top.gif) no-repeat #FEF0CD;}
+.AskQuestionBox li.bottom { background:url(../images/suidestate-start8/bg_ask_bottom.gif) no-repeat #fff;}
+.AskQuestionBox li.bottom input { background:url(../images/suidestate-start8/button_send.gif) no-repeat; cursor:pointer;}
+.AskQuestionBox li.title { color:#EC801A;}
+/* ------------------------------------- Subscribe Box */
+.SubscribeBox {}
+.SubscribeBox ul { background:url(../images/suidestate-start8/bg_subscr_top.gif) no-repeat #FFF3BE;}
+.SubscribeBox li input { background:url(../images/suidestate-start8/bg_mail_subscribe.gif) no-repeat;}
+.SubscribeBox li .button { background:url(../images/suidestate-start8/button_subscribe.gif) no-repeat;}
+.SubscribeBox li.bottom { background:url(../images/suidestate-start8/bg_subscr_bottom.gif) 0 100% no-repeat;}
+/* ---------------------------------- Best Authors Box */
+.BestAuthorsBox {}
+.BestAuthorsBox ul { background:url(../images/suidestate-start8/bg_authors_top.gif) no-repeat #F9F6E5;}
+.BestAuthorsBox li.title { color:#525753;}
+.BestAuthorsBox li.bottom { background:url(../images/suidestate-start8/bg_authors_bottom.gif) 0 100% no-repeat;}
+/* ------------------------------------------ Tags Box */
+.TagsBox { background:url(../images/suidestate-start8/bg_tags_top.gif) no-repeat;}
+.TagsBox li { border:solid #DF6C02; border-width:0 1px;}
+.TagsBox li.title { color:#CC4C03;}
+.TagsBox li.bottom { background:url(../images/suidestate-start8/bg_tags_bottom.gif) no-repeat;}
+/* ********************* Footer *********************** */
+#footer { background:url(../images/suidestate-start8/px_footer.gif) 50% 0 repeat-x;}
+#footer ul { background:url(../images/suidestate-start8/icon_moon.gif) 95% 14px no-repeat;}
+#footer li a:hover { color:#FFD162;}
+/* ----------------------- IE ------------------------- */
+* html .NewArticlesBox li .shadow div { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/suidestate-start8/image_shadow.png", sizingMethod="crop")}
+/* ---------------------------------------------------- */

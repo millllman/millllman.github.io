@@ -1,0 +1,66 @@
+/* --------------------- Default --------------------- */
+body { background:url(../images/gururemonta-start/px_header.gif) 50% 0 repeat-x;}
+a { color:#057CE1;}
+a:hover { color:#E76C29;}
+/* ********************* Header ********************* */
+#header {}
+/* Top */
+.top_header a.favorites { background:url(../images/gururemonta-start/icon_favorites.gif) 0 1px no-repeat;}
+.top_header a.login { background:url(../images/gururemonta-start/icon_login.gif) no-repeat;}
+.top_header a.reg { background:url(../images/gururemonta-start/icon_reg.gif) no-repeat;}
+.top_header a.reg:hover { color:#A4EEB3;}
+/* Bottom */
+.bottom_header .search input { background:url(../images/gururemonta-start/bg_search.gif) no-repeat;}
+.bottom_header .search .button { background:url(../images/gururemonta-start/button_search.gif) no-repeat;}
+/* Menu */
+#menu li a sup { color:#EA5505;}
+/* ******************** Content ********************* */
+.SliderBox .title { background:url(../images/gururemonta-start/px_slider_title.png) repeat;}
+/* Panel */
+.SliderBox .panel { background:url(../images/gururemonta-start/bg_slider_panel.gif) no-repeat;}
+/* Top Week */
+.SliderBox ul { border-left:1px solid #FBC4AA;}
+.SliderBox li { border-color:#fff #fff #FCD5C2 #fff; background:#FFF0E2;}
+.SliderBox li a { color:#0A62A9;}
+.SliderBox li a:hover { background:url(../images/gururemonta-start/px_slider_menu.gif) repeat-x #F79D6D;}
+.SliderBox .title a:hover { color:#FFDCA5;}
+/* --------------------------------- New Articles Box */
+.NewArticlesBox li .info a { color:#71809A;}
+.NewArticlesBox li .info a:hover { color:#085CA3;}
+.NewArticlesBox li.title { color:#4C5975;}
+/* --------------------------------- New Articles Box */
+a.author { height:14px; padding:3px 26px 0 23px; float:left; background:url(../images/gururemonta-start/icon_author.gif) 0 1px no-repeat;}
+a.rating { height:14px; padding:3px 18px 0 23px; float:left; background:url(../images/gururemonta-start/icon_rating.gif) 0 1px no-repeat;}
+a.comment { height:14px; padding:3px 10px 0 23px; float:left; background:url(../images/gururemonta-start/icon_comment1.gif) 0 1px no-repeat;}
+/* -------------------------------------- Comment Box */
+.CommentBox { background:url(../images/gururemonta-start/bg_comment_top.gif) no-repeat #F4F3FA;}
+.CommentBox li span a { color:#CA500B;}
+.CommentBox li.title { color:#4C5975; background:url(../images/gururemonta-start/icon_comment.gif) 23px 3px no-repeat;}
+.CommentBox li.bottom { background:url(../images/gururemonta-start/bg_comment_bottom.gif) 0 100% no-repeat;}
+/* --------------------------------- Ask Question Box */
+.AskQuestionBox { background:url(../images/gururemonta-start/px_ask.gif) 0 18px repeat-y;}
+.AskQuestionBox ul { background:url(../images/gururemonta-start/bg_ask_top.gif) no-repeat;}
+.AskQuestionBox li.bottom { background:url(../images/gururemonta-start/bg_ask_bottom.gif) no-repeat #fff;}
+.AskQuestionBox li.bottom input { background:url(../images/gururemonta-start/button_send.gif) no-repeat; cursor:pointer;}
+.AskQuestionBox li.title { color:#EC801A;}
+/* ------------------------------------- Subscribe Box */
+.SubscribeBox {}
+.SubscribeBox ul { background:url(../images/gururemonta-start/bg_subscr_top.gif) no-repeat #FFF0E2;}
+.SubscribeBox li input { background:url(../images/gururemonta-start/bg_mail_subscribe.gif) no-repeat;}
+.SubscribeBox li .button { background:url(../images/gururemonta-start/button_subscribe.gif) no-repeat;}
+.SubscribeBox li.bottom { background:url(../images/gururemonta-start/bg_subscr_bottom.gif) 0 100% no-repeat;}
+/* ---------------------------------- Best Authors Box */
+.BestAuthorsBox {}
+.BestAuthorsBox ul { background:url(../images/gururemonta-start/bg_subscr_top.gif) no-repeat #FFF0E2;}
+.BestAuthorsBox li.title { color:#525753;}
+.BestAuthorsBox li.bottom { background:url(../images/gururemonta-start/bg_subscr_bottom.gif) 0 100% no-repeat;}
+/* ------------------------------------------ Tags Box */
+.TagsBox { background:url(../images/gururemonta-start/bg_tags_top.gif) no-repeat;}
+.TagsBox li { border:solid #73A0D8; border-width:0 1px;}
+.TagsBox li.bottom { background:url(../images/gururemonta-start/bg_tags_bottom.gif) no-repeat;}
+/* ********************* Footer *********************** */
+#footer { background:url(../images/gururemonta-start/px_footer.gif) 50% 0 repeat-x;}
+#footer li a:hover { color:#88D4FF;}
+/* ----------------------- IE ------------------------- */
+* html .NewArticlesBox li .shadow div { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/gururemonta-start/image_shadow.png", sizingMethod="crop")}
+/* ---------------------------------------------------- */

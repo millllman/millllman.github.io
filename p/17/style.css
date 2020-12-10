@@ -1,0 +1,315 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:url(images/px_body.gif) repeat;}
+a { color:#4E1616; text-decoration:underline; outline:none;}
+a:hover { color:#982E2E; text-decoration:underline;}
+input { margin:0; padding:0; font:14px Trebuchet MS, tahoma; vertical-align:middle;}
+div { margin:0; padding:0; font:12px Trebuchet MS, tahoma; color:#3B3224; line-height:17px;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:15px 0 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:normal;}
+h1 { color:#4E1616; font:18px Trebuchet MS, tahoma; margin:0; padding:0;}
+h2 { color:#4E1616; font:18px Trebuchet MS, tahoma; margin:0; padding:0;}
+h3 { color:#312412; font:18px Trebuchet MS, tahoma; margin:0; padding:12px 0;}
+h4 { color:#4E1616; font:18px Trebuchet MS, tahoma; margin:0; padding:11px 0;}
+
+#container { width:947px; border:solid #fff; border-width:0 3px; margin:0 auto; min-height:100%; height:auto !important; height:100%; position:relative;background:#D5C2A8;}
+/* ********************* Header ********************* */
+#header { height:228px; overflow:hidden; background:url(images/px_header.gif) repeat-x #AA9880;}
+/* Logo */
+.logo { width:268px; height:228px; float:left; border-right:2px solid #fff;}
+.logo p { padding:40px 0 0 19px;}
+.logo p img { display:block;}
+.logo span { width:232px; padding:1px 0 0 10px; display:block; color:#fff; font:italic 18px Trebuchet MS, tahoma; text-align:right; line-height:21px;}
+.logo span i { padding-left:42px;}
+/* Panel */
+.panel { width:677px; float:right;}
+/* Contact Us */
+.contact_us { width:304px; height:132px; padding:10px 5px 0 27px; float:left; border-right:1px solid #fff; color:#fff; background:url(images/px_contact_us.gif) repeat #772024;}
+.contact_us p { padding:15px 0;}
+.contact_us a { color:#fff;}
+.contact_us a:hover { color:#F1DE3C;}
+.contact_us b { font-size:14px;}
+.contact_us big { font-size:18px;}
+.contact_us div { padding:11px 0 0 19px; clear:both;}
+.contact_us div em { padding:3px 0 3px 45px; float:left; color:#D2BCBC; font:bold 13px Trebuchet MS, tahoma;}
+.contact_us div em.icq { margin-right:35px; background:url(images/icon_icq.gif) 0 0 no-repeat;}
+.contact_us div em.skype { background:url(images/icon_skype.gif) 0 0 no-repeat;}
+.contact_us select { width:183px; height:25px; padding:2px; margin-left:23px; border:1px solid #858585; color:#7E7E7E; font:14px Trebuchet MS, tahoma;}
+/* Profile */
+.profile { margin-left:336px; height:142px; background:#AB9980;}
+.profile li { zoom:1;}
+.profile .edit { padding:11px 32px 0; text-align:right;}
+.profile .manager { padding:7px 24px 0;}
+.profile .manager a { padding:10px 0 0 53px; display:block; color:#fff; font-size:18px; background:url(images/icon_manager.gif) 0 0 no-repeat;}
+.profile .basket { padding:14px 24px 0;}
+.profile .basket a { padding:5px 0 21px 53px; display:block; color:#fff; font-size:18px; background:url(images/icon_basket.gif) 0 0 no-repeat; text-decoration:none;}
+.profile .basket em { text-decoration:underline;}
+.profile .basket a span { padding-left:31px; font-size:14px;}
+.profile .manager a:hover, .profile .basket a:hover { color:#F1DE3C;}
+/* Search */
+.search { height:32px; padding:8px 0 0 21px; clear:both; background:#414141; color:#fff; font:bold 14px Trebuchet MS, tahoma;}
+.search label { cursor:pointer;}
+.search #form { width:230px; padding:2px 2px 2px 23px; margin:0 7px 0 12px; border:1px solid #9B7745; color:#1E1E1E; background:url(images/icon_search.gif) 3px 3px no-repeat #fff;}
+.search select { width:218px; height:24px; padding:2px; border:1px solid #9B7745; color:#7E7E7E; font:12px Trebuchet MS, tahoma; vertical-align:middle;}
+.search .button { width:93px; height:24px; padding-bottom:2px; color:#fff; background:url(images/button_search.gif) repeat-x; border:0; cursor:pointer;}
+/* Menu */
+#menu { width:677px; height:40px; top:182px; left:270px; position:absolute; border:solid #fff; border-width:3px 0; background:#AB9980;}
+#menu li { padding:0 30px 0 38px; float:left; position:relative;}
+#menu li a { padding:9px 0; display:block; font-size:18px; text-decoration:none;}
+#menu li a:hover { color:#fff;}
+#menu li a.click { padding-right:17px; background:url(images/arrow_menu.gif) 100% 18px no-repeat;}
+#menu li a.click:hover { background:url(images/arrow_menu_hover.gif) 100% 18px no-repeat;}
+/* Dynamic Menu */
+#menu ul { width:152px; top:41px; left:32px; position:absolute; display:none; border:1px solid #fff; background:url(images/px_menu.png) repeat;}
+#menu ul li { padding:0; float:none; border-top:1px solid #fff;}
+#menu li:hover ul, #menu li.hover ul {display: block;}
+#menu li:hover a.click { color:#fff; background:url(images/arrow_menu_hover.gif) 100% 18px no-repeat;}
+#menu li:hover ul li a { padding:8px 10px; color:#fff; font-size:14px;}
+#menu li:hover ul li a:hover { color:#fff; background:url(images/px_menu_hover.png) repeat;}
+#menu ul li a { padding:8px 10px; color:#fff; font-size:12px; text-decoration:none; zoom:1;}
+
+/* ******************** Content ********************* */
+#content { padding:0 0 40px; overflow:hidden; zoom:1;}
+.empty { height:71px; clear:both;}
+/* -------------------------------------- LEFT COLUMN */
+.left_column { width:268px; float:left; border-right:2px solid #fff;}
+.left_column1 { width:435px; padding:9px 0 0; float:left;}
+.left_column2 { width:647px; float:left; border:5px solid #D5C2A8;}
+
+/* ------------------------------------- Product Menu */
+.ProductMenu { height:425px; padding:88px 0 0; background:url(images/bg_door.jpg) no-repeat;}
+.ProductMenu li { padding:10px 25px 0 0; zoom:1;}
+.ProductMenu li a { padding:24px 10px 30px 27px; color:#680505; font-size:18px; display:block; background:url(images/px_product_menu.png) repeat; text-transform:uppercase; zoom:1;}
+.ProductMenu li a:hover { color:#000;}
+
+/* ---------------------------------- Description Box */
+.DescriptionBox { padding:27px 17px 43px 14px; font-size:14px; line-height:18px; background:#EBEBEB; border-bottom:1px solid #fff;}
+.DescriptionBox1 { padding:15px 18px 40px 20px; margin-top:10px; clear:both; background:#e7dccd;}
+.DescriptionBox1 .title { padding:0 0 15px; font-size:18px;}
+
+/* ----------------------------------------- Info Box */
+.InfoBox { width:394px; padding:30px 0 0; margin-top:27px; clear:both; background:url(images/bg_info_top.gif) no-repeat;}
+.InfoBox li { padding:5px 28px 0; background:#d5c2a8; font-size:11px;}
+.InfoBox li strong { padding:8px 0 0; display:block; font-size:14px;}
+.InfoBox li.bottom { padding:30px 0 0; background:url(images/bg_info_bottom.gif) no-repeat;}
+.InfoBox li.home { padding:0 28px;}
+.InfoBox li.home strong { padding:0;}
+
+/* -------------------------------------- Preview Box */
+.PreviewBox { width:425px; border:5px solid #ede5d9; display:block;}
+.PreviewBox img { display:block;}
+
+/* ---------------------------------------- Tags Box */
+.TagsBox { padding:12px 0 0 28px; background:#E9E2D7;}
+.TagsBox li { padding:3px 0 0; overflow:hidden; zoom:1; color:#B01111; cursor:default;}
+.TagsBox li:hover span, .TagsBox li:hover b { color:#B01111;}
+.TagsBox li em { width:21px; padding:5px 0 0; float:left;}
+.TagsBox li em a { width:10px; height:10px; display:block; background:url(images/icon_delete.gif) no-repeat;}
+.TagsBox li span { width:73px; padding-right:5px; float:left; color:#4F4F4F;}
+.TagsBox li b { width:135px; float:left; color:#4F4F4F; font-weight:normal;}
+
+/* ------------------------------------- Services Box */
+.ServicesBox { padding:17px 18px 45px; background:#E9E2D7;}
+.ServicesBox li { padding:10px 0 0; zoom:1;}
+.ServicesBox li a { padding:0 0 0 34px; color:#4F4F4F; font-size:18px; background:url(images/icon_close.gif) 10px 7px no-repeat; text-decoration:none; zoom:1;}
+.ServicesBox li a:hover { color:#000;}
+.ServicesBox ul { padding:5px 0 10px;}
+.ServicesBox ul li { padding:2px 0 0;}
+.ServicesBox ul li a { padding:0; font:bold 14px Trebuchet MS, tahoma; display:block; background:url(images/px_serv.gif) repeat-y;}
+.ServicesBox ul li a em { padding:7px 31px; display:block; background:url(images/arrow_serv.gif) 11px 12px no-repeat;}
+.ServicesBox ul li ul { padding:2px 0 10px;}
+.ServicesBox ul li ul li { padding:11px 0 0 57px;}
+.ServicesBox ul li ul li a { padding:0; color:#9C121F; font:12px Trebuchet MS, tahoma; background:none;}
+.ServicesBox ul li ul li a:hover { color:#9C121F; text-decoration:underline;}
+.ServicesBox ul li ul li a.active2 { text-decoration:underline;}
+.ServicesBox span { padding:0 0 2px; display:block; background:url(images/px_shadow.gif) 1px 100% no-repeat;}
+.ServicesBox li a.open { background:url(images/icon_open.gif) 10px 7px no-repeat;}
+
+/* ---------------------------------------- Price Box */
+.PriceBox { padding:0 0 11px; overflow:hidden; zoom:1;}
+.PriceBox li.price { width:140px; padding:0 0 0 10px; float:left; color:#5B220C; font-size:14px;}
+.PriceBox li.price big { font-size:18px;}
+.PriceBox li.if { width:275px; padding:4px 0 0; float:right;}
+
+/* -------------------------------- Single Basket Box */
+.SingleBasketBox { padding:10px 10px 37px 45px; overflow:hidden; zoom:1; background:#E1D3C1;}
+.SingleBasketBox .image { width:90px; padding:27px 0 0; float:left;}
+.SingleBasketBox .image img { display:block;}
+.SingleBasketBox .text { width:485px; float:right;}
+.SingleBasketBox .info { overflow:hidden;}
+.SingleBasketBox .info li { color:#412013; font-size:14px;}
+.SingleBasketBox .info li.name { width:290px; padding:30px 0 0; float:left; color:#412013; font-size:14px;}
+.SingleBasketBox .info li.price { width:125px; padding:22px 0 0; float:right; text-align:right; color:#3F2706; font-size:14px;}
+.SingleBasketBox .info li.price big { padding:0 0 7px; font-size:18px; display:block;}
+.SingleBasketBox .info li.price input { width:50px; padding:1px; margin-right:7px; border:1px solid #D2C5B3; color:#412013;}
+.SingleBasketBox .info li.delete { width:25px; float:right;}
+.SingleBasketBox .info li.delete a { width:11px; height:11px; float:right; background:url(images/icon_delete1.gif) no-repeat;}
+.SingleBasketBox .descr {}
+.SingleBasketBox .descr li { padding:10px 0 0; overflow:hidden; color:#412013; font-size:14px;}
+.SingleBasketBox .descr li em { width:185px; padding-right:20px; float:left;}
+.SingleBasketBox .descr li span { width:220px; padding-right:20px; float:left;}
+
+/* --------------------------------------- Basket Box */
+.BasketBox {}
+.BasketBox li { padding:7px 10px 7px 64px; margin:5px 0 0; overflow:hidden; zoom:1; clear:both; background:#E1D3C1;}
+.BasketBox li p { padding:12px 0 0;}
+.BasketBox li .image { width:92px; float:left;}
+.BasketBox li .image img { display:block;}
+.BasketBox li .text { width:290px; padding:5px 0 0; float:left; color:#412013; font-size:14px;}
+.BasketBox li .price { width:125px; padding:4px 0 0; float:right; text-align:right; color:#3F2706; font-size:14px;}
+.BasketBox li .price big { padding:0 0 7px; font-size:18px; display:block;}
+.BasketBox li .price input { width:50px; padding:1px; margin-right:7px; border:1px solid #D2C5B3; color:#412013;}
+.BasketBox li .delete { width:25px; padding:7px 0 0; float:right;}
+.BasketBox li .delete a { width:11px; height:11px; float:right; background:url(images/icon_delete1.gif) no-repeat;}
+
+/* -------------------------------------- Address Box */
+.AddressBox { padding:15px 10px 15px 55px; overflow:hidden; zoom:1; background:#772024; border:1px solid #C2A28E;}
+.AddressBox ul { float:left; overflow:hidden;}
+.AddressBox li { padding:9px 0 0; overflow:hidden; zoom:1; color:#fff; font-size:14px;}
+.AddressBox li a { color:#fff;}
+.AddressBox li label { cursor:pointer;}
+.AddressBox li.title { padding:0; font-size:18px;}
+.AddressBox .one { width:312px;}
+.AddressBox .one em { width:105px; padding:1px 5px 0 0; float:left;}
+.AddressBox .one span { width:180px; float:left;}
+.AddressBox .one span input { width:170px; padding:1px; border:1px solid #AD797C; color:#412013;}
+.AddressBox .one span textarea { width:170px; height:57px; padding:1px; border:1px solid #AD797C; color:#412013;}
+.AddressBox .one .mini { width:70px; margin-right:3px;}
+.AddressBox .two { width:250px; padding:23px 0 0;}
+.AddressBox .two em { width:66px; padding:1px 5px 0 0; float:left;}
+.AddressBox .two span { width:175px; float:left;}
+.AddressBox .two span input { width:170px; padding:1px; border:1px solid #AD797C; color:#412013;}
+.AddressBox #phone { width:102px; padding:1px; margin-left:1px; border:1px solid #AD797C; color:#412013;}
+.AddressBox .button { padding:14px 0 0;}
+.AddressBox .button input { width:117px; height:23px; padding-bottom:2px; color:#fff; font-size:12px; background:url(images/button_search.gif) repeat-x; border:0; cursor:pointer;}
+.AddressBox .submit { margin-left:11px;}
+
+/* ------------------------------------- RIGHT COLUMN */
+.right_column { width:677px; float:right;}
+.right_column1 { width:486px; padding:9px 18px 0 0; float:right;}
+.right_column2 { width:475px; padding:12px 5px 0 0; float:right;}
+.right_column3 { width:236px; padding:24px 34px 40px 20px; float:right; background:#AB9981;}
+
+/* --------------------------------------- Slider Box */
+.SliderBox { height:170px; overflow:hidden; position:relative;}
+.SliderBox img { display:block;}
+.SliderBox ul { top:140px; right:8px; position:absolute;}
+.SliderBox li { padding:0 7px 0 0; float:left; color:#fff; font:italic 19px Trebuchet MS, tahoma;}
+.SliderBox li a { color:#fff; text-decoration:none;}
+.SliderBox li a:hover { color:#EFEFEF; text-decoration:underline;}
+
+/* -------------------------------------- Product Box */
+.ProductBox { padding:30px 0 30px 25px; overflow:hidden; zoom:1;}
+.ProductBox li { width:305px; padding-right:10px; float:left;}
+.ProductBox li p { padding:5px 0 0;}
+.ProductBox li img { margin-right:12px; float:left;}
+.ProductBox li .text { min-height:100px; _height:100px; color:#7D7D7D;}
+.ProductBox li .text div { padding:5px 0 0; clear:both;}
+.ProductBox li .price { padding:0 0 8px; color:#5B220C; font-size:24px;}
+.ProductBox li .price a { padding-left:14px; color:#634949; font-size:14px;}
+.ProductBox li .price a:hover { color:#000;}
+.ProductTitle { padding:8px 0 8px 25px; background:#772023;}
+.ProductTitle li { color:#fff; font-size:24px; text-shadow:2px 2px 2px #501517;}
+/* Other Page */
+.ProductBox .image { width:77px; padding:23px 0 0; float:left;}
+.ProductBox .image img { margin:0;}
+.ProductBox .info { width:225px; float:left;}
+.ProductBox .info h4 { padding:0 0 11px;}
+.ProductBox .info .text { padding:0 0 10px; _height:auto; min-height:inherit; position:relative;}
+.ProductBox .info img { float:none; margin:0;}
+.ProductBox .info .indent { margin-left:11px;}
+.ProductBox .info .present { top:0; right:30px; position:absolute;}
+
+/* --------------------------------------- Search Box */
+.SearchBox { padding:0 14px 50px; background:#ab9980;}
+.SearchBox li { padding:12px 0 0; font-size:14px; overflow:hidden; zoom:1; color:#5b220c;}
+.SearchBox li i { color:#fff; font-style:normal;}
+.SearchBox li em { width:120px; float:left;}
+.SearchBox li span { width:300px; float:left;}
+.SearchBox li span select { width:153px; height:20px; padding:1px; margin-right:12px; color:#8b8071; font:12px tahoma; border:1px solid #c4b7a5;}
+.SearchBox li b { width:170px; float:left; font-weight:normal;}
+.SearchBox li b select { width:45px; height:20px; padding:1px 1px 1px 0; margin:0 8px; color:#8b8071; font:12px tahoma; border:1px solid #c4b7a5;}
+.SearchBox li .title { padding:0 0 9px; display:block; color:#5b220c; font-size:18px; line-height:17px;}
+.SearchBox li .button { padding:17px 30px 0 0; float:right;}
+.SearchBox li .button input { width:93px; height:24px; padding-bottom:2px; color:#fff; background:url(images/button_search.gif) repeat-x; border:0; cursor:pointer;}
+.SearchBox li .back { float:right;}
+.SearchBox li .back a { padding-left:18px;}
+
+/* --------------------------------- Ask Question Box */
+.AskQuestionBox { padding:14px 0 0 14px;}
+.AskQuestionBox p { padding:12px 0 0;}
+.AskQuestionBox p a { text-decoration:none;}
+.AskQuestionBox p a:hover em { text-decoration:underline;}
+.AskQuestionBox p img { vertical-align:middle;}
+.AskQuestionBox .indent { margin:0 42px 0 14px;}
+.AskQuestionBox .indent1 { margin:0 0 0 12px;}
+.AskQuestionBox .indent2 { margin:0 15px 0 24px;}
+.AskQuestionBox .banner { margin:21px 0 0; display:block;}
+
+/* -------------------------------------- Catalog Box */
+.CatalogBox { padding:8px 0 18px 35px; background:#AB9980; overflow:hidden; zoom:1;}
+.CatalogBox ul { width:158px; float:left;}
+.CatalogBox li { padding:3px 10px 0 0; zoom:1;}
+.CatalogBox li a { padding:4px 0 0; display:block; font-size:14px;}
+.CatalogBox li strong a { padding:0; font:18px Trebuchet MS, tahoma;}
+
+/* ---------------------------------------- Main Box */
+.MainBox { padding:14px 16px 50px 22px; color:#5B220C; line-height:14px;}
+.MainBox .title { overflow:hidden;}
+.MainBox .name { float:left;}
+.MainBox .catalog { float:right; font:bold 14px Trebuchet MS, tahoma;}
+.MainBox .series { padding:11px 10px 4px; clear:both; color:#5B220C;}
+.MainBox .door { float:left;}
+.MainBox .door li { width:64px; padding:0 15px 35px 0; float:left; text-align:center;}
+.MainBox .door li a { text-decoration:none;}
+.MainBox .door li img { margin:0 0 8px; display:block;}
+
+/* -------------------------------------- Filter Box */
+.FilterBox { padding:15px 50px; border-bottom:1px solid #fff; color:#772024; font-size:14px;}
+.FilterBox select { width:40px; height:20px; padding:1px 1px 1px 0; margin:0 21px 0 10px; color:#8b8071; font:12px tahoma; border:1px solid #c4b7a5;}
+.FilterBox img { margin:0 9px; vertical-align:middle;}
+.FilterBox a.by_price { padding-right:15px; margin:0 10px 0 17px; background:url(images/arrow_menu.gif) 100% 7px no-repeat;}
+.FilterBox a.by_popular { padding-right:15px; margin:0 50px 0 15px; background:url(images/arrow_menu.gif) 100% 7px no-repeat;}
+
+/* ---------------------------------------- View Box */
+.ViewBox { padding:0 0 10px; color:#5B220C; font-size:14px;}
+.ViewBox a { padding-left:21px; font:bold 12px Trebuchet MS, tahoma;}
+
+/* ----------------------------- Similar Product Box */
+.SimilarProductBox { width:300px; float:left;}
+.SimilarProductBox li { width:87px; height:205px; padding:0 11px 12px 0; float:left; color:#5B220C; font-size:14px; text-align:center;}
+.SimilarProductBox li img { margin:2px 0 0; display:block;}
+
+/* --------------------------------------- Style Box */
+.StyleBox { width:155px; float:right;}
+.StyleBox li { padding:11px 0 0; font-size:14px; color:#5B220C;}
+.StyleBox li input { margin-right:7px;}
+.StyleBox li label { cursor:pointer; font-size:12px;}
+.StyleBox li img { margin:0 auto; display:block;}
+.StyleBox li.color { padding:35px 0 7px;}
+
+/* -------------------------------------- Offers Box */
+.OffersBox { color:#4E1616; font-size:14px; text-align:center;}
+.OffersBox p { padding:27px 0 0;}
+.OffersBox .title { padding:0 0 12px; color:#4E1616; font-size:18px;}
+.OffersBox ul { padding:10px 0 0;}
+.OffersBox li { padding:8px 0 0;}
+.OffersBox li img { margin:7px auto 0; display:block;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:947px; height:40px; margin:-40px auto 0; position:relative; background:#414141;}
+#footer li, #footer li a { color:#fff;}
+#footer li a:hover { color:#F1DE3C;}
+#footer li.copyright { padding:9px 0 0 36px; float:left; font:13px Trebuchet MS, tahoma;}
+#footer li.copyright a { padding-right:14px;}
+#footer li.copyright small { font-size:11px;}
+#footer li.bookmarks { padding:7px 20px 0 0; float:right; font:13px Trebuchet MS, tahoma;}
+#footer li.bookmarks img { margin-left:7px; vertical-align:top;}
+/* ----------------------- IE ------------------------- */
+* html .ProductMenu li a { background:#fff; filter:alpha (opacity=70);}
+* html #menu ul { background:#552B1F; filter:alpha (opacity=70);}
+/* ---------------------------------------------------- */

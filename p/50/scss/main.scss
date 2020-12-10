@@ -1,0 +1,617 @@
+/* Import */
+@import "variables";
+@import "mixin";
+@import "grid";
+@import "base";
+@import url('https://fonts.googleapis.com/css?family=Istok+Web');
+
+
+/*------------------------------------- Header */
+header {}
+/*.loader {}*/
+
+/* Logo */
+.logo-wrap {
+	text-align: center;
+	z-index: 10;
+	@include abs (25px,0,0,auto,fixed);
+	a.logo {
+		width: 200px;
+		height: 40px;
+		left: 50%;
+		margin-left: -100px;
+		display: block;
+		position: relative;
+		transition: .7s ease-in-out;
+		background: url(../img/logo.svg) 0% 0 no-repeat;
+		background-size: auto 100%;
+	}
+	&.fixed {
+		/*padding: 0px 0 0;*/
+		/*@include abs (25px,0,0,auto,fixed);*/
+		a.logo {
+			width: 37px;
+			height: 40px;
+			left: 30px;
+			margin-left: 0px;
+			position: relative;
+			background-size: 170px 100%;
+			&:before {
+				/*content: "";
+				background: rgba(0,0,0, 0.5);
+				@include abs (-5px,-7px,-7px,-5px);
+				@include border-radius (50%);*/
+			}
+			&.dropmenu-active { width: 200px; }
+			@include desktop-max { left: 15px; }
+		}
+		.dropmenu-wrap { width: 100%; }
+		.logo-dropmenu { left: 20px; }
+	}
+	.dropmenu-wrap {
+		width: 200px;
+		display: inline-block;
+		position: relative;
+	}
+}
+
+/* Logo Drop Menu */
+
+.logo-dropmenu {
+	min-width: 300px;
+	padding: 15px;
+	background: rgba(0,0,0, 0.8);
+	display: none;
+	z-index: 999;
+	@include abs (0px,0,auto,auto);
+	@include box-shadow (2px 2px 2px 1px #000);
+	li {
+		text-align: left;
+		@include font (14,17);
+		/*@include border (#757575,1px 0 0);*/
+		a {
+			padding: 10px 5px;
+			display: block;
+			@include link-color (#f55800,#fff);
+			@include link-decoration (none,none);
+			/*&:hover { background: #202020; }*/
+		}
+		&:first-child { border: 0; }
+	}
+}
+
+
+
+/*------------------------------------ Content */
+section {}
+
+.section-spacing {
+	height: 30px;
+	@include clearfix;
+}
+
+.box-spacing {
+	height: 100px;
+	@include clearfix;
+}
+
+/********************** Section 1 */
+.section_screen-1 {
+	padding: 25px 0 250px;
+	text-align: center;
+	background: url(../img/bg-screen1.jpg) 0 0 no-repeat;
+	background-size: cover;
+	h2.slogan {
+		padding: 75px 0 0;
+		color: #f55800;
+		@include font (75,80);
+	}
+	p.guarantee {
+		padding: 22px 0 0;
+	}
+	p.examples {
+		padding: 24px 0 0;
+	}
+	@include desktop {
+		h2.slogan { @include font (62,65); }
+	}
+	@include laptop {
+		h2.slogan { @include font (50,52); }
+	}
+	@include tablet {
+		h2.slogan { @include font (35,48); }
+	}
+	@include mobile {
+		h2.slogan { @include font (25,45); }
+	}
+}
+
+/********************** Section 2 */
+.section_screen-2 {
+	margin-top: -140px;
+	padding-top: 26px;
+	background: $section-yellow;
+	@include desktop {
+		.column.hd-7 .img-extensive {
+			width: 58%;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+		}
+	}
+}
+
+.section2-text {
+	padding: 30px 0 30px 40px;
+	h3.title {
+		@include font (50,52);
+		i.fa { margin: 0 5px; }
+		a {
+			@include link-color (#000,#f55800);
+			@include link-decoration (none,none);
+		}
+	}
+	a {
+		@include link-color (#000,#000);
+	}
+	@include laptop-max {
+		padding: 30px 40px;
+	}
+	@include mobile {
+		padding: 30px 20px;
+	}
+}
+
+.section2-data {
+	padding: 45px 0 0;
+	overflow: hidden;
+	@include clearfix;
+	li {
+		min-height: 53px;
+		padding: 0 20px 0 62px;
+		float: left;
+		position: relative;
+		@include font (15,17);
+		span.percent {
+			display: block;
+			@include font (36,38);
+		}
+		&:before {
+			content: "";
+			width: 53px;
+			top: 3px;
+			left: 0;
+			bottom: 0;
+			position: absolute;
+			background-size: 100% auto !important;
+		}
+		&.conversion {
+			&:before { background: url(../img/icon-conversion.png) 0 0 no-repeat; }
+		}
+		&.payback {
+			&:before { background: url(../img/icon-payback.png) 0 0 no-repeat; }
+		}
+	}
+}
+
+
+/********************** Tags Menu */
+.tags-menu {
+	padding: 10px 0 0;
+	overflow: hidden;
+	@include clearfix;
+	li {
+		padding: 10px 15px 0 0;
+		float: left;
+		a {
+			padding: 5px 11px;
+			display: block;
+			color: #fff;
+			@include font (17,20);
+			@include link-decoration (none,none);
+			@include border (#fff,1px);
+			@include border-radius (5px);
+			&:hover {
+				color: #f55800;
+				border-color: #f55800;
+			}
+		}
+	}
+}
+
+
+/********************** Section 3 */
+.section_screen-3 {
+	padding: 20px 0 35px;
+	& > .row > .column {
+		padding-top: 30px;
+		position: relative;
+	}
+	.slide-dark {
+		color: #000;
+		.title {
+			color: #000;
+			a { color: #000; }
+		}
+		.tags-menu li a {
+			color: #000;
+			&:hover {
+				color: #f55800;
+				border-color: #f55800;
+			}
+		}
+	}
+	.title {
+		color: #fff;
+		top: 45px;
+		left: 30px;
+		right: 20px;
+		position: absolute;
+		@include font (20,22);
+		span.name {
+			display: block;
+			@include font (32,34);
+		}
+		a {
+			@include link-color (#fff,#f55800);
+			@include link-decoration (none,none);
+		}
+	}
+	a.more {
+		color: #fff;
+		text-align: center;
+		@include font (32,35);
+		@include abs (30px,15px,15px);
+		span {
+			min-width: 220px;
+			top: 46%;
+			left: 50%;
+			position: absolute;
+			transform: translate(-50%,-50%);
+			text-decoration: underline;
+		}
+		&:hover {
+			color: #ffd300;
+			background: rgba(0,0,0, 0);
+		}
+	}
+	.tags-menu {
+		bottom: 15px;
+		left: 30px;
+		position: absolute;
+		li {
+			padding-top: 10px;
+			a {
+				border-color: #aeb2b9;
+				&:hover { border-color: #f55800; }
+			}
+		}
+	}
+	.section2-data {
+		bottom: 70px;
+		left: 30px;
+		right: 30px;
+		position: absolute;
+		li {
+			color: #fff;
+			&.conversion {
+				&:before { background: url(../img/icon-conversion-white.png) 0 0 no-repeat; }
+			}
+			&.payback {
+				&:before { background: url(../img/icon-payback-white.png) 0 0 no-repeat; }
+			}
+		}
+		@include mobile {
+			bottom: 55px;
+			li {
+				padding: 0 10px 0 40px;
+				@include font (14,15);
+				&:before { width: 32px; }
+				span.percent {
+					@include font (27,32);
+				}
+			}
+		}
+	}
+	.other-projects { display: none; }
+}
+
+
+/********************** Section 4 */
+.section_screen-4 {
+	padding: 25px 0 60px;
+	background: $section-yellow;
+	.title-top {
+		color: #363537;
+		text-transform: uppercase;
+		@include font (19,22);
+	}
+	.title {
+		padding: 0 0 10px;
+		color: #363537;
+		@include font (50,52);
+		@include border (#363537,0 0 2px);
+		span.arrow {
+			display: inline-block;
+			color: #580784;
+			overflow: hidden;
+			text-indent: -11px;
+			font-size: 40px;
+		}
+		a { @include link-decoration (none,none); }
+		@extend .links-dark;
+	}
+	@include desktop {
+		.title {
+			@include font (40,42);
+			span.arrow { margin-bottom: -8px; }
+		}
+	}
+	@include laptop {
+		.title {
+			@include font (30,32);
+			span.arrow { margin-bottom: -4px; }
+		}
+	}
+	@include tablet {
+		.title {
+			padding: 15px 0 10px;
+			/*@include font (30,32);*/
+			/*span.arrow { margin-bottom: -4px; }*/
+		}
+	}
+	@include mobile {
+		.title {
+			padding: 15px 0 10px;
+			@include font (30,32);
+			span.arrow { margin-bottom: -4px; }
+		}
+	}
+}
+
+.section4-menu {
+	padding: 12px 0 0;
+	li {
+		padding: 5px 0 0;
+		@include font (20,27);
+		@extend .links-dark;
+	}
+}
+
+/********************** Section 5 */
+.section_screen-5 {
+	padding: 35px 0 120px;
+	background: linear-gradient(to top, #580784 0%, #181818 100%);
+	& .row {
+		color: #fff;
+		@include font (24,25);
+	}
+	.title {
+		color: #fff;
+		@include font (50,60);
+	}
+	@include laptop {
+		.title { @include font (32,46);	}
+	}
+	@include tablet {
+		.title { @include font (27,32);	}
+	}
+	@include mobile {
+		.title { @include font (25,40);	}
+	}
+	@include laptop-max {
+		.title {
+			& + P { font-size: 18px; }
+		}
+	}
+	@include mobile-tablet {
+		padding: 35px 0 70px;
+	}
+}
+
+.section5-base {
+	padding: 240px 0 0;
+	text-align: center;
+	background: url(../img/pic-screen5.png) 50% 90px no-repeat;
+	background-size: 90% auto;
+	@include mobile-tablet {
+		padding: 170px 0 0;
+	}
+}
+
+
+/********************** Section 6 */
+.section_screen-6 {
+	padding: 90px 0 0;
+	background: $section-purple;
+	& > .container {
+		padding-top: 45px;
+		padding-bottom: 57px;
+		background: $section-orange;
+		position: relative;
+		@include border-radius (15px);
+		& > .row-indent { padding-top: 30px; }
+		p { padding: 10px 0 0; }
+	}
+	& .row,
+	& .column {
+		color: #fff;
+		@include font (24,27);
+	}
+	.title {
+		color: #fff;
+		@include font (50,53);
+	}
+	& > .container {
+		&:before,
+		&:after {
+			content: "";
+			height: 45px;
+			display: block;
+			opacity: 0.6;
+			background: $section-orange;
+			@include abs (-15px,15px,15px);
+			@include border-radius (15px);
+		}
+		&:after {
+			opacity: 0.4;
+			@include abs (-30px,30px,30px);
+		}
+	}
+	@include mobile-tablet {
+		.title { @include font (30,33); }
+	}
+}
+
+.section6_form-text {
+	padding: 0 70px 15px 0;
+	position: relative;
+	span {
+		padding: 2px 5px;
+		display: none;
+		color: #fff;
+		background: red;
+		cursor: default;
+		@include font (12,14);
+		@include border-radius (0 7px 0 3px);
+		@include abs (3px,auto,70px,auto);
+	}
+	&.error {
+		input[type=text] {
+			line-height: 41px;
+			@include border (red,3px);
+		}
+		span { display: block; }
+	}
+	@include mobile-tablet {
+		padding: 0 0 15px;
+		&.error {
+			span { right: 0; }
+		}
+	}
+}
+.section6_form-button {
+	padding: 10px 0 0;
+	@include laptop-max {
+		padding-bottom: 0px;
+	}
+	@include mobile-tablet {
+		.btn {
+			width: 100%;
+			padding: 5px 10px;
+		}
+	}
+}
+
+.section6_analysis-list {
+	padding: 0px 0 0;
+	li {
+		padding: 3px 70px 0 30px;
+		color: #fff;
+		position: relative;
+		@include font (24,27);
+		&:before {
+			content: "";
+			width: 25px;
+			height: 2px;
+			top: 16px;
+			left: 0;
+			position: absolute;
+			background: #fff;
+		}
+	}
+	@include desktop-max {
+		li { padding-right: 0; }
+	}	
+}
+
+
+/* Popup */
+.fadeScreen {
+	display: none;
+	z-index: 101;
+	background: rgba(0,0,0, 0.5);
+	@include abs (0,0,0,0,fixed);
+}
+
+.popup-box {
+	width: 480px;
+	padding: 35px 20px 20px;
+	text-align: center;
+	background: #fff;
+	display: none;
+	transform: translate(-50%,-50%);
+	z-index: 100000;
+	@include abs (50%,50%,auto,auto,fixed);
+	@include border-radius (5px);
+	@include tablet-max {
+		width: auto;
+		transform: translate(0%,-50%);
+		@include abs (50%,15px,15px,auto,fixed);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------- Footer */
+footer {
+	padding: 20px 0 30px;
+	background: $section-purple;
+	& .column {
+		color: #fff;
+		@include font (18,20);
+		p { padding: 10px 0 0; }
+		a.link-indent { margin-right: 20px; }
+	}
+	@include laptop {
+		& .social-col {
+			width: 100% !important;
+			text-align: center;
+		}
+	}
+	@include laptop-max {
+		& .column { text-align: center; }
+	}
+}
+
+.footer_social-menu {
+	float: right;
+	font-size: 0;
+	/*letter-spacing: -0.3em;*/
+	li {
+		padding-left: 12px;
+		display: inline-block;
+		color: #fff;
+		/*letter-spacing: normal;*/
+		font-size: initial;
+		vertical-align: middle;
+		a.btn-social {
+			width: 45px;
+			height: 45px;
+			display: block;
+			color: $section-purple;
+			text-align: center;
+			background: #96869b;
+			@include font (25,45);
+			&:hover { background: #ccb6d7; }
+		}
+		span.lang-active { margin: 0 7px; }
+	}
+	@include laptop-max { float: none; }
+}
+
+/*---------------------------------------------------------------  */
+

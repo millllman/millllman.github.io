@@ -1,0 +1,69 @@
+/* --------------------- Default --------------------- */
+body { background:url(../images/fincoun-start/px_header.gif) 50% 0 repeat-x;}
+a { color:#057CE1;}
+a:hover { color:#099352;}
+#px_right { background:url(../images/fincoun-start/px_header1.gif) repeat-x;}
+#px_right1 { background:url(../images/fincoun-start/px_footer1.gif) repeat-x;}
+/* ********************* Header ********************* */
+#header { background:url(../images/fincoun-start/bg_header.jpg) 50% 0 no-repeat;}
+/* Top */
+.top_header a.favorites { background:url(../images/fincoun-start/icon_favorites.gif) 0 1px no-repeat;}
+.top_header a.login { background:url(../images/fincoun-start/icon_login.gif) no-repeat;}
+.top_header a.reg { background:url(../images/fincoun-start/icon_reg.gif) no-repeat;}
+.top_header a.reg:hover { color:#FFD1A0;}
+/* Bottom */
+.bottom_header .search input { background:url(../images/fincoun-start/bg_search.gif) no-repeat;}
+.bottom_header .search .button { background:url(../images/fincoun-start/button_search.gif) no-repeat;}
+/* Menu */
+#menu li a sup { color:#099352;}
+/* ******************** Content ********************* */
+.SliderBox .title { background:url(../images/fincoun-start/px_slider_title.png) repeat;}
+/* Panel */
+.SliderBox .panel { background:url(../images/fincoun-start/bg_slider_panel.gif) no-repeat;}
+/* Top Week */
+.SliderBox ul { border-left:1px solid #C7C7C7;}
+.SliderBox li { border-color:#fff #fff #C7C7C7 #fff; background:#F3F1E5;}
+.SliderBox li a { color:#0A62A9;}
+.SliderBox li a:hover { background:url(../images/fincoun-start/px_slider_menu.gif) repeat-x #68BC90;}
+.SliderBox li.home { background:url(../images/fincoun-start/bg_slider_menu_top.gif) 100% 0 no-repeat #F3F1E5;}
+.SliderBox li.last { background:url(../images/fincoun-start/bg_slider_menu_bottom.gif) 100% 100% no-repeat #F3F1E5;}
+/* --------------------------------- New Articles Box */
+.NewArticlesBox li .info a { color:#099352;}
+.NewArticlesBox li .info a:hover { color:#085CA3;}
+/* --------------------------------- New Articles Box */
+a.author { height:14px; padding:3px 26px 0 23px; float:left; background:url(../images/fincoun-start/icon_author.gif) 0 1px no-repeat;}
+a.rating { height:14px; padding:3px 18px 0 23px; float:left; background:url(../images/fincoun-start/icon_rating.gif) 0 1px no-repeat;}
+a.comment { height:14px; padding:3px 10px 0 23px; float:left; background:url(../images/fincoun-start/icon_comment1.gif) 0 1px no-repeat;}
+/* -------------------------------------- Comment Box */
+.CommentBox { background:url(../images/fincoun-start/bg_comment_top.gif) no-repeat #EFFAF5;}
+.CommentBox li span a { color:#117620;}
+.CommentBox li.title { color:#525753; background:url(../images/fincoun-start/icon_comment.gif) 23px 3px no-repeat;}
+.CommentBox li.bottom { background:url(../images/fincoun-start/bg_comment_bottom.gif) 0 100% no-repeat;}
+/* --------------------------------- Ask Question Box */
+.AskQuestionBox { background:url(../images/fincoun-start/px_ask.gif) 0 18px repeat-y;}
+.AskQuestionBox ul { background:url(../images/fincoun-start/bg_ask_top.gif) no-repeat;}
+.AskQuestionBox li.bottom { background:url(../images/fincoun-start/bg_ask_bottom.gif) no-repeat #fff;}
+.AskQuestionBox li.bottom input { background:url(../images/fincoun-start/button_send.gif) no-repeat; cursor:pointer;}
+.AskQuestionBox li.title { color:#EC801A;}
+/* ------------------------------------- Subscribe Box */
+.SubscribeBox { background:url(../images/fincoun-start/px_subscr.gif) repeat-y;}
+.SubscribeBox ul { background:url(../images/fincoun-start/bg_subscr_top.gif) no-repeat;}
+.SubscribeBox li input { background:url(../images/fincoun-start/bg_mail_subscribe.gif) no-repeat;}
+.SubscribeBox li .button { background:url(../images/fincoun-start/button_subscribe.gif) no-repeat;}
+.SubscribeBox li.bottom { background:url(../images/fincoun-start/bg_subscr_bottom.gif) 0 100% no-repeat;}
+/* ---------------------------------- Best Authors Box */
+.BestAuthorsBox { background:url(../images/fincoun-start/px_subscr.gif) repeat-y;}
+.BestAuthorsBox ul { background:url(../images/fincoun-start/bg_subscr_top.gif) no-repeat;}
+.BestAuthorsBox li.title { color:#525753;}
+.BestAuthorsBox li.bottom { background:url(../images/fincoun-start/bg_subscr_bottom.gif) 0 100% no-repeat;}
+/* ------------------------------------------ Tags Box */
+.TagsBox { background:url(../images/fincoun-start/bg_tags_top.gif) no-repeat;}
+.TagsBox li { border:solid #2C9966; border-width:0 1px;}
+.TagsBox li.bottom { background:url(../images/fincoun-start/bg_tags_bottom.gif) no-repeat;}
+/* ********************* Footer *********************** */
+#footer { background:url(../images/fincoun-start/px_footer.gif) 50% 0 repeat-x;}
+#footer ul { background:url(../images/fincoun-start/bg_footer.jpg) 50% 0 no-repeat;}
+#footer li a:hover { color:#BFFFC2;}
+/* ----------------------- IE ------------------------- */
+* html .NewArticlesBox li .shadow div { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/fincoun-start/image_shadow.png", sizingMethod="crop")}
+/* ---------------------------------------------------- */

@@ -1,0 +1,278 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:url(images/px_body.gif) repeat-x;}
+a { color:#FF5A00; text-decoration:underline; outline:none;}
+a:hover { color:#0179DD; text-decoration:underline;}
+input { margin:0; padding:0; font:12px arial; vertical-align:middle;}
+div { margin:0; padding:0; font:12px arial; color:#000; line-height:18px;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:12px 0 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:18px; font:12px arial; color:#000;}
+h1 { color:#0179DD; font:18px Trebuchet MS, arial; margin:0; padding:0 0 12px;}
+h2 { color:#0179DD; font:17px Trebuchet MS, arial; margin:0; padding:0 0 12px;}
+h3 { color:#0179DD; font:bold 16px arial; margin:0; padding:0;}
+h4 { color:#0179DD; font:bold 16px arial; margin:0; padding:0;}
+
+#container { width:1000px; margin:0 auto; min-height:100%; height:auto !important; height:100%; position:relative;}
+/* ********************* Header ********************* */
+#header { height:122px;}
+/* Logo */
+.logo { width:185px; padding:8px 0 0; float:left;}
+/* Slogan */
+.slogan { top:33px; left:214px; position:absolute; font-size:11px;}
+/* Menu */
+.menu { width:814px; padding:63px 0 0; float:right;}
+.menu li { padding-left:23px; float:left;}
+.menu li a { height:41px; padding-left:22px; float:left; color:#fff; font:14px Trebuchet MS, arial; background:url(images/button_menu.gif) no-repeat; text-decoration:none; text-transform:uppercase; text-shadow:1px 1px 1px #AE5108; white-space:nowrap;}
+.menu li a em { height:30px; padding:11px 22px 0 0; float:left; background:url(images/button_menu.gif) 100% 0 no-repeat; cursor:pointer;}
+.menu li a:hover { color:#fff; text-decoration:underline;}
+.menu li.login { padding:0; float:right;}
+.menu li.login a { background:url(images/button_login.gif) no-repeat; text-shadow:1px 1px 1px #065B9D;}
+.menu li.login a em { background:url(images/button_login.gif) 100% 0 no-repeat;}
+/* Top Box */
+.TopBox { height:233px; background:url(images/bg_header.jpg) no-repeat;}
+.TopBox .search { width:271px; height:194px; margin:21px 0 0 11px; float:left; background:url(images/bg_search.png) no-repeat;}
+.TopBox .search li { padding:18px 20px 0 26px;}
+.TopBox .search li a { color:#0179DD;}
+.TopBox .search li a:hover { color:#1E99FF;}
+.TopBox .search li select { width:217px; height:28px; padding:5px; border:1px solid #C4C4C4; color:#000; font:12px arial; vertical-align:middle;}
+.TopBox .search li input { width:85px; height:30px; padding-bottom:2px; margin-left:9px; color:#fff; font:14px Trebuchet MS, arial; background:url(images/button_search.gif) no-repeat; border:0; text-transform:uppercase; text-shadow:1px 1px 1px #BB5B0F; cursor:pointer;}
+.TopBox .search li.title { padding:23px 20px 0 26px; color:#2F3132; font:bold 13px Trebuchet MS, arial; text-transform:uppercase;}
+.TopBox .search .width { width:124px;}
+.TopBox .descr { width:214px; padding:45px 240px 0 0; float:right; font:14px Trebuchet MS, arial;}
+.TopBox .descr p { padding:10px 0 0 11px; font-size:16px;}
+.TopBox .descr em { color:#0179DD;}
+.TopBox .descr span { color:#FF5A00;}
+
+/* ******************** Content ********************* */
+#content { padding:20px 0 106px; overflow:hidden; zoom:1; clear:both;}
+.empty { height:20px; clear:both;}
+
+/* ----------------------------------- Apartments Box */
+.ApartmentsTitle { position:relative; zoom:1; background:url(images/px_title.gif) repeat-x #E66300; text-align:center;}
+.ApartmentsTitle div { zoom:1; color:#fff; font:18px Trebuchet MS, arial; text-shadow:1px 1px 1px #9B4808; text-transform:uppercase;background:url(images/bg_title_tl.gif) no-repeat;}
+.ApartmentsTitle div div { padding:10px 10px 11px; background:url(images/bg_title_tr.gif) 100% 0 no-repeat;}
+.ApartmentsTitle h1 { color:#fff; padding:0; text-transform:uppercase; text-shadow:1px 1px 1px #9B4808;}
+.ApartmentsTitle h2 { color:#fff; padding:0; text-transform:uppercase; text-shadow:1px 1px 1px #9B4808;}
+.ApartmentsTitle a.all { top:14px; right:15px; position:absolute; color:#fff; font:12px Trebuchet MS, arial; text-transform:uppercase; text-shadow:none;}
+.ApartmentsTitle a.all:hover { color:#FFF580;}
+.blue { background:url(images/px_cat.gif) repeat-x #0179DD; text-align:left;}
+.blue div { background:url(images/bg_cat_tl.gif) no-repeat;}
+.blue div div { padding:10px 20px 11px; background:url(images/bg_cat_tr.gif) 100% 0 no-repeat;}
+/* Box */
+.ApartmentsBox { padding:21px 9px 0; border:solid #C4C4C4; border-width:0 1px;}
+.ApartmentsBox ul { padding:21px 0 20px; overflow:hidden; zoom:1; clear:both; border-top:1px dotted #C4C4C4; background:url(images/px_apart.gif) 320px 0 repeat-y;}
+.ApartmentsBox li { width:310px; padding-left:23px; float:left; line-height:17px;}
+.ApartmentsBox li img { margin-right:10px; float:left;}
+.ApartmentsBox li.one { padding:0;}
+.ApartmentsBox ul.home { padding:0 0 20px; border:0;}
+.ApartmentsBox ul.last { padding:21px 0 11px;}
+.ApartmentsBox li a.name { padding:0 0 5px; color:#0179DD; font:bold 16px arial; display:block; text-decoration:none;}
+.ApartmentsBox li a.name:hover { color:#FF5A00; text-decoration:underline;}
+.ApartmentsBox li a.more { display:block; text-align:right;}
+/* Background */
+.ApartmentsBackground { height:10px; clear:both; background:url(images/px_apart_b.gif) 0 100% repeat-x; _background:url(images/px_apart_b.gif) 0 9px repeat-x;}
+.ApartmentsBackground div { height:10px; background:url(images/bg_apart_bl.gif) no-repeat;}
+.ApartmentsBackground div div { background:url(images/bg_apart_br.gif) 100% 0 no-repeat;}
+.ApartmentsBackgroundTop { height:10px; clear:both; overflow:hidden; background:url(images/px_apart_b.gif) repeat-x;}
+.ApartmentsBackgroundTop div { height:10px; background:url(images/bg_apart_tll.gif) no-repeat;}
+.ApartmentsBackgroundTop div div { background:url(images/bg_apart_trr.gif) 100% 0 no-repeat;}
+
+/* -------------------------------------- LEFT COLUMN */
+.left_column { width:320px; float:left; padding-right:20px;}
+.left_column1 { width:402px; float:left;}
+
+/* ---------------------------------------- Order Box */
+.OrderBox { padding:10px 21px 5px; border:solid #C4C4C4; border-width:0 1px; font:16px Trebuchet MS, arial; line-height:20px;}
+.OrderBox img { margin:5px 0 0; display:block;}
+.OrderBox b { color:#0179DD; font-size:16px; text-transform:uppercase;}
+.OrderBox em { color:#FF5A00;}
+.OrderBox span { color:#0179DD;}
+.OrderBox big { font-size:18px;}
+.OrderBox a.more { display:block; text-align:right;}
+
+/* ---------------------------------------- Helper Box */
+.HelperBox { padding:0 18px 10px; border:solid #C4C4C4; border-width:0 1px;}
+.HelperBox li { padding:10px 0 0; overflow:hidden; zoom:1;}
+.HelperBox li input { width:257px; padding:4px 11px; border:1px solid #C4C4C4; color:#7B7B7B;}
+.HelperBox li select { width:281px; padding:3px 3px 3px 9px; border:1px solid #C4C4C4; font:12px arial; color:#7B7B7B;}
+.HelperBox li em { width:51px; padding:4px 0 0; float:left;}
+.HelperBox li span { width:91px; float:left;}
+.HelperBox li span input { width:37px; padding:4px; margin-left:5px;}
+.HelperBox li.button { padding:30px 0 0; text-align:right;}
+.HelperBox li.button input { width:85px; height:30px; padding:0 0 2px; color:#fff; font:14px Trebuchet MS, arial; background:url(images/button_search1.gif) no-repeat; border:0; text-transform:uppercase; text-shadow:1px 1px 1px #BB5B0F; cursor:pointer;}
+
+/* ------------------------------------- RIGHT COLUMN */
+.right_column { width:320px; float:right;}
+.right_column .title { padding:15px 11px 0; color:#0179DD; font:18px arial; text-transform:uppercase;}
+.right_column1 { width:660px; float:right;}
+.right_column2 { width:538px; float:right;}
+
+/* -------------------------------------- Weather Box */
+.WeatherBox { padding:10px 10px 0; border:solid #C4C4C4; border-width:0 1px;}
+.WeatherBox span { color:#0179DD; font-size:16px;}
+.WeatherBox .line { padding-bottom:7px; border-bottom:1px dotted #C4C4C4;}
+.WeatherBox ul {}
+.WeatherBox li { padding:3px 0 9px; overflow:hidden;}
+.WeatherBox li em { width:50px; padding:5px 0 5px 31px; float:left; background:url(images/icon_sun.gif) no-repeat;}
+.WeatherBox li i { width:200px; padding:5px 0 0; float:left; font-style:normal;}
+
+/* -------------------------------------- Sorting Box */
+.SortingBox { padding:10px 16px 0; border:solid #C4C4C4; border-width:0 1px; font-size:14px;}
+.SortingBox select { width:104px; height:28px; padding:3px; margin:0 10px; border:1px solid #C4C4C4; font-size:14px; vertical-align:middle;}
+.SortingBox .width { width:135px;}
+
+/* -------------------------------------- Catalog Box */
+.CatalogBox { padding:0 15px 0 20px; overflow:hidden; zoom:1; border:solid #C4C4C4; border-width:0 1px;}
+.CatalogBox .image { width:150px; float:left;}
+.CatalogBox .image img { display:block;}
+.CatalogBox ul { width:460px; float:right;}
+.CatalogBox li { padding:0 0 3px; overflow:hidden; zoom:1;}
+.CatalogBox li b { padding:0 10px 4px 0; float:left; font-size:16px;}
+.CatalogBox li em { color:#0179DD;}
+.CatalogBox li span { padding:0 0 4px; float:right; color:#FF7B33; font:bold 16px arial;}
+.CatalogBox li.more { padding:0; text-align:right;}
+
+/* --------------------------------------- Page Number */
+.PageNumber { padding:18px 0 0; clear:both; text-align:center;}
+.PageNumber li { padding:0 4px; display:inline;}
+.PageNumber li a:hover { text-decoration:none;}
+.PageNumber li a.active { color:#0179DD; font-weight:bold; text-decoration:none;}
+
+/* ---------------------------------- Registration Box */
+.RegistrationBox { padding:20px; border:solid #C4C4C4; border-width:0 1px;}
+.RegistrationBox i { color:#FF1111;}
+.RegistrationBox label { cursor:pointer;}
+.RegistrationBox .who { font-size:14px;}
+.RegistrationBox .who span { color:#007EE6; text-transform:uppercase;}
+.RegistrationBox .who input { margin-right:5px;}
+.RegistrationBox .who label { padding:0 18px; cursor:pointer;}
+/* Step 1 */
+.RegistrationBox .step_1 { margin-top:28px; clear:both; border-top:1px solid #C4C4C4;}
+.RegistrationBox .step_1 li { padding:20px 0 10px; overflow:hidden; zoom:1;}
+.RegistrationBox .step_1 li img { vertical-align:middle;}
+.RegistrationBox .step_1 li .form { width:200px; padding:4px; margin:0 50px 0 9px; border:1px solid #C4C4C4;}
+.RegistrationBox .step_1 li .form1 { width:141px; padding:4px; margin:0 50px 0 9px; border:1px solid #C4C4C4;}
+.RegistrationBox .step_1 li .form2 { width:169px; padding:4px; margin:0 50px 0 9px; border:1px solid #C4C4C4;}
+.RegistrationBox .step_1 li .form3 { width:345px; padding:4px; margin:0 0 0 9px; border:1px solid #C4C4C4;}
+.RegistrationBox .step_1 li .form4 { width:141px; padding:4px; margin:0 9px; border:1px solid #C4C4C4;}
+.RegistrationBox .step_1 #m { margin:0 5px 0 12px;}
+.RegistrationBox .step_1 #w { margin:0 5px 0 17px;}
+/* Step 2 */
+.RegistrationBox .step_2 { margin-top:20px; clear:both; overflow:hidden; zoom:1; border-top:1px solid #C4C4C4;}
+.RegistrationBox .step_2 li { width:270px; padding:18px 0 0; float:left;}
+.RegistrationBox .step_2 li span { color:#969595;}
+.RegistrationBox .step_2 li span input { width:141px; padding:4px; border:1px solid #C4C4C4; margin:0 0 0 11px;}
+.RegistrationBox .step_2 li label { padding:14px 0 0; display:block;}
+.RegistrationBox .step_2 li label input { margin-right:14px;}
+.RegistrationBox .step_2 li.comment { width:638px; float:right;}
+.RegistrationBox .step_2 li.comment textarea{ width:628px; padding:4px; border:1px solid #C4C4C4; margin:17px 0 0; display:block;}
+/* Step 3 */
+.RegistrationBox .step_3 { margin-top:28px; overflow:hidden; zoom:1; clear:both; border-top:1px solid #C4C4C4;}
+.RegistrationBox .step_3 li { float:left;}
+.RegistrationBox .step_3 li.captcha { width:144px; padding:15px 5px 0 0;}
+.RegistrationBox .step_3 li.captcha img { margin-top:8px; display:block;}
+.RegistrationBox .step_3 li.code { width:173px; padding:65px 10px 0 0;}
+.RegistrationBox .step_3 li.code input { width:93px; padding:4px; border:1px solid #C4C4C4;}
+.RegistrationBox .step_3 li.agree { width:320px; padding:65px 10px 0 0;}
+.RegistrationBox .step_3 li.agree input { margin-right:11px;}
+.RegistrationBox .step_3 li.button { padding:64px 0 0; float:right;}
+.RegistrationBox .step_3 li.button input { width:191px; height:30px; padding:0 0 2px; color:#fff; font:14px Trebuchet MS, arial; background:url(images/button_reg.gif) no-repeat; border:0; text-transform:uppercase; text-shadow:1px 1px 1px #BB5B0F; cursor:pointer;}
+
+/* -------------------------------- Apartment View Box */
+.ApartmentViewBox { padding:20px; overflow:hidden; zoom:1; border:solid #C4C4C4; border-width:0 1px;}
+.ApartmentViewBox .title { padding:19px 0 7px; clear:both; zoom:1; color:#228FE9; font-size:14px; text-transform:uppercase; background:url(images/px_apart_b.gif) 0 28px repeat-x;}
+.ApartmentViewBox .title span { padding-right:11px; background:#fff;}
+.ApartmentViewBox .padding { padding:19px 0 0;}
+.ApartmentViewBox .img { display:block;}
+.ApartmentViewBox .border { padding:1px; margin:20px 0 0 23px; float:left; border:1px solid #ABABAB;}
+.ApartmentViewBox .border:hover { border-color:#000;}
+.ApartmentViewBox .home { margin-left:0;}
+/* Other */
+.ApartmentViewBox .other {}
+.ApartmentViewBox .other li { padding:20px 0; overflow:hidden; zoom:1; border-bottom:1px dotted #C4C4C4;}
+.ApartmentViewBox .other div { width:125px; float:left;}
+.ApartmentViewBox .other ul { width:273px; float:right;}
+.ApartmentViewBox .other ul li { padding:0 0 3px; border:0;}
+.ApartmentViewBox .other li.name { padding:0 0 5px; color:#0179DD; font:bold 16px arial;}
+.ApartmentViewBox .other li.more { padding:0; text-align:right;}
+/* Description */
+.ApartmentViewBox .descr {}
+.ApartmentViewBox .descr li { padding:0 0 5px; overflow:hidden;}
+.ApartmentViewBox .descr li i { color:#0179DD; font-style:normal;}
+.ApartmentViewBox .descr li em { float:left; font:bold 16px arial;}
+.ApartmentViewBox .descr li span { float:right; color:#FF7B33; font:bold 16px arial;}
+/* Parameters */
+.ApartmentViewBox .parameters { padding:0 0 5px; overflow:hidden;}
+.ApartmentViewBox .parameters li { width:220px; float:left;}
+.ApartmentViewBox .parameters li em { padding:8px 24px 6px; display:block; background:url(images/icon_yes.gif) 0 10px no-repeat;}
+.ApartmentViewBox .parameters li span { padding:8px 24px 6px; display:block; background:url(images/icon_no.gif) 0 10px no-repeat;}
+.ApartmentViewBox .parameters li.home { width:280px;}
+/* Comment */
+.ApartmentViewBox .comment { padding:20px 0 0; clear:both;}
+.ApartmentViewBox .comment textarea { width:516px; height:38px; padding:7px 11px; color:#7B7B7B; font:12px tahoma; border:1px solid #C4C4C4;}
+/* Text */
+.ApartmentViewBox .text { padding:15px 0 0; clear:both;}
+.ApartmentViewBox .text textarea { width:516px; height:121px; padding:7px 11px; color:#7B7B7B; font:12px tahoma; border:1px solid #C4C4C4;}
+/* Add */
+.ApartmentViewBox .add { padding:7px 0 0; clear:both; text-align:right;}
+.ApartmentViewBox .add input { width:114px; height:30px; color:#fff; font:14px Trebuchet MS, arial; background:url(images/button_add.gif) no-repeat; border:0; text-transform:uppercase; text-shadow:1px 1px 1px #BB5B0F; cursor:pointer;}
+/* Send */
+.ApartmentViewBox .send { padding:7px 0 0; clear:both; text-align:right;}
+.ApartmentViewBox .send input { width:124px; height:30px; color:#fff; font:14px Trebuchet MS, arial; background:url(images/button_send.gif) no-repeat; border:0; text-transform:uppercase; text-shadow:1px 1px 1px #BB5B0F; cursor:pointer;}
+/***************************************************************************** Comment Box */
+.CommentBox { padding:11px 0 0; clear:both;}
+.CommentBox li { padding:20px;}
+.CommentBox li.two { background:#EDEDED;}
+.CommentBox li div { padding:0 0 10px; color:#565656; font-size:11px;}
+.CommentBox li div span { padding-right:4px; color:#E77520; font-size:14px;}
+
+/* ---------------------------------------- Search Box */
+.SearchBox { padding:20px 20px 10px; border:solid #C4C4C4; border-width:0 1px;}
+.SearchBox .title { padding:23px 0 14px; clear:both; zoom:1; color:#228FE9; font-size:14px; text-transform:uppercase; background:url(images/px_apart_b.gif) 0 32px repeat-x;}
+.SearchBox .title span { padding-right:11px; background:#fff;}
+.SearchBox .general input { width:271px; padding:4px; margin-right:55px; border:1px solid #C4C4C4; color:#7B7B7B;}
+.SearchBox .general select { width:281px; padding:3px 3px 3px 9px; margin-right:54px; border:1px solid #C4C4C4; font:12px arial; color:#7B7B7B; vertical-align:middle;}
+.SearchBox .general .none { margin:0;}
+.SearchBox .figures { padding:20px 0 0; clear:both; overflow:hidden;}
+.SearchBox .figures li { height:49px; padding-left:11px; margin-left:20px; float:left; background:url(images/bg_fig_left.gif) no-repeat;}
+.SearchBox .figures li div { padding-right:11px; float:left; background:url(images/bg_fig_right.gif) 100% 0 no-repeat;}
+.SearchBox .figures li div div { height:36px; padding:11px 3px 0; border:solid #E5E5E5; border-width:1px 0; background:none;}
+.SearchBox .figures li input { width:37px; padding:4px; margin:0 0 0 7px; border:1px solid #C4C4C4; color:#7B7B7B;}
+.SearchBox .figures li.home { margin:0;}
+.SearchBox .figures .form { margin:0 10px 0 6px;}
+.SearchBox .type { padding:28px 0 0; clear:both; overflow:hidden;}
+.SearchBox .type li { padding:0 12px 0 0; float:left;}
+.SearchBox .type li b { color:#E66300;}
+.SearchBox .type li div { padding:0 0 12px;}
+.SearchBox .type li input { margin-right:14px;}
+.SearchBox .type li label { cursor:pointer;}
+.SearchBox .type li.two { width:148px;}
+.SearchBox .parameters { overflow:hidden; zoom:1;}
+.SearchBox .parameters li { float:left;}
+.SearchBox .parameters li div { padding:0 0 15px; display:block;}
+.SearchBox .parameters li input { margin-right:14px;}
+.SearchBox .parameters li label { cursor:pointer;}
+.SearchBox .parameters li.col_1 { width:216px;}
+.SearchBox .parameters li.col_2 { width:244px;}
+.SearchBox .parameters li.col_3 { width:316px;}
+.SearchBox .parameters li.col_4 { width:180px;}
+.SearchBox .button { padding:25px 0 0; clear:both; text-align:center; zoom:1;}
+.SearchBox .button input { width:85px; height:30px; padding:0 0 2px; color:#fff; font:14px Trebuchet MS, arial; background:url(images/button_search1.gif) no-repeat; border:0; text-transform:uppercase; text-shadow:1px 1px 1px #BB5B0F; cursor:pointer;}
+
+/* ----------------------------------------- Link Box */
+.LinkBox { padding:5px 26px 0;}
+.LinkBox li { padding:8px 0 0;}
+.LinkBox li a { padding-left:15px; font-size:14px; zoom:1; display:block; background:url(images/arrow_list.gif) 0 5px no-repeat;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:1000px; height:75px; margin:-76px auto 0; position:relative; border-top:1px solid #7F7F7F;}
+#footer .copyright { width:370px; padding:28px 20px 0 10px; float:left;}
+#footer .map { width:390px; padding:28px 10px 0 0; float:left; color:#FF5A00;}
+#footer .bookmarks { width:175px; padding:20px 15px 0 10px; float:right; text-align:right;}
+/* ----------------------- IE ------------------------- */
+* html .TopBox .search { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/bg_search.png", sizingMethod="crop")}
+/* ---------------------------------------------------- */

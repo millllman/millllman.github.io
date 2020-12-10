@@ -1,0 +1,212 @@
+/* Default */
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+  	   url('../fonts/Raleway-Regular.woff') format('woff'),
+  	   url('../fonts/Raleway-Regular.ttf')  format('truetype'),
+  	   url('../fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  	   url('../fonts/Montserrat-Regular.woff') format('woff'),
+  	   url('../fonts/Montserrat-Regular.ttf')  format('truetype'),
+  	   url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  	   url('../fonts/Montserrat-Bold.woff') format('woff'),
+  	   url('../fonts/Montserrat-Bold.ttf')  format('truetype'),
+  	   url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: $main-color;
+	background: #fbfbfb;
+	font: #{$main-font-size}/#{$main-line-height} $main-font-family;
+}
+
+::selection { color: #000; background: #d9be82; }
+::-moz-selection { color: #000; background: #d9be82; }
+
+p {
+	padding: 18px 0 0;
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4 { margin: 0;}
+
+h1 {
+	padding: 30px 0 20px;
+	color: $main-title-color;
+	@include font (25,30);
+}
+
+a {
+	color: $main-link-color;
+	text-decoration: underline;
+	transition: .2s ease-in-out;
+	outline: none;
+	&:hover {
+		color: $main-link-color-hover;
+		text-decoration: underline;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+	padding: 10px 15px;
+	color: $main-color;
+	background: #fff;
+	transition: .2s ease-in-out;
+	@include font (16,20);
+	@include border (#e9e9e9,1px);
+	&:focus {
+		background: #f7f7f7;
+		/*border-color: #00aeef;*/
+		/*@include box-shadow (0 0 4px #00aeef);*/
+	}
+}
+
+.img-extensive {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+
+.btn {
+	min-width: 225px;
+	padding: 10px 15px;
+	display: inline-block;
+	color: #fff;
+	font-family: $mt-bold;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	transition: 0s ease-in-out;
+	background: linear-gradient(to bottom,#b69b5e,#a88b4e);
+	@include font (14,42);
+	@include link-decoration (none,none);
+	@include border (#96763b,0 0 3px);
+	&.btn-block {
+		display: block;
+	}
+	&:hover {
+		color: #fff;
+		line-height: 39px;
+		border-width: 0 0 6px;
+	}
+	&:focus {
+		line-height: 42px;
+		border-width: 0 0 3px;
+		background: linear-gradient(to bottom,#a88a4d,#b69a5d);
+	}
+	@include mobile { width: 100%; }
+}
+
+.row.row-minus {
+	@include mobile {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/* Popup */
+.fadeScreen {
+	display: none;
+	z-index: 102;
+	background: rgba(0,0,0, 0.7);
+	@include abs (0,0,0,0,fixed);
+}
+
+.popup-box {
+	/*width: 1295px;*/
+	padding: 0px 0px 0px;
+	text-align: center;
+	background: #fff;
+	display: none;
+	transform: translate(-50%,-50%);
+	z-index: 100000;
+	@include abs (50%,50%,auto,auto,fixed);
+	@include border-radius (5px);
+	iframe {
+		/*width: 100%;*/
+		/*height: 728px;*/
+		display: block;
+	}
+	@include laptop-desktop {
+		/*width: 728px;*/
+		/*iframe { width: 100%; }*/
+	}
+	@include tablet-max {
+		width: auto;
+		min-height: 350px;
+		transform: translate(0%,-50%);
+		@include abs (50%,15px,15px,auto,fixed);
+		iframe { width: 100%; }
+	}
+	span.close {
+		min-width: 140px;
+		color: #fff;
+		cursor: pointer;
+		@include font (18,53);
+		@include abs (-70px,auto,1px,auto);
+		@include border (#fff,1px);
+		@include border-radius (25px);
+		i.fa {
+			margin-left: 15px;
+			font-size: 30px;
+			vertical-align: middle;
+		}
+		&:hover { background: rgba(0,0,0, 0.5); }
+	}
+}
+
+.links-black {
+	@include link-color (#000,#b89d60);
+	@include link-decoration (none,none);
+}
+
+.text-gray {
+	color: $gray;
+	@include font (20,32);
+}

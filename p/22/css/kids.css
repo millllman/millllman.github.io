@@ -1,0 +1,76 @@
+/* --------------------- Default --------------------- */
+body { background:url(../images/kids/px_body.gif) repeat;}
+a { color:#499229; text-decoration:underline; outline:none;}
+a:hover { color:#5DBB34; text-decoration:none;}
+div { font:12px georgia, verdana; color:#515151;}
+h1 { color:#0093DD; font:18px arial; margin:0; padding:0;}
+h2 { color:#BCBCBC; font:18px arial; font-weight:bold; margin:0 0 11px; padding:0;}
+
+#container { background:url(../images/kids/px_header.jpg) 82px 0 repeat-x;}
+/* ********************* Header ********************* */
+#header { background:url(../images/kids/bg_header.gif) 0 100% no-repeat;}
+#header .background {}
+/* Language */
+#header .lang li a:hover { background:url(../images/lounge/px_lang.gif) repeat-x;}
+#header .lang li a.active { background:url(../images/lounge/px_lang.gif) repeat-x;}
+/* Menu */
+#header .menu li a { color:#515251;}
+#header .menu li a:hover {/* color:#fff; background:url(../images/lounge/px_menu.gif) repeat-x;*/}
+#header .menu li a em { border-color:#A9B28D; cursor:pointer;}
+#header .menu li a.active { color:#fff; background:url(../images/lounge/px_menu.gif) repeat-x;}
+/* Weather */
+#header .weather span {}
+
+/* ******************** Content ********************* */
+#content {}
+/* ---------------------------------- LEFT NAVIGATION */
+
+/* --------------------------------------- Banner Box */
+.BannerBox {}
+.BannerBox .logo { height:319px;}
+.BannerBox .logo a { width:296px; height:319px; display:block; background:url(../images/kids/logo.jpg) no-repeat;}
+.BannerBox .img { margin:0 0 9px;}
+
+/* --------------------------------- RIGHT NAVIGATION */
+
+/* ---------------------------------------- Event Box */
+.EventBox { width:100%; padding:33px 0 194px; overflow:hidden; position:relative;}
+.EventBox li { padding:7px 0 18px; overflow:hidden; font:12px georgia, verdana; line-height:19px;}
+.EventBox li a { color:#C3F245; font:bold italic 17px georgia, verdana; padding:0 140px 0 0; background:url(../images/kids/bg_menu_event.gif) 100% 0 no-repeat}
+.EventBox li a:hover { color:#FF7275; text-decoration:underline;}
+.EventBox li em { width:120px; float:left; padding:1px 8px 0 0; color:#fff;}
+.EventBox li div { margin:0 10px 0 128px;}
+.EventBox .title { width:310px; height:74px; background:url(../images/kids/title_event.jpg) no-repeat;}
+
+.EventBox .all { top:35px; right:30px; position:absolute;}
+.EventBox .all a { height:21px; padding:5px 17px 0; display:block; float:left; color:#5E6F3C; font:bold italic 12px georgia, verdana; border:1px solid #97BE4A; background:#fff;}
+.EventBox .all a:hover { background:#F3F3F3;}
+
+.EventBox .png { width:100%; height:185px; bottom:0; position:absolute;}
+.EventBox .png div { width:650px; height:185px; margin:0 auto; background:url(../images/kids/bg_event.png) no-repeat;}
+
+/* ---------------------------------------- Photo Box */
+.PhotoBox { width:100%; padding:53px 0 0; overflow:hidden; position:relative;}
+.PhotoBox li { width:24%; float:left; padding:20px 0 0; font:12px georgia, verdana; line-height:17px;}
+.PhotoBox li .image { width:141px; height:179px; padding-left:15px; position:relative;}
+.PhotoBox li .image img { width:141px; height:175px;}
+.PhotoBox li .image a { width:141px; height:175px; top:0; right:0; position:absolute; display:block; background:url(../images/kids/image_shadow.png) no-repeat;}
+.PhotoBox li .name { width:170px; padding:20px 0 0; text-align:center;}
+.PhotoBox li .name a { color:#C3F245; font:bold italic 14px georgia, verdana;}
+.PhotoBox li .name a:hover { color:#FF7275;}
+.PhotoBox .title { width:394px; height:64px; background:url(../images/kids/title_photo.gif) no-repeat;}
+
+.PhotoBox .all { top:63px; right:30px; position:absolute;}
+.PhotoBox .all a { height:21px; padding:5px 17px 0; display:block; float:left; color:#5E6F3C; font:bold italic 12px georgia, verdana; border:1px solid #97BE4A; background:#fff;}
+.PhotoBox .all a:hover { background:#F3F3F3;}
+
+/* ********************* Footer *********************** */
+#footer {}
+#footer .background { width:355px; background:url(../images/kids/bg_footer_left.gif) no-repeat;}
+#footer .copyright { margin-left:355px; background:url(../images/kids/px_footer.gif) 0 100% repeat-x;}
+/* ----------------------- IE ------------------------- */
+* html .EventBox .png div {background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/kids/bg_event.png", sizingMethod="crop")}
+* html #header .weather span { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/lounge/sun.png", sizingMethod="crop")}
+
+* html .PhotoBox li .image a { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/kids/image_shadow.png", sizingMethod="crop")}
+/* ---------------------------------------------------- */

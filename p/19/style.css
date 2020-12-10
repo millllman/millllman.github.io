@@ -1,0 +1,157 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:#F6F6F6;}
+a { color:#0C6B9B; text-decoration:underline; outline:none;}
+a:hover { color:#DA251C; text-decoration:underline;}
+input { margin:0; padding:0; font:11px tahoma; vertical-align:middle;}
+div { margin:0; padding:0; font:12px arial; color:#323232; line-height:16px;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:12px 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:normal;}
+h1 { color:#323232; font:bold 14px arial; margin:0; padding:0;}
+
+#container { width:876px; padding:0 20px; margin:0 auto; min-height:100%; height:auto !important; height:100%; position:relative;}
+/* ********************* Header ********************* */
+#header { height:146px;}
+/* Logo */
+#header .logo { width:160px; padding:34px 0 0 20px; float:left;}
+/* Menu */
+#menu { padding:69px 0 0; float:left;}
+#menu li { padding:0 0 0 35px; float:left; position:relative;}
+#menu li a { height:30px; padding-left:11px; float:left; color:#010101; font:bold 12px arial; text-decoration:none; background:url(images/bg_menu.gif) no-repeat; text-transform:uppercase;}
+#menu li a em { height:23px; padding:7px 11px 0 0; float:left; background:url(images/bg_menu.gif) 100% 0 no-repeat; cursor:pointer;}
+#menu li a:hover { color:#0C6B9B; background:url(images/bg_menu_hover.gif) no-repeat;}
+#menu li a:hover em { background:url(images/bg_menu_hover.gif) 100% 0 no-repeat;}
+/* Dynamic Menu */
+#menu ul { width:147px; padding:16px 0 0; top:30px; left:29px; position:absolute; display:none; background:url(images/bg_menu_top.png) no-repeat;}
+#menu ul li { padding:7px 21px; float:none; background:url(images/px_menu.png) repeat-y; _background:#fff; _padding:7px 15px; _margin:0 6px;}
+#menu ul li a { height:auto; padding:0; float:none; color:#0C6B9B; display:block; font:bold 12px arial; background:none; text-transform:inherit;}
+#menu ul li a:hover { color:#018BD1; background:none;}
+#menu li:hover ul, #menu li.hover ul {display: block;}
+#menu li:hover a { color:#0C6B9B; background:url(images/bg_menu_hover.gif) no-repeat;}
+#menu li:hover a em { background:url(images/bg_menu_hover.gif) 100% 0 no-repeat;}
+#menu li:hover ul li a { color:#0C6B9B; background:none;}
+#menu li:hover ul li a:hover { color:#018BD1;}
+#menu li.bottom { height:19px; padding:0; margin:0; background:url(images/bg_menu_bottom.png) no-repeat;}
+#menu li a.active { color:#fff; background:url(images/bg_menu_blue.gif) no-repeat;}
+#menu li a.active em { background:url(images/bg_menu_blue.gif) 100% 0 no-repeat;}
+/* language */
+#header .language { margin-top:74px; padding-right:5px; float:right; font:bold 10px arial; background:url(images/icon_language.gif) 7px 8px no-repeat #fff;}
+#header .language a { padding:4px 24px 3px; float:left; color:#323232; font:bold 11px arial; text-decoration:none;}
+#header .language a.rus { background:url(images/icon_rus.gif) 100% 5px no-repeat;}
+#header .language a.eng { background:url(images/icon_eng.gif) 100% 5px no-repeat;}
+
+/* ******************** Content ********************* */
+#content { padding:46px 0 277px; overflow:hidden; zoom:1;}
+.clients_title { padding:5px 24px 24px; clear:both; zoom:1; font:bold 12px arial; text-transform:uppercase;}
+#content .wrap { padding:47px 0 0; clear:both;}
+
+/* --------------------------------------- Slider Box */
+.SliderBox { height:212px; clear:both; background:url(images/bg_slider.gif) no-repeat;}
+.SliderBox ul { width:250px; padding:40px 36px 0 0; float:right;}
+.SliderBox li { padding:8px 0 0 36px; font-size:13px; background:url(images/icon_yes.gif) 0 10px no-repeat;}
+.SliderBox .image { padding:21px 0 0 21px; float:left;}
+.SliderBox .image img { display:block;}
+.SliderBox .button { position:relative;}
+.SliderBox .button div { top:32px; left:32px; position:absolute;}
+.SliderBox .button a { width:10px; height:10px; margin-right:5px; float:left; background:url(images/button_slider.png) no-repeat;}
+.SliderBox .button a:hover { background:url(images/button_slider_active.png) no-repeat;}
+.SliderBox .button a.active { background:url(images/button_slider_active.png) no-repeat;}
+
+/* ---------------------------------- Our Clients Box */
+.OurClientsBox { clear:both; overflow:hidden; zoom:1; position:relative; background:#EDEDED;}
+.OurClientsBox li { width:275px; padding:23px 0; float:left;}
+.OurClientsBox li .image { width:100px; float:left; text-align:center;}
+.OurClientsBox li .text { width:160px; float:left;}
+.OurClientsBox li .text a.name { padding:0 0 12px; display:block; font:bold 11px arial; text-transform:uppercase; text-decoration:none;}
+.OurClientsBox li.prev { width:21px;}
+.OurClientsBox li.prev a { width:21px; height:100%; _height:182px; top:0; left:0; position:absolute; background:url(images/arrow_prev.gif) 6px 50% no-repeat #fff;}
+.OurClientsBox li.prev a:hover { background:url(images/arrow_prev.gif) 6px 50% no-repeat #FAFAFA;}
+.OurClientsBox li.next { width:21px; float:right;}
+.OurClientsBox li.next a { width:21px; height:100%; _height:182px; top:0; right:0; position:absolute; background:url(images/arrow_next.gif) 8px 50% no-repeat #fff;}
+.OurClientsBox li.next a:hover { background:url(images/arrow_next.gif) 8px 50% no-repeat #FAFAFA;}
+
+/* -------------------------------------- LEFT COLUMN */
+.left_column { width:240px; padding:0 24px 0 21px; float:left;}
+.left_column big { font-size:13px; line-height:18px;}
+.left_column .title { font:bold 14px arial; text-transform:uppercase;}
+.left_column .title1 { padding:0 0 20px; font:bold 14px arial; text-transform:uppercase;}
+.left_column1 { width:465px; float:left;}
+.left_column1 .title { padding:0 52px 23px; font:bold 14px arial; text-transform:uppercase;}
+.left_column1 .title1 { padding:40px 52px 0; font:bold 14px arial; text-transform:uppercase;}
+
+/* ----------------------------------------- News Box */
+.NewsBox {}
+.NewsBox li { padding:20px 0 18px;}
+.NewsBox li em { padding:0 0 10px; margin-bottom:11px; display:block; color:#0C6B9B; border-bottom:1px solid #DDDDDD;}
+.NewsBox li span { padding:0 0 5px; display:block; font:bold 14px arial;}
+.NewsBox .more { padding:5px 0 0; text-align:right;}
+
+/* ----------------------------------------- Info Box */
+.InfoBox { padding:0 0 0 52px; clear:both;}
+.InfoBox li { padding:12px 0 0; overflow:hidden; color:#0C6B9B; font-size:13px;}
+.InfoBox li span { width:130px; padding:5px 10px 5px 34px; float:left;}
+.InfoBox li .mail { background:url(images/icon_mail.gif) 0 9px no-repeat;}
+.InfoBox li .fax { background:url(images/icon_fax.gif) 0 4px no-repeat;}
+.InfoBox li .phone { background:url(images/icon_phone.gif) 0 2px no-repeat;}
+.InfoBox li .mobile { background:url(images/icon_mobile.gif) 0 3px no-repeat;}
+
+/* -------------------------------------- Address Box */
+.AddressBox { padding:11px 0 0 52px; clear:both; overflow:hidden; zoom:1;}
+.AddressBox li.text { width:185px; padding-right:40px; float:left; line-height:20px;}
+.AddressBox li.button { width:180px; float:left;}
+.AddressBox li.button a { height:28px; padding-left:11px; float:left; color:#fff; font:bold 12px arial; background:url(images/button_address.gif) no-repeat; text-decoration:none;}
+.AddressBox li.button a em { height:22px; padding:6px 11px 0 0; float:left; background:url(images/button_address.gif) 100% 0 no-repeat; cursor:pointer;}
+.AddressBox li.button a:hover { background-position:0 100%;}
+.AddressBox li.button a:hover em { background-position:100% 100%;}
+
+/* ----------------------------------------- Menu Box */
+.MenuBox { padding:70px 0 0; clear:both;}
+.MenuBox li { padding:0 19px 0 24px; float:left; font-size:13px; background:url(images/line_menu.gif) 0 3px no-repeat;}
+.MenuBox li.home { padding:0 19px; background:none;}
+
+/* ------------------------------------- RIGHT COLUMN */
+.right_column { width:250px; float:right;}
+.right_column1 { width:395px; padding-right:15px; float:right;}
+.right_column1 .title { padding:0 0 14px 128px; font:bold 14px arial; text-transform:uppercase;}
+
+/* ------------------------------------- Services Box */
+.ServicesBox {}
+.ServicesBox li { padding:0 0 21px 28px; background:url(images/icon_services.gif) 0 0 no-repeat;}
+.ServicesBox li a.name { padding:0 0 5px; display:block;}
+
+/* -------------------------------------- Contact Box */
+.ContactBox { padding:17px 0 0; background:url(images/px_contact.gif) repeat-y #fff;}
+.ContactBox li { padding:0 0 17px; overflow:hidden; zoom:1; background:url(images/px_contact.gif) repeat-y #fff;}
+.ContactBox li em { width:80px; padding:6px 0 0; float:left; text-align:right; font-size:13px;}
+.ContactBox li em label { cursor:pointer;}
+.ContactBox li span { width:259px; padding:0 18px; float:right;}
+.ContactBox li span input { width:238px; padding:5px 10px; color:#0C6B9B; font:13px arial; border:1px solid #EDEDED;}
+.ContactBox li span textarea { width:238px; height:63px; padding:5px 10px; color:#0C6B9B; font:13px arial; border:1px solid #EDEDED;}
+.ContactBox #phone { color:#ACACAC;}
+.ContactBox #file { width:218px; padding:5px 30px 5px 10px; color:#ACACAC; background:url(images/icon_file.gif) 237px 6px no-repeat;}
+.ContactBox li.button { height:25px; padding:0 0 0 118px; background:url(images/bg_contact.gif) 94% 0 no-repeat #F6F6F6;}
+.ContactBox li.button input { width:81px; height:25px; padding:0 0 2px; color:#fff; font:bold 12px arial; border:0; background:url(images/button_send.gif) no-repeat; cursor:pointer;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:100%; min-width:916px; height:228px; margin-top:-228px; position:relative; background:#EDEDED;}
+#footer .wrap { width:876px; padding:48px 20px 0; margin:0 auto;}
+#footer ul { width:200px; padding-right:45px; float:left;}
+#footer li a { padding:7px 0 7px 30px; display:block; text-decoration:none;}
+#footer li div { margin-left:30px; border-top:1px solid #D0D0D0;}
+#footer .title { padding:0 21px 18px; font:bold 11px arial; text-transform:uppercase;}
+#footer .current li a { background:url(images/icon_current.gif) 0 7px no-repeat;}
+#footer .translate li a { background:url(images/icon_translate.gif) 0 8px no-repeat;}
+#footer a.vkontakte { background:url(images/icon_vkontakte.gif) 0 7px no-repeat;}
+#footer a.twitter { background:url(images/icon_twitter.gif) 0 7px no-repeat;}
+#footer a.myspace { background:url(images/icon_myspace.gif) 0 7px no-repeat;}
+#footer .copyright { padding:58px 40px 0 0; float:right; color:#4C4C4C;}
+/* ----------------------- IE ------------------------- */
+* html #menu ul { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/bg_menu_top.png", sizingMethod="crop")}
+* html #menu li.bottom { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/bg_menu_bottom.png", sizingMethod="crop")}
+* html .SliderBox .button a { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/button_slider.png", sizingMethod="crop")}
+* html .SliderBox .button a:hover { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/button_slider_active.png", sizingMethod="crop")}
+/* ---------------------------------------------------- */

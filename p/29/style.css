@@ -1,0 +1,325 @@
+ /* --------------------- Default --------------------- */
+body { margin:0px;padding:0; text-align:center;}
+a { color:#00ACC5; text-decoration:underline;}
+a:hover { color:#00ACC5; text-decoration:none;}
+input { margin:0; padding:0; font-family:arial; font-size:11px; color:#6E6E6E; vertical-align:middle;}
+select { margin:0; padding:0; font-family:arial; font-size:11px; color:#6E6E6E; vertical-align:middle;}
+div { margin:0; padding:0; font-family:arial; font-size:11px; color:#6E6E6E; line-height:18px;}
+em, i { font-style:normal;}
+img { border:0;}
+label { margin:0; padding:0;}
+p { margin:0; padding:12px 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:normal;}
+h1 { color:#7C7C7C; font:21px arial; margin:0; padding:0;}
+h2 { color:#7C7C7C; font:18px arial; margin:21px 0; padding:0;}
+
+#container { width:989px; margin:0 auto; text-align:left;}
+/* ********************* Header ********************* */
+#header {}
+
+#logo { height:102px;}
+#logo .img { margin:24px 0 0;}
+
+#register { height:39px;}
+#register .form { width:148px; height:17px; margin:0 14px 0 10px; padding:3px 3px 0; border:1px solid #586995;}
+#register .form:hover { border-color:#000; background:#F4F4F4;}
+#register .form:active { border-color:#000; background:#F4F4F4;}
+#register i a { font:13px arial; font-style:italic; font-weight:bold; margin:0 35px 0 0;}
+#register em { margin:0 23px 0 6px;}
+
+#news { height:99px;}
+#news .left { width:183px; float:left; padding:15px 0 0;}
+#news .left em { display:block;}
+#news .left a { font-size:11px; font-weight:bold;}
+#news .right { width:805px; float:right; text-align:right;}
+.indent_ban {}
+.indent_ban .right { padding:10px 0 0;}
+
+#menu { height:43px; padding:0 30px; background:url(images/px_menu.gif) 0 bottom repeat-x #4F7B82;}
+#menu li { float:left; background:url(images/line_menu.gif) 100% 15px no-repeat; padding:0 3px 0 0;}
+#menu li a { font:15px arial; color:#fff; font-weight:bold; text-decoration:none; display:block; height:30px; padding:13px 14px 0;}
+#menu li a:hover { background:url(images/px_menu.gif) 0 bottom repeat-x #3B666D;}
+/* ******************** Content ********************* */
+#content {}
+/* ---------------------------------- Left Navigation */
+#left_nav { width:236px; float:left;}
+
+#catalog_menu {}
+#catalog_menu li { background:url(images/arrow_menu.gif) 10px 9px no-repeat #EEEEEE;}
+#catalog_menu li.active { background:url(images/arrow_menu_over.gif) 10px 9px no-repeat #EEEEEE;}
+#catalog_menu li a { padding:7px 0 7px 31px; font-size:13px; font-weight:bold; font-style:italic; text-decoration:none; display:block;}
+#catalog_menu li a:hover { background:url(images/arrow_menu.gif) 10px 9px no-repeat #DDDBDB;}
+#catalog_menu li ul li { background:#F8F8F8;}
+#catalog_menu li ul li a { font-weight:normal; font-style:normal;}
+#catalog_menu li ul li a:hover { background:#F4F3F3; color:#FCA20D;}
+
+/* ---------------------------------------- Item Pro */
+.item_pro { margin:0 0 32px; width:100%; float:left;}
+.item_pro .avatar { width:72px; float:left; padding:3px 0 0;}
+.item_pro .avatar img { width:50px; height:50px;}
+.item_pro .online {background:url(images/status_online.gif) 56px 4px no-repeat;}
+.item_pro .offline {background:url(images/status_offline.gif) 56px 4px no-repeat;}
+.item_pro .info { width:160px; float:left;}
+.item_pro .info .img { margin:0 0 0 8px; vertical-align:middle;}
+
+/* --------------------------------- Right Navigation */
+#right_nav { width:736px; float:right;}
+
+/* --------------------------------- Search Project */
+#search_project { width:100%; float:left;}
+#search_project .info_article { height:25px; background:url(images/bg_top.gif) 0 0 no-repeat #C2C2C2;}
+#search_project .info_article .left { float:left; color:#fff; padding:4px 49px 0;}
+#search_project .info_article .left a {background:url(images/px_link.gif) 0 bottom repeat-x; padding:0 0 1px; margin:0 12px; text-decoration:none;}
+#search_project .info_article .left a:hover { background:none;}
+#search_project .info_article .right { padding:5px 40px 0 0; float:right; background:url(images/bg_top.gif) 100% 0 no-repeat;}
+#search_project .text { background:#EEEEEE; padding:17px 0 20px 30px;}
+#search_project .text .empty { height:1px; clear:both;}
+#search_project .text .left { width:370px; float:left;}
+#search_project .text .left strong { margin:0 0 14px; display:block;}
+#search_project .text .left ul { width:180px; float:left;}
+#search_project .text .left li { line-height:24px;}
+#search_project .text .left li input { margin:0 10px 0 0; vertical-align:middle;}
+#search_project .text .right { width:330px; float:left;}
+#search_project .text .right p { padding:23px 0;}
+#search_project .text .right select { height:21px; padding:2px 0; border:1px solid #586995;}
+#search_project .text .right .inp { width:64px; margin:0 10px 0 7px; height:17px; padding:3px 5px 0; border:1px solid #586995;}
+#search_project .text .right .sel { width:46px; margin:0 0 0 10px;}
+#search_project .text .right .sel_1 { width:146px;}
+#search_project .text .right .sel_2 { width:146px; margin:0 0 0 34px;}
+#search_project .text .right ul { margin:0 0 17px;}
+#search_project .text .right li { line-height:20px;}
+
+/* --------------------------------- Freelancer Info */
+.freelancer_pro { width:100%; float:left; margin:30px 0 0;}
+.freelancer_pro .info_article { height:25px; background:url(images/bg_top.gif) 0 0 no-repeat #FCA20D;}
+.freelancer_pro .info_article .bg_top { height:25px; background:url(images/bg_top.gif) 100% 0 no-repeat;}
+.freelancer_pro .info_article .rating, .response, .hour_price, .project_price { color:#fff; font-size:12px; padding:3px 0 0;}
+.freelancer_pro .info_article .empty { width:340px; float:left;}
+.freelancer_pro .info_article .rating { width:92px; float:left;}
+.freelancer_pro .info_article .response { width:105px; float:left;}
+.freelancer_pro .info_article .hour_price { width:102px; float:left;}
+.freelancer_pro .info_article .project_price { width:92px; float:left;}
+.freelancer_pro .info { height:86px; background:#FFF1DD; border-top:1px solid #fff;}
+.freelancer_pro .info .add { width:49px; float:left;}
+.freelancer_pro .info .add p { padding:25px 0 0 19px;}
+.freelancer_pro .info .add .img { margin:12px 0 0; display:block;}
+.freelancer_pro .info .avatar { width:73px; float:left; padding:20px 0 0;}
+.freelancer_pro .info .avatar img { width:50px; height:50px;}
+.freelancer_pro .info .service { width:218px; float:left; padding:17px 0 0;}
+.freelancer_pro .info .service .img { margin:0 7px 0 9px; vertical-align:middle;}
+.freelancer_pro .info .service .online { color:#FC9209;}
+.freelancer_pro .info .service .offline { color:#00809F;}
+.freelancer_pro .info .service .busy { color:#CB004D;}
+.freelancer_pro .info .rating { width:92px; float:left; font-size:12px; padding:32px 0 0; color:#6E6E6E;}
+.freelancer_pro .info .response { width:105px; float:left; font-size:12px; padding:32px 0 0; color:#6E6E6E;}
+.freelancer_pro .info .response a { color:#A3A3A3; text-decoration:none;}
+.freelancer_pro .info .response a:hover { color:#000; text-decoration:none;}
+.freelancer_pro .info .response .plus { color:#FCA20D; margin:0 7px 0 0;}
+.freelancer_pro .info .response .minus { color:#00ACC5; margin:0 0 0 7px;}
+.freelancer_pro .info .hour_price { width:103px; float:left; font-size:12px; padding:32px 0 0; color:#6E6E6E;}
+.freelancer_pro .info .project_price { width:92px; float:left; font-size:12px; padding:32px 0 0; color:#6E6E6E;}
+.freelancer_pro .portfolio { padding:20px 0 0 50px;}
+.freelancer_pro .portfolio div { width:222px; float:left; margin:0 4px 0 0;}
+.freelancer_pro .portfolio div ul { margin:12px 0;}
+
+#page { padding:40px 0 0; text-align:center; clear:both;}
+#page a { font-size:14px; font-weight:bold; padding:3px 4px; margin:0 3px;}
+#page a:hover { background:#A3A3A3; color:#fff; text-decoration:none;}
+#page a.active { background:#A3A3A3; color:#fff; text-decoration:none;}
+
+
+/* ********************* Page 1 *********************** */
+
+.publish_project {}
+.publish_project .left { float:left;}
+.publish_project .right { float:right; padding:15px 0 0;}
+.publish_project .right a.link {background:url(images/px_link.gif) 0 bottom repeat-x; padding:0 0 1px; text-decoration:none; font-weight:bold;}
+.publish_project .right a:hover.link { background:none;}
+
+/* --------------------------------- Freelancer Project */
+.freelancer_project { padding:0 0 0 20px; overflow:hidden; zoom:1; clear:both;}
+.pay_project { border:2px solid #95B0B4;}
+.freelancer_project .project_info { width:532px; float:left; padding:15px 0 20px;}
+.freelancer_project .project_info .pay { width:147px; height:22px; padding:5px 0 0; margin:0 0 10px; display:block; color:#fff; font-weight:bold; text-decoration:none; text-align:center; background:url(images/pay_project_link.gif) 0 0 no-repeat;}
+.freelancer_project .project_info h3 { font-size:18px; font-weight:normal; margin:0 0 18px; padding:0;}
+.freelancer_project .project_info h3 img { vertical-align:middle; margin:0 4px 0 0;}
+.freelancer_project .project_info h3 a:hover { color:#FCA20D;}
+.freelancer_project .project_info strong { color:#000;}
+.freelancer_project .project_info em { color:#010000; display:block;}
+.freelancer_project .project_info .indent { height:10px; display:block;}
+.freelancer_project .project_info .img { margin:0 0 0 11px; vertical-align:middle;}
+.freelancer_project .project_info .img1 { margin:0 0 0 15px;}
+.freelancer_project .project_budget { width:180px; float:left; font-size:18px; padding:15px 0 0;}
+.freelancer_project_empty { height:30px; width:100%; float:left;}
+
+/* ********************* Page 2 *********************** */
+
+/* ----------------------------- Publish Project Option */
+.publish_project_options { background:#EEEEEE; clear:both; padding:0 0 0 15px;}
+.publish_project_options .empty { height:30px; clear:both;}
+.publish_project_options .row { width:100%; float:left; padding:14px 0 0;}
+	.publish_project_options .row .left { width:125px; float:left; padding:1px 0 0;}
+	.publish_project_options .row .right { width:570px; float:left;}
+.publish_project_options .row_close { width:100%; float:left; padding:30px 0 0;}
+	.publish_project_options .row_close .left { width:125px; float:left; padding:1px 0 0; color:#D6D6D6;}
+	.publish_project_options .row_close .left1 { width:305px; float:left; color:#D6D6D6;}
+	.publish_project_options .row_close .right { width:285px; float:left; padding:1px 0 0;}
+.publish_project_options select { height:20px; background:#fff; border:1px solid #586995;}
+.publish_project_options textarea { width:528px; overflow:hidden; height:244px; padding:3px; color:#6E6E6E; font:11px arial; background:#fff; border:1px solid #586995;}
+.publish_project_options .indent { padding:7px 0 25px; display:block;}
+.publish_project_options .sel { width:184px; margin:0 21px 0 0;}
+.publish_project_options .sel1 { width:184px; margin:0 21px 0 11px;}
+.publish_project_options .sel2 { width:46px; margin:0 78px 0 14px;}
+.publish_project_options .sel3 { width:66px; margin:0 0 0 14px;}
+.publish_project_options .inp { width:200px; height:17px; padding:3px 3px 0; background:#fff; border:1px solid #D6D6D6;}
+.publish_project_options .inp1 { width:64px; height:17px; padding:3px 3px 0; background:#fff; border:1px solid #586995;}
+.publish_project_options .inp2 { width:528px; height:17px; padding:3px 3px 0; background:#fff; border:1px solid #586995;}
+.publish_project_options .file { width:274px; height:17px; padding:3px 3px 0; background:#fff; border:1px solid #586995;}
+
+.project_heading { margin:21px 0 21px 47px;}
+.page_2 { margin:0 0 5px;}
+
+/* ********************* Page 3 *********************** */
+
+/* ----------------------------------- Offer Project */
+.offer_project { padding:17px 0 0 20px; clear:both;}
+.offer_project_active { background:#EEEEEE;}
+	.offer_project_active .info em { font-size:10px;}
+	.offer_project_active .info a { color:#FCA20D;}
+.offer_project_heading { margin:21px 20px;}
+.offer_project .avatar { width:73px; float:left;}
+	.offer_project .online {background:url(images/status_online.gif) 56px 4px no-repeat;}
+	.offer_project .offline {background:url(images/status_offline.gif) 56px 4px no-repeat;}
+.offer_project .info { width:170px; float:left;}
+	.offer_project .info em { color:#A3A3A3; display:block;}
+	.offer_project .info .img { margin:0 0 0 8px; vertical-align:middle;}
+.offer_project .text { width:705px; float:left;}
+.offer_project .empty { height:30px; clear:both;}
+	.offer_project .empty a { font-size:13px; font-weight:bold;}
+	.offer_project .empty .left { float:left;}
+	.offer_project .empty .right { float:right; padding:0 20px;}
+.offer_project .article {}
+	.offer_project .article h3 { color:#010000; font:16px arial; font-weight:bold; margin:0;}
+	.offer_project .article h3 em { color:#A3A3A3;}
+	.offer_project .article .left { float:left;}
+	.offer_project .article .right { float:right;}
+.offer_project .text .cont { color:#010000; padding:0 120px 0 0; clear:both;}
+	.offer_project .text .cont em { padding:27px 0 12px; display:block;}
+	.offer_project .text .cont em img { margin:0 8px 0 0; vertical-align:middle;}
+	.offer_project .text .cont em .a { margin:0 21px 0 0;}
+
+.offer_project_line { height:20px; margin:0 21px 0 20px; border-top:1px solid #E1E1E1; display:block;}
+
+/* ------------------------------- Comment Project */
+.comment_project { padding:0 0 0 20px;}
+.comment_project strong { margin:0 0 12px; display:block;}
+.comment_project .inp { width:64px; height:17px; padding:3px 3px 0; margin:0 10px 0 7px; background:#fff; border:1px solid #586995;}
+.comment_project .inp1 { width:500px; height:17px; padding:3px 3px 0; background:#fff; border:1px solid #586995;}
+.comment_project .inp2 { width:220px; height:17px; padding:3px 3px 0; background:#fff; border:1px solid #586995;}
+.comment_project select { height:21px; background:#fff; border:1px solid #586995;}
+.comment_project textarea { width:500px; overflow:hidden; height:244px; padding:3px; color:#6E6E6E; font:11px arial; background:#fff; border:1px solid #586995;}
+.comment_project .sel { width:46px; margin:0 10px;}
+.comment_project .sel1 { width:66px; margin:0 10px;}
+
+/* ********************* Page 4 *********************** */
+
+.my_message_heading { margin:21px 30px;}
+/* ---------------------------------- Freelancer Menu */
+.freelancer_menu { height:39px; background:#EEEEEE; padding:0 0 0 30px;}
+.freelancer_menu a { font-size:12px; font-weight:bold;}
+.freelancer_menu .img { margin:0 8px 0 0; vertical-align:middle;}
+.freelancer_menu .img1 { margin:0 0 0 4px; vertical-align:middle;}
+.freelancer_menu .name, .message, .account, .balance, .edit { padding:10px 0 0; font-size:12px; font-weight:bold;}
+.freelancer_menu .name { width:190px; float:left;}
+.freelancer_menu .message { width:150px; float:left;}
+.freelancer_menu .account { width:130px; float:left;}
+.freelancer_menu .balance { width:160px; float:left;}
+.freelancer_menu .edit { width:220px; float:left;}
+.freelancer_menu .exit { float:left; padding:9px 0 0;}
+
+/* ---------------------------------- My Message Info */
+.my_message_info { height:22px; clear:both; padding:0 0 0 30px; margin:0 0 7px; background:url(images/bg_top.gif) 0 0 no-repeat #C2C2C2;}
+.my_message_info .bg_top { height:22px; background:url(images/bg_top.gif) 100% 0 no-repeat;}
+.my_message_info div { font-size:12px; color:#fff;}
+.my_message_info .from, .theme, .time_date { padding:2px 0 0;}
+.my_message_info .from { width:353px; float:left;}
+.my_message_info .theme { width:450px; float:left;}
+.my_message_info .time_date { float:left;}
+
+/* ---------------------------------- My Messages */
+.my_message { padding:14px 0 0 30px; margin:0 0 15px; clear:both; background:url(images/my_message_line.gif) 100% 0 no-repeat;}
+.my_message_active { background:#FFF1DD;}
+.my_message .empty { overflow:hidden; zoom:1; height:15px; clear:both;}
+.my_message .avatar { width:73px; float:left;}
+	.my_message .online {background:url(images/status_online.gif) 56px 4px no-repeat;}
+	.my_message .offline {background:url(images/status_offline.gif) 56px 4px no-repeat;}
+.my_message .info { width:220px; float:left;}
+	.my_message .info .img { margin:0 0 0 8px; vertical-align:middle;}
+	.my_message .info em { color:#A3A3A3; display:block;}
+.my_message .up_down { width:60px; float:left;}
+.my_message .text { width:430px; padding:0 20px 0 0; float:left;}
+	.my_message .text strong a { color:#00ACC5; font-size:12px; display:block; text-decoration:none;}
+	.my_message .text strong a:hover { text-decoration:underline;}
+.my_message .date { width:120px; float:left; font-size:12px;}
+.my_message .select { width:30px; float:left; padding:20px 0 0;}
+
+/* ---------------------------------- My Messages Page */
+#my_message_page { padding:25px 0 0 30px; clear:both; background:url(images/my_message_line.gif) 100% 0 no-repeat;}
+#my_message_page .left { float:left;}
+	#my_message_page .left a { font-size:14px; font-weight:bold; padding:3px 4px; margin:0 3px;}
+	#my_message_page .left a:hover { background:#A3A3A3; color:#fff; text-decoration:none;}
+	#my_message_page .left a.active { background:#A3A3A3; color:#fff; text-decoration:none;}
+#my_message_page .right { float:right; padding:0 40px;}
+#my_message_page .right .inp { margin:0 20px 0 0;}
+
+/* ********************* Page 5 *********************** */
+
+.offer_project_active1 { background:#EEEEEE;}
+.offer_project_active1 .empty { padding:0 0 15px;}
+.portfolio_image { margin:32px 0 0; clear:both; text-align:center;}
+.comment_work_wrapper { padding:0 50px;}
+.comment_work_wrapper .inp { width:568px; height:17px; padding:3px 3px 0; background:#fff; border:1px solid #586995;}
+.comment_work_wrapper textarea { width:568px; overflow:hidden; height:244px; padding:3px; color:#6E6E6E; font:11px arial; background:#fff; border:1px solid #586995;}
+
+/* ----------------------------------- Comment Work */
+.comment_work { padding:35px 0 0; margin:0; clear:both; background:url(images/px.gif) 0 0 repeat-x;}
+.comment_work .avatar { width:73px; float:left;}
+	.comment_work .online {background:url(images/status_online.gif) 56px 4px no-repeat;}
+	.comment_work .offline {background:url(images/status_offline.gif) 56px 4px no-repeat;}
+.comment_work .info { width:170px; float:left;}
+	.comment_work .info em { color:#A3A3A3; display:block;}
+	.comment_work .info .img { margin:0 0 0 8px; vertical-align:middle;}
+.comment_work .text { width:620px; float:left; color:#000000;}
+.comment_work .empty { height:30px; clear:both;}
+.comment_work h3 { color:#010000; font:16px arial; font-weight:bold; margin:0;}
+.comment_work_line { height:1px; clear:both; background:url(images/px.gif) 0 0 repeat-x;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********************* Footer *********************** */	 
+#footer { height:120px; color:#000; clear:both;}
+#footer p { padding:50px 0 0;}
+/* ----------------------- IE ------------------------- */
+* html #menu li { width:1px; white-space:nowrap;}
+* html #catalog_menu li a { height:1px;}
+* html #search_project .info_article .right { padding:10px 40px 0 0;}
+* html #search_project .text .left li { height:24px;}
+* html #search_project .text { padding:17px 0 0 30px;}
+* html #search_project.page_2 .right { padding:5px 40px 0 0;}
+* html .offer_project .empty { height:1px; clear:both;}
+* html .my_message .empty { height:1px;}
+* html .freelancer_menu .name, .message, .account, .balance, .edit { padding:12px 0 0;}
+* html .comment_work .empty { height:1px;}
+/* ---------------------------------------------------- */

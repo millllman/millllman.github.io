@@ -1,0 +1,32 @@
+/* ------------------- Media Queries ---------------- */
+
+
+/* 1200 */
+@media screen and ( max-width: 1220px) {
+	#container { width: 940px;}
+	.cat-p3 { display: none;}	
+	footer { width: 940px;}
+
+	.DeliveryFAQ { width: 435px !important;}
+	.ContactRight { width: 460px !important;}
+
+	.ProductLeft { width: 460px !important;}
+	.ProductSlider .wrap-slide { padding: 0 55px !important;}
+	.ProductSpare li { width: 25% !important;}
+	.ProductSpare li:last-child { display: none;}
+
+	.RecommendMenu ul { width: 50% !important;}
+	.rec-m3 { display: none;}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------- */

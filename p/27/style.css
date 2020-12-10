@@ -1,0 +1,93 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:url(images/px_body.gif) repeat-x #E8E4CB;}
+a { color:#00326B; text-decoration:none; outline:none;}
+a:hover { color:#1864BA; text-decoration:underline;}
+input { margin:0; padding:0; font:11px tahoma; vertical-align:middle;}
+div { margin:0; padding:0; font:12px arial; color:#4D5455; line-height:16px;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:12px 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:normal;}
+h1 { color:#00326B; font:23px arial; margin:0; padding:0 0 16px 10px;}
+h2 { color:#00326B; font:21px arial; margin:0; padding:0;}
+
+#container { width:1000px; margin:0 auto; min-height:100%; height:auto !important; height:100%; position:relative; background:url(images/bg_header.jpg) 119px 45px no-repeat;}
+#compass { width:234px; height:254px; bottom:0; left:0; position:absolute; background:url(images/compass.jpg) no-repeat;}
+/* ********************* Header ********************* */
+#header { height:253px;}
+/* Menu */
+#header .menu { padding:0 0 0 30px; overflow:hidden;}
+#header .menu li { padding:0 4px; float:left;}
+#header .menu li a { height:32px; padding:14px 38px 0; display:block; float:left; color:#fff; font-size:14px; text-transform:uppercase; text-shadow:1px 1px 1px #132A4A;}
+#header .menu li a:hover { background:url(images/px_menu.gif) repeat-x #122546; text-decoration:none;}
+#header .menu li a.active { background:url(images/px_menu.gif) repeat-x #122546;}
+/* Logo */
+#header .logo { padding:44px 0 0 34px; float:left;}
+/* Phone */
+#header .phone { padding:44px 6px 0; float:right; color:#fff; font-size:30px; line-height:21px;}
+#header .phone em { padding-right:7px; float:left; font:bold 13px arial;}
+#header .phone span { padding:2px 0 0; float:left;}
+#header .phone div { padding:12px 0 0; clear:both; color:#fff; font-size:30px;}
+
+/* ******************** Content ********************* */
+#content { padding:0 0 150px 20px; overflow:hidden; zoom:1; clear:both;}
+/* Inner Page */
+#inner_page { background:url(images/px_body_inner.gif) repeat-x #E8E4CB;}
+#inner_page #container { background:url(images/bg_header_inner.jpg) 294px 43px no-repeat;}
+#inner_page #left_column { padding:5px 0 105px;}
+#inner_page #center_column, #inner_page #right_column { padding:84px 0 0;}
+#inner_page .IconMenuBox { padding:0; float:none; top:283px; right:0; position:absolute;}
+#inner_page .CatalogBox li.services { padding:0 38px 7px;}
+
+/* ------------------------------------------ Top Box */
+.TopBox { min-height:380px; _height:380px; clear:both;}
+/* Catalog Box */
+.CatalogBox { float:left;}
+.CatalogBox li { padding:0 20px 15px; position:relative;}
+.CatalogBox li a { width:144px; height:32px; padding:3px 42px 0 18px; display:block; color:#3F413E; font:bold 12px arial; background:url(images/bg_cat.png) no-repeat; text-transform:uppercase;}
+.CatalogBox li a:hover { background:url(images/bg_cat_hover.png) no-repeat; text-decoration:none;}
+.CatalogBox li a.active { background:url(images/bg_cat_hover.png) no-repeat;}
+.CatalogBox li.services { padding:0 38px 15px; color:#00326B; font:bold 15px arial; text-transform:uppercase;}
+.CatalogBox div { top:0; left:235px; position:absolute;}
+.CatalogBox div a { width:146px; height:26px; padding:9px 42px 0 18px; font:bold 15px arial; background:url(images/bg_feedback.png) no-repeat;}
+/* Icon Menu Box */
+.IconMenuBox { padding:280px 0 0; float:right;}
+.IconMenuBox li { padding-right:25px; float:left;}
+.feedback { top:536px; left:235px; position:absolute;}
+.feedback a { width:146px; height:26px; padding:9px 42px 0 18px; display:block; font:bold 15px arial; background:url(images/bg_feedback.png) no-repeat;}
+
+/* -------------------------------------- LEFT COLUMN */
+#left_column { width:209px; padding:5px 0 180px; float:left;}
+#left_column .title { padding:0 19px; color:#00326B; font:bold 15px arial; text-transform:uppercase;}
+#left_column .partner { padding:21px 29px 0;}
+
+/* -------------------------------------- CENTER COLUMN */
+#center_column { width:420px; float:left; _width:400px;}
+#center_column .text { padding:0 0 0 12px; clear:both;}
+#center_column .border { width:209px; height:131px; padding:5px 15px 25px; margin-right:11px; float:left; background:url(images/image_border.gif) no-repeat;}
+
+/* ------------------------------------- RIGHT COLUMN */
+#right_column { width:330px; float:right;}
+
+/* ---------------------------------- Search Land Box */
+.SearchLandBox {}
+.SearchLandBox li { width:155px; height:148px; padding:17px 5px 0 0; float:left; font-size:11px; text-align:center;}
+.SearchLandBox li a { padding:0 0 2px; font-weight:bold; display:block;}
+.SearchLandBox li img { width:129px; height:91px; padding:5px 13px 21px; float:left; background:url(images/image_border1.gif) no-repeat;}
+
+
+/* ********************* Footer *********************** */
+#footer { width:100%; height:106px; margin-top:-106px; position:relative; background:url(images/px_footer.gif) repeat-x;}
+#footer .wrap { width:1000px; height:106px; margin:0 auto; position:relative;}
+#footer .menu { height:35px; margin:0 23px 0 182px; overflow:hidden; background:#D3CFB7;}
+#footer .menu li { padding:10px 0 0 61px; float:left;}
+#footer .menu li a { color:#1D1D1D; text-transform:uppercase;}
+#footer .menu li a:hover { color:#41403C;}
+#footer .copyright { padding:16px 24px 0 270px; clear:both; color:#706757; font-size:14px; text-align:right;}
+/* ----------------------- IE ------------------------- */
+* html .CatalogBox li a { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/bg_cat.png", sizingMethod="crop")}
+* html .CatalogBox li a:hover { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/bg_cat_hover.png", sizingMethod="crop")}
+* html .CatalogBox div a { background:expression("none"); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/bg_feedback.png", sizingMethod="crop")}
+/* ---------------------------------------------------- */

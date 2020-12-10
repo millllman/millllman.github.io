@@ -1,0 +1,128 @@
+ /* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body {}
+a { color:#0C80E2; text-decoration:underline; outline:none;}
+a:hover { color:#EA6800;}
+input { margin:0; padding:0; font-family:tahoma; font-size:11px; vertical-align:middle;}
+div { margin:0; padding:0; font:11px tahoma; color:#222222; line-height:16px;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:12px 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; line-height:normal;}
+h1 { color:#222222; font:18px tahoma; margin:0; padding:0 0 21px;}
+h2 { color:#222222; font:18px tahoma; margin:0; padding:0 0 21px;}
+
+#container { min-height:100%; min-width:1000px; height:auto !important; height:100%; position:relative;}
+#crane { width:87px; height:98px; bottom:126px; left:0; position:absolute; background:url(images/bg_crane.jpg) no-repeat;}
+/* ********************* Header ********************* */
+#header { height:280px; background:url(images/bg_header.jpg) 50% 0 no-repeat;}
+/* Logo */
+#header .logo { padding:12px 0 0 51px; float:left;}
+/* Info */
+#header .info { width:250px; padding:10px 0 0; float:right;}
+/* Icon Menu */
+#header .icon_menu { float:right;}
+#header .icon_menu li { padding:2px 10px 2px 11px; float:left; background:url(images/line_icon_menu.gif) 0 0 no-repeat;}
+#header .icon_menu li a { width:11px; height:11px; display:block; line-height:11px; text-decoration:none;}
+#header .icon_menu li a.home { background:url(images/icon_home.gif) no-repeat;}
+#header .icon_menu li a.contact { background:url(images/icon_contact.gif) no-repeat;}
+#header .icon_menu li a.map { background:url(images/icon_map.gif) no-repeat;}
+#header .icon_menu li a.search { background:url(images/icon_search.gif) no-repeat;}
+#header .icon_menu li a:hover { background-position:0 100%;}
+#header .icon_menu li a.active { background-position:0 100%;}
+#header .icon_menu li.home { background:none;}
+/* Address */
+#header .address { width:228px; padding:21px 21px 18px 0; font:18px georgia, times new roman, tahoma; text-align:right; clear:left;}
+#header .address big { padding-left:10px; font-size:40px;}
+#header .address a { padding:5px 18px 0 0; display:block; font:12px tahoma; background:url(images/arrow_scheme.gif) 100% 11px no-repeat;}
+
+/********************** Menu Box **********************/
+.MenuBox { padding:4px 0 0 44px; overflow:hidden; zoom:1;}
+.MenuBox ul { width:25%; _width:24.5%; float:left;}
+.MenuBox ul li { padding:5px 10px 0; background:url(images/arrow.gif) 0 10px no-repeat;}
+.MenuBox ul li em { color:#868686; display:block; font-size:10px;}
+.MenuBox li.title { padding:0 10px 10px; font-size:18px; background:none;}
+.MenuBox li.more { padding:10px 10px 0; background:none;}
+.MenuBox li.more a { color:#EA6800;}
+.MenuBox li.more a:hover { color:red;}
+.MenuBox ul.union { padding:0 0 80px; background:url(images/bg_union.jpg) 50% 100% no-repeat;}
+.MenuBox ul.member { padding:0 0 54px; background:url(images/bg_member.jpg) 50% 100% no-repeat;}
+.MenuBox ul.analytics { padding:0 0 72px; background:url(images/bg_analytics.jpg) 50% 100% no-repeat;}
+.MenuBox ul.forum { padding:0 0 54px; background:url(images/bg_forum.jpg) 50% 100% no-repeat;}
+
+/* ******************** Content ********************* */
+#content { padding:5px 0 194px 287px; overflow:hidden; zoom:1;}
+/* ---------------------------------- LEFT NAVIGATION */
+#left_nav { width:255px; float:left; margin-left:-287px; _margin-left:-144px;}
+
+/* ------------------------------------- Sub Menu Box */
+.SubMenuBox {}
+.SubMenuBox li { padding:5px 0 0; overflow:hidden;}
+.SubMenuBox li a { padding:5px 15px 5px 61px; float:left; font-size:14px; background:url(images/arrow_sub_menu.gif) 42px 11px no-repeat;}
+.SubMenuBox li a:hover { color:#fff; background:url(images/bg_sub_menu.gif) 100% 0 no-repeat #FF9600; text-decoration:none;}
+.SubMenuBox li a.active { color:#fff; background:url(images/bg_sub_menu.gif) 100% 0 no-repeat #FF9600; text-decoration:none;}
+
+/* ----------------------------------------- News Box */
+.NewsBox { padding:70px 0 0; position:relative;}
+.NewsBox li { padding:0 0 21px 42px;}
+.NewsBox li em { padding:5px 7px; float:left; color:#fff; background:#FF9600;}
+.NewsBox li div { padding:5px 0 0; clear:left; font-size:12px;}
+.NewsBox li.title { padding:0 0 17px 42px; font-size:18px;}
+.NewsBox li.more { padding:10px 10px 0; text-align:right;}
+.NewsBox li.more a { padding:0 19px 0 0; color:#EA6800; font-size:12px; background:url(images/arrow_sub_menu.gif) 100% 5px no-repeat;}
+.NewsBox li.more a:hover { color:red;}
+
+/* --------------------------------- RIGHT NAVIGATION */
+#right_nav { width:100%; float:left;}
+
+/* ---------------------------------------- Main Box */
+.MainBox { background:url(images/bg_content_tl.gif) no-repeat #F0F7FA;}
+.MainBox .content { padding:15px 31px 20px 34px; overflow:hidden; zoom:1; font-size:12px; background:url(images/bg_content_bl.gif) 0 100% no-repeat; line-height:18px;}
+.MainBox .title { padding:0 0 21px; font-size:18px;}
+.MainBox .menu { padding:15px 0 0; clear:left;}
+.MainBox .menu li { padding-right:4px; float:left; color:#818181; font-size:11px;}
+
+/* ---------------------------------------- Info Box */
+.InfoBox { width:100%; float:left; padding:40px 0 0;}
+/* Messenger */
+.InfoBox .messenger { margin-right:302px; padding:17px 15px 21px 32px; border:1px dashed #BDBDBD; position:relative;}
+.InfoBox .messenger .tl { width:8px; height:8px; top:-1px; left:-1px; position:absolute; background:url(images/bg_corner.gif) no-repeat;}
+.InfoBox .messenger .tr { width:8px; height:8px; top:-1px; right:-1px; position:absolute; background:url(images/bg_corner.gif) 100% 0 no-repeat;}
+.InfoBox .messenger .bl { width:8px; height:8px; bottom:-1px; left:-1px; position:absolute; background:url(images/bg_corner.gif) 0 100% no-repeat;}
+.InfoBox .messenger .br { width:8px; height:8px; bottom:-1px; right:-1px; position:absolute; background:url(images/bg_corner.gif) 100% 100% no-repeat;}
+.InfoBox .messenger big { font-size:14px;}
+.InfoBox .messenger ul { padding:14px 0 0;}
+.InfoBox .messenger li { padding:8px 20px 0 12px; background:url(images/arrow.gif) 0 12px no-repeat;}
+.InfoBox .messenger li.more { padding:23px 0 0 12px; text-align:right; background:none;}
+.InfoBox .messenger li.more a { padding:0 19px 0 0; margin-left:32px; color:#EA6800; font-size:12px; background:url(images/arrow_sub_menu.gif) 100% 5px no-repeat;}
+.InfoBox .messenger li.more a:hover { color:red;}
+.InfoBox .messenger .title { padding:0 0 8px; font-size:18px;}
+/* Partner */
+.InfoBox .partner { width:232px; padding-right:17px; float:right;}
+.InfoBox .partner p { padding:10px 0 0;}
+.InfoBox .partner .text { padding:10px 0 17px; text-align:center; color:#747474; font-size:12px;}
+.InfoBox .partner .indent { margin-left:30px;}
+
+
+/* ********************* Footer *********************** */
+#footer { height:83px; min-width:982px; margin:-126px 9px 0; position:relative; background:url(images/bg_footer_left.gif) no-repeat #F0F7FA;}
+#footer .background {}
+#footer div, #footer div a { color:#686868;}
+#footer div a:hover { color:#000;}
+/* Copyright */
+#footer .copyright { width:253px; float:left; padding:17px 20px 0 37px;}
+#footer .copyright p { padding:2px 0 5px;}
+/* Address */
+#footer .address { width:200px; float:left; padding:17px 0 0;}
+#footer .address p { padding:2px 0;}
+/* Menu */
+#footer .menu { padding-right:14px; height:83px; float:right; background:url(images/bg_footer_right.gif) 100% 0 no-repeat;}
+#footer .menu ul { padding:17px 0 0; float:right;}
+#footer .menu li { padding-right:7px; float:left;}
+#footer .menu li a { margin-right:4px;}
+#footer .menu .empty { clear:both;}
+/* ----------------------- IE ------------------------- */
+* html body	{ width: expression(((document.documentElement.clientWidth || document.clientWidth) < 1000)? "1000px" : "100%"); height:100%;}
+* html .InfoBox .messenger .tl, * html .InfoBox .messenger .tr, * html .InfoBox .messenger .bl, * html .InfoBox .messenger .br { background:none;}
+/* ---------------------------------------------------- */

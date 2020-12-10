@@ -1,0 +1,85 @@
+/********************
+ * FEATURE CAROUSEL *
+ ********************/
+.carousel-container {
+  position:relative;
+  padding: 0px 0 0 45px;
+}
+#carousel {
+  height:240px;
+  width:640px;  
+  position:relative;
+  margin-bottom:0.5em;
+  font-size:12px;
+  font-family: Arial;
+}
+.carousel-image {
+  border:0;
+  display:block;
+}
+.carousel-feature {
+  position:absolute;
+  top:-1000px;
+  left:-1000px;  
+  cursor:pointer;
+}
+.carousel-feature .carousel-caption {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background-color:#000;
+}
+.carousel-feature .carousel-caption p {
+  margin:0;
+  padding:5px;
+  font-weight:bold;
+  font-size:12px;
+  color:white;
+}
+.tracker-summation-container {
+  position:absolute;
+  color:white;
+  right:48px;
+  top:230px;
+  padding:3px;
+  margin:3px;
+  background-color:#000;
+  display: none;
+}
+.tracker-individual-container {
+  position:absolute;
+  color:white;
+  left:50%;
+  top:245px;
+  padding:0;
+  margin:0 0 0 -40px;
+}
+.tracker-individual-container li {
+  list-style:none;
+  text-indent: -999px;
+  padding: 0 0 0 7px;
+}
+.tracker-individual-container .tracker-individual-blip {
+  width: 13px;
+  height: 13px;  
+  color:white;
+  text-align:center;
+  background:url(../images/bullet.gif) no-repeat;
+}
+.tracker-individual-container .tracker-individual-blip-selected {
+  color:white;
+  font-weight:bold;
+  background-position: 100% 0;
+}
+#carousel-left {
+  position:absolute;
+  bottom:33px;
+  left:220px;
+  cursor:pointer;
+}
+#carousel-right {
+  position:absolute;
+  bottom:33px;
+  right:220px;
+  cursor:pointer;
+}

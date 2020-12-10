@@ -1,0 +1,213 @@
+/* CSS for jQuery Orbit Plugin 1.2.3
+ * www.ZURB.com/playground
+ * Copyright 2010, ZURB
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ 
+ 
+ 
+/* PUT IN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY
+   ================================================== */
+#orbit { 	
+	background: #000 url('../js/orbit/loading.gif') no-repeat center center;
+	overflow: hidden; }
+#orbit>img,  
+#orbit>div,
+#orbit>a { display: none;}
+
+
+
+
+/* CONTAINER
+   ================================================== */
+
+div.orbit-wrapper {
+    width: 1px;
+    height: 1px;
+    position: relative; }
+
+div.orbit {
+    width: 1px;
+    height: 1px;
+    position: relative;
+    overflow: hidden }
+
+div.orbit>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; }
+
+div.orbit>a {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 0; 
+    display: none; }
+
+.orbit>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* Note: If your slider only uses content or anchors, you're going to want to put the width and height declarations on the ".orbit>div" and "div.orbit>a" tags in addition to just the .orbit-wrapper */
+
+
+/* TIMER
+   ================================================== */
+
+div.timer {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: .6;
+    cursor: pointer;
+    z-index: 1001; display:none;}
+
+span.rotator {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    background: url(orbit/rotator-black.png) no-repeat;
+    z-index: 3; }
+
+span.mask {
+    display: block;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    overflow: hidden; }
+
+span.rotator.move {
+    left: 0 }
+
+span.mask.move {
+    width: 40px;
+    left: 0;
+    background: url(orbit/timer-black.png) repeat 0 0; }
+
+span.pause {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(orbit/pause-black.png) no-repeat;
+    z-index: 4;
+    opacity: 0; }
+
+span.pause.active {
+    background: url(orbit/pause-black.png) no-repeat 0 -40px }
+
+div.timer:hover span.pause,
+span.pause.active {
+    opacity: 1 }
+
+.main-slider { overflow: hidden; height: 340px;}
+/* CAPTIONS
+   ================================================== */
+
+.orbit-caption {
+    display: none;
+    font-family: arial, "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif; }
+
+.orbit-wrapper .orbit-caption {
+    background: transparent;
+    /*background: rgba(0,0,0,.6);*/
+    z-index: 1000;
+    color: #fff;
+	text-align: left;
+	padding: 0px 0;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%; }
+
+.orbit-caption-size { padding: 3px 16px; display: block; font-family: calibri, arial;}
+.orbit-caption-size em { font-size: 11px;}
+.orbit-caption-size b { padding: 5px 0 5px; font-size: 24px; display: block;}
+.orbit-caption-size a { padding: 0 0 0 17px; color: #ED1C24; font-weight: bold; text-decoration: underline; background:url(../images/arrow_main_slider.gif) 0 4px no-repeat;}
+.orbit-caption-size a:hover { color: #fff;}
+.orbit-caption-size p { padding: 19px 0 0; margin: 0;}
+
+/* DIRECTIONAL NAV
+   ================================================== */
+
+div.slider-nav {
+    display: block }
+
+div.slider-nav span {
+    width: 8px;
+    height: 15px;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 5;
+    bottom: -38px;    
+    cursor: pointer; }
+
+div.slider-nav span.left {
+    background: url(../js/orbit/btn-slide.gif) 0 0 no-repeat;
+    left: -43px; }
+
+div.slider-nav span.right {
+    background: url(../js/orbit/btn-slide.gif) 100% 0 no-repeat;
+    right: -43px; }
+
+/* BULLET NAV
+   ================================================== */
+
+.orbit-bullets {
+    position: absolute;
+    z-index: 5;
+    list-style: none;
+    bottom: -55px;
+    left: -30px;	
+    padding: 0;
+    width: 225px; }
+
+.orbit-bullets li {
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #999;
+    text-indent: -9999px;
+    background:url(orbit/bullets.png) 0 0 no-repeat;
+    width: 11px;
+    height: 11px;
+    overflow: inherit;}
+
+.orbit-bullets li.active {
+    color: #222;
+    background-position:100% 0;}
+    
+.orbit-bullets li.has-thumb {
+    background:none;
+    width: 42px;
+    height: 40px;
+    border: 0px solid #2B2B2B; position: relative; opacity: 0.5; filter:alpha(opacity=50);}
+
+.orbit-bullets li.active.has-thumb {
+    background-position: 0 0;
+    border-color: #fff;
+    opacity: 1; filter:alpha(opacity=100);
+}
+
+.thumb-arrow { width: 100%; height: 5px; display: none; top: -8px; left: 0; position: absolute; background:url(orbit/arrow_mini.gif) 50% 0 no-repeat;}
+.orbit-bullets li.active.has-thumb .thumb-arrow { display: block;}
+
+
+.orbit-bullets li.has-thumb img { max-width: 42px !important;}

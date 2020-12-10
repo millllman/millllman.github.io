@@ -1,0 +1,334 @@
+/* --------------------- Default --------------------- */
+html, body { margin:0; padding:0; height:100%; width:100%;}
+body { background:url(../images/px_body.gif) 50% 0 repeat;}
+a { color:#545659; text-decoration:none; outline:none;}
+a:hover { color:#93cb5c; text-decoration:underline; transition: .2s ease-in-out;}
+input { margin:0; padding:0; font:16px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; vertical-align:middle;}
+div { margin:0; padding:0; color:#696e6f; font:15px/18px 'Ubuntu Condensed', MyriadPro, sans-serif, arial;}
+em { font-style:normal;}
+img { border:0;}
+p { margin:0; padding:18px 0 0;}
+ul { margin:0; padding:0; list-style:none;}
+li { margin:0; padding:0; color:#696e6f; font:15px/18px 'Ubuntu Condensed', MyriadPro, sans-serif, arial;}
+h1 { color:#545659; font:24px/25px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; margin:0; padding:0 0 17px;}
+h2 { color:#8e8e8e; font:18px/22px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; margin:0; padding:0;}
+::selection { color: #000; background: #ade476;}
+::-moz-selection { color: #000; background: #ade476;}
+@font-face { font-family:MyriadPro; src:local("MyriadPro-Regular"), url(js/MyriadPro-Regular.otf);}
+
+#container { width: 960px; margin: 0 auto; min-height:100%; height:auto !important; height:100%; position:relative;}
+#FlowersTop { width: 100%; height: 482px; min-width: 960px; top: 129px; left: 0; position: absolute; background:url(../images/bg_header.png) 50% 0 no-repeat;}
+#FlowersCenter { width: 100%; height: 503px; min-width: 960px; top: 808px; left: 0; position: absolute; background:url(../images/bg_content.png) 50% 0 no-repeat;}
+/* ********************* Header ********************* */
+#header { height: 160px;}
+/* Logo */
+.LogoHead { width: 233px; padding: 16px 0 0 21px; float: left;}
+/* Slogan Box */
+.SloganBox { width: 250px; padding: 75px 0 0; float: left;}
+/* -------------------------------------- Profile Menu */
+.ProfileMenu { width: 288px; padding: 24px 0 0; float: right;}
+.ProfileMenu li { margin: 8px 0 0; clear: both; color: #8e8e8e; font:16px/27px 'Ubuntu Condensed', MyriadPro, sans-serif, arial;}
+.ProfileMenu li a { color: #8e8e8e;}
+.ProfileMenu li a:hover { color: #000;}
+.ProfileMenu li.login { padding: 0px 0 0 40px; background:url(../images/icon_login.png) 0 100% no-repeat;}
+.ProfileMenu li.login a { margin: 0 2px;}
+.ProfileMenu li.basket { height: 27px; padding: 0 0 0 40px; color: #8e8e8e; font:16px/27px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; background:url(../images/icon_basket.png) no-repeat #f0efef; position: relative;}
+.ProfileMenu li.basket span.total { width: 148px; float: left; line-height: 25px;}
+.ProfileMenu li.basket span.total a { margin-right: 7px; border-bottom: 1px dashed #8e8e8e;}
+.ProfileMenu li.basket span.total a:hover { text-decoration: none; border-color: #000;}
+.ProfileMenu li.basket a.checkout { padding: 0 15px 2px; float: right; color: #fff; font:16px/25px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; background: #545659; border-radius: 5px;}
+.ProfileMenu li.basket a.checkout:hover { background: #93cb5c; text-decoration: none;}
+.ProfileMenu li.search { height: 27px; padding: 0 0 0 40px; color: #8e8e8e; background:url(../images/icon_search.png) no-repeat #f0efef;}
+.ProfileMenu li.search input[type="text"] { width:240px; height: 25px; padding:1px; color:#727272; font:16px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; border:0; vertical-align: top; background: none;}
+
+/* Basket Popup */
+.BasketPopup { width: 291px; padding: 0 0 14px; top: 107px; right: 77px; position: absolute; z-index: 999999; background:url(../images/px_basket.gif) repeat; border: 1px solid #c4c4c4; box-shadow: 0 0 3px #c4c4c4;}
+.BasketPopup .basket-wrap { padding: 21px 8px 0; border: solid #93cb5c; border-width: 4px 0 0;}
+.BasketPopup .arrow { width: 15px; height: 8px; margin-left: -7px; top: -8px; left: 50%; position: absolute; background:url(../images/corner_basket.png) no-repeat;}
+.BasketBox { padding: 10px 0 12px; overflow: hidden; border-top: 1px solid #e0e0e0;}
+.BasketBox li.image { width: 70px; float: left;}
+.BasketBox li.image img { display: block; border: 1px solid #fff; box-shadow: 0 0 2px #a1a1a1;}
+.BasketBox li.name { width: 120px; float: left;}
+.BasketBox li.name a { text-decoration: underline;}
+.BasketBox li.price { width: 66px; padding: 0 16px 0 0; float: right; text-align: right;}
+.BasketBox li.price .delete { padding: 14px 0 0; overflow: hidden;}
+.BasketBox li.price .delete a { width: 23px; height: 24px; float: right; background:url(../images/btn-delete.png) no-repeat;}
+.BasketBox li.price .delete a:hover { background-position: 0 100%;}
+.BasketPrice { margin-top: 20px; border: solid #fff; border-width: 1px 0; clear: both;}
+.BasketPrice ul { padding: 15px 23px; clear: both; overflow: hidden; border: solid #d7e6d9; border-width: 1px 0; background:url(../images/px_price.gif) repeat;}
+.BasketPrice li { font-size: 18px;}
+.BasketPrice .name { width: 120px; float: left;}
+.BasketPrice .sum { width: 110px; float: right; color: #323232; text-align: right;}
+.BasketMenu { padding: 13px 0 0 17px; clear: both; overflow: hidden;}
+.BasketMenu a { color: #fff; float: left; font:16px/32px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; text-align: center; border: 1px solid #608d33; background:url(../images/btn-basket.gif) repeat-x #94cc5c; border-radius: 3px;}
+.BasketMenu a.basket { min-width: 70px; margin-right: 15px;}
+.BasketMenu a.order { min-width: 157px; padding: 0 13px 0 0;}
+.BasketMenu a.order em { display: block; font:16px/32px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; background:url(../images/arrow_basket.gif) 100% 50% no-repeat;}
+.BasketMenu a:hover { text-decoration: none; background: #94cc5c;}
+
+/* -------------------------------------- Main Menu */
+.MainMenu { height: 41px; padding: 0 0 0 10px; clear: both; background: #545659; border-radius: 5px;}
+.MainMenu li { float: left; position: relative;}
+.MainMenu li a { padding: 0 9px; display: block; color: #fff; font:17px/41px 'Ubuntu Condensed', MyriadPro, sans-serif, arial;}
+.MainMenu li a:hover { background: #333435; text-decoration: none;}
+.MainMenu ul { width: 156px; top: 41px; left: 0; position: absolute; z-index: 99999999; border: solid #fff; border-width: 0 1px 1px; background: #333435; display: none;}
+.MainMenu ul li { float: none; border-top: 1px solid #fff;}
+.MainMenu ul li a { padding: 6px 12px; font:15px/18px 'Ubuntu Condensed', MyriadPro, sans-serif, arial;}
+.MainMenu ul li a:hover { background: #93cb5c;}
+.MainMenu li:hover ul { display: block;}
+.MainMenu li:hover a, .MainMenu li a.active { background: #333435;}
+
+/* ******************** Content ********************* */
+#content { padding: 0 0px 30px; background: #fff; border-radius: 5px; box-shadow: 0 0 5px #909090;}
+
+.clear { clear: both;}
+.content-spacing { height: 223px; clear: both;}
+.box-spacing { height: 30px; clear: both;}
+.box-spacing1 { height: 20px; clear: both;}
+.box-spacing2 { height: 64px; clear: both;}
+.box-spacing3 { height: 38px; clear: both;}
+.box-spacing4 { height: 35px; clear: both;}
+.content-wrap { padding: 30px 10px 0; clear: both;}
+
+/* Title Main */
+.TitleMain { padding: 25px 0; clear: both; font-size: 24px; background:url(../images/px_title.gif) 0 52% repeat-x;}
+.TitleMain em { padding: 0 18px 0 0; background: #fff;}
+.TitleMain1 { padding: 25px 0; clear: both; font-size: 24px; background:url(../images/px_title.gif) 0 52% repeat-x;}
+.TitleMain1 em { padding: 0 18px 0 0; background:url(../images/px_body.gif) 100% 0 repeat;}
+
+/* -------------------------------------- Slider Box */
+.SliderBox { width: 612px; padding: 0 0 7px; float: left; background:url(../images/bg_slider.gif) 22px 100% no-repeat;}
+.SliderBox .border { height: 382px; padding: 10px; overflow: hidden; border: 1px solid #ececec; background:url(../images/px_slider.gif) repeat-y #fefefe; box-shadow: 0 0 1px #ececec; border-radius: 5px 5px 8px 8px;}
+.SliderBox img { display: block;}
+
+/* -------------------------------------- Action Box */
+.ActionBox { width: 314px; float: right;}
+.ActionBox .gray { padding: 0 0 9px; background:url(../images/bg_action.gif) 0 100% no-repeat;}
+.ActionBox .gray img { display: block; border: 5px solid #545659;}
+.ActionBox .green { padding: 6px 0 9px; background:url(../images/bg_action.gif) 0 100% no-repeat;}
+.ActionBox .green img { display: block; border: 5px solid #93cb5c;}
+
+/* -------------------------------------- Catalog Box */
+.CatalogBox { overflow: hidden; clear: both;}
+.CatalogBox li { width: 220px; padding: 0 0 0 20px; float: left; overflow: hidden; color: #8e8e8e; font-size: 16px;}
+.CatalogBox li a { position: relative; display: block;}
+.CatalogBox li .empty { height: 12px; clear: both;}
+.CatalogBox li .border { width: 218px; height: 218px; margin: 0 0 12px; display: block; border: 1px solid #545659;}
+.CatalogBox li span.name { display: block;}
+.CatalogBox li .price { width: 88px; padding: 0 0 0 32px; float: left; color: #545659; font:16px/17px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; background:url(../images/icon_price.gif) 0 0 no-repeat;}
+.CatalogBox li .buy { float: right;}
+.CatalogBox li .buy a { padding: 0 0 1px 33px; display: block; font:16px/17px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; background:url(../images/icon_buy.gif) 0 1px no-repeat;}
+.CatalogBox li:first-child { padding: 0;}
+.CatalogBox li em.new { width: 52px; height: 51px; display: block; top: 0; left: 0; position: absolute; background:url(../images/icon_new.png) no-repeat;}
+.CatalogBox li em.sale { width: 40px; height: 40px; display: block; top: 2px; right: 3px; position: absolute; background:url(../images/icon_sale.png) no-repeat;}
+
+/* Banner Box */
+.BannerBox { padding: 33px 0 0; clear: both;}
+.BannerBox li { width: 290px; padding: 0 0 0 43px; float: left;}
+.BannerBox li:first-child { padding: 0;}
+.BannerBox li div { height: 138px; padding: 10px; position: relative; border: 1px solid #e2e2e2; background:url(../images/px_banner.gif) repeat-y #fefefe; box-shadow: 0 0 1px #e2e2e2;}
+.BannerBox li div a { bottom: 10px; left: 10px; position: absolute;}
+.BannerBox li div img { display: block;}
+.BannerBox li div:hover { border-color: #c0c0c0; box-shadow: 0 0 3px 1px #c0c0c0;}
+
+/* Partner Box */
+.PartnerBox { clear: both;}
+.PartnerBox img { margin: 0 9px; vertical-align: middle;}
+.PartnerBox img:hover { opacity: 0.7;}
+
+/* ----------------------------------- Page Navigation */
+.PageNavigation { padding: 7px 0; clear: both; overflow: hidden; border: solid #b6b6b6; border-width: 1px 0;}
+.PageNavigation ul { float: left; overflow: hidden;}
+.PageNavigation li { padding: 0 10px 0 16px; float: left; font:14px/15px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; background:url(../images/arrow_page.gif) 0 5px no-repeat;}
+.PageNavigation li:first-child { padding: 0 10px 0 8px; background: none;}
+.PageNavigation li a:hover { text-decoration: none;}
+.PageNavigation .way { padding: 0 4px 0 0; float: right; font:14px/15px 'Ubuntu Condensed', MyriadPro, sans-serif, arial;}
+.PageNavigation .way a {}
+.PageNavigation .way a.back { padding: 0 0 0 21px; float: left; background:url(../images/icon_back.gif) 0 50% no-repeat;}
+.PageNavigation .way a.forward { padding: 0 21px 0 0; float: left; background:url(../images/icon_forward.gif) 100% 50% no-repeat;}
+.PageNavigation .way span { float: left; margin: 0 14px;}
+
+/* -------------------------------------- Subscribe Box */
+.SubscribeBox { padding: 11px 13px 14px 103px; clear: both; background:url(../images/px_subscribe.gif); border: 1px solid #cccccc; border-radius: 3px; position: relative;}
+.SubscribeBox .preview { bottom: 0; left: 19px; position: absolute;}
+.SubscribeBox .preview img { display: block;}
+.SubscribeBox .download { width: 150px; padding: 5px 0 0; float: left;}
+.SubscribeBox .download a { border-bottom: 1px dashed #545659; text-decoration: none;}
+.SubscribeBox .download a:hover { border-color: #93cb5c;}
+.SubscribeBox .subscribe { float: right;}
+.SubscribeBox .subscribe label { padding: 0 12px 0 0; cursor: pointer;}
+.SubscribeBox .subscribe input[type="text"] { width:200px; height: 19px; padding:4px 3px 3px; color:#545659; border: 0; border-bottom:1px solid #fcfcfc; background: #f6f6f6; border-radius: 3px;}
+.SubscribeBox .subscribe a.checkout { padding: 0 15px 2px; float: right; color: #fff; font:16px/25px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; background: #545659; border-radius: 5px;}
+.SubscribeBox .subscribe a.checkout:hover { background: #93cb5c; text-decoration: none;}
+
+/* -------------------------------------- Cart Box */
+.CartTitle { padding: 38px 0 0; clear: both;}
+
+/* Caption */
+.CartCaption { padding: 0px 53px 4px 3px; clear: both; overflow: hidden;}
+.CartCaption .name { width: 400px; float: left;}
+.CartCaption .price { width: 88px; padding: 0px 10px 0 0; float: right;}
+.CartCaption .amount { width: 100px; padding: 0px 10px 0 0; float: right;}
+.CartCaption .total { width: 90px; padding: 0px 10px 0 0; float: right;}
+
+/* Box */
+.CartBox { padding: 12px 30px 12px 3px; clear: both; overflow: hidden; border-top: 1px solid #b6b6b6;}
+.CartBox .image { width: 91px; float: left;}
+.CartBox .image img { width: 73px; display: block; border: 1px solid #545659;}
+.CartBox .name { width: 400px; padding: 20px 0 0; float: left;}
+.CartBox .name a { text-decoration: underline;}
+.CartBox .name span { display: block;}
+.CartBox .price { width: 88px; padding: 27px 10px 0 0; float: right;}
+.CartBox .amount { width: 100px; padding: 25px 10px 0 0; float: right;}
+.CartBox .amount input[type="text"] { width:23px; padding:2px; margin: 0 7px; float: left; color:#696e6f; font-size: 14px; text-align: center; border:1px solid #ececec;}
+.CartBox .amount span.minus { width: 19px; height: 19px; float: left; background:url(../images/btn-amount.png) no-repeat; cursor: pointer;}
+.CartBox .amount span.plus { width: 19px; height: 19px; float: left; background:url(../images/btn-amount.png) 100% 0 no-repeat; cursor: pointer;}
+.CartBox .total { width: 90px; padding: 27px 10px 0 0; float: right;}
+.CartBox .delete { width: 23px; padding: 24px 0 0; float: right;}
+.CartBox .delete a { width: 23px; height: 24px; display: block; background:url(../images/btn-delete.png) no-repeat;}
+.CartBox .delete a:hover { background-position: 0 100%;}
+
+/* Cart Total */
+.CartTotal { padding: 5px 25px 0px; clear: both; font-size: 18px; text-align: right; border-top: 1px solid #b6b6b6;}
+.CartTotal span { padding: 0 0 0 70px; color: #000;}
+
+/* Order */
+.CartOrder { padding: 62px 0 0; clear: both; overflow: hidden; font-size: 16px;}
+.CartOrder a {}
+.CartOrder a.back { padding: 7px 0 5px 33px; float: right; background:url(../images/btn-back.gif) 0 9px no-repeat;}
+.CartOrder a.checkout { padding: 0 25px; margin-left: 58px; float: right; color: #fff; font:16px/32px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; text-align: center; border: 1px solid #608d33; background:url(../images/btn-basket.gif) repeat-x #94cc5c; border-radius: 3px;}
+.CartOrder a.checkout:hover { text-decoration: none; background: #94cc5c;}
+
+/* -------------------------------------- Product Box */
+.ProductImage { width: 298px; padding: 0 0 94px; float: left;}
+.ProductImage .main { padding: 10px; background:url(../images/px_productimage.gif) repeat-y #fefefe; border: 1px solid #ececec; border-radius: 3px 3px 7px 7px;}
+.ProductImage .mini { padding: 4px 0 0; margin-left: -2px;}
+.ProductImage .mini img { margin-left: 2px; border: 3px solid #f5f5f5;}
+.ProductImage .mini .active img { border-color: #93cb5c;}
+.PIBg { height: 6px; clear: both; background:url(../images/bg_productimage.gif) 50% 0 no-repeat;}
+#orbit-product { height: 276px; overflow: hidden;}
+
+/* Description */
+.ProductDescr { width: 622px; float: right;}
+.ProductDescr h1 { padding: 0 0 5px;}
+.ProductDescr .art { padding: 0 0 12px; color: #8e8e8e; font-size: 16px;}
+
+/* Button */
+.ProductBuy { padding: 12px 0 0; clear: both; overflow: hidden; font-size: 16px;}
+.ProductBuy a {}
+.ProductBuy a.back { padding: 7px 0 5px 33px; float: right; background:url(../images/btn-back.gif) 0 9px no-repeat;}
+.ProductBuy a.buy { padding: 0 15px 0 0; margin-left: 40px; float: right; color: #fff; font:16px/32px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; text-align: center; border: 1px solid #608d33; background:url(../images/btn-basket.gif) repeat-x #94cc5c; border-radius: 3px;}
+.ProductBuy a.buy:hover { text-decoration: none; background: #94cc5c;}
+.ProductBuy a.buy em { padding: 0 0 0 48px; display: block; font:16px/32px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; background:url(../images/btn-buy.gif) 15px 50% no-repeat;}
+.ProductBuy .social { padding: 8px 0 0; float: left;}
+.ProductBuy .social a { margin-right: 1px;}
+
+/* Amount */
+.ProductAmountWrap { padding: 0 0 20px 22px; clear: both; background:url(../images/px_price.gif) repeat; border-radius: 5px;}
+.ProductAmount { padding: 20px 0px 0px 0px; clear: both; overflow: hidden;}
+.ProductAmount li { font-size: 14px;}
+.ProductAmount .name { width: 140px; padding: 1px 15px 0 0; float: left;}
+.ProductAmount .name a { text-decoration: underline;}
+.ProductAmount .name span { display: block;}
+.ProductAmount .number { width: 80px; padding: 1px 15px 0 0; float: left;}
+.ProductAmount .price { width: 80px; padding: 1px 0 0; float: left;}
+.ProductAmount .amount { width: 97px; float: right;}
+.ProductAmount .amount input[type="text"] { width:23px; padding:2px; margin: 0 7px; float: left; color:#696e6f; font-size: 14px; text-align: center; border:1px solid #ececec;}
+.ProductAmount .amount span.minus { width: 19px; height: 19px; float: left; background:url(../images/btn-amount.png) no-repeat; cursor: pointer;}
+.ProductAmount .amount span.plus { width: 19px; height: 19px; float: left; background:url(../images/btn-amount.png) 100% 0 no-repeat; cursor: pointer;}
+
+/* -------------------------------------- Tabs Menu */
+.TabsMenu { height: 33px; clear: both; border-bottom: 1px solid #f0efef;}
+.TabsMenu li { float: left; white-space: nowrap;}
+.TabsMenu li a { padding: 0 8px 0 30px; display: block; color: #8e8e8e; font:14px/32px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; border: solid #f0efef; border-width: 1px 1px 0 0; background:url(../images/icon_tabs.gif) 12px 13px no-repeat #f7f7f7; position: relative;}
+.TabsMenu li a em { width: 100%; height: 4px; display: none; top: -3px; left: 0; position: absolute; background: #93cb5c; border-radius: 3px 3px 0 0;}
+.TabsMenu li a:hover { text-decoration: none;}
+.TabsMenu li:first-child { border-left:1px solid #f0efef;}
+.TabsMenu li.active a { padding: 0 8px 1px 30px; color: #93cb5c; background:url(../images/icon_tabs_hover.gif) 12px 13px no-repeat #fff;}
+.TabsMenu li.active a em { display: block;}
+#product-descr li a {}
+
+/* -------------------------------------- Product Text */
+.ProductText { padding: 15px 18px; clear: both; overflow: hidden; border: solid #f0efef; border-width: 0 1px 1px;}
+.ProductText .text { color: #545659; font-size: 14px;}
+
+/* -------------------------------------- Similar Product */
+.SimilarWrap { padding: 12px 30px; clear: both; overflow: hidden; border: solid #f0efef; border-width: 0 1px 1px;}
+.SimilarProduct { overflow: hidden;}
+.SimilarProduct li { width: 100px; padding: 0 27px 0 0; float: left; color: #8e8e8e; font-size: 16px;}
+.SimilarProduct li img { width: 80px; height: 80px; display: block; border: 3px solid #f5f5f5;}
+.SimilarProduct li .name { padding: 3px 0 0; display: block;}
+.SimilarProduct li .buy { padding: 7px 0 0;}
+.SimilarProduct li .buy a { padding: 0 0 1px 33px; display: block; font:16px/17px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; background:url(../images/icon_buy.gif) 0 1px no-repeat;}
+
+/* -------------------------------------- Page Number */
+.PageNumber { padding: 36px 0 0; clear: both; text-align: center;}
+.PageNumber li { padding: 0 1px; display: inline-block;}
+.PageNumber li a { padding: 0 5px; display: block; text-decoration: none; font:14px/16px 'Ubuntu Condensed', MyriadPro, sans-serif, arial; border-radius: 3px;}
+.PageNumber li a:hover, .PageNumber li a.active { color: #fff; background: #93cb5c;}
+
+/* -------------------------------------- Filter Box */
+.FilterBox { padding: 0 0 30px; clear: both; overflow: hidden;}
+.FilterBox li { padding: 0 18px 0 0; float: left; color: #545659; font-size: 18px;}
+.FilterBox li a { text-decoration: none;}
+.FilterBox li a:hover, .FilterBox li a.active:hover { border-bottom: 1px dashed #93cb5c;}
+.FilterBox li a.active { border-bottom: 1px dashed #545659;}
+.FilterBox li.all { padding: 0; float: right;}
+
+/* -------------------------------------- LEFT COLUMN */
+#left_column { width:221px; float:left;}
+
+/* -------------------------------------- Catalog Menu */
+.CatalogTitle { padding: 0 0 14px; font:24px/25px 'Ubuntu Condensed', MyriadPro, sans-serif, arial;}
+.CatalogMenu { padding: 15px 14px 17px; background:url(../images/px_catalog.gif); border: 1px solid #cecece; box-shadow: 0 0 3px #cecece; border-radius: 3px;}
+.CatalogMenu li { padding: 2px 0 0; background:url(../images/line_catalog.gif) repeat-x;}
+.CatalogMenu li a { padding: 7px 9px; display: block; color: #fff;}
+.CatalogMenu li a:hover, .CatalogMenu li a.active { color: #545659; text-decoration: none;}
+.CatalogMenu li:first-child { background: none;}
+
+/* ------------------------------------- RIGHT COLUMN */
+#right_column { width:701px; float:right;}
+
+/* -------------------------------------- Catalog Single */
+.CatalogSingle { padding: 10px; overflow: hidden; background:url(../images/px_catsingle.gif) repeat-y #fefefe; border: 1px solid #ececec; border-radius: 3px 3px 7px 7px;}
+.CatalogSingle .CSLeft { width: 290px; height: 382px; float: left; background:url(../images/bg_catsingle.gif) 28px 100% no-repeat #fff;}
+.CatalogSingle .text { padding: 37px 21px 0 18px;}
+.CatalogSingle .more { padding: 8px 0 0; font-size: 14px; text-align: right;}
+.CatalogSingle .more a { color: #93cb5c;}
+.CatalogSingle .CSRight { width: 389px; height: 382px; float: left;}
+.CatalogSingle .CSRight img { width: 389px; height: 382px; display: block;}
+.CSBg { height: 27px; clear: both; background:url(../images/bg_catsingle1.gif) 50% 0 no-repeat;}
+.CSRight .orbit-bullets, .SliderBox .orbit-bullets { bottom: 12px; left: 50%; margin-left: -40px;}
+
+/* -------------------------------------- Catalog Image Menu */
+.CatalogImageMenu { padding: 21px 0; clear: both; overflow: hidden;}
+.CatalogImageMenu li { width: 220px; padding: 0 0 0 20px; float: left; font-size: 14px;}
+.CatalogImageMenu li a { display: block; color: #545659; border: solid #d7e6d9; border-width: 1px 0; background:url(../images/px_price.gif) repeat; position: relative;}
+.CatalogImageMenu li a:hover { color: #000;}
+.CatalogImageMenu li a em { padding: 14px 10px 14px 90px; display: block; border: solid #fff; border-width: 1px 0;}
+.CatalogImageMenu li a img { width: 61px; height: 67px; display: block; top: -8px; left: 14px; position: absolute; border:1px solid #d7e6d9; border-radius: 3px;}
+.CatalogImageMenu li:first-child { padding: 0;}
+
+
+
+
+/* ********************* Footer *********************** */
+#footer { width:100%; height:189px; margin:-189px auto 0; position:relative;}
+.FooterMain { width: 960px; margin: 0 auto; padding: 30px 0 0; position: relative; background:url(../images/px_footer.gif) repeat-x;}
+#FlowersBottom { width: 100%; height: 230px; min-width: 960px; bottom: 0; left: 0; position: absolute; background:url(../images/bg_footer.png) 50% 0 no-repeat;}
+/* Copyright */
+.Copyright { width: 244px; padding: 0 30px 0 0; float: left; color: #000; font:16px/19px 'Ubuntu Condensed', MyriadPro, sans-serif, arial;}
+/* Menu */
+.MenuFoot { width: 120px; padding: 0 20px 0 0; float: left;}
+.MenuFoot li { padding: 6px 0 0; font-size: 16px;}
+.MenuFoot li a { color: #8e8e8e;}
+.MenuFoot li a:hover { color: #000;}
+.MenuFoot li.title { padding: 0 0 3px; color: #000;}
+.MenuFoot:nth-child(odd) { width: 150px;}
+
+/* Share Box */
+.ShareBox { width: 220px; float: right; color: #000; font-size: 16px;}
+.ShareBox p { padding: 10px 0 0;}
+.ShareBox a { margin-right: 2px;}
+.ShareBox a:hover { opacity: 0.7;}
+/* ---------------------------------------------------- */
